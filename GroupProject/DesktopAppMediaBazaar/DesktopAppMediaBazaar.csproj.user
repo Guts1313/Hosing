@@ -5,9 +5,6 @@
     <Compile Update="AdminAddingEmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminCancelledShiftsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="AdminDepartmentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -24,6 +21,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AdminVacationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChooseEmployeeByDepartmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm.cs">

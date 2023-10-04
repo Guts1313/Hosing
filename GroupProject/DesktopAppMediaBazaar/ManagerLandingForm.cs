@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataItems.LogicItems;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClassLibrary.Classes;
-using ClassLibrary.Controllers;
-using ClassLibrary.DBHelpers;
 
 namespace DesktopAppMediaBazaar
 {

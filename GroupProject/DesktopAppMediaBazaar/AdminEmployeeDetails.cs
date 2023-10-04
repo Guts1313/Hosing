@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClassLibrary.Classes;
-using ClassLibrary.Controllers;
-using ClassLibrary.DBHelpers;
+using BussinessLayer.Controllers;
 using DataAccessLayer;
+using DataAccessLayer.DAL;
+using DataItems.LogicItems;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DesktopAppMediaBazaar

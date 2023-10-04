@@ -1,7 +1,7 @@
-using ClassLibrary.Classes;
-using ClassLibrary.Controllers;
-using ClassLibrary.DBHelpers;
+using BussinessLayer.Controllers;
 using DataAccessLayer;
+using DataAccessLayer.DAL;
+using DataItems.LogicItems;
 
 namespace DesktopAppMediaBazaar
 {

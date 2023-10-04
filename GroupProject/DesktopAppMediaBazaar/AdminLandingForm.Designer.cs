@@ -176,7 +176,7 @@
             btnCreate.TabIndex = 27;
             btnCreate.Text = "Create Announcement";
             btnCreate.UseVisualStyleBackColor = false;
-            btnCreate.Click += btnCreate_Click;
+            //btnCreate.Click += btnCreate_Click;
             // 
             // tbTitle
             // 
@@ -343,7 +343,7 @@
             btnCancelledShifts.TabIndex = 15;
             btnCancelledShifts.Text = "Cancelled shifts";
             btnCancelledShifts.UseVisualStyleBackColor = false;
-            btnCancelledShifts.Click += btnCancelledShifts_Click;
+            //btnCancelledShifts.Click += btnCancelledShifts_Click;
             // 
             // btnLogout
             // 

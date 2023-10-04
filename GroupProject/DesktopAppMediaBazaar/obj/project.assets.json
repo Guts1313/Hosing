@@ -802,6 +802,20 @@
           }
         }
       },
+      "BussinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DataAccessLayer": "1.0.0",
+          "DataBlocks": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        }
+      },
       "DataAccessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2306,6 +2320,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BussinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BussinessLayer/BussinessLayer.csproj",
+      "msbuildProject": "../BussinessLayer/BussinessLayer.csproj"
+    },
     "DataAccessLayer/1.0.0": {
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
@@ -2319,8 +2338,9 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\ClassLibrary\\ClassLibrary.csproj",
+      "BussinessLayer >= 1.0.0",
       "DataAccessLayer >= 1.0.0",
+      "DataBlocks >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.1.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
@@ -2352,11 +2372,14 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
             },
             "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
             }
           }
         }
@@ -2402,16 +2425,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\ClassLibrary\\ClassLibrary.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\ClassLibrary\\ClassLibrary.csproj",
-      "targetGraphs": [
-        "net7.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

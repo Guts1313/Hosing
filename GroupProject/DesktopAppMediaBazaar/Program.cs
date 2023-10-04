@@ -1,5 +1,3 @@
-using ClassLibrary.DBHelpers;
-
 namespace DesktopAppMediaBazaar
 {
     internal static class Program

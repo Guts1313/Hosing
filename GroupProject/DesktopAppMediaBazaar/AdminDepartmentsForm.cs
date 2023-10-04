@@ -1,6 +1,7 @@
-﻿using ClassLibrary.Controllers;
-using ClassLibrary.Classes;
+﻿using BussinessLayer.Controllers;
 using DataAccessLayer;
+using DataAccessLayer.DAL;
+using DataItems.LogicItems;
 using Microsoft.VisualBasic.Logging;
 using System;
 using System.Collections.Generic;
@@ -62,13 +63,13 @@ namespace DesktopAppMediaBazaar
             }
         }
 
-        private void btnCancelledShifts_Click(object sender, EventArgs e)
+/*        private void btnCancelledShifts_Click(object sender, EventArgs e)
         {
             AdminCancelledShiftsForm form = new AdminCancelledShiftsForm(_loggedInEmployee);
             this.Hide();
             form.ShowDialog();
             this.Close();
-        }
+        }*/
 
         private void btnLogout_Click(object sender, EventArgs e)
         {

@@ -1,8 +1,7 @@
-﻿using ClassLibrary.Classes;
-using ClassLibrary.Controllers;
-using ClassLibrary.DBHelpers;
-using ClassLibrary.Interfaces;
+﻿using BussinessLayer.Controllers;
 using DataAccessLayer;
+using DataAccessLayer.DAL;
+using DataItems.LogicItems;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -21,7 +20,7 @@ namespace DesktopAppMediaBazaar
     {
         private VacationController vacationController = new(new DALVacationController());
         private ShiftController shiftController = new(new DALShiftController());
-        private CancelledShiftController cancelledShiftController = new(new DALCancelledShiftController());
+        //private CancelledShiftController cancelledShiftController = new(new DALCancelledShiftController());
         Employee _loggedInEmployee;
         private Vacation vacation = null;
         public AdminVacationsForm(Employee loggedInEmployee)
@@ -60,13 +59,13 @@ namespace DesktopAppMediaBazaar
             this.Close();
         }
 
-        private void btnCancelledShifts_Click(object sender, EventArgs e)
+/*        private void btnCancelledShifts_Click(object sender, EventArgs e)
         {
             AdminCancelledShiftsForm form = new AdminCancelledShiftsForm(_loggedInEmployee);
             this.Hide();
             form.ShowDialog();
             this.Close();
-        }
+        }*/
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -105,7 +104,7 @@ namespace DesktopAppMediaBazaar
 
             Shift[] shifts = shiftController.GetShiftsFromVacation(vacation);
 
-            foreach (Shift shift in shifts)
+/*            foreach (Shift shift in shifts)
             {
                 CancelledShift cancelledShift = new CancelledShift();
                 cancelledShift.AssignedEmployee = shift.Employee;
@@ -113,7 +112,7 @@ namespace DesktopAppMediaBazaar
                 cancelledShift.Reason = $"Vacation from {vacation.StartDate} until {vacation.EndDate}";
                 cancelledShift.IsViewed = true;
                 cancelledShiftController.Add(cancelledShift, new DALShiftController());
-            }
+            }*/
 
             btnApprove.Visible = false;
             btnReject.Visible = false;

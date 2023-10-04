@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClassLibrary.Classes;
-using ClassLibrary.Controllers;
-using ClassLibrary.DBHelpers;
-using ClassLibrary.Interfaces;
+using BussinessLayer.Controllers;
 using DataAccessLayer;
+using DataAccessLayer.DAL;
+using DataItems.LogicItems;
 
 namespace DesktopAppMediaBazaar
 {
@@ -77,13 +76,13 @@ namespace DesktopAppMediaBazaar
             this.Close();
         }
 
-        private void btnCancelledShifts_Click(object sender, EventArgs e)
+/*        private void btnCancelledShifts_Click(object sender, EventArgs e)
         {
             AdminCancelledShiftsForm form = new AdminCancelledShiftsForm(_loggedInEmployee);
             this.Hide();
             form.ShowDialog();
             this.Close();
-        }
+        }*/
 
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
@@ -311,13 +310,13 @@ namespace DesktopAppMediaBazaar
             this.Close();
         }
 
-        private void btnCancelledShifts_Click_1(object sender, EventArgs e)
+/*        private void btnCancelledShifts_Click_1(object sender, EventArgs e)
         {
             AdminCancelledShiftsForm form = new AdminCancelledShiftsForm(_loggedInEmployee);
             this.Hide();
             form.ShowDialog();
             this.Close();
-        }
+        }*/
 
         private void buttonVacations_Click(object sender, EventArgs e)
         {
