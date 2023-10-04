@@ -1,5 +1,4 @@
-﻿using ClassLibrary.Classes;
-using ClassLibrary.Controllers;
+﻿using BussinessLayer.Classes;
 using ClassLibrary.Interfaces;
 using System.Data.SqlClient;
 

@@ -1,7 +1,6 @@
-﻿using ClassLibrary.Classes;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using ClassLibrary.Interfaces;
-using ClassLibrary.Controllers;
+using BussinessLayer.Classes;
 using System.Data;
 
 namespace DataAccessLayer.DAL

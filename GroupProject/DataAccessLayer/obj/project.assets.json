@@ -146,6 +146,16 @@
             "rid": "win"
           }
         }
+      },
+      "BussinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BussinessLayer.dll": {}
+        }
       }
     }
   },
@@ -462,27 +472,33 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BussinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BussinessLayer/BussinessLayer.csproj",
+      "msbuildProject": "../BussinessLayer/BussinessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BussinessLayer >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Danila\\.nuget\\packages\\": {}
+    "C:\\Users\\nahme\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\nahme\\.nuget\\packages\\",
+      "outputPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nahme\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -495,7 +511,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -529,7 +549,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
