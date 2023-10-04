@@ -1,0 +1,110 @@
+﻿@page
+@using DataItems.LogicItems;
+@model Shifts
+@{
+	ViewData["Title"] = "Shifts";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h4>Shifts for the week of @Model.NewDate.AddDays(0 - (int)Model.NewDate.DayOfWeek + 1).ToShortDateString() - @Model.NewDate.AddDays(6 - (int)Model.NewDate.DayOfWeek + 1).ToShortDateString()</h4>
+
+<div class="schedule">
+
+    <form method="post" >
+        <button class="btn btn-dark mt-3 mb-3" asp-page-handler="PreviousWeek">Previous Week</button>
+        <button class="btn btn-dark mt-3 mb-3" asp-page-handler="CurrentWeek">Current Week</button>
+        <button class="btn btn-dark mt-3 mb-3" asp-page-handler="NextWeek">Next Week </button>
+    </form>
+
+</div>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th class="p-4">Shift Type</th>
+            @for (int dayIndex = 0; dayIndex < Model.WeekDays.Count; dayIndex++)
+            {
+                var day = Model.WeekDays[dayIndex];
+                var date = Model.NewDate.AddDays(dayIndex - (int)Model.NewDate.DayOfWeek + 1);
+                <th class="@(date.Date == DateTime.Today ? "table-info" : "") p-4">@day<br />@date.ToString("dd-MM-yyyy")</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="p-4">Morning</td>
+            @for (int dayIndex = 0; dayIndex < Model.WeekDays.Count; dayIndex++)
+            {
+                bool working = false;
+                int id = 0;
+                foreach (Shift shift in Model._assignedShifts)
+                {
+                    if (shift.Date == Model.NewDate.AddDays(dayIndex - (int)Model.NewDate.DayOfWeek + 1) && shift.Type == (int)ShiftType.Morning)
+                    {
+                        working = true;
+                        id = shift.Id;
+                    }
+
+                }
+
+                <td class="@(working ? "table-danger" : "table-success") p-4">
+                    @((working ? "Working" : "Not Working"));
+                    @if (working && Model.shiftIdsToCancel.Contains(id))
+                    {
+                        <a asp-page="/CallInSick" asp-route-id="@id" class="btn btn-primary btn-sm w-100">Cancel</a>
+                    }
+
+                </td>
+            }
+        </tr>
+        <tr>
+            <td class="p-4">Afternoon</td>
+            @for (int dayIndex = 0; dayIndex < Model.WeekDays.Count; dayIndex++)
+            {
+                bool working = false;
+                int id = 0;
+                foreach (Shift shift in Model._assignedShifts)
+                {
+                    if (shift.Date == Model.NewDate.AddDays(dayIndex - (int)Model.NewDate.DayOfWeek + 1) && shift.Type == (int)ShiftType.Afternoon)
+                    {
+                        working = true;
+                        id = shift.Id;
+                    }
+                }
+
+                <td class="@(working ? "table-danger" : "table-success") p-4">
+                    @((working ? "Working" : "Not Working"));
+                    @if (working && Model.shiftIdsToCancel.Contains(id))
+                    {
+                        <a asp-page="/CallInSick" asp-route-id="@id" class="btn btn-primary btn-sm w-100">Cancel</a>
+                    }
+                </td>
+            }
+        </tr>
+        <tr>
+            <td class="p-4">Evening</td>
+            @for (int dayIndex = 0; dayIndex < Model.WeekDays.Count; dayIndex++)
+            {
+                bool working = false;
+                int id = 0;
+                foreach (Shift shift in Model._assignedShifts)
+                {
+                    if (shift.Date == Model.NewDate.AddDays(dayIndex - (int)Model.NewDate.DayOfWeek + 1) && shift.Type == (int)ShiftType.Evening)
+                    {
+                        working = true;
+                        id = shift.Id;
+                    }
+
+                }
+
+                <td class="@(working ? "table-danger" : "table-success") p-4">
+                    @((working ? "Working" : "Not Working"));
+                    @if (working && Model.shiftIdsToCancel.Contains(id))
+                    {
+                        <a asp-page="/CallInSick" asp-route-id="@id" class="btn btn-primary btn-sm w-100">Cancel</a>
+                    }
+                </td>
+            }
+        </tr>
+    </tbody>
+</table>
