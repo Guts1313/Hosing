@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj": {}
+    "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj": {}
   },
   "projects": {
-    "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj": {
+    "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
+        "projectUniqueName": "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
         "projectName": "GroupProject",
-        "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
-        "packagesPath": "C:\\Users\\nahme\\.nuget\\packages\\",
-        "outputPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\",
+        "projectPath": "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
+        "packagesPath": "C:\\Users\\shevoK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nahme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shevoK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
