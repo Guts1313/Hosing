@@ -1,7 +1,6 @@
-﻿using ClassLibrary.Classes;
-using ClassLibrary.Interfaces;
-using ClassLibrary.Controllers;
-using DataAccessLayer;
+﻿using DataAccessLayer;
+using DataAccessLayer.Interfaces;
+using DataItems.LogicItems;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -80,7 +79,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Employee> employees = new();
-                DepartmentController _departmentController = new(new DALDepartmentController());
+                DALDepartmentController _departmentController = new DALDepartmentController();
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
                     string sql = "SELECT * FROM Employee";
@@ -114,7 +113,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 Employee employee = null;
-                DepartmentController _departmentController = new(new DALDepartmentController());
+                DALDepartmentController _departmentController = new DALDepartmentController();
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
@@ -184,7 +183,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Employee> employees = new();
-                DepartmentController _departmentController = new(new DALDepartmentController());
+                DALDepartmentController _departmentController = new DALDepartmentController();
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
                     string sql = "SELECT * FROM EMPLOYEE WHERE Id NOT IN" +

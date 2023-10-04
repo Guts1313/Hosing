@@ -1,11 +1,11 @@
-﻿using ClassLibrary.Classes;
-using ClassLibrary.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using DataItems.LogicItems;
+using DataAccessLayer.Interfaces;
 
 namespace DataAccessLayer.DAL
 {

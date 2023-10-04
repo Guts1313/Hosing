@@ -1,7 +1,7 @@
 ﻿using System.Data.SqlClient;
-using ClassLibrary.Interfaces;
-using BussinessLayer.Classes;
 using System.Data;
+using DataAccessLayer.Interfaces;
+using DataItems.LogicItems;
 
 namespace DataAccessLayer.DAL
 {

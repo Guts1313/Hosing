@@ -1,0 +1,84 @@
+﻿@page
+@using BussinessLayer.Controllers;
+@using DataItems.LogicItems;
+@using DataAccessLayer
+@using DataAccessLayer.DAL;
+@model GroupProject.Pages.HomeModel
+@{
+	ViewData["Title"] = "Home";
+}
+
+<h1>Welcome, @Model._loggedInEmployee.Username !</h1>
+
+<h2 class="mt-3 mb-2">Announcements:</h2>
+
+<div class="row">
+	@{
+		VacationController vacationController = new(new DALVacationController());
+		if (Model._announcements != null)
+		{
+			foreach (var a in Model._announcements)
+			{
+				if (vacationController.ReadById(a.VacationId).Employee.Id != Model._loggedInEmployee.Id)
+				{
+					<div class="col">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">@a.Title</h4>
+								<p class="card-text">@a.Details</p>
+								@if(@a.VacationId != 0)
+								{
+									<a asp-page="/ChooseShift" asp-route-id="@a.VacationId" class="btn btn-primary">See available shifts</a>
+								}
+							</div>
+						</div>
+					</div>
+				}
+			}
+		}
+	}
+</div>
+
+<h2 class="mt-3">Shifts:</h2>
+<div class="row">
+	@{
+		int i = 0;
+	}
+	@foreach (var shift in Model._assignedShifts)
+	{
+		<div class="col-3">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">
+						@shift.Date.ToShortDateString() : @shift.GetType()
+					</h5>
+					@{
+						if (shift.Type == (int)ShiftType.Morning)
+						{
+							<p class="card-text">8am - 12pm</p>
+						}
+						else if (shift.Type == (int)ShiftType.Afternoon)
+						{
+							<p class="card-text">12pm - 4pm</p>
+						}
+						else if (shift.Type == (int)ShiftType.Evening)
+						{
+							<p class="card-text">4pm - 8pm</p>
+						}
+					}
+					@{
+						if(Model.shiftIdsToCancel.Contains(shift.Id))
+						{
+							<a asp-page="/CallInSick" asp-route-id="@shift.Id" class="btn btn-primary">Cancel</a>
+						}
+						else
+						{
+							<a asp-page="/CallInSick" asp-route-id="@shift.Id" class="btn btn-dark disabled">Too early to cancel</a>
+						}
+					}
+				</div>
+			</div>
+		</div>
+		i++;
+	}
+</div>

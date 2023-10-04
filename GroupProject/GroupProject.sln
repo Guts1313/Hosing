@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BussinessLayer", "Bussiness
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopAppMediaBazaar", "..\..\..\..\Desktop\modo-media-bazaar-group-1-FinalWeek18\MediaBazaarWebsite\DesktopAppMediaBazaar\DesktopAppMediaBazaar.csproj", "{A18A4B00-94B6-458A-8FB0-8F9F3154DBCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBlocks", "DataBlocks\DataBlocks.csproj", "{8BD46FEE-1A60-474F-A804-A2CE7886D2B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A18A4B00-94B6-458A-8FB0-8F9F3154DBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18A4B00-94B6-458A-8FB0-8F9F3154DBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18A4B00-94B6-458A-8FB0-8F9F3154DBCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD46FEE-1A60-474F-A804-A2CE7886D2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD46FEE-1A60-474F-A804-A2CE7886D2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD46FEE-1A60-474F-A804-A2CE7886D2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD46FEE-1A60-474F-A804-A2CE7886D2B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

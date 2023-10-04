@@ -1,6 +1,6 @@
-﻿using BussinessLayer.Classes;
+﻿using DataItems.LogicItems;
 
-namespace ClassLibrary.Interfaces
+namespace DataAccessLayer.Interfaces
 {
     public interface IAnnouncementController
     {

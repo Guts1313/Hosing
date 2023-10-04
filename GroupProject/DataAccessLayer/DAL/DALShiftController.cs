@@ -1,5 +1,5 @@
-﻿using BussinessLayer.Classes;
-using ClassLibrary.Interfaces;
+﻿using DataAccessLayer.Interfaces;
+using DataItems.LogicItems;
 using System.Data.SqlClient;
 
 namespace DataAccessLayer.DAL
@@ -68,7 +68,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Shift> shifts = new();
-                EmployeeController employeeController = new EmployeeController(new DALEmployeeController());
+                DALEmployeeController employeeController = new DALEmployeeController();
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
@@ -141,7 +141,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 Shift shift;
-                EmployeeController employeeController = new EmployeeController(new DALEmployeeController());
+                DALEmployeeController employeeController = new DALEmployeeController();
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
@@ -173,7 +173,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Shift> shifts = new();
-                EmployeeController employeeController = new EmployeeController(new DALEmployeeController());
+                DALEmployeeController employeeController = new DALEmployeeController();
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
                     string sql = "SELECT * FROM Shift WHERE Date = @date";
@@ -276,7 +276,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Shift> shifts = new();
-                EmployeeController employeeController = new(new DALEmployeeController());
+                DALEmployeeController employeeController = new DALEmployeeController();
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
                     string sql = "SELECT s.* FROM Shift AS s INNER JOIN Vacation AS V ON s.EmployeeID = v.EmployeeId WHERE s.EmployeeID = @empId AND s.Date >= @startDate AND s.Date <= @endDate";

@@ -146,6 +146,16 @@
             "rid": "win"
           }
         }
+      },
+      "DataBlocks/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataBlocks.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataBlocks.dll": {}
+        }
       }
     }
   },
@@ -462,27 +472,33 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DataBlocks/1.0.0": {
+      "type": "project",
+      "path": "../DataBlocks/DataBlocks.csproj",
+      "msbuildProject": "../DataBlocks/DataBlocks.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DataBlocks >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shevoK\\.nuget\\packages\\": {}
+    "C:\\Users\\Danila\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\shevoK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shevoK\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\shevoK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -495,7 +511,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

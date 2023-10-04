@@ -1,6 +1,7 @@
-﻿using ClassLibrary.Interfaces;
-using System.Data.SqlClient;
-using BussinessLayer.Classes;
+﻿using System.Data.SqlClient;
+using DataItems.LogicItems;
+using DataAccessLayer.Interfaces;
+
 namespace DataAccessLayer.DAL
 {
     public class DALVacationController : SQLConnectParent, IVacationController
@@ -42,7 +43,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Vacation> vacations = new();
-                EmployeeController _employeeController = new(new DALEmployeeController());
+                DALEmployeeController _employeeController = new DALEmployeeController();
 
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
@@ -84,7 +85,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Vacation> vacations = new();
-                EmployeeController _employeeController = new(new DALEmployeeController());
+                DALEmployeeController _employeeController = new DALEmployeeController();
 
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
@@ -128,7 +129,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 List<Vacation> vacations = new();
-                EmployeeController _employeeController = new(new DALEmployeeController());
+                DALEmployeeController _employeeController = new DALEmployeeController();
 
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
@@ -172,7 +173,7 @@ namespace DataAccessLayer.DAL
             try
             {
                 Vacation vacation = null;
-                EmployeeController _employeeController = new(new DALEmployeeController());
+                DALEmployeeController _employeeController = new DALEmployeeController();
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {

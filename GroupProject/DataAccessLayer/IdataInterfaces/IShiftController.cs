@@ -1,6 +1,6 @@
-﻿using BussinessLayer.Classes;
+﻿using DataItems.LogicItems;
 
-namespace ClassLibrary.Interfaces
+namespace DataAccessLayer.Interfaces
 {
     public interface IShiftController
 	{
@@ -21,6 +21,5 @@ namespace ClassLibrary.Interfaces
 		public Shift[] GetFutureShiftsByEmp(Employee employee);
 
 		public Shift[] GetShiftsFromVacation(Vacation vacation);
-
     }
 }

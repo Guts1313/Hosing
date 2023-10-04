@@ -1,6 +1,6 @@
-﻿using BussinessLayer.Classes;
+﻿using DataItems.LogicItems;
 
-namespace ClassLibrary.Interfaces
+namespace DataAccessLayer.Interfaces
 {
     public interface IVacationController
 	{
@@ -17,5 +17,5 @@ namespace ClassLibrary.Interfaces
 		public Vacation[] ReadAllByMemberFiltered(string filter, int id);
 
 		public Vacation ReadById(int id);
-	}
+    }
 }
