@@ -54,7 +54,8 @@ namespace DataAccessLayer.DAL
             {
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
-                    string sql = "DELETE FROM Employee WHERE Id = @id";
+                    string sql = "DELETE FROM Employee WHERE Id = @id;" +
+                                 "DELETE FROM Shift WHERE EmployeeId = @id";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
