@@ -1,0 +1,25 @@
+﻿@page
+@using DataBlocks.LogicItems;
+@model GroupProject.Pages.StockModel
+@{
+}
+
+
+<div class="stock-list">
+    @foreach (var stock in Model.stocks)
+    {
+        <div class="stock-list-item">
+            <span class="stock-list-item-title">@stock.Name</span>
+            <p class="stock-list-item-desc">Price: @stock.Price</p>
+            <p class="stock-list-item-desc">Available Amount: @stock.Amount</p>
+            <p class="stock-list-item-desc">Description: @stock.Description</p>
+            
+            <form method = "post">
+                <input type="hidden" name="id" value="@stock.Id"/>
+                <label asp-for="@stock.Amount">Amount</label>
+                <input asp-for="@stock.Amount" name="amount"/>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    }
+</div>
