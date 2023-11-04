@@ -70,7 +70,7 @@ namespace DesktopAppMediaBazaar
         private void btnLogout_Click(object sender, EventArgs e)
         {
             _loggedInEmployee = null;
-            LoginForm form = new LoginForm();
+            Login form = new Login();
             this.Hide();
             form.ShowDialog();
             this.Close();

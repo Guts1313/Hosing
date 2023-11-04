@@ -26,11 +26,74 @@
     <Compile Update="ChooseEmployeeByDepartmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LoginForm.cs">
+    <Compile Update="CustomElements\Controls\CustomButtonV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomLabelV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomLogoBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomPanelV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomTextBoxV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomTitleLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ManagerLandingForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundPanelListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundTextBox.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>
