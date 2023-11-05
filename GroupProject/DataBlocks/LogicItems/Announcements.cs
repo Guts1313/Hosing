@@ -27,7 +27,7 @@ namespace DataItems.LogicItems
         }
         public override string ToString()
         {
-            return $"{Id}: {Title} ";
+            return $"{Title} ";
         }
     }
 }

@@ -232,7 +232,7 @@ namespace CustomMessageBox.Private
                     button2.Location = new Point(xCenter + (button2.Width / 2) + 5, yCenter);
                     button2.Text = "No";
                     button2.DialogResult = DialogResult.No;//Set DialogResult
-                    button2.BackColor = Color.FromArgb(156, 84, 213); ;//Title Bar Back Color
+                    button2.BackColor = Color.FromArgb(229, 229, 229); ;//Title Bar Back Color
                     button2.ForeColor = Color.FromArgb(110, 110, 110);
 
                     //Set Default Button

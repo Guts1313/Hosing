@@ -88,7 +88,6 @@ namespace DesktopAppMediaBazaar.CustomElements
 
         //Properties
         #region -> Appearance properties
-        [Category("RJ Code - Appearance")]
         public new Color BackColor
         {
             get { return backColor; }
@@ -97,6 +96,18 @@ namespace DesktopAppMediaBazaar.CustomElements
                 backColor = value;
                 lblText.BackColor = backColor;
                 btnIcon.BackColor = backColor;
+            }
+        }
+
+        private int cornerRadius = 15;
+        [Category("RJ Code - Appearance")]
+        public int CornerRadius
+        {
+            get { return cornerRadius; }
+            set
+            {
+                cornerRadius = value;
+                this.Invalidate(); // Causes control to be redrawn.
             }
         }
 
@@ -374,6 +385,39 @@ namespace DesktopAppMediaBazaar.CustomElements
         #endregion
 
         #region -> Overridden methods
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            // Overriding this method to do nothing prevents flickering that can occur from the default background painting.
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e)
+        {
+            // First, we create a graphics path that corresponds to a rectangle with rounded corners.
+            GraphicsPath gfxPath = new GraphicsPath();
+            Rectangle bounds = new Rectangle(0, 0, this.Width, this.Height);
+
+            int cornerDiameter = cornerRadius * 2;
+            gfxPath.AddArc(bounds.X, bounds.Y, cornerDiameter, cornerDiameter, 180, 90);
+            gfxPath.AddArc(bounds.X + bounds.Width - cornerDiameter - 1, bounds.Y, cornerDiameter, cornerDiameter, 270, 90);
+            gfxPath.AddArc(bounds.X + bounds.Width - cornerDiameter - 1, bounds.Y + bounds.Height - cornerDiameter - 1, cornerDiameter, cornerDiameter, 0, 90);
+            gfxPath.AddArc(bounds.X, bounds.Y + bounds.Height - cornerDiameter - 1, cornerDiameter, cornerDiameter, 90, 90);
+            gfxPath.CloseAllFigures();
+
+            // We set the region of the UserControl to our graphics path, giving us the rounded corners.
+            this.Region = new Region(gfxPath);
+
+            // Then we tell the PaintEventArgs to only paint within that graphics path.
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.FillPath(new SolidBrush(this.BackColor), gfxPath);
+
+            // If you have a border, you may draw it here as well.
+            using (Pen borderPen = new Pen(this.borderColor, borderSize))
+            {
+                e.Graphics.DrawPath(borderPen, gfxPath);
+            }
+        }
+
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);

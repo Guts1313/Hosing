@@ -59,13 +59,13 @@ namespace DesktopAppMediaBazaar
             this.Close();
         }
 
-/*        private void btnCancelledShifts_Click(object sender, EventArgs e)
-        {
-            AdminCancelledShiftsForm form = new AdminCancelledShiftsForm(_loggedInEmployee);
-            this.Hide();
-            form.ShowDialog();
-            this.Close();
-        }*/
+        /*        private void btnCancelledShifts_Click(object sender, EventArgs e)
+                {
+                    AdminCancelledShiftsForm form = new AdminCancelledShiftsForm(_loggedInEmployee);
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Close();
+                }*/
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -104,15 +104,15 @@ namespace DesktopAppMediaBazaar
 
             Shift[] shifts = shiftController.GetShiftsFromVacation(vacation);
 
-/*            foreach (Shift shift in shifts)
-            {
-                CancelledShift cancelledShift = new CancelledShift();
-                cancelledShift.AssignedEmployee = shift.Employee;
-                cancelledShift.Shift = shift;
-                cancelledShift.Reason = $"Vacation from {vacation.StartDate} until {vacation.EndDate}";
-                cancelledShift.IsViewed = true;
-                cancelledShiftController.Add(cancelledShift, new DALShiftController());
-            }*/
+            /*            foreach (Shift shift in shifts)
+                        {
+                            CancelledShift cancelledShift = new CancelledShift();
+                            cancelledShift.AssignedEmployee = shift.Employee;
+                            cancelledShift.Shift = shift;
+                            cancelledShift.Reason = $"Vacation from {vacation.StartDate} until {vacation.EndDate}";
+                            cancelledShift.IsViewed = true;
+                            cancelledShiftController.Add(cancelledShift, new DALShiftController());
+                        }*/
 
             btnApprove.Visible = false;
             btnReject.Visible = false;

@@ -2,28 +2,46 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="AdminAddingEmployeeForm.cs">
+    <Compile Update="CustomElements\NoHoverButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DashboardManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminDepartmentsForm.cs">
+    <Compile Update="FormsOld\AdminAddingEmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminEmployeeDetails.cs">
+    <Compile Update="FormsOld\AdminDepartmentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminEmployeesForm.cs">
+    <Compile Update="FormsOld\AdminEmployeeDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminLandingForm.cs">
+    <Compile Update="FormsOld\AdminEmployeesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminShiftsForm.cs">
+    <Compile Update="FormsOld\AdminLandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminVacationsForm.cs">
+    <Compile Update="FormsOld\AdminShiftsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChooseEmployeeByDepartmentForm.cs">
+    <Compile Update="FormsOld\AdminVacationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsUtility\AnnouncementsAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsUtility\EmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsUtility\EmployeesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AnnouncementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsOld\ChooseEmployeeByDepartmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CustomElements\Controls\CustomButtonV2.cs">
@@ -56,10 +74,22 @@
     <Compile Update="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Departments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\EmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Shifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Vacation.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ManagerLandingForm.cs">
+    <Compile Update="FormsOld\ManagerLandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CustomElements\CustomCheckBox.cs">
@@ -95,5 +125,10 @@
     <Compile Update="CustomElements\RoundTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

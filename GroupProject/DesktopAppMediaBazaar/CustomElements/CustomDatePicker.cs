@@ -10,7 +10,7 @@ using System.Drawing.Drawing2D;
 
 namespace DesktopAppMediaBazaar.CustomElements
 {
-    internal class CustomDatePicker : DateTimePicker
+    public class CustomDatePicker : DateTimePicker
     {
         //Fields
         //-> Appearance
@@ -21,7 +21,7 @@ namespace DesktopAppMediaBazaar.CustomElements
 
         //-> Other Values
         private bool droppedDown = false;
-        private Image calendarIcon = Properties.Resources.calendarDark;
+        private Image calendarIcon = Properties.Resources.calendarWhite;
         private RectangleF iconButtonArea;
         private const int calendarIconWidth = 34;
         private const int arrowIconWidth = 17;
@@ -35,7 +35,7 @@ namespace DesktopAppMediaBazaar.CustomElements
                 skinColor = value;
                 if (skinColor.GetBrightness() >= 0.6F)
                     calendarIcon = Properties.Resources.calendarDark;
-                else calendarIcon = Properties.Resources.calendarDark;
+                else calendarIcon = Properties.Resources.calendarWhite;
                 this.Invalidate();
             }
         }
@@ -108,14 +108,6 @@ namespace DesktopAppMediaBazaar.CustomElements
                 penBorder.Alignment = PenAlignment.Inset;
                 textFormat.LineAlignment = StringAlignment.Center;
 
-                // Calculate the center point for the calendar icon
-                float iconCenterX = this.Width - (calendarIconWidth / 2) - 9;
-                float iconCenterY = this.Height / 2;
-
-                // Calculate the top-left corner point for drawing the icon
-                float iconTopLeftX = iconCenterX - (calendarIcon.Width / 2);
-                float iconTopLeftY = iconCenterY - (calendarIcon.Height / 2);
-
                 //Draw surface
                 graphics.FillRectangle(skinBrush, clientArea);
                 //Draw text
@@ -124,8 +116,8 @@ namespace DesktopAppMediaBazaar.CustomElements
                 if (droppedDown == true) graphics.FillRectangle(openIconBrush, iconArea);
                 //Draw border 
                 if (borderSize >= 1) graphics.DrawRectangle(penBorder, clientArea.X, clientArea.Y, clientArea.Width, clientArea.Height);
-                // Draw the icon
-                graphics.DrawImage(calendarIcon, iconTopLeftX, iconTopLeftY);
+                //Draw icon
+                graphics.DrawImage(calendarIcon, this.Width - calendarIcon.Width - 9, (this.Height - calendarIcon.Height) / 2);
 
             }
         }

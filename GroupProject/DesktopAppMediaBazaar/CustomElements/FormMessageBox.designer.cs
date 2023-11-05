@@ -103,14 +103,14 @@ namespace CustomMessageBox.Private
             // labelMessage
             // 
             labelMessage.AutoSize = true;
-            labelMessage.Font = new Font("Cascadia Mono", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            labelMessage.Font = new Font("Cascadia Code SemiLight", 9F, FontStyle.Regular, GraphicsUnit.Point);
             labelMessage.ForeColor = Color.FromArgb(110, 110, 110);
             labelMessage.Location = new Point(12, 12);
             labelMessage.Margin = new Padding(4, 0, 4, 0);
             labelMessage.MaximumSize = new Size(700, 0);
             labelMessage.Name = "labelMessage";
             labelMessage.Padding = new Padding(6, 6, 12, 17);
-            labelMessage.Size = new Size(122, 41);
+            labelMessage.Size = new Size(109, 39);
             labelMessage.TabIndex = 1;
             labelMessage.Text = "labelMessage";
             labelMessage.TextAlign = ContentAlignment.MiddleLeft;

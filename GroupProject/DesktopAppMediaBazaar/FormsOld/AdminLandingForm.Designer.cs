@@ -69,7 +69,7 @@
             // 
             labelWelcome.AutoSize = true;
             labelWelcome.Font = new Font("Century Gothic", 19.125F, FontStyle.Regular, GraphicsUnit.Point);
-            labelWelcome.Location = new Point(343, 55);
+            labelWelcome.Location = new Point(343, 52);
             labelWelcome.Margin = new Padding(2, 0, 2, 0);
             labelWelcome.Name = "labelWelcome";
             labelWelcome.Size = new Size(137, 32);
@@ -82,10 +82,10 @@
             btnEdit.FlatStyle = FlatStyle.Flat;
             btnEdit.Font = new Font("Century Gothic", 13.125F, FontStyle.Regular, GraphicsUnit.Point);
             btnEdit.ForeColor = Color.White;
-            btnEdit.Location = new Point(343, 597);
+            btnEdit.Location = new Point(343, 560);
             btnEdit.Margin = new Padding(2, 1, 2, 1);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(148, 44);
+            btnEdit.Size = new Size(148, 41);
             btnEdit.TabIndex = 20;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
@@ -96,19 +96,19 @@
             lbAnnouncements.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lbAnnouncements.FormattingEnabled = true;
             lbAnnouncements.ItemHeight = 21;
-            lbAnnouncements.Location = new Point(343, 281);
+            lbAnnouncements.Location = new Point(343, 263);
             lbAnnouncements.Name = "lbAnnouncements";
-            lbAnnouncements.Size = new Size(557, 277);
+            lbAnnouncements.Size = new Size(557, 256);
             lbAnnouncements.TabIndex = 21;
             lbAnnouncements.Click += listBox1_SelectedIndexChanged;
             // 
             // lblTitle
             // 
             lblTitle.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTitle.Location = new Point(937, 281);
+            lblTitle.Location = new Point(937, 263);
             lblTitle.Margin = new Padding(2, 0, 2, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(574, 23);
+            lblTitle.Size = new Size(574, 22);
             lblTitle.TabIndex = 22;
             lblTitle.Text = "Title:";
             lblTitle.Visible = false;
@@ -116,10 +116,10 @@
             // lblDetails
             // 
             lblDetails.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDetails.Location = new Point(937, 335);
+            lblDetails.Location = new Point(937, 314);
             lblDetails.Margin = new Padding(2, 0, 2, 0);
             lblDetails.Name = "lblDetails";
-            lblDetails.Size = new Size(574, 92);
+            lblDetails.Size = new Size(574, 86);
             lblDetails.TabIndex = 23;
             lblDetails.Text = "Details:";
             lblDetails.Visible = false;
@@ -128,7 +128,7 @@
             // 
             lblStart.AutoSize = true;
             lblStart.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblStart.Location = new Point(937, 433);
+            lblStart.Location = new Point(937, 406);
             lblStart.Margin = new Padding(2, 0, 2, 0);
             lblStart.Name = "lblStart";
             lblStart.Size = new Size(108, 22);
@@ -140,7 +140,7 @@
             // 
             lblEndDate.AutoSize = true;
             lblEndDate.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEndDate.Location = new Point(937, 491);
+            lblEndDate.Location = new Point(937, 460);
             lblEndDate.Margin = new Padding(2, 0, 2, 0);
             lblEndDate.Name = "lblEndDate";
             lblEndDate.Size = new Size(101, 22);
@@ -154,10 +154,10 @@
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.Font = new Font("Century Gothic", 13.125F, FontStyle.Regular, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(515, 597);
+            btnDelete.Location = new Point(515, 560);
             btnDelete.Margin = new Padding(2, 1, 2, 1);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(148, 44);
+            btnDelete.Size = new Size(148, 41);
             btnDelete.TabIndex = 26;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
@@ -169,18 +169,18 @@
             btnCreate.FlatStyle = FlatStyle.Flat;
             btnCreate.Font = new Font("Century Gothic", 13.125F, FontStyle.Regular, GraphicsUnit.Point);
             btnCreate.ForeColor = Color.White;
-            btnCreate.Location = new Point(343, 651);
+            btnCreate.Location = new Point(343, 610);
             btnCreate.Margin = new Padding(2, 1, 2, 1);
             btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(320, 34);
+            btnCreate.Size = new Size(320, 32);
             btnCreate.TabIndex = 27;
             btnCreate.Text = "Create Announcement";
             btnCreate.UseVisualStyleBackColor = false;
-            //btnCreate.Click += btnCreate_Click;
+            btnCreate.Click += btnCreate_Click;
             // 
             // tbTitle
             // 
-            tbTitle.Location = new Point(1049, 279);
+            tbTitle.Location = new Point(1049, 262);
             tbTitle.Name = "tbTitle";
             tbTitle.Size = new Size(250, 23);
             tbTitle.TabIndex = 28;
@@ -188,10 +188,10 @@
             // 
             // tbDetails
             // 
-            tbDetails.Location = new Point(1049, 334);
+            tbDetails.Location = new Point(1049, 313);
             tbDetails.Multiline = true;
             tbDetails.Name = "tbDetails";
-            tbDetails.Size = new Size(250, 93);
+            tbDetails.Size = new Size(250, 87);
             tbDetails.TabIndex = 29;
             tbDetails.Visible = false;
             // 
@@ -201,10 +201,10 @@
             btnSubmit.FlatStyle = FlatStyle.Flat;
             btnSubmit.Font = new Font("Century Gothic", 13.125F, FontStyle.Regular, GraphicsUnit.Point);
             btnSubmit.ForeColor = Color.White;
-            btnSubmit.Location = new Point(937, 532);
+            btnSubmit.Location = new Point(937, 499);
             btnSubmit.Margin = new Padding(2, 1, 2, 1);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(148, 44);
+            btnSubmit.Size = new Size(148, 41);
             btnSubmit.TabIndex = 32;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = false;
@@ -213,7 +213,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(1049, 432);
+            dateTimePicker1.Location = new Point(1049, 405);
             dateTimePicker1.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 23);
@@ -222,7 +222,7 @@
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(1049, 490);
+            dateTimePicker2.Location = new Point(1049, 459);
             dateTimePicker2.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(250, 23);
@@ -301,7 +301,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 923);
+            panel1.Size = new Size(250, 865);
             panel1.TabIndex = 35;
             // 
             // buttonVacations
@@ -310,9 +310,9 @@
             buttonVacations.FlatStyle = FlatStyle.Flat;
             buttonVacations.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             buttonVacations.ForeColor = Color.White;
-            buttonVacations.Location = new Point(6, 501);
+            buttonVacations.Location = new Point(6, 470);
             buttonVacations.Name = "buttonVacations";
-            buttonVacations.Size = new Size(238, 75);
+            buttonVacations.Size = new Size(238, 70);
             buttonVacations.TabIndex = 19;
             buttonVacations.Text = "Vacations";
             buttonVacations.UseVisualStyleBackColor = false;
@@ -324,9 +324,9 @@
             btnHome.FlatStyle = FlatStyle.Flat;
             btnHome.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnHome.ForeColor = Color.White;
-            btnHome.Location = new Point(6, 21);
+            btnHome.Location = new Point(6, 20);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(238, 75);
+            btnHome.Size = new Size(238, 70);
             btnHome.TabIndex = 18;
             btnHome.Text = "Announcements";
             btnHome.UseVisualStyleBackColor = false;
@@ -337,13 +337,12 @@
             btnCancelledShifts.FlatStyle = FlatStyle.Flat;
             btnCancelledShifts.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnCancelledShifts.ForeColor = Color.White;
-            btnCancelledShifts.Location = new Point(6, 405);
+            btnCancelledShifts.Location = new Point(6, 380);
             btnCancelledShifts.Name = "btnCancelledShifts";
-            btnCancelledShifts.Size = new Size(238, 75);
+            btnCancelledShifts.Size = new Size(238, 70);
             btnCancelledShifts.TabIndex = 15;
             btnCancelledShifts.Text = "Cancelled shifts";
             btnCancelledShifts.UseVisualStyleBackColor = false;
-            //btnCancelledShifts.Click += btnCancelledShifts_Click;
             // 
             // btnLogout
             // 
@@ -351,9 +350,9 @@
             btnLogout.FlatStyle = FlatStyle.Flat;
             btnLogout.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogout.ForeColor = Color.White;
-            btnLogout.Location = new Point(6, 827);
+            btnLogout.Location = new Point(6, 775);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(238, 75);
+            btnLogout.Size = new Size(238, 70);
             btnLogout.TabIndex = 13;
             btnLogout.Text = "Log out";
             btnLogout.UseVisualStyleBackColor = false;
@@ -365,9 +364,9 @@
             btnDepartments.FlatStyle = FlatStyle.Flat;
             btnDepartments.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnDepartments.ForeColor = Color.White;
-            btnDepartments.Location = new Point(6, 213);
+            btnDepartments.Location = new Point(6, 200);
             btnDepartments.Name = "btnDepartments";
-            btnDepartments.Size = new Size(238, 75);
+            btnDepartments.Size = new Size(238, 70);
             btnDepartments.TabIndex = 3;
             btnDepartments.Text = "Departments";
             btnDepartments.UseVisualStyleBackColor = false;
@@ -379,9 +378,9 @@
             btnEmployees.FlatStyle = FlatStyle.Flat;
             btnEmployees.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnEmployees.ForeColor = Color.White;
-            btnEmployees.Location = new Point(6, 117);
+            btnEmployees.Location = new Point(6, 110);
             btnEmployees.Name = "btnEmployees";
-            btnEmployees.Size = new Size(238, 75);
+            btnEmployees.Size = new Size(238, 70);
             btnEmployees.TabIndex = 1;
             btnEmployees.Text = "Employees";
             btnEmployees.UseVisualStyleBackColor = false;
@@ -393,9 +392,9 @@
             btnShifts.FlatStyle = FlatStyle.Flat;
             btnShifts.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnShifts.ForeColor = Color.White;
-            btnShifts.Location = new Point(6, 309);
+            btnShifts.Location = new Point(6, 290);
             btnShifts.Name = "btnShifts";
-            btnShifts.Size = new Size(238, 75);
+            btnShifts.Size = new Size(238, 70);
             btnShifts.TabIndex = 2;
             btnShifts.Text = "Shifts";
             btnShifts.UseVisualStyleBackColor = false;
@@ -405,7 +404,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(343, 135);
+            label2.Location = new Point(343, 127);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(187, 24);
@@ -418,10 +417,10 @@
             buttonCancel.FlatStyle = FlatStyle.Flat;
             buttonCancel.Font = new Font("Century Gothic", 13.125F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancel.ForeColor = Color.Black;
-            buttonCancel.Location = new Point(1151, 532);
+            buttonCancel.Location = new Point(1151, 499);
             buttonCancel.Margin = new Padding(2, 1, 2, 1);
             buttonCancel.Name = "buttonCancel";
-            buttonCancel.Size = new Size(148, 44);
+            buttonCancel.Size = new Size(148, 41);
             buttonCancel.TabIndex = 37;
             buttonCancel.Text = "Cancel";
             buttonCancel.UseVisualStyleBackColor = false;
@@ -432,7 +431,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(343, 202);
+            label3.Location = new Point(343, 189);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(134, 22);
@@ -443,7 +442,7 @@
             // 
             radioButtonPast.AutoSize = true;
             radioButtonPast.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButtonPast.Location = new Point(343, 234);
+            radioButtonPast.Location = new Point(343, 219);
             radioButtonPast.Name = "radioButtonPast";
             radioButtonPast.Size = new Size(66, 26);
             radioButtonPast.TabIndex = 39;
@@ -456,7 +455,7 @@
             // 
             radioButtonCurrent.AutoSize = true;
             radioButtonCurrent.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButtonCurrent.Location = new Point(415, 234);
+            radioButtonCurrent.Location = new Point(415, 219);
             radioButtonCurrent.Name = "radioButtonCurrent";
             radioButtonCurrent.Size = new Size(98, 26);
             radioButtonCurrent.TabIndex = 40;
@@ -469,7 +468,7 @@
             // 
             radioButtonAll.AutoSize = true;
             radioButtonAll.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButtonAll.Location = new Point(611, 234);
+            radioButtonAll.Location = new Point(611, 219);
             radioButtonAll.Name = "radioButtonAll";
             radioButtonAll.Size = new Size(49, 26);
             radioButtonAll.TabIndex = 42;
@@ -482,7 +481,7 @@
             // 
             radioButtonFuture.AutoSize = true;
             radioButtonFuture.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            radioButtonFuture.Location = new Point(519, 234);
+            radioButtonFuture.Location = new Point(519, 219);
             radioButtonFuture.Name = "radioButtonFuture";
             radioButtonFuture.Size = new Size(86, 26);
             radioButtonFuture.TabIndex = 41;
@@ -493,9 +492,9 @@
             // 
             // AdminLandingForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1584, 918);
+            ClientSize = new Size(1584, 861);
             Controls.Add(radioButtonAll);
             Controls.Add(radioButtonFuture);
             Controls.Add(radioButtonCurrent);

@@ -138,6 +138,7 @@
             btnForgot.Name = "btnForgot";
             btnForgot.Size = new Size(112, 16);
             btnForgot.TabIndex = 5;
+            btnForgot.TabStop = true;
             btnForgot.Text = "Forgot Password";
             btnForgot.VisitedLinkColor = Color.FromArgb(70, 41, 100);
             // 
@@ -293,7 +294,7 @@
             customControlBox1.Size = new Size(139, 31);
             customControlBox1.TabIndex = 0;
             // 
-            // LoginForm
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -303,7 +304,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MaximumSize = new Size(2560, 1440);
             MinimumSize = new Size(100, 42);
-            Name = "LoginForm";
+            Name = "Login";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";

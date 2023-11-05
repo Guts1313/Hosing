@@ -8,10 +8,10 @@ namespace DesktopAppMediaBazaar.CustomElements
     public class RoundLabel : Label
     {
 
-        public int cornerRadius = 18;
-        public Color borderColor = Color.FromArgb(231, 34, 83);
+        public int cornerRadius = 30;
+        public Color borderColor = Color.FromArgb(229, 229, 229);
         public int borderWidth = 1;
-        public Color backColor = Color.FromArgb(231, 34, 83);
+        public Color backColor = Color.FromArgb(229, 229, 229);
 
         public bool isFillLeftTop = false;
         public bool isFillRightTop = false;

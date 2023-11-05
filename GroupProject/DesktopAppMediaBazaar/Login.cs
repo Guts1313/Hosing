@@ -127,11 +127,11 @@ namespace DesktopAppMediaBazaar
                 Form nextForm = null;
                 if (EmployeeController.IsAdmin(LoggedInEmployee))
                 {
-                    nextForm = new AdminLandingForm(LoggedInEmployee);
+                    nextForm = new Dashboard(LoggedInEmployee);
                 }
                 else if (EmployeeController.IsManager(LoggedInEmployee))
                 {
-                    nextForm = new ManagerLandingForm(LoggedInEmployee);
+                    nextForm = new DashboardManager(LoggedInEmployee);
                 }
                 else
                 {
@@ -141,6 +141,7 @@ namespace DesktopAppMediaBazaar
                 if (nextForm != null)
                 {
                     animator.Hide(lbLoggingIn, true);
+                    RJMessageBox.Show($"Welcome back, {LoggedInEmployee.Username}!", "", MessageBoxButtons.OK);
                     this.Hide();
                     nextForm.ShowDialog();
                     this.Close();
@@ -234,6 +235,5 @@ namespace DesktopAppMediaBazaar
             }
             base.WndProc(ref m);
         }
-
     }
 }
