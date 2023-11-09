@@ -6,7 +6,6 @@ C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.AdminLandingForm.resources
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.AdminShiftsForm.resources
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.AdminVacationsForm.resources
-C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.LoginForm.resources
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.ManagerLandingForm.resources
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Properties.Resources.resources
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.csproj.GenerateResource.cache
@@ -280,3 +279,19 @@ C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Shifts.resources
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Vacation.resources
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Login.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\bin\Debug\net7.0-windows\libs\Animator.dll
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\bin\Debug\net7.0-windows\Animator.dll
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.CustomElements.CustomComboBox.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\CustomMessageBox.Private.FormMessageBox.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\housing.CustomElements.RoundTextBox.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Dashboard.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.DashboardManager.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.ChildFormsUtility.AnnouncementsAddEdit.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.EmployeeDetails.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.EmployeesAdd.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.ChildForms.AnnouncementsForm.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Departments.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.EmployeesForm.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Shifts.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Vacation.resources
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Login.resources
