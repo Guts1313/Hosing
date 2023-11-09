@@ -2,35 +2,133 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="AdminAddingEmployeeForm.cs">
+    <Compile Update="CustomElements\NoHoverButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="DashboardManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminDepartmentsForm.cs">
+    <Compile Update="FormsOld\AdminAddingEmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminEmployeeDetails.cs">
+    <Compile Update="FormsOld\AdminDepartmentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminEmployeesForm.cs">
+    <Compile Update="FormsOld\AdminEmployeeDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminLandingForm.cs">
+    <Compile Update="FormsOld\AdminEmployeesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminShiftsForm.cs">
+    <Compile Update="FormsOld\AdminLandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AdminVacationsForm.cs">
+    <Compile Update="FormsOld\AdminShiftsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChooseEmployeeByDepartmentForm.cs">
+    <Compile Update="FormsOld\AdminVacationsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LoginForm.cs">
+    <Compile Update="FormsUtility\AnnouncementsAddEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ManagerLandingForm.cs">
+    <Compile Update="FormsUtility\EmployeeDetails.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormsUtility\EmployeesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AnnouncementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsOld\ChooseEmployeeByDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomButtonV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomLabelV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomLogoBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomPanelV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomTextBoxV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\Controls\CustomTitleLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Departments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\EmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Shifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Vacation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormsOld\ManagerLandingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\CustomTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundPanelListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomElements\RoundTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
