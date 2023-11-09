@@ -1,6 +1,7 @@
 ﻿using BussinessLayer.Controllers;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
+using DesktopAppMediaBazaar.CustomElements;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,7 @@ namespace DesktopAppMediaBazaar.Forms
 
         private void showDepartments()
         {
+            lbDepartments.Items.Clear();
             foreach (Department department in DepartmentController.GetAll())
             {
                 lbDepartments.Items.Add(department.Name);
@@ -50,9 +52,9 @@ namespace DesktopAppMediaBazaar.Forms
             {
                 Department dep = DepartmentController.Get(lbDepartments.SelectedItem.ToString());
                 DepartmentController.Remove(dep);
-                lbDepartments.Items.Clear();
                 showDepartments();
             }
+            else RJMessageBox.Show("Please select a department!");
         }
     }
 }
