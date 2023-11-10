@@ -40,14 +40,18 @@ namespace DesktopAppMediaBazaar.Forms
 
         private void btnViewEdit_Click(object sender, EventArgs e)
         {
-            EmployeeDetails form = new EmployeeDetails();
-            //form.FormClosed += (s, args) => RefreshEmployeeListAsync();
-            form.ShowDialog();
+            if (lbEmployees.SelectedIndex != -1)
+            {
+                EmployeeDetails form = new EmployeeDetails(lbEmployees, (Employee)lbEmployees.SelectedItem);
+                //form.FormClosed += (s, args) => RefreshEmployeeListAsync();
+                form.ShowDialog();
+            }
+            else RJMessageBox.Show("Please select an employee!");
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            EmployeesAdd form = new EmployeesAdd();
+            EmployeesAdd form = new EmployeesAdd(lbEmployees);
             //form.FormClosed += (s, args) => RefreshEmployeeListAsync();
             form.ShowDialog();
         }
@@ -68,8 +72,9 @@ namespace DesktopAppMediaBazaar.Forms
             lbEmployees.Items.Clear();
             foreach (Employee employee in EmployeeController.GetAll())
             {
-                if (employee.Department.Id > 2 && employee.ToString().ToLower().Contains(tbxName.Texts.ToLower()))
-                   lbEmployees.Items.Add(employee.ToString());
+                if (employee.Department.Id > 2 &&
+                    employee.ToString().ToLower().Contains(tbxName.Texts.ToLower()))
+                { lbEmployees.Items.Add(employee.ToString()); }
             }
         }
     }

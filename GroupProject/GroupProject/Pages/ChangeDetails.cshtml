@@ -1,0 +1,50 @@
+﻿@page
+@model MediaBazaarWebsite.Pages.ChangeDetails
+@{
+	ViewData["Title"] = "Change details";
+}
+<div class="container">
+	<h1 class="mt-2 mb-2 text-center">Changing details</h1>
+	<div class="row text-center m-2 mb-1 justify-content-center">
+		<div class="col-4">
+			<div class="card bg-light mt-4" style="width: 100%;">
+				<div class="card-body">
+
+					<div class="row">
+						<div class="col-4">
+							<p>Profile pictures:</p>
+						</div>
+						<div class="col-4">
+							<input type="text" asp-for="_profilePicture" placeholder="Type your username..." class="inputs">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<p>Username:</p>
+						</div>
+						<div class="col-4">
+							<input type="text" asp-for="_username" placeholder="Type your username..." class="inputs">
+						</div>
+					</div>
+					<div class="row m-2">
+						<div class="col-4">
+							<p>Email:</p>
+						</div>
+						<div class="col-4">
+							<input type="text" asp-for="_email" placeholder="Type your username..." class="inputs">
+						</div>
+					</div>
+					<div class="row m-2">
+						<div class="col-4">
+							<p>Phone:</p>
+						</div>
+						<div class="col-4">
+							<input type="text" asp-for="_phone" placeholder="Type your username..." class="inputs">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
