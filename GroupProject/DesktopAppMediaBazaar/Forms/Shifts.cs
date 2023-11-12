@@ -1,6 +1,7 @@
 ﻿using BussinessLayer.Controllers;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
+using DesktopAppMediaBazaar.CustomElements;
 
 namespace DesktopAppMediaBazaar.Forms
 {
@@ -58,12 +59,12 @@ namespace DesktopAppMediaBazaar.Forms
             lbEmployees.Items.Clear();
             if (_selectedDate == default(DateTime))
             {
-                MessageBox.Show("The date was not selected!");
+                RJMessageBox.Show("The date was not selected!");
                 return;
             }
             if (cbxDepartment.SelectedIndex == -1)
             {
-                MessageBox.Show("The department was not selected!");
+                RJMessageBox.Show("The department was not selected!");
                 return;
             }
 
@@ -106,7 +107,7 @@ namespace DesktopAppMediaBazaar.Forms
             }
             if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
             {
-                MessageBox.Show("Before you search by an employee,select shift type \n(morning/afternoon/evening) ");
+                RJMessageBox.Show("Before you search by an employee,select shift type \n(morning/afternoon/evening) ");
             }
         }
 
