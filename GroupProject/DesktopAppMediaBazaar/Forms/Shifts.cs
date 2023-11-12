@@ -90,46 +90,52 @@ namespace DesktopAppMediaBazaar.Forms
             {
                 lbEmployees.Items.Clear();
 
-            }// Assuming tbxName.Texts is the correct way to get the text from your 
+            }
             foreach (Employee employee in EmployeeController.GetAll())
             {
-                // Assuming employee.Name is the property that holds the employee's name
+
                 if (employee.Department.Id > 2 && employee.Name.ToLower().Contains(searchText))
                 {
                     List<Shift> employeeShifts = ShiftController.GetAllAssigned(employee).ToList();
                     foreach (Shift shift in employeeShifts)
                     {
-                        if (morningCheckBox.Checked)
-                        {
-                            if (shift.Type == 1)
-                            {
-                                lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
 
-                            }
-                        }
-                        if (afterNoonCheckBox.Checked)
-                        {
-                            if (shift.Type==2)
-                            {
-                                lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
-
-                            }
-                        }
-                        if (eveningCheckBox.Checked)
-                        {
-                            if (shift.Type ==3)
-                            {
-                                lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
-
-                            }
-                        }
-                        
+                        FilterByShiftType(shift,employee);
                     }
                 }
             }
             if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
             {
                 MessageBox.Show("Before you search by an employee,select shift type \n(morning/afternoon/evening) ");
+            }
+        }
+
+
+        public void FilterByShiftType(Shift shift, Employee employee)
+        {
+            if (morningCheckBox.Checked)
+            {
+                if (shift.Type == 1)
+                {
+                    lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
+
+                }
+            }
+            if (afterNoonCheckBox.Checked)
+            {
+                if (shift.Type == 2)
+                {
+                    lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
+
+                }
+            }
+            if (eveningCheckBox.Checked)
+            {
+                if (shift.Type == 3)
+                {
+                    lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
+
+                }
             }
         }
     }
