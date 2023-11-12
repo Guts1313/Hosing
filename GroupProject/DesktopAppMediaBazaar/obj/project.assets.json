@@ -2346,19 +2346,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GRIGS\\.nuget\\packages\\": {}
+    "C:\\Users\\nahme\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GroupProject\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
+      "projectUniqueName": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
       "projectName": "DesktopAppMediaBazaar",
-      "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
-      "packagesPath": "C:\\Users\\GRIGS\\.nuget\\packages\\",
-      "outputPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\obj\\",
+      "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
+      "packagesPath": "C:\\Users\\nahme\\.nuget\\packages\\",
+      "outputPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\GRIGS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nahme\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2372,14 +2372,14 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
+            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
             },
-            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
             }
           }
         }
@@ -2422,7 +2422,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
