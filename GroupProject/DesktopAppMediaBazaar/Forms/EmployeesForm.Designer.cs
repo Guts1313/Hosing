@@ -115,6 +115,7 @@
             btnDelete.Text = "Delete";
             btnDelete.TextColor = Color.FromArgb(229, 229, 229);
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
@@ -181,6 +182,7 @@
             tbxName.TabIndex = 15;
             tbxName.Texts = "";
             tbxName.UnderlinedStyle = true;
+            tbxName._TextChanged += tbxName__TextChanged;
             // 
             // roundPanelListBox1
             // 

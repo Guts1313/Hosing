@@ -1,0 +1,92 @@
+﻿@page
+@using BussinessLayer.Controllers;
+@using DataBlocks.LogicItems;
+@using DataItems.LogicItems;
+@using MediaBazaarWebsite.Pages;
+@using DataAccessLayer.DAL;
+@model Profile
+@{
+	ViewData["Title"] = "Profile";
+}
+
+<div class="container">
+	<div class="row mt-5">
+		<div class="col-3">
+			<img src="@Model._loggedInEmployee.ProfilePicture" style="width: 100%;" class="border" />
+		</div>
+
+
+		<div class="col-7">
+			<h1>@Model._loggedInEmployee.Name</h1>
+			<h4>Employee - Department: @Model._loggedInEmployee.Department.Name</h4>
+
+			<div class="row mt-4">
+				<div class="col-3">
+					<h5>Username:</h5>
+				</div>
+				<div class="col-3">
+					<h5>@Model._loggedInEmployee.Username</h5>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-3">
+					<h5>Email:</h5>
+				</div>
+				<div class="col-3">
+					<h5>@Model._loggedInEmployee.Email</h5>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-3">
+					<h5>Phone:</h5>
+				</div>
+				<div class="col-3">
+					<h5>@Model._loggedInEmployee.Phone</h5>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-3">
+					<h5>Hire date:</h5>
+				</div>
+				<div class="col-3">
+					<h5>@Model._loggedInEmployee.HireDate.ToShortDateString()</h5>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-3">
+					<h5>Salary:</h5>
+				</div>
+				<div class="col-3">
+					<h5>@Model._loggedInEmployee.Salary</h5>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-3">
+					<h5>Available shift(s):</h5>
+				</div>
+
+				@{
+
+					int shifts = Model._loggedInEmployee.Shifts;
+					string _shifts = string.Empty;
+					if (shifts.HasShift(ShiftType.Morning))
+					{
+						_shifts += "Morning ";
+					}
+					if (shifts.HasShift(ShiftType.Afternoon))
+					{
+						_shifts += "Afternoon ";
+					}
+					if (shifts.HasShift(ShiftType.Evening))
+					{
+						_shifts += "Evening ";
+					}
+					<div class="col-3">
+						<h5>@_shifts</h5>
+					</div>
+				}
+
+			</div>
+		</div>
+	</div>
+</div>

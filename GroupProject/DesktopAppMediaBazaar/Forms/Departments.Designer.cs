@@ -92,6 +92,7 @@
             btnDelete.Text = "Delete";
             btnDelete.TextColor = Color.FromArgb(229, 229, 229);
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
@@ -112,6 +113,7 @@
             btnAdd.Text = "Add";
             btnAdd.TextColor = Color.FromArgb(229, 229, 229);
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // panel1
             // 

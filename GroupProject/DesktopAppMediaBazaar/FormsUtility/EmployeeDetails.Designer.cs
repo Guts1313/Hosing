@@ -46,11 +46,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
             roundPanelListBox1 = new CustomElements.RoundPanelListBox();
             lbxShifts = new ListBox();
             label7 = new Label();
-            customCheckBox3 = new CustomElements.CustomCheckBox();
-            customCheckBox2 = new CustomElements.CustomCheckBox();
+            cklMorning = new CustomElements.CustomCheckBox();
+            cklAfternoon = new CustomElements.CustomCheckBox();
             label6 = new Label();
             label5 = new Label();
-            customCheckBox1 = new CustomElements.CustomCheckBox();
+            cklEvening = new CustomElements.CustomCheckBox();
             lbRegisterDate = new CustomElements.RoundLabel();
             label4 = new Label();
             cbxDepartment = new CustomElements.CustomComboBox();
@@ -81,11 +81,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelButtons.Controls.Add(customLabelV21);
             panelButtons.Controls.Add(roundPanelListBox1);
             panelButtons.Controls.Add(label7);
-            panelButtons.Controls.Add(customCheckBox3);
-            panelButtons.Controls.Add(customCheckBox2);
+            panelButtons.Controls.Add(cklMorning);
+            panelButtons.Controls.Add(cklAfternoon);
             panelButtons.Controls.Add(label6);
             panelButtons.Controls.Add(label5);
-            panelButtons.Controls.Add(customCheckBox1);
+            panelButtons.Controls.Add(cklEvening);
             panelButtons.Controls.Add(lbRegisterDate);
             panelButtons.Controls.Add(label4);
             panelButtons.Controls.Add(cbxDepartment);
@@ -231,6 +231,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             rbtnAll.Text = "All";
             rbtnAll.UnCheckedColor = Color.FromArgb(229, 229, 229);
             rbtnAll.UseVisualStyleBackColor = false;
+            rbtnAll.CheckedChanged += rbtnAll_CheckedChanged;
             // 
             // rbtnFuture
             // 
@@ -250,6 +251,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             rbtnFuture.Text = "Future";
             rbtnFuture.UnCheckedColor = Color.FromArgb(229, 229, 229);
             rbtnFuture.UseVisualStyleBackColor = false;
+            rbtnFuture.CheckedChanged += rbtnFuture_CheckedChanged;
             // 
             // rbtnPast
             // 
@@ -269,6 +271,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             rbtnPast.Text = "Past";
             rbtnPast.UnCheckedColor = Color.FromArgb(229, 229, 229);
             rbtnPast.UseVisualStyleBackColor = false;
+            rbtnPast.CheckedChanged += rbtnPast_CheckedChanged;
             // 
             // customLabelV21
             // 
@@ -318,33 +321,33 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label7.TabIndex = 35;
             label7.Text = "Shifts:";
             // 
-            // customCheckBox3
+            // cklMorning
             // 
-            customCheckBox3.AutoSize = true;
-            customCheckBox3.Location = new Point(166, 328);
-            customCheckBox3.MinimumSize = new Size(45, 22);
-            customCheckBox3.Name = "customCheckBox3";
-            customCheckBox3.OffBackColor = Color.FromArgb(229, 229, 229);
-            customCheckBox3.OffToggleColor = Color.FromArgb(156, 84, 213);
-            customCheckBox3.OnBackColor = Color.FromArgb(229, 229, 229);
-            customCheckBox3.OnToggleColor = Color.FromArgb(156, 84, 213);
-            customCheckBox3.Size = new Size(45, 22);
-            customCheckBox3.TabIndex = 34;
-            customCheckBox3.UseVisualStyleBackColor = true;
+            cklMorning.AutoSize = true;
+            cklMorning.Location = new Point(166, 328);
+            cklMorning.MinimumSize = new Size(45, 22);
+            cklMorning.Name = "cklMorning";
+            cklMorning.OffBackColor = Color.FromArgb(229, 229, 229);
+            cklMorning.OffToggleColor = Color.FromArgb(156, 84, 213);
+            cklMorning.OnBackColor = Color.FromArgb(229, 229, 229);
+            cklMorning.OnToggleColor = Color.FromArgb(156, 84, 213);
+            cklMorning.Size = new Size(45, 22);
+            cklMorning.TabIndex = 34;
+            cklMorning.UseVisualStyleBackColor = true;
             // 
-            // customCheckBox2
+            // cklAfternoon
             // 
-            customCheckBox2.AutoSize = true;
-            customCheckBox2.Location = new Point(256, 328);
-            customCheckBox2.MinimumSize = new Size(45, 22);
-            customCheckBox2.Name = "customCheckBox2";
-            customCheckBox2.OffBackColor = Color.FromArgb(229, 229, 229);
-            customCheckBox2.OffToggleColor = Color.FromArgb(156, 84, 213);
-            customCheckBox2.OnBackColor = Color.FromArgb(229, 229, 229);
-            customCheckBox2.OnToggleColor = Color.FromArgb(156, 84, 213);
-            customCheckBox2.Size = new Size(45, 22);
-            customCheckBox2.TabIndex = 33;
-            customCheckBox2.UseVisualStyleBackColor = true;
+            cklAfternoon.AutoSize = true;
+            cklAfternoon.Location = new Point(256, 328);
+            cklAfternoon.MinimumSize = new Size(45, 22);
+            cklAfternoon.Name = "cklAfternoon";
+            cklAfternoon.OffBackColor = Color.FromArgb(229, 229, 229);
+            cklAfternoon.OffToggleColor = Color.FromArgb(156, 84, 213);
+            cklAfternoon.OnBackColor = Color.FromArgb(229, 229, 229);
+            cklAfternoon.OnToggleColor = Color.FromArgb(156, 84, 213);
+            cklAfternoon.Size = new Size(45, 22);
+            cklAfternoon.TabIndex = 33;
+            cklAfternoon.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -368,19 +371,19 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label5.TabIndex = 31;
             label5.Text = "Afternoon";
             // 
-            // customCheckBox1
+            // cklEvening
             // 
-            customCheckBox1.AutoSize = true;
-            customCheckBox1.Location = new Point(343, 328);
-            customCheckBox1.MinimumSize = new Size(45, 22);
-            customCheckBox1.Name = "customCheckBox1";
-            customCheckBox1.OffBackColor = Color.FromArgb(229, 229, 229);
-            customCheckBox1.OffToggleColor = Color.FromArgb(156, 84, 213);
-            customCheckBox1.OnBackColor = Color.FromArgb(229, 229, 229);
-            customCheckBox1.OnToggleColor = Color.FromArgb(156, 84, 213);
-            customCheckBox1.Size = new Size(45, 22);
-            customCheckBox1.TabIndex = 30;
-            customCheckBox1.UseVisualStyleBackColor = true;
+            cklEvening.AutoSize = true;
+            cklEvening.Location = new Point(343, 328);
+            cklEvening.MinimumSize = new Size(45, 22);
+            cklEvening.Name = "cklEvening";
+            cklEvening.OffBackColor = Color.FromArgb(229, 229, 229);
+            cklEvening.OffToggleColor = Color.FromArgb(156, 84, 213);
+            cklEvening.OnBackColor = Color.FromArgb(229, 229, 229);
+            cklEvening.OnToggleColor = Color.FromArgb(156, 84, 213);
+            cklEvening.Size = new Size(45, 22);
+            cklEvening.TabIndex = 30;
+            cklEvening.UseVisualStyleBackColor = true;
             // 
             // lbRegisterDate
             // 
@@ -578,10 +581,10 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private Label label2;
         private CustomElements.RoundLabel lbRegisterDate;
         private Label label4;
-        private CustomElements.CustomCheckBox customCheckBox1;
+        private CustomElements.CustomCheckBox cklEvening;
         private Label label7;
-        private CustomElements.CustomCheckBox customCheckBox3;
-        private CustomElements.CustomCheckBox customCheckBox2;
+        private CustomElements.CustomCheckBox cklMorning;
+        private CustomElements.CustomCheckBox cklAfternoon;
         private Label label6;
         private Label label5;
         private CustomElements.RoundPanelListBox roundPanelListBox1;

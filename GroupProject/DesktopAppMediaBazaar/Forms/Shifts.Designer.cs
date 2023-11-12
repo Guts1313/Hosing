@@ -34,13 +34,13 @@
             customLabelV21 = new CustomElements.Controls.CustomLabelV2();
             tbxName = new housing.CustomElements.RoundTextBox();
             panel1 = new Panel();
-            customCheckBox3 = new CustomElements.CustomCheckBox();
-            customCheckBox2 = new CustomElements.CustomCheckBox();
+            morningCheckBox = new CustomElements.CustomCheckBox();
+            afterNoonCheckBox = new CustomElements.CustomCheckBox();
             label6 = new Label();
             cbxDepartment = new CustomElements.CustomComboBox();
             label2 = new Label();
             label5 = new Label();
-            customCheckBox1 = new CustomElements.CustomCheckBox();
+            eveningCheckBox = new CustomElements.CustomCheckBox();
             label4 = new Label();
             label1 = new Label();
             Calendar = new CustomElements.CustomDatePicker();
@@ -118,17 +118,18 @@
             tbxName.TabIndex = 15;
             tbxName.Texts = "";
             tbxName.UnderlinedStyle = true;
+            tbxName._TextChanged += tbxName__TextChanged;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(229, 229, 229);
-            panel1.Controls.Add(customCheckBox3);
-            panel1.Controls.Add(customCheckBox2);
+            panel1.Controls.Add(morningCheckBox);
+            panel1.Controls.Add(afterNoonCheckBox);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(cbxDepartment);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(customCheckBox1);
+            panel1.Controls.Add(eveningCheckBox);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(Calendar);
@@ -140,33 +141,33 @@
             panel1.Size = new Size(282, 337);
             panel1.TabIndex = 17;
             // 
-            // customCheckBox3
+            // morningCheckBox
             // 
-            customCheckBox3.AutoSize = true;
-            customCheckBox3.Location = new Point(42, 149);
-            customCheckBox3.MinimumSize = new Size(45, 22);
-            customCheckBox3.Name = "customCheckBox3";
-            customCheckBox3.OffBackColor = Color.FromArgb(156, 84, 213);
-            customCheckBox3.OffToggleColor = Color.FromArgb(229, 229, 229);
-            customCheckBox3.OnBackColor = Color.FromArgb(156, 84, 213);
-            customCheckBox3.OnToggleColor = Color.FromArgb(229, 229, 229);
-            customCheckBox3.Size = new Size(45, 22);
-            customCheckBox3.TabIndex = 40;
-            customCheckBox3.UseVisualStyleBackColor = true;
+            morningCheckBox.AutoSize = true;
+            morningCheckBox.Location = new Point(42, 149);
+            morningCheckBox.MinimumSize = new Size(45, 22);
+            morningCheckBox.Name = "morningCheckBox";
+            morningCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
+            morningCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
+            morningCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
+            morningCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
+            morningCheckBox.Size = new Size(45, 22);
+            morningCheckBox.TabIndex = 40;
+            morningCheckBox.UseVisualStyleBackColor = true;
             // 
-            // customCheckBox2
+            // afterNoonCheckBox
             // 
-            customCheckBox2.AutoSize = true;
-            customCheckBox2.Location = new Point(132, 149);
-            customCheckBox2.MinimumSize = new Size(45, 22);
-            customCheckBox2.Name = "customCheckBox2";
-            customCheckBox2.OffBackColor = Color.FromArgb(156, 84, 213);
-            customCheckBox2.OffToggleColor = Color.FromArgb(229, 229, 229);
-            customCheckBox2.OnBackColor = Color.FromArgb(156, 84, 213);
-            customCheckBox2.OnToggleColor = Color.FromArgb(229, 229, 229);
-            customCheckBox2.Size = new Size(45, 22);
-            customCheckBox2.TabIndex = 39;
-            customCheckBox2.UseVisualStyleBackColor = true;
+            afterNoonCheckBox.AutoSize = true;
+            afterNoonCheckBox.Location = new Point(132, 149);
+            afterNoonCheckBox.MinimumSize = new Size(45, 22);
+            afterNoonCheckBox.Name = "afterNoonCheckBox";
+            afterNoonCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
+            afterNoonCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
+            afterNoonCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
+            afterNoonCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
+            afterNoonCheckBox.Size = new Size(45, 22);
+            afterNoonCheckBox.TabIndex = 39;
+            afterNoonCheckBox.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -198,6 +199,7 @@
             cbxDepartment.Size = new Size(241, 33);
             cbxDepartment.TabIndex = 28;
             cbxDepartment.Texts = "";
+            cbxDepartment.OnSelectedIndexChanged += cbxDepartment_OnSelectedIndexChanged;
             // 
             // label2
             // 
@@ -222,19 +224,19 @@
             label5.TabIndex = 37;
             label5.Text = "Afternoon";
             // 
-            // customCheckBox1
+            // eveningCheckBox
             // 
-            customCheckBox1.AutoSize = true;
-            customCheckBox1.Location = new Point(219, 149);
-            customCheckBox1.MinimumSize = new Size(45, 22);
-            customCheckBox1.Name = "customCheckBox1";
-            customCheckBox1.OffBackColor = Color.FromArgb(156, 84, 213);
-            customCheckBox1.OffToggleColor = Color.FromArgb(229, 229, 229);
-            customCheckBox1.OnBackColor = Color.FromArgb(156, 84, 213);
-            customCheckBox1.OnToggleColor = Color.FromArgb(229, 229, 229);
-            customCheckBox1.Size = new Size(45, 22);
-            customCheckBox1.TabIndex = 36;
-            customCheckBox1.UseVisualStyleBackColor = true;
+            eveningCheckBox.AutoSize = true;
+            eveningCheckBox.Location = new Point(219, 149);
+            eveningCheckBox.MinimumSize = new Size(45, 22);
+            eveningCheckBox.Name = "eveningCheckBox";
+            eveningCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
+            eveningCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
+            eveningCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
+            eveningCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
+            eveningCheckBox.Size = new Size(45, 22);
+            eveningCheckBox.TabIndex = 36;
+            eveningCheckBox.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -277,6 +279,7 @@
             Calendar.TabIndex = 30;
             Calendar.TextColor = Color.FromArgb(114, 118, 127);
             Calendar.Value = new DateTime(2023, 1, 1, 0, 0, 0, 0);
+            Calendar.ValueChanged += Calendar_ValueChanged;
             // 
             // btnSearch
             // 
@@ -297,6 +300,7 @@
             btnSearch.Text = "Search by Date";
             btnSearch.TextColor = Color.FromArgb(156, 84, 213);
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
             // btnDelete
             // 
@@ -337,6 +341,7 @@
             btnAdd.Text = "Add";
             btnAdd.TextColor = Color.FromArgb(229, 229, 229);
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             // 
             // roundPanelListBox1
             // 
@@ -395,11 +400,11 @@
         private Label label2;
         private CustomElements.CustomDatePicker Calendar;
         private Label label1;
-        private CustomElements.CustomCheckBox customCheckBox3;
-        private CustomElements.CustomCheckBox customCheckBox2;
+        private CustomElements.CustomCheckBox morningCheckBox;
+        private CustomElements.CustomCheckBox afterNoonCheckBox;
         private Label label6;
         private Label label5;
-        private CustomElements.CustomCheckBox customCheckBox1;
+        private CustomElements.CustomCheckBox eveningCheckBox;
         private Label label4;
         private Panel panel2;
         private CustomElements.Controls.CustomLabelV2 customLabelV21;
