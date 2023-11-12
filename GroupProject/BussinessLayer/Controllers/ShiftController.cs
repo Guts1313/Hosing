@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccessLayer.Interfaces;
+﻿using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
 
 namespace BussinessLayer.Controllers
@@ -41,22 +36,30 @@ namespace BussinessLayer.Controllers
         {
             return _shiftDal.GetById(id);
         }
-		public Shift[] GetAllByDate(DateTime date)
-		{
-			return _shiftDal.GetAllByDate(date);
-		}
-		public Shift[] GetAllByDateAndDepartment(DateTime date, Department department)
+        public Shift[] GetAllByDate(DateTime date)
+        {
+            return _shiftDal.GetAllByDate(date);
+        }
+        public Shift[] GetAllByDateAndDepartment(DateTime date, Department department)
         {
             List<Shift> shifts = new();
-            foreach(Shift s in GetAllByDate(date))
+            foreach (Shift s in GetAllByDate(date))
             {
-                if(s.Employee.Department.Id == department.Id)
+                if (s.Employee.Department.Id == department.Id)
                 {
                     shifts.Add(s);
                 }
             }
             return shifts.ToArray();
         }
+
+        public IEnumerable<Employee> GetEmployeesByNameFragment(string nameFragment)
+        {
+
+            return _shiftDal.GetEmployeesByNameFragment(nameFragment);
+
+        }
+
         public bool Update(Shift shift)
         {
             return _shiftDal.Update(shift);

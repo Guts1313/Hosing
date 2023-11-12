@@ -157,6 +157,8 @@ namespace DataAccessLayer.DAL
                         {
                             Employee employee = employeeController.GetById(Convert.ToInt32(dr[1]));
                             shift = new Shift(Convert.ToInt32(dr[0]), employee, Convert.ToDateTime(dr[2]), Convert.ToInt32(dr[3]), Convert.ToBoolean(dr[4]));
+                            conn.Close();
+
                             return shift;
                         }
                     }
@@ -197,10 +199,13 @@ namespace DataAccessLayer.DAL
                     }
 
                 }
+                conn.Close();
+
                 return shifts.ToArray();
             }
             catch (Exception ex)
             {
+
                 return null;
             }
         }
@@ -226,6 +231,8 @@ namespace DataAccessLayer.DAL
                         if (result < 0) return false;
                     }
                 }
+                conn.Close();
+
                 return true;
             }
             catch (Exception ex)
@@ -263,6 +270,8 @@ namespace DataAccessLayer.DAL
                     }
 
                 }
+                conn.Close();
+
                 return shifts.ToArray();
             }
             catch (Exception ex)
@@ -303,6 +312,7 @@ namespace DataAccessLayer.DAL
                     }
 
                 }
+                conn.Close();
                 return shifts.ToArray();
             }
             catch (Exception ex)
@@ -311,5 +321,64 @@ namespace DataAccessLayer.DAL
             }
         }
 
+        public IEnumerable<Employee> GetEmployeesByNameFragment(string nameFragment)
+        {
+            var employees = new List<Employee>();
+
+            using (SqlConnection conn = new SqlConnection(CONNECTION_STRING))
+            {
+                string query = "SELECT Id, Username, Password, DepartmentId FROM Employee WHERE Name LIKE @nameFragment";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@nameFragment", $"%{nameFragment}%");
+                    conn.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            int id = reader.GetInt32(reader.GetOrdinal("Id"));
+                            string username = reader.GetString(reader.GetOrdinal("Username"));
+                            string password = reader.GetString(reader.GetOrdinal("Password"));
+
+                            int departmentId = reader.GetInt32(reader.GetOrdinal("Id"));
+                            Department department = GetDepartmentById(departmentId);
+
+                            var employee = new Employee(id, username, password, department);
+                            employees.Add(employee);
+                        }
+                    }
+                }
+            }
+
+            return employees;
+        }
+
+        private Department GetDepartmentById(int departmentId)
+        {
+            Department department = null;
+
+            using (SqlConnection conn = new SqlConnection(CONNECTION_STRING))
+            {
+                string query = "SELECT Id, Name FROM Department WHERE Id = @departmentId";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@departmentId", departmentId);
+                    conn.Open();
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            int id = reader.GetInt32(reader.GetOrdinal("Id"));
+                            string name = reader.GetString(reader.GetOrdinal("Name"));
+
+                            department = new Department(id, name);
+                            conn.Close();
+                        }
+                    }
+                }
+            }
+
+            return department;
+        }
     }
 }
