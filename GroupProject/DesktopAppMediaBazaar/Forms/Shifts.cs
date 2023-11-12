@@ -1,7 +1,9 @@
 ﻿using BussinessLayer.Controllers;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
+using DesktopAppMediaBazaar.ChildFormsUtility;
 using DesktopAppMediaBazaar.CustomElements;
+using DesktopAppMediaBazaar.FormsUtility;
 
 namespace DesktopAppMediaBazaar.Forms
 {
@@ -34,7 +36,8 @@ namespace DesktopAppMediaBazaar.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            ShiftAdd form = new ShiftAdd();
+            form.ShowDialog();
         }
 
         private void Calendar_ValueChanged(object sender, EventArgs e)

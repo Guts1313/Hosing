@@ -38,6 +38,9 @@
     <Compile Update="FormsUtility\EmployeesAdd.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormsUtility\ShiftAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\AnnouncementsForm.cs">
       <SubType>Form</SubType>
     </Compile>
