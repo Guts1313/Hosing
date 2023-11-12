@@ -16,7 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\GroupProject\cb02-group5\GroupProject\GroupProject
 build_property._RazorSourceGeneratorDebug = 
 
-<<<<<<< Updated upstream
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/CallInSick.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsbEluU2ljay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,8 +32,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hvb3NlU2hpZnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-=======
->>>>>>> Stashed changes
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -47,18 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< Updated upstream
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-=======
->>>>>>> Stashed changes
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< Updated upstream
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -67,8 +60,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdFZhY2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-=======
->>>>>>> Stashed changes
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
