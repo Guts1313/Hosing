@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using BussinessLayer.Controllers;
+using DataItems.LogicItems;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace DesktopAppMediaBazaar.FormsUtility
 {
     public partial class ShiftAdd : Form
     {
+        private readonly Employee _currentEmployee;
+        private readonly DepartmentController _departmentController;
+        private readonly EmployeeController _employeeController;
+        private readonly ShiftController _shiftController;
         #region FORM CUSTOM STYLE
         //FORM DRAG NO BORDER
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -34,12 +31,20 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnClose.ForeColor = Color.FromArgb(229, 229, 229);
         }
         #endregion
-        public ShiftAdd()
+        public ShiftAdd(DepartmentController departmentController, Employee loggedEmployee,EmployeeController employeeController,ShiftController shiftController)
         {
             InitializeComponent();
-            this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
-            this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
-            this.FormBorderStyle = FormBorderStyle.None;
+            InitializeEventHandlers();
+            _departmentController = departmentController;
+            _currentEmployee = loggedEmployee;
+            _employeeController = employeeController;
+            _shiftController = shiftController;
+
+            foreach (Department department in _departmentController.GetAll())
+            {
+                cbxDepartment.Items.Add(department.Name);
+            }
+            _shiftController = shiftController;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -47,9 +52,48 @@ namespace DesktopAppMediaBazaar.FormsUtility
             this.Close();
         }
 
+        private void InitializeEventHandlers()
+        {
+            this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
+            this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
         private void lbxEmployees_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            var shiftType = CheckShiftSelectionType();
+            DateTime shiftDate = Calendar.Value;
+            Shift shift = new Shift(_currentEmployee,shiftDate,shiftType);
+            _shiftController.AddShift(shift);
+            lbxEmployees.Items.Add(shift);
+        }
+
+        private int CheckShiftSelectionType()
+        {
+            int shiftType;
+
+            if (cklMorning.Checked)
+            {
+                shiftType = 1;
+                return shiftType;
+
+            }
+            else if(cklAfternoon.Checked)
+            {
+                shiftType= 2;
+                return shiftType;
+
+            }
+            else
+            {
+                shiftType = 3;
+                return shiftType;
+            }
         }
     }
 }

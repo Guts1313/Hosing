@@ -1,7 +1,6 @@
 ﻿using BussinessLayer.Controllers;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
-using DesktopAppMediaBazaar.ChildFormsUtility;
 using DesktopAppMediaBazaar.CustomElements;
 using DesktopAppMediaBazaar.FormsUtility;
 
@@ -36,7 +35,7 @@ namespace DesktopAppMediaBazaar.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ShiftAdd form = new ShiftAdd();
+            ShiftAdd form = new ShiftAdd(DepartmentController, _loggedInEmployee, EmployeeController,ShiftController);
             form.ShowDialog();
         }
 
@@ -104,7 +103,7 @@ namespace DesktopAppMediaBazaar.Forms
                     foreach (Shift shift in employeeShifts)
                     {
 
-                        FilterByShiftType(shift,employee);
+                        FilterByShiftType(shift, employee);
                     }
                 }
             }

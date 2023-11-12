@@ -374,3 +374,4 @@ C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-
 C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.genruntimeconfig.cache
 C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\ref\DesktopAppMediaBazaar.dll
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.ShiftAdd.resources
+C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.ShiftAdd.resources

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F4UySmVJK+VjETrz6leu9wkuI7ECKLJAJz1B/Llf1WRhAm9snyY02hDM/EQdMC4rFTWTFi+8IB4lizs5UX1+ww==",
+  "dgSpecHash": "0wFw+142fHaKVo0nzsl5p2lU9F2/GBgEpVgvJW50mN9bhlm/I6w474yrOXJ9DeXp2kMdVFgbXS6q6Smtf6OXHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+  "projectFilePath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

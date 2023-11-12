@@ -337,6 +337,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnSave.Text = "Save";
             btnSave.TextColor = Color.FromArgb(127, 131, 140);
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // lbName
             // 
