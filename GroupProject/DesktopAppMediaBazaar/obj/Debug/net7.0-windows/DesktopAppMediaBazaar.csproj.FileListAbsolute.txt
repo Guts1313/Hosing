@@ -376,3 +376,5 @@ C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.ShiftAdd.resources
 C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.ShiftAdd.resources
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.ShiftAdd.resources
+C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.ForgotPassword.resources
+C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.ResetPassword.resources

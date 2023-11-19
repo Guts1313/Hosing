@@ -235,5 +235,13 @@ namespace DesktopAppMediaBazaar
             }
             base.WndProc(ref m);
         }
+
+        private void btnForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgotPassword forgotPassword = new ForgotPassword();
+            this.Hide();
+            forgotPassword.ShowDialog();
+            this.Close();
+        }
     }
 }

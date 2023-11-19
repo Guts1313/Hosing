@@ -15,6 +15,10 @@ namespace DataAccessLayer.Interfaces
 
 		public bool Delete(Employee employee);
 
+		public bool ChangePassword(string email, string newPassword);
+
+		public bool FindEmail(string emailToSearch);
+
 		public Employee[] GetAll();
 
 		public Employee GetById(int id);

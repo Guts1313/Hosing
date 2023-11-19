@@ -29,6 +29,14 @@ namespace BussinessLayer.Controllers
         {
             return _employeeDal.Update(employee);
         }
+        public bool ChangePassword(string email, string newPassword) 
+        {
+            return _employeeDal.ChangePassword(email,newPassword);
+        }
+        public bool FindEmail(string email)
+        {
+            return _employeeDal.FindEmail(email);
+        }
         public Employee[] GetAll()
         {
             return _employeeDal.GetAll();
