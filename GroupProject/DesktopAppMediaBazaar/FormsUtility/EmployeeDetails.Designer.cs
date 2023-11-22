@@ -33,6 +33,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private void InitializeComponent()
         {
             panelButtons = new Panel();
+            label9 = new Label();
             panel1 = new Panel();
             tbxName = new RoundTextBox();
             tbxUsername = new RoundTextBox();
@@ -63,6 +64,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
             lbEmail = new Label();
             lbName = new Label();
             panelBody = new Panel();
+            label10 = new Label();
+            label11 = new Label();
             panelButtons.SuspendLayout();
             panel1.SuspendLayout();
             roundPanelListBox1.SuspendLayout();
@@ -72,6 +75,9 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // panelButtons
             // 
             panelButtons.BackColor = Color.FromArgb(156, 84, 213);
+            panelButtons.Controls.Add(label11);
+            panelButtons.Controls.Add(label10);
+            panelButtons.Controls.Add(label9);
             panelButtons.Controls.Add(panel1);
             panelButtons.Controls.Add(label8);
             panelButtons.Controls.Add(tbxSalary);
@@ -103,6 +109,17 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelButtons.Size = new Size(890, 453);
             panelButtons.TabIndex = 4;
             panelButtons.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(154, 312);
+            label9.Name = "label9";
+            label9.Size = new Size(63, 16);
+            label9.TabIndex = 44;
+            label9.Text = "8am-16pm";
             // 
             // panel1
             // 
@@ -354,7 +371,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label6.AutoSize = true;
             label6.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(229, 229, 229);
-            label6.Location = new Point(331, 298);
+            label6.Location = new Point(331, 291);
             label6.Name = "label6";
             label6.Size = new Size(73, 21);
             label6.TabIndex = 32;
@@ -365,7 +382,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label5.AutoSize = true;
             label5.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(229, 229, 229);
-            label5.Location = new Point(232, 298);
+            label5.Location = new Point(230, 291);
             label5.Name = "label5";
             label5.Size = new Size(91, 21);
             label5.TabIndex = 31;
@@ -400,7 +417,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(229, 229, 229);
-            label4.Location = new Point(151, 298);
+            label4.Location = new Point(151, 291);
             label4.Name = "label4";
             label4.Size = new Size(73, 21);
             label4.TabIndex = 28;
@@ -543,6 +560,28 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelBody.Size = new Size(897, 459);
             panelBody.TabIndex = 6;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(247, 312);
+            label10.Name = "label10";
+            label10.Size = new Size(63, 16);
+            label10.TabIndex = 45;
+            label10.Text = "16pm-2am";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(334, 312);
+            label11.Name = "label11";
+            label11.Size = new Size(56, 16);
+            label11.TabIndex = 46;
+            label11.Text = "2am-8am";
+            // 
             // EmployeeDetails
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
@@ -599,5 +638,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private RoundTextBox tbxName;
         private RoundTextBox tbxUsername;
         private RoundTextBox tbxPhone;
+        private Label label9;
+        private Label label11;
+        private Label label10;
     }
 }

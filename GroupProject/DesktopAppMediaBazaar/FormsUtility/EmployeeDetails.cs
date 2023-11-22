@@ -169,7 +169,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             { RJMessageBox.Show("You cannot select more than 2 preferred shifts!"); return; }
 
             Department department = departmentController.Get(cbxDepartment.SelectedItem.ToString());
-            
+
             string name = tbxName.Texts;
             string username = tbxUsername.Texts;
             string phone = tbxPhone.Texts;

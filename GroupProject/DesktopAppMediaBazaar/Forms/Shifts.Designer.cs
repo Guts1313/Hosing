@@ -34,6 +34,7 @@
             customLabelV21 = new CustomElements.Controls.CustomLabelV2();
             tbxName = new housing.CustomElements.RoundTextBox();
             panel1 = new Panel();
+            label3 = new Label();
             morningCheckBox = new CustomElements.CustomCheckBox();
             afterNoonCheckBox = new CustomElements.CustomCheckBox();
             label6 = new Label();
@@ -49,6 +50,8 @@
             btnAdd = new CustomElements.RoundButton();
             roundPanelListBox1 = new CustomElements.RoundPanelListBox();
             lbEmployees = new ListBox();
+            label7 = new Label();
+            label8 = new Label();
             roundPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -123,6 +126,9 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(229, 229, 229);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label3);
             panel1.Controls.Add(morningCheckBox);
             panel1.Controls.Add(afterNoonCheckBox);
             panel1.Controls.Add(label6);
@@ -140,6 +146,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(282, 337);
             panel1.TabIndex = 17;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(114, 118, 127);
+            label3.Location = new Point(29, 127);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 16);
+            label3.TabIndex = 41;
+            label3.Text = "8am-16pm";
             // 
             // morningCheckBox
             // 
@@ -174,7 +191,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(114, 118, 127);
-            label6.Location = new Point(207, 119);
+            label6.Location = new Point(203, 106);
             label6.Name = "label6";
             label6.Size = new Size(73, 21);
             label6.TabIndex = 38;
@@ -218,7 +235,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(114, 118, 127);
-            label5.Location = new Point(108, 119);
+            label5.Location = new Point(106, 106);
             label5.Name = "label5";
             label5.Size = new Size(91, 21);
             label5.TabIndex = 37;
@@ -243,7 +260,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(114, 118, 127);
-            label4.Location = new Point(27, 119);
+            label4.Location = new Point(27, 106);
             label4.Name = "label4";
             label4.Size = new Size(73, 21);
             label4.TabIndex = 35;
@@ -367,6 +384,28 @@
             lbEmployees.Size = new Size(657, 323);
             lbEmployees.TabIndex = 0;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.FromArgb(114, 118, 127);
+            label7.Location = new Point(123, 127);
+            label7.Name = "label7";
+            label7.Size = new Size(63, 16);
+            label7.TabIndex = 42;
+            label7.Text = "16pm-2am";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.FromArgb(114, 118, 127);
+            label8.Location = new Point(209, 127);
+            label8.Name = "label8";
+            label8.Size = new Size(56, 16);
+            label8.TabIndex = 43;
+            label8.Text = "2am-8pm";
+            // 
             // Shifts
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -409,5 +448,8 @@
         private Panel panel2;
         private CustomElements.Controls.CustomLabelV2 customLabelV21;
         private housing.CustomElements.RoundTextBox tbxName;
+        private Label label3;
+        private Label label8;
+        private Label label7;
     }
 }
