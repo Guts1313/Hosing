@@ -2346,19 +2346,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Danila\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
       "projectName": "DesktopAppMediaBazaar",
-      "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
-      "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\obj\\",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2372,14 +2372,14 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
+            "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
             },
-            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+            "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
             }
           }
         }
@@ -2414,6 +2414,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -2422,7 +2440,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataBlocks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d974677a88d12108c76e9acd3cb2b13920771f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataBlocks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataBlocks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

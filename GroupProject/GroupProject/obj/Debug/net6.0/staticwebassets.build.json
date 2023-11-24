@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< Updated upstream
-  "Hash": "PO0aNa7FUMOGdevW7jLZkqpuV9VffbSw3iGx20SqNpM=",
-=======
-  "Hash": "PP1Uy14GbIWhNb5Exe0Nq8QyVpR7H52wRnBe7bIJZ8U=",
->>>>>>> Stashed changes
+  "Hash": "WtQXNz7VvJ0FvWlrAISoh7nBfwr0wFw/jKwyinSCbFk=",
   "Source": "GroupProject",
   "BasePath": "_content/GroupProject",
   "Mode": "Default",
@@ -14,87 +10,62 @@
     {
       "Name": "GroupProject\\wwwroot",
       "Source": "GroupProject",
-<<<<<<< Updated upstream
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css",
       "SourceId": "GroupProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "GroupProject.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< Updated upstream
-      "OriginalItemSpec": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css",
       "SourceId": "GroupProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-=======
-      "OriginalItemSpec": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css"
-    },
-    {
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "GroupProject.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< Updated upstream
-      "OriginalItemSpec": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "OriginalItemSpec": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -103,22 +74,17 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\favicon.ico",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\favicon.ico",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -127,22 +93,17 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\js\\site.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\js\\site.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -151,22 +112,17 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -175,22 +131,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -199,22 +150,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -223,22 +169,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -247,22 +188,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -271,22 +207,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -295,22 +226,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -319,22 +245,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -343,22 +264,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -367,22 +283,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -391,22 +302,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -415,22 +321,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -439,22 +340,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -463,22 +359,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -487,22 +378,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -511,22 +397,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -535,22 +416,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -559,22 +435,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -583,22 +454,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -607,22 +473,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -631,22 +492,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -655,22 +511,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -679,22 +530,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -703,22 +549,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -727,22 +568,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -751,22 +587,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -775,22 +606,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -799,22 +625,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -823,22 +644,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -847,22 +663,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -871,22 +682,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -895,22 +701,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -919,22 +720,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -943,22 +739,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -967,22 +758,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -991,22 +777,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1015,22 +796,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1039,22 +815,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1063,22 +834,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1087,22 +853,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1111,22 +872,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1135,22 +891,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1159,22 +910,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1183,22 +929,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1207,22 +948,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1231,22 +967,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1255,22 +986,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1279,22 +1005,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1303,22 +1024,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1327,22 +1043,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1351,22 +1062,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1375,22 +1081,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1399,22 +1100,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1423,22 +1119,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1447,22 +1138,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1471,22 +1157,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1495,22 +1176,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< Updated upstream
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-=======
-      "Identity": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
->>>>>>> Stashed changes
+      "ContentRoot": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",

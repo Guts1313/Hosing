@@ -33,6 +33,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private void InitializeComponent()
         {
             panelButtons = new Panel();
+            label11 = new Label();
+            label10 = new Label();
             label9 = new Label();
             panel1 = new Panel();
             tbxName = new RoundTextBox();
@@ -64,8 +66,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
             lbEmail = new Label();
             lbName = new Label();
             panelBody = new Panel();
-            label10 = new Label();
-            label11 = new Label();
             panelButtons.SuspendLayout();
             panel1.SuspendLayout();
             roundPanelListBox1.SuspendLayout();
@@ -109,6 +109,28 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelButtons.Size = new Size(890, 453);
             panelButtons.TabIndex = 4;
             panelButtons.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(334, 312);
+            label11.Name = "label11";
+            label11.Size = new Size(56, 16);
+            label11.TabIndex = 46;
+            label11.Text = "2am-8am";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(247, 312);
+            label10.Name = "label10";
+            label10.Size = new Size(63, 16);
+            label10.TabIndex = 45;
+            label10.Text = "16pm-2am";
             // 
             // label9
             // 
@@ -341,7 +363,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklMorning
             // 
             cklMorning.AutoSize = true;
-            cklMorning.Location = new Point(166, 328);
+            cklMorning.Location = new Point(166, 334);
             cklMorning.MinimumSize = new Size(45, 22);
             cklMorning.Name = "cklMorning";
             cklMorning.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -355,7 +377,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklAfternoon
             // 
             cklAfternoon.AutoSize = true;
-            cklAfternoon.Location = new Point(256, 328);
+            cklAfternoon.Location = new Point(256, 334);
             cklAfternoon.MinimumSize = new Size(45, 22);
             cklAfternoon.Name = "cklAfternoon";
             cklAfternoon.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -391,7 +413,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklEvening
             // 
             cklEvening.AutoSize = true;
-            cklEvening.Location = new Point(343, 328);
+            cklEvening.Location = new Point(343, 334);
             cklEvening.MinimumSize = new Size(45, 22);
             cklEvening.Name = "cklEvening";
             cklEvening.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -559,28 +581,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelBody.Padding = new Padding(13, 14, 0, 0);
             panelBody.Size = new Size(897, 459);
             panelBody.TabIndex = 6;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(247, 312);
-            label10.Name = "label10";
-            label10.Size = new Size(63, 16);
-            label10.TabIndex = 45;
-            label10.Text = "16pm-2am";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(334, 312);
-            label11.Name = "label11";
-            label11.Size = new Size(56, 16);
-            label11.TabIndex = 46;
-            label11.Text = "2am-8am";
             // 
             // EmployeeDetails
             // 
