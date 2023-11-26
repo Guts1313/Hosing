@@ -31,7 +31,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnClose.ForeColor = Color.FromArgb(229, 229, 229);
         }
         #endregion
-        public ShiftAdd(DepartmentController departmentController, Employee loggedEmployee,EmployeeController employeeController,ShiftController shiftController)
+        public ShiftAdd(DepartmentController departmentController, Employee loggedEmployee, EmployeeController employeeController, ShiftController shiftController)
         {
             InitializeComponent();
             InitializeEventHandlers();
@@ -68,7 +68,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
         {
             var shiftType = CheckShiftSelectionType();
             DateTime shiftDate = Calendar.Value;
-            Shift shift = new Shift(_currentEmployee,shiftDate,shiftType);
+            Shift shift = new Shift(_currentEmployee, shiftDate, shiftType);
             _shiftController.AddShift(shift);
             lbxEmployees.Items.Add(shift);
         }
@@ -83,9 +83,9 @@ namespace DesktopAppMediaBazaar.FormsUtility
                 return shiftType;
 
             }
-            else if(cklAfternoon.Checked)
+            else if (cklAfternoon.Checked)
             {
-                shiftType= 2;
+                shiftType = 2;
                 return shiftType;
 
             }

@@ -48,7 +48,7 @@ namespace DataItems.LogicItems
 
         public override string ToString()
         {
-            return $"{Id}: {Employee.Name} on {DateOnly.FromDateTime(Date)} in the {GetType()}";
+            return $"{Employee.Name} | {DateOnly.FromDateTime(Date)} | {GetType()} SHIFT";
         }
     }
 }

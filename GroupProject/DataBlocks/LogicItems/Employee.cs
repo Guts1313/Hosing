@@ -77,8 +77,8 @@ namespace DataItems.LogicItems
         public override string ToString()
         {
             if (Email != string.Empty)
-                return $"{Id}: {Name} ({Username}) - {Email}";
-            return $"{Id}: {Name} ({Username})";
+                return $"{Name} ({Username}) | {Email}";
+            return $"{Name} ({Username})";
         }
     }
 }

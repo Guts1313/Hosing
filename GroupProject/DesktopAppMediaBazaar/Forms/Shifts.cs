@@ -35,7 +35,7 @@ namespace DesktopAppMediaBazaar.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ShiftAdd form = new ShiftAdd(DepartmentController, _loggedInEmployee, EmployeeController,ShiftController);
+            ShiftAdd form = new ShiftAdd(DepartmentController, _loggedInEmployee, EmployeeController, ShiftController);
             form.ShowDialog();
         }
 

@@ -88,7 +88,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             endDate.CalendarFont = new Font("Cascadia Code", 10F, FontStyle.Bold, GraphicsUnit.Point);
             endDate.CustomFormat = "MMM dd, yyy";
             endDate.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            endDate.Location = new Point(345, 217);
+            endDate.Location = new Point(339, 217);
             endDate.MinDate = new DateTime(1753, 12, 31, 0, 0, 0, 0);
             endDate.MinimumSize = new Size(0, 35);
             endDate.Name = "endDate";
@@ -105,7 +105,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             startDate.CalendarFont = new Font("Cascadia Code", 10F, FontStyle.Bold, GraphicsUnit.Point);
             startDate.CustomFormat = "MMM dd, yyy";
             startDate.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            startDate.Location = new Point(88, 217);
+            startDate.Location = new Point(87, 217);
             startDate.MinimumSize = new Size(0, 35);
             startDate.Name = "startDate";
             startDate.Size = new Size(181, 35);

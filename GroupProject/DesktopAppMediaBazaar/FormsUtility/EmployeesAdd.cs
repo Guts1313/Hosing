@@ -95,7 +95,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
             string departmentName = null;
             Department department = departmentController.Get(cbxDepartment.SelectedItem.ToString());
-            
+
             decimal salary;
             try { salary = Convert.ToDecimal(tbxSalary.Texts); }
             catch { RJMessageBox.Show("Salary should be a number!"); return; }
