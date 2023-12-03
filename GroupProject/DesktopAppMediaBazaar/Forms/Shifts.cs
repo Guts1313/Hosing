@@ -19,11 +19,8 @@ namespace DesktopAppMediaBazaar.Forms
         {
             InitializeComponent();
             _loggedInEmployee = loggedInEmployee;
-            foreach (var shift in ShiftController.GetAll())
-            {
-                Calendar.Value = shift.Date; //no methods available to add dates in the custom datepicker
-                lbEmployees.Items.Add(shift);
-            }
+
+            getAllShifts();
 
             foreach (Department department in DepartmentController.GetAll())
             {
@@ -33,6 +30,16 @@ namespace DesktopAppMediaBazaar.Forms
 
         }
 
+        private void getAllShifts()
+        {
+            lbEmployees.Items.Clear();
+            foreach (var shift in ShiftController.GetAll())
+            {
+                //Calendar.Value = shift.Date; //no methods available to add dates in the custom datepicker
+                lbEmployees.Items.Add(shift);
+            }
+        }
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -40,6 +47,17 @@ namespace DesktopAppMediaBazaar.Forms
             form.ShowDialog();
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (lbEmployees.SelectedIndex != -1)
+            {
+                var shiftItem = (Shift)lbEmployees.SelectedItem;
+                ShiftController.DeleteShift(shiftItem);
+
+                getAllShifts();
+            }
+            else { RJMessageBox.Show("No shift is selected"); }
+        }
 
         private void Calendar_ValueChanged(object sender, EventArgs e)
         {

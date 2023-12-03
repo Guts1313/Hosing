@@ -100,7 +100,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             var shiftType = CheckShiftSelectionType();
             DateTime shiftDate = Calendar.Value;
 
-            if (lbxEmployees.SelectedIndex != 1)
+            if (lbxEmployees.SelectedIndex != -1)
             {
                 Employee _employee = (Employee)lbxEmployees.SelectedItem;
                 Shift shift = new Shift(_employee, shiftDate, shiftType);

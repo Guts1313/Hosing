@@ -21,6 +21,7 @@ namespace DataAccessLayer.Interfaces
 		public Shift[] GetFutureShiftsByEmp(Employee employee);
 
 		public Shift[] GetShiftsFromVacation(Vacation vacation);
+
 		public IEnumerable<Employee> GetEmployeesByNameFragment(string nameFragment);
 
     }
