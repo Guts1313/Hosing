@@ -13,7 +13,7 @@ using DesktopAppMediaBazaar.ChildForms;
 using DesktopAppMediaBazaar.CustomElements.Classes;
 using System.Security.Permissions;
 using DesktopAppMediaBazaar.Forms;
-using Vacation = DesktopAppMediaBazaar.Forms.Vacation;
+using Vacation = DesktopAppMediaBazaar.Forms.Vacations;
 
 namespace DesktopAppMediaBazaar
 {

@@ -368,7 +368,6 @@ C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBaza
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Departments.resources
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.EmployeesForm.resources
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Shifts.resources
-C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Vacation.resources
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Login.resources
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Properties.Resources.resources
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.ResetPassword.resources
@@ -383,3 +382,4 @@ C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBaza
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.pdb
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.genruntimeconfig.cache
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\ref\DesktopAppMediaBazaar.dll
+C:\Users\Administrator\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Vacations.resources

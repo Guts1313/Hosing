@@ -1,7 +1,7 @@
 ﻿namespace DesktopAppMediaBazaar.Forms
 
 {
-    partial class Vacation
+    partial class Vacations
     {
         /// <summary>
         /// Required designer variable.
@@ -110,6 +110,7 @@
             btnReject.Text = "Reject";
             btnReject.TextColor = Color.FromArgb(229, 229, 229);
             btnReject.UseVisualStyleBackColor = false;
+            btnReject.Click += btnReject_Click;
             // 
             // btnApprove
             // 
@@ -130,6 +131,7 @@
             btnApprove.Text = "Approve";
             btnApprove.TextColor = Color.FromArgb(229, 229, 229);
             btnApprove.UseVisualStyleBackColor = false;
+            btnApprove.Click += btnApprove_Click;
             // 
             // roundPanelListBox1
             // 
@@ -154,8 +156,10 @@
             lbVacation.Name = "lbVacation";
             lbVacation.Size = new Size(941, 323);
             lbVacation.TabIndex = 0;
+            lbVacation.SelectedIndexChanged += lbVacation_SelectedIndexChanged;
+            lbVacation.DoubleClick += lbVacation_DoubleClick;
             // 
-            // Vacation
+            // Vacations
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -163,7 +167,7 @@
             Controls.Add(roundPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Vacation";
+            Name = "Vacations";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Vacation";
             roundPanel1.ResumeLayout(false);

@@ -89,7 +89,7 @@
     <Compile Update="Forms\Shifts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Vacation.cs">
+    <Compile Update="Forms\Vacations.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Login.cs">

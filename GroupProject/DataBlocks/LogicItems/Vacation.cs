@@ -39,9 +39,18 @@ namespace DataItems.LogicItems
             Pending = true;
         }
 
+        public string DisplayInfo
+        {
+            get
+            {
+                return $"{Employee.Name} ({StartDate.ToShortDateString()} - {EndDate.ToShortDateString()})";
+            }
+        }
+
         public override string ToString()
         {
-            return $"{Id}: {Employee.Name} ({StartDate.ToShortDateString()} - {EndDate.ToShortDateString()})";
+            string employeeName = Employee != null ? Employee.Name : "Unknown Employee";
+            return $"{employeeName} ({StartDate.ToShortDateString()} - {EndDate.ToShortDateString()})";
         }
     }
 }
