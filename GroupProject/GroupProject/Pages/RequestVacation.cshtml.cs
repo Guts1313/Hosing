@@ -14,9 +14,11 @@ namespace MediaBazaarWebsite.Pages
         public Vacation Vacation { get; set; }
 
         [BindProperty]
-        public DateOnly StartDate { get; set; }
+        public DateTime StartDate { get; set; }
+
         [BindProperty]
-        public DateOnly EndDate { get; set; }
+        public DateTime EndDate { get; set; }
+
         [BindProperty]
         public string Reason { get; set; }
 
@@ -30,8 +32,8 @@ namespace MediaBazaarWebsite.Pages
 
             loggedInEmployee = employeeController.Get(username);
 
-            StartDate = DateOnly.FromDateTime(DateTime.Today);
-            EndDate = DateOnly.FromDateTime(DateTime.Today);
+            StartDate = DateTime.Today;
+            EndDate = DateTime.Today;
         }
 
         public IActionResult OnPost()
@@ -40,13 +42,16 @@ namespace MediaBazaarWebsite.Pages
 
             loggedInEmployee = employeeController.Get(username);
 
-            if (StartDate < DateOnly.FromDateTime(DateTime.Today) || EndDate < DateOnly.FromDateTime(DateTime.Today))
+            if (StartDate < DateTime.Today || EndDate < DateTime.Today)
             {
                 return Page();
             }
             else
             {
-                Vacation vacation = new Vacation(loggedInEmployee, StartDate, EndDate, Reason);
+                DateOnly startDate = DateOnly.FromDateTime(StartDate);
+                DateOnly endDate = DateOnly.FromDateTime(EndDate);
+
+                Vacation vacation = new Vacation(loggedInEmployee, startDate, endDate, Reason);
 
                 if (vacationController.Create(vacation))
                     return RedirectToPage("Index");

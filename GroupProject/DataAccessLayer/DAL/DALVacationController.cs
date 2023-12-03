@@ -14,6 +14,7 @@ namespace DataAccessLayer.DAL
                 {
                     string sql = "INSERT INTO Vacation (EmployeeId, StartDate, EndDate, Reason, Approved, Pending) VALUES (@employeeId, @startDate, @endDate, @reason, @approved, @pending)";
 
+
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
                         cmd.Parameters.AddWithValue("@employeeId", vacation.Employee.Id);

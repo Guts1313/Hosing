@@ -19,8 +19,8 @@
 		{
 			foreach (var a in Model._announcements)
 			{
-				if (vacationController.ReadById(a.VacationId).Employee.Id != Model._loggedInEmployee.Id)
-				{
+				//if (vacationController.ReadById(a.VacationId).Employee.Id != Model._loggedInEmployee.Id)
+				//{
 					<div class="col">
 						<div class="card">
 							<div class="card-body">
@@ -33,7 +33,7 @@
 							</div>
 						</div>
 					</div>
-				}
+				//}
 			}
 		}
 	}

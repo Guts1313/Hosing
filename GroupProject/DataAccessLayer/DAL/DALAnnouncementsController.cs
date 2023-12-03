@@ -195,10 +195,10 @@ namespace DataAccessLayer.DAL
             {
                 List<Announcements> announcements = new();
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
-                string sql = "SELECT * FROM Announcements WHERE StartDate <= @daysBefore AND EndDate >= @today";
+                string sql = "SELECT * FROM Announcements WHERE EndDate >= @today";
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
-                    cmd.Parameters.AddWithValue("@daysBefore", DateTime.Now.AddDays(3));
+                    //cmd.Parameters.AddWithValue("@daysBefore", DateTime.Now.AddDays(3));
                     cmd.Parameters.AddWithValue("@today", DateTime.Now);
                     conn.Open();
                     SqlDataReader reader = cmd.ExecuteReader();
@@ -207,7 +207,7 @@ namespace DataAccessLayer.DAL
                         DateOnly startDate = DateOnly.FromDateTime(Convert.ToDateTime(reader[3]));
                         DateOnly endDate = DateOnly.FromDateTime(Convert.ToDateTime(reader[4]));
                         int vacationId;
-                        if (reader.GetInt32("VacationId") > 0)
+                        if (!reader.IsDBNull(reader.GetOrdinal("VacationId")))
                         {
                             vacationId = reader.GetInt32("VacationId");
                         }
