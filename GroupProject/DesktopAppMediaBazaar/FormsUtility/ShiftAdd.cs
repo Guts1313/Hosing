@@ -64,9 +64,9 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private void showEmployeesMainForm()
         {
             lbEmployees.Items.Clear();
-            foreach (Employee employee in _employeeController.GetAll())
+            foreach (var shift in _shiftController.GetAll())
             {
-                if (employee.Department.Id > 2) lbEmployees.Items.Add(employee);
+                lbEmployees.Items.Add(shift);
             }
         }
 
