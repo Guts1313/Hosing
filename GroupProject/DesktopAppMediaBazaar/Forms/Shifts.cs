@@ -33,16 +33,19 @@ namespace DesktopAppMediaBazaar.Forms
 
         }
 
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ShiftAdd form = new ShiftAdd(DepartmentController, _loggedInEmployee, EmployeeController, ShiftController);
+            ShiftAdd form = new ShiftAdd(DepartmentController, _loggedInEmployee, EmployeeController, ShiftController, lbEmployees);
             form.ShowDialog();
         }
+
 
         private void Calendar_ValueChanged(object sender, EventArgs e)
         {
             _selectedDate = Calendar.Value.Date; // custom calendar has no methods to choose dates
         }
+
 
         private void cbxDepartment_OnSelectedIndexChanged(object sender, EventArgs e)
         {
@@ -55,6 +58,7 @@ namespace DesktopAppMediaBazaar.Forms
                 lbEmployees.Items.Add(shift);
             }
         }
+
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -81,7 +85,6 @@ namespace DesktopAppMediaBazaar.Forms
 
             }
         }
-
 
 
         private void tbxName__TextChanged(object sender, EventArgs e)

@@ -74,7 +74,7 @@ namespace DesktopAppMediaBazaar.Forms
             {
                 if (employee.Department.Id > 2 &&
                     employee.ToString().ToLower().Contains(tbxName.Texts.ToLower()))
-                { lbEmployees.Items.Add(employee.ToString()); }
+                { lbEmployees.Items.Add(employee); }
             }
         }
     }

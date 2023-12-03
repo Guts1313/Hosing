@@ -1,5 +1,7 @@
 ﻿using BussinessLayer.Controllers;
+using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
+using DesktopAppMediaBazaar.CustomElements;
 using System.Runtime.InteropServices;
 
 namespace DesktopAppMediaBazaar.FormsUtility
@@ -10,6 +12,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private readonly DepartmentController _departmentController;
         private readonly EmployeeController _employeeController;
         private readonly ShiftController _shiftController;
+        private ListBox lbEmployees;
         #region FORM CUSTOM STYLE
         //FORM DRAG NO BORDER
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -31,7 +34,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnClose.ForeColor = Color.FromArgb(229, 229, 229);
         }
         #endregion
-        public ShiftAdd(DepartmentController departmentController, Employee loggedEmployee, EmployeeController employeeController, ShiftController shiftController)
+        public ShiftAdd(DepartmentController departmentController, Employee loggedEmployee, EmployeeController employeeController, ShiftController shiftController, ListBox lbEmployees)
         {
             InitializeComponent();
             InitializeEventHandlers();
@@ -39,12 +42,32 @@ namespace DesktopAppMediaBazaar.FormsUtility
             _currentEmployee = loggedEmployee;
             _employeeController = employeeController;
             _shiftController = shiftController;
+            this.lbEmployees = lbEmployees;
 
             foreach (Department department in _departmentController.GetAll())
             {
                 cbxDepartment.Items.Add(department.Name);
             }
             _shiftController = shiftController;
+            showEmployees();
+        }
+
+        private void showEmployees()
+        {
+            lbxEmployees.Items.Clear();
+            foreach (Employee employee in _employeeController.GetAll())
+            {
+                if (employee.Department.Id > 2) lbxEmployees.Items.Add(employee);
+            }
+        }
+
+        private void showEmployeesMainForm()
+        {
+            lbEmployees.Items.Clear();
+            foreach (Employee employee in _employeeController.GetAll())
+            {
+                if (employee.Department.Id > 2) lbEmployees.Items.Add(employee);
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -59,18 +82,34 @@ namespace DesktopAppMediaBazaar.FormsUtility
             this.FormBorderStyle = FormBorderStyle.None;
         }
 
-        private void lbxEmployees_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        private void lbxEmployees_SelectedIndexChanged(object sender, EventArgs e) { }
 
+        private void tbxName__TextChanged_1(object sender, EventArgs e)
+        {
+            lbxEmployees.Items.Clear();
+            foreach (Employee employee in _employeeController.GetAll())
+            {
+                if (employee.Department.Id > 2 &&
+                    employee.ToString().ToLower().Contains(tbxName.Texts.ToLower()))
+                { lbxEmployees.Items.Add(employee); }
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             var shiftType = CheckShiftSelectionType();
             DateTime shiftDate = Calendar.Value;
-            Shift shift = new Shift(_currentEmployee, shiftDate, shiftType);
-            _shiftController.AddShift(shift);
-            lbxEmployees.Items.Add(shift);
+
+            if (lbxEmployees.SelectedIndex != 1)
+            {
+                Employee _employee = (Employee)lbxEmployees.SelectedItem;
+                Shift shift = new Shift(_employee, shiftDate, shiftType);
+                _shiftController.AddShift(shift);
+                lbxEmployees.Items.Add(shift);
+                showEmployeesMainForm();
+                this.Close();
+            }
+            else { RJMessageBox.Show("Please select an employee!"); }
         }
 
         private int CheckShiftSelectionType()

@@ -186,6 +186,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             tbxName.TabIndex = 52;
             tbxName.Texts = "";
             tbxName.UnderlinedStyle = false;
+            tbxName._TextChanged += tbxName__TextChanged_1;
             // 
             // cklMorning
             // 
