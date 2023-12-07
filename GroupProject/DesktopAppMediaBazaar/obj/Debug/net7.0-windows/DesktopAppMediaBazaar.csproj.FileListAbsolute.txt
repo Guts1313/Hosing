@@ -199,7 +199,6 @@ C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Departments.resources
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.EmployeesForm.resources
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Shifts.resources
-C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Vacation.resources
 C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Login.resources
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\bin\Debug\net7.0-windows\libs\Animator.dll
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\bin\Debug\net7.0-windows\Animator.dll
@@ -383,3 +382,4 @@ C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBaza
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.genruntimeconfig.cache
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\ref\DesktopAppMediaBazaar.dll
 C:\Users\Administrator\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Vacations.resources
+C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.Forms.Vacations.resources
