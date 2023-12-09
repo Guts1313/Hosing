@@ -46,11 +46,9 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label5 = new Label();
             cklEvening = new CustomElements.CustomCheckBox();
             label4 = new Label();
-            cbxDepartment = new CustomElements.CustomComboBox();
             roundPanelListBox1 = new CustomElements.RoundPanelListBox();
             lbxEmployees = new ListBox();
             label7 = new Label();
-            label2 = new Label();
             lbFormTitle = new Label();
             btnClose = new Button();
             btnSave = new CustomElements.RoundButton();
@@ -70,7 +68,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelButtons.Controls.Add(panel1);
             panelButtons.Controls.Add(roundPanelListBox1);
             panelButtons.Controls.Add(label7);
-            panelButtons.Controls.Add(label2);
             panelButtons.Controls.Add(lbFormTitle);
             panelButtons.Controls.Add(btnClose);
             panelButtons.Controls.Add(btnSave);
@@ -126,7 +123,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panel1.Controls.Add(label5);
             panel1.Controls.Add(cklEvening);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(cbxDepartment);
             panel1.Location = new Point(135, 38);
             panel1.Name = "panel1";
             panel1.Size = new Size(286, 176);
@@ -137,7 +133,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label3.AutoSize = true;
             label3.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(20, 115);
+            label3.Location = new Point(22, 94);
             label3.Name = "label3";
             label3.Size = new Size(63, 16);
             label3.TabIndex = 55;
@@ -148,7 +144,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label12.AutoSize = true;
             label12.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(109, 115);
+            label12.Location = new Point(111, 94);
             label12.Name = "label12";
             label12.Size = new Size(63, 16);
             label12.TabIndex = 54;
@@ -159,7 +155,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label11.AutoSize = true;
             label11.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(198, 115);
+            label11.Location = new Point(200, 94);
             label11.Name = "label11";
             label11.Size = new Size(56, 16);
             label11.TabIndex = 53;
@@ -191,7 +187,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklMorning
             // 
             cklMorning.AutoSize = true;
-            cklMorning.Location = new Point(28, 138);
+            cklMorning.Location = new Point(30, 117);
             cklMorning.MinimumSize = new Size(45, 22);
             cklMorning.Name = "cklMorning";
             cklMorning.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -205,7 +201,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklAfternoon
             // 
             cklAfternoon.AutoSize = true;
-            cklAfternoon.Location = new Point(118, 138);
+            cklAfternoon.Location = new Point(120, 117);
             cklAfternoon.MinimumSize = new Size(45, 22);
             cklAfternoon.Name = "cklAfternoon";
             cklAfternoon.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -221,7 +217,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label6.AutoSize = true;
             label6.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(229, 229, 229);
-            label6.Location = new Point(191, 94);
+            label6.Location = new Point(193, 73);
             label6.Name = "label6";
             label6.Size = new Size(73, 21);
             label6.TabIndex = 49;
@@ -232,7 +228,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label5.AutoSize = true;
             label5.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(229, 229, 229);
-            label5.Location = new Point(94, 94);
+            label5.Location = new Point(96, 73);
             label5.Name = "label5";
             label5.Size = new Size(91, 21);
             label5.TabIndex = 48;
@@ -241,7 +237,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklEvening
             // 
             cklEvening.AutoSize = true;
-            cklEvening.Location = new Point(205, 138);
+            cklEvening.Location = new Point(207, 117);
             cklEvening.MinimumSize = new Size(45, 22);
             cklEvening.Name = "cklEvening";
             cklEvening.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -257,31 +253,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(229, 229, 229);
-            label4.Location = new Point(15, 94);
+            label4.Location = new Point(17, 73);
             label4.Name = "label4";
             label4.Size = new Size(73, 21);
             label4.TabIndex = 46;
             label4.Text = "Morning";
-            // 
-            // cbxDepartment
-            // 
-            cbxDepartment.BackColor = Color.FromArgb(229, 229, 229);
-            cbxDepartment.BorderColor = Color.FromArgb(229, 229, 229);
-            cbxDepartment.BorderSize = 1;
-            cbxDepartment.CornerRadius = 15;
-            cbxDepartment.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbxDepartment.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            cbxDepartment.ForeColor = Color.FromArgb(116, 120, 129);
-            cbxDepartment.IconColor = Color.FromArgb(156, 84, 213);
-            cbxDepartment.ListBackColor = Color.FromArgb(229, 229, 229);
-            cbxDepartment.ListTextColor = Color.FromArgb(156, 84, 213);
-            cbxDepartment.Location = new Point(16, 58);
-            cbxDepartment.MinimumSize = new Size(200, 30);
-            cbxDepartment.Name = "cbxDepartment";
-            cbxDepartment.Padding = new Padding(1);
-            cbxDepartment.Size = new Size(250, 33);
-            cbxDepartment.TabIndex = 45;
-            cbxDepartment.Texts = "";
             // 
             // roundPanelListBox1
             // 
@@ -313,22 +289,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label7.AutoSize = true;
             label7.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.FromArgb(229, 229, 229);
-            label7.Location = new Point(38, 139);
+            label7.Location = new Point(38, 111);
             label7.Name = "label7";
             label7.Size = new Size(73, 21);
             label7.TabIndex = 35;
             label7.Text = "Shifts:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(229, 229, 229);
-            label2.Location = new Point(38, 100);
-            label2.Name = "label2";
-            label2.Size = new Size(109, 21);
-            label2.TabIndex = 25;
-            label2.Text = "Department:";
             // 
             // lbFormTitle
             // 
@@ -438,7 +403,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private Panel panelBody;
         private Label label1;
         private Label label3;
-        private Label label2;
         private CustomElements.RoundLabel lbRegisterDate;
         private Label label7;
         private CustomElements.RoundPanelListBox roundPanelListBox1;
@@ -456,7 +420,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private Label label5;
         private CustomElements.CustomCheckBox cklEvening;
         private Label label4;
-        private CustomElements.CustomComboBox cbxDepartment;
         private CustomElements.CustomDatePicker Calendar;
         private RoundTextBox tbxUsername;
         private RoundTextBox tbxPhone;

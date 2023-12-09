@@ -1,4 +1,5 @@
 ﻿using BussinessLayer.Controllers;
+using BussinessLayer.Controllers.Shifts;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
 using System;
@@ -13,7 +14,7 @@ using System.Windows.Forms;
 
 namespace DesktopAppMediaBazaar
 {
-	public partial class ChooseEmployeeByDepartmentForm : Form
+    public partial class ChooseEmployeeByDepartmentForm : Form
 	{
 		public EmployeeController EmployeeController { get; private set; } = new (new DALEmployeeController());
         public ShiftController ShiftController { get; private set; } = new(new DALShiftController());

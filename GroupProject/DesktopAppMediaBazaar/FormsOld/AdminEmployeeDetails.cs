@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BussinessLayer.Controllers;
+using BussinessLayer.Controllers.Shifts;
 using DataAccessLayer;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
@@ -15,7 +16,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DesktopAppMediaBazaar
 {
-	public partial class AdminEmployeeDetails : Form
+    public partial class AdminEmployeeDetails : Form
 	{
         public DepartmentController DepartmentController { get; private set; } = new(new DALDepartmentController());
         public EmployeeController EmployeeController { get; private set; } = new(new DALEmployeeController());
