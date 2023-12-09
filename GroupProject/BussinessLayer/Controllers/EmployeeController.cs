@@ -13,30 +13,37 @@ namespace BussinessLayer.Controllers
         private IEmployeeController _employeeDal;
 
         public Employee? LoggedInEmployee { get; set; }
+
         public EmployeeController(IEmployeeController employeeController)
         {
             _employeeDal = employeeController;
         }
+
         public bool AddEmployee(Employee employee)
         {
             return _employeeDal.Create(employee);
         }
+
         public bool RemoveEmployee(Employee employee)
         {
             return _employeeDal.Delete(employee);
         }
+
         public bool UpdateEmployee(Employee employee)
         {
             return _employeeDal.Update(employee);
         }
+
         public bool ChangePassword(string email, string newPassword) 
         {
             return _employeeDal.ChangePassword(email,newPassword);
         }
+
         public bool FindEmail(string email)
         {
             return _employeeDal.FindEmail(email);
         }
+
         public Employee[] GetAll()
         {
             return _employeeDal.GetAll();
@@ -59,6 +66,7 @@ namespace BussinessLayer.Controllers
             }
             return null;
         }
+
         public Employee[] GetAllByDepartment(Department department)
         {
             List<Employee> employees = new();
@@ -97,6 +105,7 @@ namespace BussinessLayer.Controllers
                 return true;
             return false;
         }
+
 		public Employee[] GetAvailableEmployees(DateTime date, int shiftType)
         {
             return _employeeDal.GetAvailableEmployees(date, shiftType);

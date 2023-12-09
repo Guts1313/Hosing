@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBlocks", "DataBlocks\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopAppMediaBazaar", "DesktopAppMediaBazaar\DesktopAppMediaBazaar.csproj", "{97F2AA08-996F-460C-A70A-EE764930D94D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{FAF6EC4D-4616-41F1-9132-1738F412EE2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{97F2AA08-996F-460C-A70A-EE764930D94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97F2AA08-996F-460C-A70A-EE764930D94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97F2AA08-996F-460C-A70A-EE764930D94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF6EC4D-4616-41F1-9132-1738F412EE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF6EC4D-4616-41F1-9132-1738F412EE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF6EC4D-4616-41F1-9132-1738F412EE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF6EC4D-4616-41F1-9132-1738F412EE2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

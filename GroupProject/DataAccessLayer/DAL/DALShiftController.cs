@@ -72,7 +72,7 @@ namespace DataAccessLayer.DAL
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
-                    string sql = "SELECT * FROM Shift";
+                    string sql = "SELECT * FROM Shift ORDER BY Date DESC;";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {

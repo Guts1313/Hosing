@@ -17,5 +17,16 @@ namespace DataItems.LogicItems
         {
             value |= (int)target;
         }
+
+        public static IEnumerable<ShiftType> GetShifts(int value)
+        {
+            foreach (ShiftType shiftType in Enum.GetValues(typeof(ShiftType)))
+            {
+                if ((value & (int)shiftType) != 0)
+                {
+                    yield return shiftType;
+                }
+            }
+        }
     }
 }

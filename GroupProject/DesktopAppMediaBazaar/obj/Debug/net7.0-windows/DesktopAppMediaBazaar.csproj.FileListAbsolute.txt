@@ -383,3 +383,4 @@ C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBaza
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.pdb
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.genruntimeconfig.cache
 C:\Users\Administrator\Source\Repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\ref\DesktopAppMediaBazaar.dll
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.FormsUtility.ShiftAutoAdd.resources

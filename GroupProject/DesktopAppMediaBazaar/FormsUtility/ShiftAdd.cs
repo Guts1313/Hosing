@@ -1,4 +1,5 @@
 ﻿using BussinessLayer.Controllers;
+using BussinessLayer.Controllers.Shifts;
 using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
 using DesktopAppMediaBazaar.CustomElements;
@@ -44,10 +45,10 @@ namespace DesktopAppMediaBazaar.FormsUtility
             _shiftController = shiftController;
             this.lbEmployees = lbEmployees;
 
-            foreach (Department department in _departmentController.GetAll())
-            {
-                cbxDepartment.Items.Add(department.Name);
-            }
+            /*            foreach (Department department in _departmentController.GetAll())
+                        {
+                            cbxDepartment.Items.Add(department.Name);
+                        }*/
             _shiftController = shiftController;
             showEmployees();
         }
@@ -130,7 +131,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             }
             else
             {
-                shiftType = 3;
+                shiftType = 4;
                 return shiftType;
             }
         }

@@ -1,4 +1,5 @@
 ﻿using BussinessLayer.Controllers;
+using BussinessLayer.Controllers.Shifts;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
 using DesktopAppMediaBazaar.CustomElements;
@@ -40,6 +41,11 @@ namespace DesktopAppMediaBazaar.Forms
             }
         }
 
+        private void btnAutoShifts_Click(object sender, EventArgs e)
+        {
+            ShiftAutoAdd form = new ShiftAutoAdd(ShiftController, lbEmployees);
+            form.ShowDialog();
+        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {

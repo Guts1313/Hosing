@@ -1,7 +1,7 @@
 ﻿using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
 
-namespace BussinessLayer.Controllers
+namespace BussinessLayer.Controllers.Shifts
 {
     public class ShiftController
     {
@@ -36,10 +36,12 @@ namespace BussinessLayer.Controllers
         {
             return _shiftDal.GetById(id);
         }
+
         public Shift[] GetAllByDate(DateTime date)
         {
             return _shiftDal.GetAllByDate(date);
         }
+
         public Shift[] GetAllByDateAndDepartment(DateTime date, Department department)
         {
             List<Shift> shifts = new();
@@ -64,6 +66,7 @@ namespace BussinessLayer.Controllers
         {
             return _shiftDal.Update(shift);
         }
+
         public List<int> GetShiftIdsToCancelByEmp(Employee employee, Shift[] shifts)
         {
             List<int> shiftIdsToCancel = new();
@@ -76,14 +79,15 @@ namespace BussinessLayer.Controllers
             }
             return shiftIdsToCancel;
         }
+
         public Shift[] GetFutureShiftsByEmp(Employee employee)
         {
             return _shiftDal.GetFutureShiftsByEmp(employee);
         }
+
         public Shift[] GetShiftsFromVacation(Vacation vacation)
         {
             return _shiftDal.GetShiftsFromVacation(vacation);
         }
-
     }
 }

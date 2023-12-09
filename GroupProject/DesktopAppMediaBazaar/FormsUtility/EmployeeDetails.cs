@@ -1,4 +1,5 @@
 ﻿using BussinessLayer.Controllers;
+using BussinessLayer.Controllers.Shifts;
 using DataAccessLayer.DAL;
 using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
@@ -102,6 +103,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
         private void showDepartments()
         {
+            cbxDepartment.Items.Clear();
             foreach (Department department in departmentController.GetAll())
             {
                 cbxDepartment.Items.Add(department.Name);
