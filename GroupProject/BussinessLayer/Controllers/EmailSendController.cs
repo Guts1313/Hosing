@@ -1,31 +1,27 @@
 ﻿using System.Net;
 using System.Net.Mail;
+using System.Security.Cryptography.X509Certificates;
 
 namespace BussinessLayer.Controllers
 {
     public class EmailSendController
     {
         private string _emailTo;
-        private string emailFrom, emailPass, messageBody;
-        private int code;
-        private CodeController codeGenerator;
+        private string emailFrom, emailPass;
         private MailMessage message;
         private SmtpClient smtpClient;
-        public EmailSendController(string emailTo)
+        public EmailSendController(string emailTo, string subject, string messageBody)
         {
             _emailTo = emailTo;
             emailFrom = "mediabazaar464@gmail.com";
             emailPass = "plne tmxx lkfs bpll";
-            codeGenerator = new CodeController();
-            code = codeGenerator.GenerateCode();
-            messageBody = $"Your code is {code}";
 
             message = new MailMessage();
+            message.Subject = subject;
+            message.Body = messageBody;
             message.From = new MailAddress(emailFrom);
             message.To.Add(_emailTo);
             message.CC.Add(emailFrom);
-            message.Body = messageBody;
-            message.Subject = "Password Reset Code";
 
             smtpClient = new SmtpClient("smtp.gmail.com");
             smtpClient.EnableSsl = true;
@@ -34,8 +30,8 @@ namespace BussinessLayer.Controllers
             smtpClient.Port = 587;
             smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtpClient.Credentials = new NetworkCredential(emailFrom, emailPass);
-        }
 
+        }
         public bool SendEmail()
         {
             try
@@ -47,9 +43,9 @@ namespace BussinessLayer.Controllers
             {
                 throw new SmtpFailedRecipientsException("There has been an issue with more than one email address");
             }
-            catch (SmtpFailedRecipientException)
+            catch (SmtpFailedRecipientException) // if email does not exist
             {
-                throw new SmtpFailedRecipientException("There has been an issue with your email address");
+                return false;
             }
             catch (SmtpException)
             {
@@ -64,6 +60,5 @@ namespace BussinessLayer.Controllers
                 throw new Exception("An error occurred. Try again later");
             }
         }
-        public bool CheckCode(int code) => codeGenerator.IsCodeValid(code);
     }
 }

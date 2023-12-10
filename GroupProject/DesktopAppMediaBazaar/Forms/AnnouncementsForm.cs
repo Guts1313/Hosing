@@ -1,18 +1,11 @@
 ﻿using BussinessLayer.Controllers;
-using DataAccessLayer.DAL;
 using DataItems.LogicItems;
 using DesktopAppMediaBazaar.ChildFormsUtility;
 using DesktopAppMediaBazaar.Classes;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using DesktopAppMediaBazaar.CustomElements;
+using BussinessLayer.Utilities.Messages;
+using DataAccessLayer.Interfaces;
 
 namespace DesktopAppMediaBazaar.ChildForms
 {
@@ -61,7 +54,8 @@ namespace DesktopAppMediaBazaar.ChildForms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AnnouncementsAddEdit form = new AnnouncementsAddEdit(AnnouncementsAddEdit.FormMode.Add);
+
+            AnnouncementsAddEdit form = new AnnouncementsAddEdit(AnnouncementsAddEdit.FormMode.Add, null, _loggedInEmployee);
             form.FormClosed += (s, args) => RefreshAnnouncementsListAsync();
             form.ShowDialog();
         }

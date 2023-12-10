@@ -1,9 +1,11 @@
 ﻿using AnimatorNS;
 using BussinessLayer.Controllers;
+using BussinessLayer.Utilities.Messages;
 using DataAccessLayer.DAL;
 using DesktopAppMediaBazaar.CustomElements;
 using DesktopAppMediaBazaar.CustomElements.Classes;
 using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,8 +22,8 @@ namespace DesktopAppMediaBazaar
 {
     public partial class ForgotPassword : Form
     {
-        private EmailSendController emailSendController;
         private EmployeeController employeeController;
+        CodeController codeGenerator;
 
         private readonly Timer tmrFadeIn;
         private bool aeroShadow;
@@ -46,6 +48,7 @@ namespace DesktopAppMediaBazaar
         {
             InitializeComponent();
             employeeController = new EmployeeController(new DALEmployeeController());
+            codeGenerator = new CodeController();
 
             animator = new Animator()
             {
@@ -118,7 +121,11 @@ namespace DesktopAppMediaBazaar
 
             try
             {
-                emailSendController = new EmailSendController(tbxEmail.Text);
+                int code = codeGenerator.GenerateCode();
+                string subject = string.Format(EmailMessages.VERIFICATION_CODE_SUBJECT, code);
+                string body = string.Format(EmailMessages.VERIFICATION_CODE_BODY, code);
+
+                EmailSendController emailSendController = new EmailSendController(tbxEmail.Text,subject, body);
                 if (emailSendController.SendEmail())
                 {
                     RJMessageBox.Show("Email sent successfully");
@@ -188,7 +195,7 @@ namespace DesktopAppMediaBazaar
 
             await Task.Delay(2000);
 
-            if (!emailSendController.CheckCode(code))
+            if (!codeGenerator.IsCodeValid(code))
             {
                 RJMessageBox.Show("Wrong code");
                 ResetCodeInput();

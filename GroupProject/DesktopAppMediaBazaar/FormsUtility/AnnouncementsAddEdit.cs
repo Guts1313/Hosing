@@ -4,6 +4,9 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using DesktopAppMediaBazaar.Classes;
+using BussinessLayer.Utilities.Messages;
+using BussinessLayer.Controllers;
+using DataAccessLayer.DAL;
 
 namespace DesktopAppMediaBazaar.ChildFormsUtility
 {
@@ -37,13 +40,17 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
         private readonly FormMode _mode;
         private readonly Announcements _announcementToEdit;
         private readonly AnnouncementsManager _announcementss;
+        private Employee _loggedInEmpl;
+        private EmployeeController employeeController;
 
-        public AnnouncementsAddEdit(FormMode mode, Announcements announcementToEdit = null)
+        public AnnouncementsAddEdit(FormMode mode, Announcements announcementToEdit = null, Employee loggedInEmpl = null)
         {
             InitializeComponent();
             _mode = mode;
             _announcementToEdit = announcementToEdit;
             _announcementss = new AnnouncementsManager();
+            employeeController = new EmployeeController(new DALEmployeeController());
+            _loggedInEmpl = loggedInEmpl;
 
             if (mode == FormMode.Edit && announcementToEdit != null)
             {
@@ -81,6 +88,26 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
                         EndDate = DateOnly.FromDateTime(endDate.Value)
                     };
 
+                    try
+                    {
+                        foreach (var employee in employeeController.GetAll())
+                        {
+                            string subject = string.Format(EmailMessages.ANNOUNCEMENT_SUBJECT, employee.Name, "admin1");
+                            string body = string.Format(EmailMessages.ANNOUNCEMENT_BODY, tbxDescription.Texts);
+
+                            if (employee.Email != null)
+                            {
+                                EmailSendController emailSendController = new EmailSendController(employee.Email, subject, body);
+                                emailSendController.SendEmail();
+                            }
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        RJMessageBox.Show(ex.Message);
+                    }
+
                     success = _announcementss.AddAnnouncement(newAnnouncement);
                 }
                 else
@@ -100,6 +127,11 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
                 errorMessage = $"An error occurred while saving the announcement: {ex.Message}";
                 return false;
             }
+        }
+
+        private void SendEmail()
+        {
+
         }
 
 
