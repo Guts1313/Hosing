@@ -1,4 +1,7 @@
-﻿using BussinessLayer.Controllers.Shifts;
+﻿using BussinessLayer.Controllers;
+using BussinessLayer.Controllers.Shifts;
+using BussinessLayer.Utilities.Messages;
+using DataAccessLayer.DAL;
 using DesktopAppMediaBazaar.CustomElements;
 using System;
 using System.Collections.Generic;
@@ -52,6 +55,20 @@ namespace DesktopAppMediaBazaar.FormsUtility
             try
             {
                 shiftsAutomation.AssignShiftsAutomaticallyByDate(start, end);
+
+                EmployeeController employeeController = new EmployeeController(new DALEmployeeController());
+
+                foreach (var employee in employeeController.GetAll())
+                {
+                    string subject = string.Format(EmailMessages.AUTO_ASSIGNED_SHIFT_SUBJECT, employee.Name);
+                    string body = string.Format(EmailMessages.AUTO_ASSIGNED_SHIFT_BODY, employee.Name);
+
+                    if (employee.Email != null)
+                    {
+                        EmailSendController emailSendController = new EmailSendController(employee.Email, subject, body);
+                        emailSendController.SendEmail();
+                    }
+                }
             }
             catch (Exception ex)
             {
