@@ -66,7 +66,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             panelButtons.Location = new Point(3, 3);
             panelButtons.Margin = new Padding(4, 3, 4, 3);
             panelButtons.Name = "panelButtons";
-            panelButtons.Size = new Size(554, 327);
+            panelButtons.Size = new Size(554, 352);
             panelButtons.TabIndex = 4;
             panelButtons.MouseDown += panelTitleBar_MouseDown;
             // 
@@ -75,7 +75,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             label2.AutoSize = true;
             label2.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(229, 229, 229);
-            label2.Location = new Point(281, 222);
+            label2.Location = new Point(38, 256);
             label2.Name = "label2";
             label2.Size = new Size(64, 21);
             label2.TabIndex = 19;
@@ -88,7 +88,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             endDate.CalendarFont = new Font("Cascadia Code", 10F, FontStyle.Bold, GraphicsUnit.Point);
             endDate.CustomFormat = "MMM dd, yyy";
             endDate.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            endDate.Location = new Point(339, 217);
+            endDate.Location = new Point(87, 251);
             endDate.MinDate = new DateTime(1753, 12, 31, 0, 0, 0, 0);
             endDate.MinimumSize = new Size(0, 35);
             endDate.Name = "endDate";
@@ -165,7 +165,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Cascadia Code", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.FromArgb(127, 131, 140);
-            btnSave.Location = new Point(38, 258);
+            btnSave.Location = new Point(38, 291);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(473, 43);
             btnSave.TabIndex = 12;
@@ -250,7 +250,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             panelBody.Margin = new Padding(4, 3, 4, 3);
             panelBody.Name = "panelBody";
             panelBody.Padding = new Padding(13, 14, 0, 0);
-            panelBody.Size = new Size(560, 333);
+            panelBody.Size = new Size(560, 358);
             panelBody.TabIndex = 6;
             // 
             // AnnouncementsAddEdit
@@ -258,7 +258,7 @@ namespace DesktopAppMediaBazaar.ChildFormsUtility
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 229, 229);
-            ClientSize = new Size(560, 333);
+            ClientSize = new Size(560, 358);
             Controls.Add(panelBody);
             Font = new Font("Cascadia Code", 10F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.Black;

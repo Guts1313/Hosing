@@ -38,11 +38,12 @@
             customLabelV21 = new CustomElements.Controls.CustomLabelV2();
             tbxName = new housing.CustomElements.RoundTextBox();
             roundPanelListBox1 = new CustomElements.RoundPanelListBox();
-            lbEmployees = new ListBox();
+            dgvEmployees = new DataGridView();
             roundPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             roundPanelListBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvEmployees).BeginInit();
             SuspendLayout();
             // 
             // roundPanel1
@@ -61,7 +62,7 @@
             roundPanel1.Margin = new Padding(4, 3, 4, 3);
             roundPanel1.Name = "roundPanel1";
             roundPanel1.Radius = 20;
-            roundPanel1.Size = new Size(1041, 542);
+            roundPanel1.Size = new Size(1041, 578);
             roundPanel1.TabIndex = 4;
             // 
             // panel2
@@ -70,9 +71,9 @@
             panel2.Controls.Add(btnViewEdit);
             panel2.Controls.Add(btnDelete);
             panel2.Controls.Add(btnAdd);
-            panel2.Location = new Point(756, 409);
+            panel2.Location = new Point(756, 436);
             panel2.Name = "panel2";
-            panel2.Size = new Size(243, 97);
+            panel2.Size = new Size(243, 103);
             panel2.TabIndex = 16;
             // 
             // btnViewEdit
@@ -87,9 +88,9 @@
             btnViewEdit.FlatStyle = FlatStyle.Flat;
             btnViewEdit.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewEdit.ForeColor = Color.FromArgb(156, 84, 213);
-            btnViewEdit.Location = new Point(3, 49);
+            btnViewEdit.Location = new Point(3, 52);
             btnViewEdit.Name = "btnViewEdit";
-            btnViewEdit.Size = new Size(240, 40);
+            btnViewEdit.Size = new Size(240, 43);
             btnViewEdit.TabIndex = 15;
             btnViewEdit.Text = "View / Edit Details";
             btnViewEdit.TextColor = Color.FromArgb(156, 84, 213);
@@ -110,7 +111,7 @@
             btnDelete.ForeColor = Color.FromArgb(229, 229, 229);
             btnDelete.Location = new Point(126, 3);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(117, 40);
+            btnDelete.Size = new Size(117, 43);
             btnDelete.TabIndex = 14;
             btnDelete.Text = "Delete";
             btnDelete.TextColor = Color.FromArgb(229, 229, 229);
@@ -131,7 +132,7 @@
             btnAdd.ForeColor = Color.FromArgb(229, 229, 229);
             btnAdd.Location = new Point(3, 3);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(117, 40);
+            btnAdd.Size = new Size(117, 43);
             btnAdd.TabIndex = 13;
             btnAdd.Text = "Add";
             btnAdd.TextColor = Color.FromArgb(229, 229, 229);
@@ -143,9 +144,9 @@
             panel1.BackColor = Color.FromArgb(229, 229, 229);
             panel1.Controls.Add(customLabelV21);
             panel1.Controls.Add(tbxName);
-            panel1.Location = new Point(58, 403);
+            panel1.Location = new Point(58, 430);
             panel1.Name = "panel1";
-            panel1.Size = new Size(680, 97);
+            panel1.Size = new Size(680, 103);
             panel1.TabIndex = 14;
             // 
             // customLabelV21
@@ -170,7 +171,7 @@
             tbxName.BorderSize = 3;
             tbxName.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tbxName.ForeColor = Color.FromArgb(127, 131, 140);
-            tbxName.Location = new Point(0, 25);
+            tbxName.Location = new Point(0, 27);
             tbxName.Margin = new Padding(4);
             tbxName.Multiline = false;
             tbxName.Name = "tbxName";
@@ -187,32 +188,37 @@
             // roundPanelListBox1
             // 
             roundPanelListBox1.BackColor = Color.FromArgb(156, 84, 213);
-            roundPanelListBox1.Controls.Add(lbEmployees);
-            roundPanelListBox1.Location = new Point(52, 50);
+            roundPanelListBox1.Controls.Add(dgvEmployees);
+            roundPanelListBox1.Location = new Point(52, 53);
             roundPanelListBox1.Margin = new Padding(4, 3, 4, 3);
             roundPanelListBox1.Name = "roundPanelListBox1";
-            roundPanelListBox1.Size = new Size(947, 337);
+            roundPanelListBox1.Size = new Size(947, 359);
             roundPanelListBox1.TabIndex = 12;
             // 
-            // lbEmployees
+            // dgvEmployees
             // 
-            lbEmployees.BackColor = Color.FromArgb(156, 84, 213);
-            lbEmployees.BorderStyle = BorderStyle.None;
-            lbEmployees.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbEmployees.ForeColor = Color.FromArgb(229, 229, 229);
-            lbEmployees.FormattingEnabled = true;
-            lbEmployees.ItemHeight = 17;
-            lbEmployees.Location = new Point(6, 7);
-            lbEmployees.Margin = new Padding(4, 3, 4, 3);
-            lbEmployees.Name = "lbEmployees";
-            lbEmployees.Size = new Size(941, 323);
-            lbEmployees.TabIndex = 0;
+            dgvEmployees.AllowUserToAddRows = false;
+            dgvEmployees.AllowUserToDeleteRows = false;
+            dgvEmployees.AllowUserToResizeColumns = false;
+            dgvEmployees.AllowUserToResizeRows = false;
+            dgvEmployees.BackgroundColor = Color.FromArgb(156, 84, 213);
+            dgvEmployees.BorderStyle = BorderStyle.None;
+            dgvEmployees.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvEmployees.GridColor = Color.FromArgb(11, 7, 17);
+            dgvEmployees.Location = new Point(0, 0);
+            dgvEmployees.Name = "dgvEmployees";
+            dgvEmployees.ReadOnly = true;
+            dgvEmployees.RowHeadersWidth = 62;
+            dgvEmployees.RowTemplate.Height = 28;
+            dgvEmployees.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvEmployees.Size = new Size(947, 359);
+            dgvEmployees.TabIndex = 2;
             // 
             // EmployeesForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1041, 542);
+            ClientSize = new Size(1041, 578);
             Controls.Add(roundPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
@@ -224,6 +230,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             roundPanelListBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvEmployees).EndInit();
             ResumeLayout(false);
         }
 
@@ -232,7 +239,7 @@
         private CustomElements.RoundPanel roundPanel1;
         private Panel panel1;
         private CustomElements.RoundPanelListBox roundPanelListBox1;
-        private ListBox lbEmployees;
+        private DataGridView dgvEmployees;
         private CustomElements.Controls.CustomLabelV2 customLabelV21;
         private housing.CustomElements.RoundTextBox tbxName;
         private Panel panel2;

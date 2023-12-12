@@ -110,6 +110,51 @@ namespace DataAccessLayer.DAL
             }
         }
 
+        public Employee GetByUsername(string username)
+        {
+            try
+            {
+                Employee employee = null;
+                DALDepartmentController _departmentController = new DALDepartmentController();
+
+                using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                {
+                    string sql = "SELECT * FROM Employee WHERE Username = @username";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@username", username);
+
+                        conn.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            Department department = _departmentController.Get(Convert.ToInt32(dr["DepartmentId"]));
+                            employee = new Employee(Convert.ToInt32(dr["Id"]),
+                                dr["Username"].ToString(),
+                                dr["Password"].ToString(),
+                                department,
+                                dr["Name"].ToString(),
+                                dr["Email"].ToString(),
+                                dr["Phone"].ToString(),
+                                Convert.ToDecimal(dr["Salary"]),
+                                Convert.ToDateTime(dr["HireDate"]),
+                                dr["ProfilePicture"].ToString(),
+                                Convert.ToInt32(dr["Shifts"]));
+                        }
+                    }
+                }
+                return employee;
+            }
+            catch (Exception ex)
+            {
+                // Optionally log the exception or handle it as necessary
+                return null;
+            }
+        }
+
+
         public Employee GetById(int id)
         {
             try
@@ -142,6 +187,31 @@ namespace DataAccessLayer.DAL
             {
                 return null;
             }
+        }
+
+        public DateTime? GetClosestShiftDate(int employeeId)
+        {
+            try
+            {
+                using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                conn.Open();
+                string sql = "SELECT TOP 1 Date FROM Shift WHERE EmployeeId = @employeeId AND Date >= GETDATE() AND IsCancelled = 0 ORDER BY Date ASC";
+
+                using SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@employeeId", employeeId);
+
+                var result = cmd.ExecuteScalar();
+                if (result != null && DateTime.TryParse(result.ToString(), out DateTime shiftDate))
+                {
+                    return shiftDate;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle or log the exception as necessary
+            }
+
+            return null; // Return null if no shifts found or an exception occurs
         }
 
         public bool Update(Employee employee)

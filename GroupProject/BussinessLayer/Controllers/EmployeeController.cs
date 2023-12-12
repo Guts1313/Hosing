@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccessLayer.DAL;
 using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
 
@@ -27,6 +28,16 @@ namespace BussinessLayer.Controllers
         public bool RemoveEmployee(Employee employee)
         {
             return _employeeDal.Delete(employee);
+        }
+
+        public DateTime? GetClosestShiftDate(int employeeId)
+        {
+            return _employeeDal.GetClosestShiftDate(employeeId);
+        }
+
+        public Employee GetEmployeeByUsername(string username)
+        {
+            return _employeeDal.GetByUsername(username);
         }
 
         public bool UpdateEmployee(Employee employee)

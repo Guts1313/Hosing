@@ -27,9 +27,26 @@ namespace DesktopAppMediaBazaar.Forms
             InitializeComponent();
             _loggedInEmployee = loggedInEmployee;
 
-            var vacations = vacationController.ReadAll();
-            lbVacation.DataSource = vacations;
-            lbVacation.DisplayMember = "DisplayInfo";
+            InitializeDataGridView(); // Call this method to set up the DataGridView
+        }
+
+        private void InitializeDataGridView()
+        {
+            dgvVacations.AutoGenerateColumns = false;
+            dgvVacations.DataSource = vacationController.ReadAll();
+
+            // Define columns for DataGridView
+            dgvVacations.Columns.Add("EmployeeName", "Employee");
+            dgvVacations.Columns["EmployeeName"].DataPropertyName = "Employee.Name";
+
+            // Add Status column
+            dgvVacations.Columns.Add("Status", "Status");
+            dgvVacations.Columns["Status"].DataPropertyName = "Approved";
+
+            // Cell formatting for color coding
+            dgvVacations.CellFormatting += new DataGridViewCellFormattingEventHandler(dgvVacations_CellFormatting);
+
+            InitializeDataGridViewStyles();
         }
 
         private void btnViewDetails_Click(object sender, EventArgs e)
@@ -37,15 +54,13 @@ namespace DesktopAppMediaBazaar.Forms
             ShowVacationDetails();
         }
 
-        private void lbVacation_DoubleClick(object sender, EventArgs e)
-        {
-            ShowVacationDetails();
-        }
 
         private void btnApprove_Click(object sender, EventArgs e)
         {
-            if (vacation != null)
+            if (dgvVacations.SelectedRows.Count > 0)
             {
+                vacation = dgvVacations.SelectedRows[0].DataBoundItem as Vacation;
+
                 if (!vacation.Approved || vacation.Pending)
                 {
                     vacation.Pending = false;
@@ -53,16 +68,6 @@ namespace DesktopAppMediaBazaar.Forms
                     vacationController.Update(vacation);
 
                     Shift[] shifts = shiftController.GetShiftsFromVacation(vacation);
-                    /* foreach (Shift shift in shifts)
-                    {
-                        // CancelledShift cancelledShift = new CancelledShift();
-                        // cancelledShift.AssignedEmployee = shift.Employee;
-                        // cancelledShift.Shift = shift;
-                        // cancelledShift.Reason = $"Vacation from {vacation.StartDate} until {vacation.EndDate}";
-                        // cancelledShift.IsViewed = true;
-                        // cancelledShiftController.Add(cancelledShift, new DALShiftController());
-                    } */
-
                     CreateAnnouncement(vacation);
                     RJMessageBox.Show("Vacation has been approved.");
                 }
@@ -72,6 +77,7 @@ namespace DesktopAppMediaBazaar.Forms
                 }
 
                 RefreshVacationList();
+                dgvVacations.Refresh();
             }
             else
             {
@@ -80,10 +86,13 @@ namespace DesktopAppMediaBazaar.Forms
         }
 
 
+
         private void btnReject_Click(object sender, EventArgs e)
         {
-            if (vacation != null)
+            if (dgvVacations.SelectedRows.Count > 0)
             {
+                vacation = dgvVacations.SelectedRows[0].DataBoundItem as Vacation;
+
                 if (vacation.Approved || vacation.Pending)
                 {
                     vacation.Pending = false;
@@ -98,6 +107,7 @@ namespace DesktopAppMediaBazaar.Forms
                 }
 
                 RefreshVacationList();
+                dgvVacations.Refresh();
             }
             else
             {
@@ -108,8 +118,9 @@ namespace DesktopAppMediaBazaar.Forms
 
         private void ShowVacationDetails()
         {
-            if (vacation != null)
+            if (dgvVacations.SelectedRows.Count > 0)
             {
+                vacation = dgvVacations.SelectedRows[0].DataBoundItem as Vacation;
                 string details = $"Employee: {vacation.Employee.Name}\n" +
                                  $"Start Date: {vacation.StartDate}\n" +
                                  $"End Date: {vacation.EndDate}\n" +
@@ -143,42 +154,91 @@ namespace DesktopAppMediaBazaar.Forms
             announcementsController.CreateAnnouncement(announcement);
         }
 
-        private void lbVacation_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            vacation = lbVacation.SelectedItem as Vacation;
-
-            if (vacation != null)
-            {
-                btnApprove.Visible = !vacation.Approved || vacation.Pending;
-                btnReject.Visible = vacation.Approved || vacation.Pending;
-            }
-            else
-            {
-                btnApprove.Visible = false;
-                btnReject.Visible = false;
-            }
-        }
-
         private void RefreshVacationList()
         {
             int? selectedVacationId = vacation?.Id;
 
             var vacations = vacationController.ReadAll();
-            lbVacation.DataSource = null;
-            lbVacation.DataSource = vacations;
-            lbVacation.DisplayMember = "DisplayInfo";
+            dgvVacations.DataSource = null;
+            dgvVacations.DataSource = vacations;
 
             if (selectedVacationId.HasValue)
             {
-                foreach (var v in vacations)
+                foreach (DataGridViewRow row in dgvVacations.Rows)
                 {
+                    Vacation v = row.DataBoundItem as Vacation;
                     if (v.Id == selectedVacationId.Value)
                     {
-                        lbVacation.SelectedItem = v;
+                        dgvVacations.CurrentCell = row.Cells[0];
                         break;
                     }
                 }
             }
+        }
+
+        private void InitializeDataGridViewStyles()
+        {
+            #region COLORS DATAGRID
+            dgvVacations.DefaultCellStyle.SelectionBackColor = Color.FromArgb(215, 215, 215);
+            dgvVacations.DefaultCellStyle.SelectionForeColor = dgvVacations.DefaultCellStyle.ForeColor;
+            dgvVacations.RowHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(215, 215, 215);
+            dgvVacations.RowHeadersDefaultCellStyle.SelectionForeColor = dgvVacations.RowHeadersDefaultCellStyle.ForeColor;
+            dgvVacations.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dgvVacations.AdvancedRowHeadersBorderStyle.Top = DataGridViewAdvancedCellBorderStyle.Single;
+            dgvVacations.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dgvVacations.AdvancedColumnHeadersBorderStyle.Left = DataGridViewAdvancedCellBorderStyle.Single;
+            dgvVacations.BackgroundColor = Color.FromArgb(156, 84, 213);
+            dgvVacations.GridColor = Color.FromArgb(156, 84, 213);
+            dgvVacations.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(156, 84, 213);
+            dgvVacations.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(156, 84, 213);
+            dgvVacations.DefaultCellStyle.ForeColor = Color.FromArgb(215, 215, 215);
+            dgvVacations.DefaultCellStyle.BackColor = Color.FromArgb(156, 84, 213);
+            dgvVacations.DefaultCellStyle.SelectionForeColor = Color.FromArgb(127, 131, 140);
+            dgvVacations.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(215, 215, 215);
+            dgvVacations.EnableHeadersVisualStyles = false;
+            dgvVacations.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvVacations.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            dgvVacations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgvVacations.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dgvVacations.AllowUserToResizeRows = false;
+
+            foreach (DataGridViewColumn column in dgvVacations.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+
+            foreach (DataGridViewColumn column in dgvVacations.Columns)
+            {
+                column.Resizable = DataGridViewTriState.False;
+            }
+
+            foreach (DataGridViewRow row in dgvVacations.Rows)
+            {
+                row.Resizable = DataGridViewTriState.False;
+            }
+
+            #endregion
+
+        }
+
+        private void dgvVacations_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvVacations.Columns[e.ColumnIndex].Name == "Status" && e.RowIndex >= 0)
+            {
+                Vacation vacation = dgvVacations.Rows[e.RowIndex].DataBoundItem as Vacation;
+                if (vacation != null)
+                {
+                    Color backColor = vacation.Approved ? Color.Green : Color.Red;
+                    Color foreColor = Color.White; // For better visibility
+
+                    dgvVacations.Rows[e.RowIndex].Cells["Status"].Style.BackColor = backColor;
+                    dgvVacations.Rows[e.RowIndex].Cells["Status"].Style.ForeColor = foreColor;
+                }
+            }
+        }
+        private void roundPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

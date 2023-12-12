@@ -22,6 +22,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private DepartmentController departmentController;
         private EmployeeController employeeController;
         private ListBox lbEmployees;
+        private Action refreshEmployeesGrid; // Delegate to refresh DataGridView
+
 
         #region FORM CUSTOM STYLE
         //FORM DRAG NO BORDER
@@ -44,13 +46,13 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnClose.ForeColor = Color.FromArgb(229, 229, 229);
         }
         #endregion
-        public EmployeesAdd(ListBox lbEmployees)
+        public EmployeesAdd(Action refreshEmployeesGrid)
         {
             InitializeComponent();
             this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
             this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             this.FormBorderStyle = FormBorderStyle.None;
-            this.lbEmployees = lbEmployees;
+            this.refreshEmployeesGrid = refreshEmployeesGrid;
             employeeController = new(new DALEmployeeController());
             departmentController = new(new DALDepartmentController());
             showDepartments();
@@ -108,8 +110,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
             Employee employee = new Employee(_username, _password, department, _name, _email, _phone, salary, shifts);
             employeeController.AddEmployee(employee);
 
-            showEmployees();
-            this.Close();
+            refreshEmployeesGrid();
+            this.Close();   
         }
 
         private void btnClose_Click(object sender, EventArgs e)

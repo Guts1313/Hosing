@@ -24,6 +24,9 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private EmployeeController employeeController;
         private Employee _employee;
         private ListBox lbEmployees;
+        private DataGridView dgvEmployees; // Reference to DataGridView
+        private Action refreshEmployeesGrid; // Delegate to refresh DataGridView
+
 
         #region FORM CUSTOM STYLE
         //FORM DRAG NO BORDER
@@ -46,13 +49,14 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnClose.ForeColor = Color.FromArgb(229, 229, 229);
         }
         #endregion
-        public EmployeeDetails(ListBox lbEmployees, Employee employee)
+        public EmployeeDetails(DataGridView dgvEmployees, Employee employee, Action refreshEmployeesGrid)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
             this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
-            this.lbEmployees = lbEmployees;
+            this.dgvEmployees = dgvEmployees;
+            this.refreshEmployeesGrid = refreshEmployeesGrid;   
             _employee = employee;
             shiftController = new(new DALShiftController());
             departmentController = new(new DALDepartmentController());
@@ -183,7 +187,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             Employee employee = new Employee(_employee.Id, username, _employee.Password, department, name, _employee.Email, phone, salary, _employee.HireDate, _employee.ProfilePicture, shifts);
             employeeController.UpdateEmployee(employee);
 
-            showEmployees();
+            refreshEmployeesGrid();
             this.Close();
         }
     }

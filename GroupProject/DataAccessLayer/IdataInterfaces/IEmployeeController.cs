@@ -15,7 +15,11 @@ namespace DataAccessLayer.Interfaces
 
 		public bool Delete(Employee employee);
 
-		public bool ChangePassword(string email, string newPassword);
+        public Employee GetByUsername(string username);
+
+        public DateTime? GetClosestShiftDate(int employeeId);
+
+        public bool ChangePassword(string email, string newPassword);
 
 		public bool FindEmail(string emailToSearch);
 

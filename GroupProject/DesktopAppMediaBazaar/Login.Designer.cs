@@ -53,6 +53,7 @@
             // 
             // LogInContainer
             // 
+            LogInContainer.BackColor = SystemColors.ControlDarkDark;
             LogInContainer.Controls.Add(rightPanel);
             LogInContainer.Controls.Add(leftPanel);
             LogInContainer.Controls.Add(customControlBox1);
@@ -60,10 +61,10 @@
             LogInContainer.DrawIcon = false;
             LogInContainer.Font = new Font("Cascadia Code", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             LogInContainer.Location = new Point(0, 0);
-            LogInContainer.MinimumSize = new Size(100, 42);
+            LogInContainer.MinimumSize = new Size(100, 45);
             LogInContainer.Name = "LogInContainer";
-            LogInContainer.Padding = new Padding(0, 31, 0, 0);
-            LogInContainer.Size = new Size(700, 515);
+            LogInContainer.Padding = new Padding(0, 33, 0, 0);
+            LogInContainer.Size = new Size(700, 549);
             LogInContainer.TabIndex = 0;
             LogInContainer.TextAlignment = CustomElements.Controls.CustomContainer.Alignment.Left;
             LogInContainer.TitleBarTextColor = Color.Gainsboro;
@@ -79,12 +80,11 @@
             rightPanel.Controls.Add(tbxPassword);
             rightPanel.Controls.Add(tbxUsername);
             rightPanel.Controls.Add(customTitleLabel4);
-            rightPanel.Dock = DockStyle.Left;
             rightPanel.ForeColor = Color.FromArgb(250, 250, 250);
             rightPanel.Location = new Point(350, 31);
             rightPanel.Name = "rightPanel";
             rightPanel.Side = CustomElements.Controls.CustomPanelV2.PanelSide.Right;
-            rightPanel.Size = new Size(350, 484);
+            rightPanel.Size = new Size(350, 518);
             rightPanel.TabIndex = 2;
             // 
             // btnEmail
@@ -95,9 +95,9 @@
             btnEmail.Font = new Font("Segoe UI", 8.3F, FontStyle.Regular, GraphicsUnit.Point);
             btnEmail.LinkBehavior = LinkBehavior.NeverUnderline;
             btnEmail.LinkColor = Color.FromArgb(156, 84, 213);
-            btnEmail.Location = new Point(51, 444);
+            btnEmail.Location = new Point(51, 474);
             btnEmail.Name = "btnEmail";
-            btnEmail.Size = new Size(160, 15);
+            btnEmail.Size = new Size(175, 16);
             btnEmail.TabIndex = 8;
             btnEmail.TabStop = true;
             btnEmail.Text = "mediabazaar464@gmail.com";
@@ -108,9 +108,9 @@
             customLabelV22.BackColor = Color.Transparent;
             customLabelV22.Font = new Font("Cascadia Code SemiLight", 8.3F, FontStyle.Regular, GraphicsUnit.Point);
             customLabelV22.ForeColor = Color.FromArgb(114, 118, 127);
-            customLabelV22.Location = new Point(32, 411);
+            customLabelV22.Location = new Point(32, 438);
             customLabelV22.Name = "customLabelV22";
-            customLabelV22.Size = new Size(290, 55);
+            customLabelV22.Size = new Size(290, 59);
             customLabelV22.TabIndex = 7;
             customLabelV22.Text = "To obtain access to this app or for any questions about its use, submit an email to";
             // 
@@ -120,7 +120,7 @@
             customLabelV21.BackColor = Color.Transparent;
             customLabelV21.Font = new Font("Cascadia Code SemiBold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             customLabelV21.ForeColor = Color.FromArgb(114, 118, 127);
-            customLabelV21.Location = new Point(32, 391);
+            customLabelV21.Location = new Point(32, 417);
             customLabelV21.Name = "customLabelV21";
             customLabelV21.Size = new Size(56, 16);
             customLabelV21.TabIndex = 6;
@@ -134,7 +134,7 @@
             btnForgot.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnForgot.LinkBehavior = LinkBehavior.NeverUnderline;
             btnForgot.LinkColor = Color.FromArgb(156, 84, 213);
-            btnForgot.Location = new Point(155, 329);
+            btnForgot.Location = new Point(155, 351);
             btnForgot.Name = "btnForgot";
             btnForgot.Size = new Size(112, 16);
             btnForgot.TabIndex = 5;
@@ -148,11 +148,11 @@
             btnLogin.BackColor = Color.Transparent;
             btnLogin.DialogResult = DialogResult.None;
             btnLogin.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogin.Location = new Point(-7, 314);
-            btnLogin.MinimumSize = new Size(144, 47);
+            btnLogin.Location = new Point(-7, 335);
+            btnLogin.MinimumSize = new Size(144, 50);
             btnLogin.Name = "btnLogin";
             btnLogin.Radius = 20;
-            btnLogin.Size = new Size(151, 47);
+            btnLogin.Size = new Size(151, 50);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "LOGIN";
             btnLogin.Click += btnLogin_Click;
@@ -164,9 +164,9 @@
             lbLoggingIn.ForeColor = Color.FromArgb(114, 118, 127);
             lbLoggingIn.Image = (Image)resources.GetObject("lbLoggingIn.Image");
             lbLoggingIn.ImageAlign = ContentAlignment.MiddleLeft;
-            lbLoggingIn.Location = new Point(17, 325);
+            lbLoggingIn.Location = new Point(17, 347);
             lbLoggingIn.Name = "lbLoggingIn";
-            lbLoggingIn.Size = new Size(127, 22);
+            lbLoggingIn.Size = new Size(127, 23);
             lbLoggingIn.TabIndex = 3;
             lbLoggingIn.Text = "Logging in...";
             lbLoggingIn.TextAlign = ContentAlignment.MiddleRight;
@@ -178,7 +178,7 @@
             tbxPassword.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tbxPassword.ForeColor = Color.FromArgb(127, 131, 140);
             tbxPassword.Image = null;
-            tbxPassword.Location = new Point(0, 243);
+            tbxPassword.Location = new Point(0, 259);
             tbxPassword.MaxLength = 30;
             tbxPassword.Multiline = false;
             tbxPassword.Name = "tbxPassword";
@@ -200,7 +200,7 @@
             tbxUsername.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tbxUsername.ForeColor = Color.FromArgb(127, 131, 140);
             tbxUsername.Image = null;
-            tbxUsername.Location = new Point(0, 193);
+            tbxUsername.Location = new Point(0, 206);
             tbxUsername.MaxLength = 64;
             tbxUsername.Multiline = false;
             tbxUsername.Name = "tbxUsername";
@@ -220,10 +220,10 @@
             customTitleLabel4.BackColor = Color.Transparent;
             customTitleLabel4.Font = new Font("Cascadia Code SemiLight", 18F, FontStyle.Regular, GraphicsUnit.Point);
             customTitleLabel4.ForeColor = Color.FromArgb(110, 110, 110);
-            customTitleLabel4.Location = new Point(12, 148);
+            customTitleLabel4.Location = new Point(12, 158);
             customTitleLabel4.Name = "customTitleLabel4";
             customTitleLabel4.Side = CustomElements.Controls.CustomTitleLabel.PanelSide.RightPanel;
-            customTitleLabel4.Size = new Size(241, 34);
+            customTitleLabel4.Size = new Size(241, 36);
             customTitleLabel4.TabIndex = 0;
             customTitleLabel4.Text = "ACCOUNT DETAILS";
             customTitleLabel4.TextAlign = ContentAlignment.MiddleCenter;
@@ -235,21 +235,20 @@
             leftPanel.Controls.Add(pictureBox1);
             leftPanel.Controls.Add(customTitleLabel3);
             leftPanel.Controls.Add(customTitleLabel1);
-            leftPanel.Dock = DockStyle.Left;
             leftPanel.ForeColor = Color.FromArgb(250, 250, 250);
             leftPanel.Location = new Point(0, 31);
             leftPanel.Name = "leftPanel";
             leftPanel.Side = CustomElements.Controls.CustomPanelV2.PanelSide.Left;
-            leftPanel.Size = new Size(350, 484);
+            leftPanel.Size = new Size(350, 518);
             leftPanel.TabIndex = 1;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(156, 84, 213);
             pictureBox1.Image = Properties.Resources.LOGO;
-            pictureBox1.Location = new Point(144, 49);
+            pictureBox1.Location = new Point(144, 52);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(64, 64);
+            pictureBox1.Size = new Size(64, 68);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -259,10 +258,10 @@
             customTitleLabel3.BackColor = Color.Transparent;
             customTitleLabel3.Font = new Font("Cascadia Code", 13.25F, FontStyle.Italic, GraphicsUnit.Point);
             customTitleLabel3.ForeColor = Color.FromArgb(250, 250, 250);
-            customTitleLabel3.Location = new Point(0, 245);
+            customTitleLabel3.Location = new Point(0, 261);
             customTitleLabel3.Name = "customTitleLabel3";
             customTitleLabel3.Side = CustomElements.Controls.CustomTitleLabel.PanelSide.LeftPanel;
-            customTitleLabel3.Size = new Size(350, 32);
+            customTitleLabel3.Size = new Size(350, 34);
             customTitleLabel3.TabIndex = 5;
             customTitleLabel3.Text = "ACCESS PORTAL";
             customTitleLabel3.TextAlign = ContentAlignment.MiddleCenter;
@@ -274,10 +273,10 @@
             customTitleLabel1.BackColor = Color.Transparent;
             customTitleLabel1.Font = new Font("Cascadia Code", 20.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             customTitleLabel1.ForeColor = Color.FromArgb(250, 250, 250);
-            customTitleLabel1.Location = new Point(0, 209);
+            customTitleLabel1.Location = new Point(0, 223);
             customTitleLabel1.Name = "customTitleLabel1";
             customTitleLabel1.Side = CustomElements.Controls.CustomTitleLabel.PanelSide.LeftPanel;
-            customTitleLabel1.Size = new Size(350, 48);
+            customTitleLabel1.Size = new Size(350, 51);
             customTitleLabel1.TabIndex = 0;
             customTitleLabel1.Text = "MEDIA BAZAAR";
             customTitleLabel1.TextAlign = ContentAlignment.MiddleCenter;
@@ -297,14 +296,14 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 515);
+            ClientSize = new Size(700, 549);
             Controls.Add(LogInContainer);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
-            MaximumSize = new Size(2560, 1440);
-            MinimumSize = new Size(100, 42);
+            MaximumSize = new Size(2560, 1536);
+            MinimumSize = new Size(100, 45);
             Name = "Login";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
