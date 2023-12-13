@@ -46,8 +46,9 @@ namespace DesktopAppMediaBazaar
                 int _index = Convert.ToInt32(split[0]);
 
                 Employee _employee = EmployeeController.GetById(_index);
-
-                AdminEmployeeDetails form = new AdminEmployeeDetails(_loggedInEmployee, _employee);
+                byte[] key = EmployeeController.GetKey(_index);
+                byte[] iv = EmployeeController.GetIv(_index);
+                AdminEmployeeDetails form = new AdminEmployeeDetails(_loggedInEmployee, _employee, key, iv);
                 this.Hide();
                 form.ShowDialog();
             }

@@ -14,6 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DesktopAppMediaBazaar
-build_property.ProjectDir = C:\Users\Administrator\source\repos\cb02-group5\GroupProject\DesktopAppMediaBazaar\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\S2-Group-Project\cb02-group5\GroupProject\DesktopAppMediaBazaar\

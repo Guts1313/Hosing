@@ -9,9 +9,9 @@ namespace DataAccessLayer.Interfaces
 {
 	public interface IEmployeeController
 	{
-		public bool Create(Employee employee);
+		public bool Create(Employee employee, byte[] key, byte[] iv);
 
-		public bool Update(Employee employee);
+		public bool Update(Employee employee, byte[] key, byte[] iv);
 
 		public bool Delete(Employee employee);
 
@@ -28,5 +28,9 @@ namespace DataAccessLayer.Interfaces
 		public Employee GetById(int id);
 
 		public Employee[] GetAvailableEmployees(DateTime date, int shiftType);
-	}
+        public byte[] GetKeyByIndex(int index);
+        public byte[] GetIvByIndex(int index);
+		public byte[] GetKeyByName(string name);
+        public byte[] GetIvByName(string name);
+    }
 }

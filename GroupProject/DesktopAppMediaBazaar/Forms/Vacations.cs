@@ -1,13 +1,4 @@
 ﻿using DataItems.LogicItems;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using DesktopAppMediaBazaar.CustomElements;
 using BussinessLayer.Controllers;
 using DataAccessLayer.DAL;
@@ -37,7 +28,7 @@ namespace DesktopAppMediaBazaar.Forms
 
             // Define columns for DataGridView
             dgvVacations.Columns.Add("EmployeeName", "Employee");
-            dgvVacations.Columns["EmployeeName"].DataPropertyName = "Employee.Name";
+            dgvVacations.Columns["EmployeeName"].DataPropertyName = "Employee";
 
             // Add Status column
             dgvVacations.Columns.Add("Status", "Status");
@@ -53,7 +44,6 @@ namespace DesktopAppMediaBazaar.Forms
         {
             ShowVacationDetails();
         }
-
 
         private void btnApprove_Click(object sender, EventArgs e)
         {
@@ -84,8 +74,6 @@ namespace DesktopAppMediaBazaar.Forms
                 RJMessageBox.Show("No vacation selected.");
             }
         }
-
-
 
         private void btnReject_Click(object sender, EventArgs e)
         {
@@ -237,6 +225,11 @@ namespace DesktopAppMediaBazaar.Forms
             }
         }
         private void roundPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvVacations_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

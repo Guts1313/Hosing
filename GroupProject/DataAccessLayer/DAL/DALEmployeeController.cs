@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,13 +14,13 @@ namespace DataAccessLayer.DAL
 {
     public class DALEmployeeController : SQLConnectParent, IEmployeeController
     {
-        public bool Create(Employee employee)
+        public bool Create(Employee employee, byte[] key, byte[] iv)
         {
             try
             {
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
-                    string sql = "INSERT INTO Employee (Username, Password, DepartmentID, Name, Email, Phone, Shifts, ProfilePicture, Salary, HireDate) VALUES (@username, @password, @departmentID, @name, @email, @phone, @shifts, @profilepicture, @salary, @hiredate)";
+                    string sql = "INSERT INTO Employee (Username, Password, DepartmentID, Name, Email, Phone, Shifts, ProfilePicture, Salary, HireDate, SalaryKey, SalaryIv) VALUES (@username, @password, @departmentID, @name, @email, @phone, @shifts, @profilepicture, @salary, @hiredate, @salaryKey, @salaryIv)";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
@@ -33,6 +34,8 @@ namespace DataAccessLayer.DAL
                         cmd.Parameters.AddWithValue("@profilepicture", "https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg");
                         cmd.Parameters.AddWithValue("@salary", employee.Salary);
                         cmd.Parameters.AddWithValue("@hiredate", employee.HireDate);
+                        cmd.Parameters.AddWithValue("@salaryKey", key);
+                        cmd.Parameters.AddWithValue("@salaryIv", iv);
 
                         conn.Open();
                         int result = cmd.ExecuteNonQuery();
@@ -95,7 +98,7 @@ namespace DataAccessLayer.DAL
                         {
                             Department department = _departmentController.Get(Convert.ToInt32(dr[3]));
                             if (department.Id > 2)
-                                employees.Add(new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department, dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), Convert.ToDecimal(dr[7]), Convert.ToDateTime(dr[8]), dr[9].ToString(), Convert.ToInt32(dr[10])));
+                                employees.Add(new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department, dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), (byte[])dr[7], Convert.ToDateTime(dr[8]), dr[9].ToString(), Convert.ToInt32(dr[10])));
                             else
                                 employees.Add(new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department));
                         }
@@ -138,7 +141,7 @@ namespace DataAccessLayer.DAL
                                 dr["Name"].ToString(),
                                 dr["Email"].ToString(),
                                 dr["Phone"].ToString(),
-                                Convert.ToDecimal(dr["Salary"]),
+                                (byte[])(dr["Salary"]),
                                 Convert.ToDateTime(dr["HireDate"]),
                                 dr["ProfilePicture"].ToString(),
                                 Convert.ToInt32(dr["Shifts"]));
@@ -176,7 +179,7 @@ namespace DataAccessLayer.DAL
                         if (dr.Read())
                         {
                             Department department = _departmentController.Get(Convert.ToInt32(dr[3]));
-                            employee = new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department, dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), Convert.ToDecimal(dr[7]), Convert.ToDateTime(dr[8]), dr[9].ToString(), Convert.ToInt32(dr[10]));
+                            employee = new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department, dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), (byte[])(dr[7]), Convert.ToDateTime(dr[8]), dr[9].ToString(), Convert.ToInt32(dr[10]));
                         }
                     }
 
@@ -214,13 +217,13 @@ namespace DataAccessLayer.DAL
             return null; // Return null if no shifts found or an exception occurs
         }
 
-        public bool Update(Employee employee)
+        public bool Update(Employee employee, byte[] key, byte[] iv)
         {
             try
             {
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
-                    string sql = "UPDATE Employee SET Username = @username, Password = @password, DepartmentID = @departmentID, Name = @name, Email = @email, Phone = @phone, Shifts = @shifts, ProfilePicture = @profilepicture, Salary = @salary, HireDate = @hiredate WHERE Id = @id";
+                    string sql = "UPDATE Employee SET Username = @username, Password = @password, DepartmentID = @departmentID, Name = @name, Email = @email, Phone = @phone, Shifts = @shifts, ProfilePicture = @profilepicture, Salary = @salary, HireDate = @hiredate, SalaryKey = @salaryKey, SalaryIv = @salaryIv WHERE Id = @id";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
@@ -235,6 +238,8 @@ namespace DataAccessLayer.DAL
                         cmd.Parameters.AddWithValue("@profilepicture", employee.ProfilePicture);
                         cmd.Parameters.AddWithValue("@salary", employee.Salary);
                         cmd.Parameters.AddWithValue("@hiredate", employee.HireDate);
+                        cmd.Parameters.AddWithValue("@salaryKey", key);
+                        cmd.Parameters.AddWithValue("@salaryIv", iv);
 
                         conn.Open();
                         int result = cmd.ExecuteNonQuery();
@@ -274,7 +279,7 @@ namespace DataAccessLayer.DAL
                         {
                             Department department = _departmentController.Get(Convert.ToInt32(dr[3]));
                             if (department.Id > 2)
-                                employees.Add(new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department, dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), Convert.ToDecimal(dr[7]), Convert.ToDateTime(dr[8]), dr[9].ToString(), Convert.ToInt32(dr[10])));
+                                employees.Add(new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department, dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), (byte[])(dr[7]), Convert.ToDateTime(dr[8]), dr[9].ToString(), Convert.ToInt32(dr[10])));
                             else
                                 employees.Add(new Employee(Convert.ToInt32(dr[0]), dr[1].ToString(), dr[2].ToString(), department));
                         }
@@ -383,6 +388,134 @@ namespace DataAccessLayer.DAL
             catch (Exception ex)
             {
                 throw new Exception(ex.ToString());
+            }
+        }
+
+        public byte[] GetKeyByIndex(int index)
+        {
+            byte[] key;
+            try
+            {
+                key = default;
+                using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                {
+                    string sql = "SELECT * FROM Employee WHERE Id = @id";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@id", index);
+
+                        conn.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            key = (byte[])dr[11];
+                        }
+                    }
+
+                }
+                return key;
+            }
+            catch (Exception ex)
+            {
+                return default;
+            }
+        }
+
+        public byte[] GetIvByIndex(int index)
+        {
+            byte[] iv;
+            try
+            {
+                iv = default;
+                using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                {
+                    string sql = "SELECT * FROM Employee WHERE Id = @id";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@id", index);
+
+                        conn.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            iv = (byte[])dr[12];
+                        }
+                    }
+
+                }
+                return iv;
+            }
+            catch (Exception ex)
+            {
+                return default;
+            }
+        }
+
+        public byte[] GetKeyByName(string name)
+        {
+            byte[] key;
+            try
+            {
+                key = default;
+                using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                {
+                    string sql = "SELECT * FROM Employee WHERE Username = @name";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@name", name);
+
+                        conn.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            key = (byte[])dr[11];
+                        }
+                    }
+
+                }
+                return key;
+            }
+            catch (Exception ex)
+            {
+                return default;
+            }
+        }
+
+        public byte[] GetIvByName(string name)
+        {
+            byte[] iv;
+            try
+            {
+                iv = default;
+                using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                {
+                    string sql = "SELECT * FROM Employee WHERE Username = @name";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@name", name);
+
+                        conn.Open();
+                        SqlDataReader dr = cmd.ExecuteReader();
+
+                        if (dr.Read())
+                        {
+                            iv = (byte[])dr[12];
+                        }
+                    }
+
+                }
+                return iv;
+            }
+            catch (Exception ex)
+            {
+                return default;
             }
         }
     }

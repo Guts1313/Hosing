@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using BussinessLayer.Controllers;
+﻿using BussinessLayer.Controllers;
 using BussinessLayer.Controllers.Shifts;
-using DataAccessLayer;
 using DataAccessLayer.DAL;
 using DataItems.LogicItems;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using Microsoft.Identity.Client;
 
 namespace DesktopAppMediaBazaar
 {
@@ -23,8 +13,9 @@ namespace DesktopAppMediaBazaar
         public ShiftController ShiftController { get; private set; } = new(new DALShiftController());
         Employee _employee;
 		Employee _loggedInEmployee;
+		private Encryptor encryptor = new Encryptor();
 
-		public AdminEmployeeDetails(Employee loggedInEmployee, Employee employee)
+		public AdminEmployeeDetails(Employee loggedInEmployee, Employee employee, byte[] key, byte[] iv)
 		{
 			InitializeComponent();
 			_loggedInEmployee = loggedInEmployee;
@@ -34,7 +25,7 @@ namespace DesktopAppMediaBazaar
 			tbxPhone.Text = _employee.Phone;
 			tbxUsername.Text = _employee.Username;
 			lblResistrationDate.Text = DateOnly.FromDateTime(_employee.HireDate).ToString();
-			numUpDownSalary.Value = _employee.Salary;
+			numUpDownSalary.Value = encryptor.Decrypt(_employee.Salary, key, iv);
 			
 			lbxShiftsWorked.Items.Clear();
 			lbxFutureShifts.Items.Clear();
@@ -72,7 +63,6 @@ namespace DesktopAppMediaBazaar
 			}
 
 		}
-
 		private void btnBack_Click(object sender, EventArgs e)
 		{
 			AdminEmployeesForm form = new AdminEmployeesForm(_loggedInEmployee);
@@ -131,11 +121,16 @@ namespace DesktopAppMediaBazaar
 				}
 			}
 
-			Employee employee = new Employee(_employee.Id, username, _employee.Password, department, name, _employee.Email, phone, salary, _employee.HireDate, _employee.ProfilePicture, shifts);
+            Encryptor encryptor = new Encryptor();
+            byte[] key = encryptor.GenerateKey();
+            byte[] iv = encryptor.GenerateIV();
+            byte[] encriptedSalary = encryptor.Encrypt(salary, key, iv);
+
+            Employee employee = new Employee(_employee.Id, username, _employee.Password, department, name, _employee.Email, phone, encriptedSalary, _employee.HireDate, _employee.ProfilePicture, shifts);
 
 			_employee = employee;
 
-			EmployeeController.UpdateEmployee(_employee);
+			EmployeeController.UpdateEmployee(_employee, key, iv);
 
 			AdminEmployeesForm form = new AdminEmployeesForm(_loggedInEmployee);
 			this.Hide();

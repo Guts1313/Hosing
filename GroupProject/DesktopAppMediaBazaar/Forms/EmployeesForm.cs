@@ -65,7 +65,11 @@ namespace DesktopAppMediaBazaar.Forms
                 Employee selectedEmployee = EmployeeController.GetEmployeeByUsername(displayInfo.Username);
                 if (selectedEmployee != null)
                 {
-                    EmployeeDetails form = new EmployeeDetails(dgvEmployees, selectedEmployee, showEmployees);
+
+                    byte[] key = EmployeeController.GetKeybyName(displayInfo.Username);
+                    byte[] iv = EmployeeController.GetIvByName(displayInfo.Username);
+
+                    EmployeeDetails form = new EmployeeDetails(dgvEmployees, selectedEmployee, showEmployees, key, iv);
                     form.ShowDialog();
                 }
             }

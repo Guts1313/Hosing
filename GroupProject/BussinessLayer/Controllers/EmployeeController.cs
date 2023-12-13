@@ -20,9 +20,9 @@ namespace BussinessLayer.Controllers
             _employeeDal = employeeController;
         }
 
-        public bool AddEmployee(Employee employee)
+        public bool AddEmployee(Employee employee, byte[] key, byte[] iv)
         {
-            return _employeeDal.Create(employee);
+            return _employeeDal.Create(employee, key, iv);
         }
 
         public bool RemoveEmployee(Employee employee)
@@ -40,9 +40,9 @@ namespace BussinessLayer.Controllers
             return _employeeDal.GetByUsername(username);
         }
 
-        public bool UpdateEmployee(Employee employee)
+        public bool UpdateEmployee(Employee employee, byte[] key, byte[] iv)
         {
-            return _employeeDal.Update(employee);
+            return _employeeDal.Update(employee, key, iv);
         }
 
         public bool ChangePassword(string email, string newPassword) 
@@ -122,5 +122,24 @@ namespace BussinessLayer.Controllers
             return _employeeDal.GetAvailableEmployees(date, shiftType);
         }
 
-	}
+        public byte[] GetKey(int index)
+        {
+            return _employeeDal.GetKeyByIndex(index);
+        }
+
+        public byte[] GetIv(int index)
+        {
+            return _employeeDal.GetIvByIndex(index);
+        }
+
+        public byte[] GetKeybyName(string username)
+        {
+            return _employeeDal.GetKeyByName(username);
+        }
+
+        public byte[] GetIvByName(string username)
+        {
+            return _employeeDal.GetIvByName(username);
+        }
+    }
 }

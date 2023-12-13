@@ -21,7 +21,7 @@ namespace DataItems.LogicItems
         public string Name { get; set; }
         public string? Email { get; private set; }
         public string? Phone { get; private set; }
-        public decimal Salary { get; private set; }
+        public byte[] Salary { get; private set; }
         public DateTime HireDate { get; private set; }
         public int Shifts { get; private set; }
         public string ProfilePicture { get; private set; }
@@ -37,7 +37,7 @@ namespace DataItems.LogicItems
             Department = department;
         }
 
-        public Employee(string username, string password, Department department, string name, string email, string phone, decimal salary, int shifts)
+        public Employee(string username, string password, Department department, string name, string email, string phone, byte[] salary, int shifts)
         {
             Username = username;
             Password = password;
@@ -51,7 +51,7 @@ namespace DataItems.LogicItems
             Shifts = shifts;
         }
 
-        public Employee(int id, string username, string password, Department department, string name, string email, string phone, decimal salary, DateTime hireDate, string profilePicture, int shifts)
+        public Employee(int id, string username, string password, Department department, string name, string email, string phone, byte[] salary, DateTime hireDate, string profilePicture, int shifts)
         {
             Id = id;
             Username = username;
@@ -66,7 +66,7 @@ namespace DataItems.LogicItems
             Shifts = shifts;
         }
 
-        public void ChangeDetails(string name, string username, string phone, decimal salary)
+        public void ChangeDetails(string name, string username, string phone, byte[] salary)
         {
             Name = name;
             Username = username;

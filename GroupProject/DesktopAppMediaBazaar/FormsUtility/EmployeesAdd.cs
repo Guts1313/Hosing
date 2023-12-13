@@ -107,8 +107,13 @@ namespace DesktopAppMediaBazaar.FormsUtility
             if (salary == 0)
             { RJMessageBox.Show("Salary cannot be 0!"); return; }
 
-            Employee employee = new Employee(_username, _password, department, _name, _email, _phone, salary, shifts);
-            employeeController.AddEmployee(employee);
+            Encryptor encryptor = new Encryptor();
+            byte[] key = encryptor.GenerateKey();
+            byte[] iv = encryptor.GenerateIV();
+            byte[] encriptedSalary = encryptor.Encrypt(salary, key, iv);
+
+            Employee employee = new Employee(_username, _password, department, _name, _email, _phone, encriptedSalary, shifts);
+            employeeController.AddEmployee(employee, key, iv);
 
             refreshEmployeesGrid();
             this.Close();   

@@ -2,6 +2,10 @@
 using BussinessLayer.Controllers.Shifts;
 using BussinessLayer.Utilities.Messages;
 using DataAccessLayer.DAL;
+using DataAccessLayer.Interfaces;
+using DataItems.LogicItems;
+using System.Numerics;
+using System.Xml.Linq;
 
 ShiftsAutomation shiftsAutomation = new ShiftsAutomation();
 

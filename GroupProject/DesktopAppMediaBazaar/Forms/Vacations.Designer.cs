@@ -30,16 +30,16 @@
         private void InitializeComponent()
         {
             roundPanel1 = new CustomElements.RoundPanel();
+            roundPanelListBox2 = new CustomElements.RoundPanelListBox();
+            dgvVacations = new DataGridView();
             panel2 = new Panel();
             btnViewDetails = new CustomElements.RoundButton();
             btnReject = new CustomElements.RoundButton();
             btnApprove = new CustomElements.RoundButton();
-            roundPanelListBox2 = new CustomElements.RoundPanelListBox();
-            dgvVacations = new DataGridView();
             roundPanel1.SuspendLayout();
-            panel2.SuspendLayout();
             roundPanelListBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvVacations).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // roundPanel1
@@ -54,12 +54,43 @@
             roundPanel1.IsBorder = false;
             roundPanel1.IsFill = true;
             roundPanel1.Location = new Point(0, 0);
-            roundPanel1.Margin = new Padding(4, 3, 4, 3);
+            roundPanel1.Margin = new Padding(5, 4, 5, 4);
             roundPanel1.Name = "roundPanel1";
             roundPanel1.Radius = 20;
-            roundPanel1.Size = new Size(1041, 578);
+            roundPanel1.Size = new Size(1190, 722);
             roundPanel1.TabIndex = 4;
             roundPanel1.Paint += roundPanel1_Paint;
+            // 
+            // roundPanelListBox2
+            // 
+            roundPanelListBox2.BackColor = Color.FromArgb(156, 84, 213);
+            roundPanelListBox2.Controls.Add(dgvVacations);
+            roundPanelListBox2.Location = new Point(59, 66);
+            roundPanelListBox2.Margin = new Padding(5, 4, 5, 4);
+            roundPanelListBox2.Name = "roundPanelListBox2";
+            roundPanelListBox2.Size = new Size(1082, 449);
+            roundPanelListBox2.TabIndex = 17;
+            // 
+            // dgvVacations
+            // 
+            dgvVacations.AllowUserToAddRows = false;
+            dgvVacations.AllowUserToDeleteRows = false;
+            dgvVacations.AllowUserToResizeColumns = false;
+            dgvVacations.AllowUserToResizeRows = false;
+            dgvVacations.BackgroundColor = Color.FromArgb(156, 84, 213);
+            dgvVacations.BorderStyle = BorderStyle.None;
+            dgvVacations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvVacations.GridColor = Color.FromArgb(11, 7, 17);
+            dgvVacations.Location = new Point(0, 0);
+            dgvVacations.Margin = new Padding(3, 4, 3, 4);
+            dgvVacations.Name = "dgvVacations";
+            dgvVacations.ReadOnly = true;
+            dgvVacations.RowHeadersWidth = 62;
+            dgvVacations.RowTemplate.Height = 28;
+            dgvVacations.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvVacations.Size = new Size(1082, 449);
+            dgvVacations.TabIndex = 2;
+            dgvVacations.CellContentClick += dgvVacations_CellContentClick;
             // 
             // panel2
             // 
@@ -67,9 +98,10 @@
             panel2.Controls.Add(btnViewDetails);
             panel2.Controls.Add(btnReject);
             panel2.Controls.Add(btnApprove);
-            panel2.Location = new Point(756, 436);
+            panel2.Location = new Point(864, 545);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(243, 103);
+            panel2.Size = new Size(278, 129);
             panel2.TabIndex = 16;
             // 
             // btnViewDetails
@@ -84,9 +116,10 @@
             btnViewDetails.FlatStyle = FlatStyle.Flat;
             btnViewDetails.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnViewDetails.ForeColor = Color.FromArgb(156, 84, 213);
-            btnViewDetails.Location = new Point(3, 52);
+            btnViewDetails.Location = new Point(3, 65);
+            btnViewDetails.Margin = new Padding(3, 4, 3, 4);
             btnViewDetails.Name = "btnViewDetails";
-            btnViewDetails.Size = new Size(240, 43);
+            btnViewDetails.Size = new Size(274, 54);
             btnViewDetails.TabIndex = 16;
             btnViewDetails.Text = "View Details";
             btnViewDetails.TextColor = Color.FromArgb(156, 84, 213);
@@ -105,9 +138,10 @@
             btnReject.FlatStyle = FlatStyle.Flat;
             btnReject.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnReject.ForeColor = Color.FromArgb(229, 229, 229);
-            btnReject.Location = new Point(126, 3);
+            btnReject.Location = new Point(144, 4);
+            btnReject.Margin = new Padding(3, 4, 3, 4);
             btnReject.Name = "btnReject";
-            btnReject.Size = new Size(117, 43);
+            btnReject.Size = new Size(134, 54);
             btnReject.TabIndex = 14;
             btnReject.Text = "Reject";
             btnReject.TextColor = Color.FromArgb(229, 229, 229);
@@ -126,59 +160,31 @@
             btnApprove.FlatStyle = FlatStyle.Flat;
             btnApprove.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnApprove.ForeColor = Color.FromArgb(229, 229, 229);
-            btnApprove.Location = new Point(3, 3);
+            btnApprove.Location = new Point(3, 4);
+            btnApprove.Margin = new Padding(3, 4, 3, 4);
             btnApprove.Name = "btnApprove";
-            btnApprove.Size = new Size(117, 43);
+            btnApprove.Size = new Size(134, 54);
             btnApprove.TabIndex = 13;
             btnApprove.Text = "Approve";
             btnApprove.TextColor = Color.FromArgb(229, 229, 229);
             btnApprove.UseVisualStyleBackColor = false;
             btnApprove.Click += btnApprove_Click;
             // 
-            // roundPanelListBox2
-            // 
-            roundPanelListBox2.BackColor = Color.FromArgb(156, 84, 213);
-            roundPanelListBox2.Controls.Add(dgvVacations);
-            roundPanelListBox2.Location = new Point(52, 53);
-            roundPanelListBox2.Margin = new Padding(4, 3, 4, 3);
-            roundPanelListBox2.Name = "roundPanelListBox2";
-            roundPanelListBox2.Size = new Size(947, 359);
-            roundPanelListBox2.TabIndex = 17;
-            // 
-            // dgvVacations
-            // 
-            dgvVacations.AllowUserToAddRows = false;
-            dgvVacations.AllowUserToDeleteRows = false;
-            dgvVacations.AllowUserToResizeColumns = false;
-            dgvVacations.AllowUserToResizeRows = false;
-            dgvVacations.BackgroundColor = Color.FromArgb(156, 84, 213);
-            dgvVacations.BorderStyle = BorderStyle.None;
-            dgvVacations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvVacations.GridColor = Color.FromArgb(11, 7, 17);
-            dgvVacations.Location = new Point(0, 0);
-            dgvVacations.Name = "dgvVacations";
-            dgvVacations.ReadOnly = true;
-            dgvVacations.RowHeadersWidth = 62;
-            dgvVacations.RowTemplate.Height = 28;
-            dgvVacations.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvVacations.Size = new Size(947, 359);
-            dgvVacations.TabIndex = 2;
-            // 
             // Vacations
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1041, 578);
+            ClientSize = new Size(1190, 722);
             Controls.Add(roundPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(5, 4, 5, 4);
             Name = "Vacations";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Vacation";
             roundPanel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
             roundPanelListBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvVacations).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 

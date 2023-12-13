@@ -27,6 +27,9 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private DataGridView dgvEmployees; // Reference to DataGridView
         private Action refreshEmployeesGrid; // Delegate to refresh DataGridView
 
+        private Encryptor encryptor;
+        private byte[] _key;
+        private byte[] _iv;
 
         #region FORM CUSTOM STYLE
         //FORM DRAG NO BORDER
@@ -49,7 +52,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnClose.ForeColor = Color.FromArgb(229, 229, 229);
         }
         #endregion
-        public EmployeeDetails(DataGridView dgvEmployees, Employee employee, Action refreshEmployeesGrid)
+        public EmployeeDetails(DataGridView dgvEmployees, Employee employee, Action refreshEmployeesGrid, byte[] key, byte[] iv)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -61,6 +64,10 @@ namespace DesktopAppMediaBazaar.FormsUtility
             shiftController = new(new DALShiftController());
             departmentController = new(new DALDepartmentController());
             employeeController = new(new DALEmployeeController());
+
+            encryptor = new Encryptor();
+            _key = key;
+            _iv = iv;
             showAllEmployeeDetails();
         }
 
@@ -70,7 +77,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             tbxPhone.Texts = _employee.Phone;
             tbxUsername.Texts = _employee.Username;
             lbRegisterDate.Text = DateOnly.FromDateTime(_employee.HireDate).ToString();
-            tbxSalary.Texts = _employee.Salary.ToString();
+            tbxSalary.Texts = encryptor.Decrypt(_employee.Salary, _key, _iv).ToString();
             showShifts();
             showDepartments();
             showShiftsChecked();
@@ -184,8 +191,13 @@ namespace DesktopAppMediaBazaar.FormsUtility
             try { salary = Convert.ToDecimal(tbxSalary.Texts); }
             catch { RJMessageBox.Show("Salary should be a number!"); return; }
 
-            Employee employee = new Employee(_employee.Id, username, _employee.Password, department, name, _employee.Email, phone, salary, _employee.HireDate, _employee.ProfilePicture, shifts);
-            employeeController.UpdateEmployee(employee);
+            Encryptor encryptor = new Encryptor();
+            byte[] key = encryptor.GenerateKey();
+            byte[] iv = encryptor.GenerateIV();
+            byte[] encriptedSalary = encryptor.Encrypt(salary, key, iv);
+
+            Employee employee = new Employee(_employee.Id, username, _employee.Password, department, name, _employee.Email, phone, encriptedSalary, _employee.HireDate, _employee.ProfilePicture, shifts);
+            employeeController.UpdateEmployee(employee, key, iv);
 
             refreshEmployeesGrid();
             this.Close();

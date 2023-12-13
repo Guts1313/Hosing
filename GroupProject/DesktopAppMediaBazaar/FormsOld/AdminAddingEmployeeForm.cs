@@ -31,6 +31,7 @@ namespace DesktopAppMediaBazaar
             string _email = tbxEmail.Text;
             string _phone = tbxPhone.Text;
             string departmentName = null;
+
             if (comboBoxDepartment.SelectedIndex != -1)
             {
                 departmentName = comboBoxDepartment.SelectedItem.ToString();
@@ -86,11 +87,16 @@ namespace DesktopAppMediaBazaar
                 }
             }
 
-			Employee employee = new Employee(_username, _password, _department, _name, _email, _phone, _salary, _shifts);
+            Encryptor encryptor = new Encryptor();
+            byte[] key = encryptor.GenerateKey();
+            byte[] iv = encryptor.GenerateIV();
+            byte[] encriptedSalary = encryptor.Encrypt(_salary, key, iv);
+
+			Employee employee = new Employee(_username, _password, _department, _name, _email, _phone, encriptedSalary, _shifts);
 
 
 
-			if (EmployeeController.AddEmployee(employee))
+            if (EmployeeController.AddEmployee(employee, key, iv))
             {
                 MessageBox.Show("Employee has been added successfully");
             }
