@@ -15,7 +15,9 @@ namespace BussinessLayer.Utilities.Messages
 
         //Body
         public const string ANNOUNCEMENT_BODY = "\"{0}\"";
-        public const string AUTO_ASSIGNED_SHIFT_BODY = "Check your schedule in the shift tab";
+        public const string AUTO_ASSIGNED_SHIFT_BODY = "Explore your upcoming agenda effortlessly by checking your schedule " +
+            "through the intuitive Shift Tab feature. Stay organized and informed as you seamlessly navigate through your " +
+            "planned activities and upcoming shifts.";
         public const string VERIFICATION_CODE_BODY = "Your code is {0}, copy it and use it in your \"enter code\" tab";
     }
 }
