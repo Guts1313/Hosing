@@ -12,7 +12,7 @@ namespace BussinessLayer.Utilities.Messages
         public const string ANNOUNCEMENT_SUBJECT = "{0}, you have a new announcement from {1}";
         public const string AUTO_ASSIGNED_SHIFT_SUBJECT = "{0}, your schedule for the week is ready";
         public const string VERIFICATION_CODE_SUBJECT = "Your Code is {0}";
-
+         
         //Body
         public const string ANNOUNCEMENT_BODY = "\"{0}\"";
         public const string AUTO_ASSIGNED_SHIFT_BODY = "Explore your upcoming agenda effortlessly by checking your schedule " +
