@@ -167,6 +167,7 @@ namespace DesktopAppMediaBazaar.Forms
             #endregion
         }
     }
+
     public class EmployeeDisplayInfo
     {
         public string Name { get; set; }

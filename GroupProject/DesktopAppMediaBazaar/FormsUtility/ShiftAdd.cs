@@ -3,6 +3,7 @@ using BussinessLayer.Controllers.Shifts;
 using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
 using DesktopAppMediaBazaar.CustomElements;
+using DesktopAppMediaBazaar.Forms;
 using System.Runtime.InteropServices;
 
 namespace DesktopAppMediaBazaar.FormsUtility
@@ -13,7 +14,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private readonly DepartmentController _departmentController;
         private readonly EmployeeController _employeeController;
         private readonly ShiftController _shiftController;
-        private ListBox lbEmployees;
+        private DataGridView lbEmployees;
         #region FORM CUSTOM STYLE
         //FORM DRAG NO BORDER
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -35,7 +36,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnClose.ForeColor = Color.FromArgb(229, 229, 229);
         }
         #endregion
-        public ShiftAdd(DepartmentController departmentController, Employee loggedEmployee, EmployeeController employeeController, ShiftController shiftController, ListBox lbEmployees)
+        public ShiftAdd(DepartmentController departmentController, Employee loggedEmployee, EmployeeController employeeController, ShiftController shiftController, DataGridView lbEmployees)
         {
             InitializeComponent();
             InitializeEventHandlers();
@@ -64,11 +65,33 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
         private void showEmployeesMainForm()
         {
-            lbEmployees.Items.Clear();
-            foreach (var shift in _shiftController.GetAll())
-            {
-                lbEmployees.Items.Add(shift);
-            }
+            var shifts = _shiftController.GetAll()
+                .Select(shift => new ShiftDisplayInfo
+                {
+                    Name = shift.Employee.Name,
+                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    date = shift.Date,
+                })
+                .ToList();
+
+            lbEmployees.Columns.Clear();
+            lbEmployees.DataSource = shifts;
+            AdjustDataGridViewColumns();
+        }
+
+        private void AdjustDataGridViewColumns()
+        {
+            lbEmployees.Columns.Add("Name", "Name");
+            lbEmployees.Columns.Add("shiftType", "Shift Type");
+            lbEmployees.Columns.Add("date", "Date");
+
+            lbEmployees.Columns["Name"].DataPropertyName = "Name";
+            lbEmployees.Columns["shiftType"].DataPropertyName = "shiftType";
+            lbEmployees.Columns["date"].DataPropertyName = "date";
+
+            lbEmployees.Columns["Name"].HeaderText = "Name";
+            lbEmployees.Columns["shiftType"].HeaderText = "Shift Type";
+            lbEmployees.Columns["Date"].HeaderText = "Date";
         }
 
         private void btnClose_Click(object sender, EventArgs e)

@@ -28,5 +28,18 @@ namespace DataItems.LogicItems
                 }
             }
         }
+
+        public static ShiftType GetFirstShift(int value)
+        {
+            foreach (ShiftType shiftType in Enum.GetValues(typeof(ShiftType)))
+            {
+                if ((value & (int)shiftType) != 0)
+                {
+                    return shiftType;
+                }
+            }
+
+            return ShiftType.Morning;
+        }
     }
 }

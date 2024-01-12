@@ -4,6 +4,7 @@ using DataAccessLayer.DAL;
 using DataItems.LogicItems;
 using DesktopAppMediaBazaar.CustomElements;
 using DesktopAppMediaBazaar.FormsUtility;
+using System.Windows.Forms;
 
 namespace DesktopAppMediaBazaar.Forms
 {
@@ -19,6 +20,8 @@ namespace DesktopAppMediaBazaar.Forms
         public Shifts(Employee loggedInEmployee)
         {
             InitializeComponent();
+            InitializeDataGridViewStyles();
+
             _loggedInEmployee = loggedInEmployee;
 
             getAllShifts();
@@ -28,41 +31,68 @@ namespace DesktopAppMediaBazaar.Forms
                 cbxDepartment.Items.Add(department.Name);
             }
             cbxDepartment.SelectedIndex = -1;
-
         }
 
         private void getAllShifts()
         {
-            lbEmployees.Items.Clear();
-            foreach (var shift in ShiftController.GetAll())
-            {
-                //Calendar.Value = shift.Date; //no methods available to add dates in the custom datepicker
-                lbEmployees.Items.Add(shift);
-            }
+            var shifts = ShiftController.GetAll()
+                .Select(shift => new ShiftDisplayInfo
+                {
+                    id = shift.Id,
+                    Name = shift.Employee.Name,
+                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    date = shift.Date,
+                })
+                .ToList();
+
+            dataGridViewShifts.Columns.Clear();
+            dataGridViewShifts.DataSource = shifts;
+            AdjustDataGridViewColumns();
+        }
+
+        private void AdjustDataGridViewColumns()
+        {
+            dataGridViewShifts.Columns.Add("Name", "Name");
+            dataGridViewShifts.Columns.Add("shiftType", "Shift Type");
+            dataGridViewShifts.Columns.Add("date", "Date");
+
+            dataGridViewShifts.Columns["Name"].DataPropertyName = "Name";
+            dataGridViewShifts.Columns["shiftType"].DataPropertyName = "shiftType";
+            dataGridViewShifts.Columns["date"].DataPropertyName = "date";
+
+            dataGridViewShifts.Columns["Name"].HeaderText = "Name";
+            dataGridViewShifts.Columns["shiftType"].HeaderText = "Shift Type";
+            dataGridViewShifts.Columns["Date"].HeaderText = "Date";
         }
 
         private void btnAutoShifts_Click(object sender, EventArgs e)
         {
-            ShiftAutoAdd form = new ShiftAutoAdd(ShiftController, lbEmployees);
+            ShiftAutoAdd form = new ShiftAutoAdd(ShiftController, dataGridViewShifts);
             form.ShowDialog();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ShiftAdd form = new ShiftAdd(DepartmentController, _loggedInEmployee, EmployeeController, ShiftController, lbEmployees);
+            ShiftAdd form = new ShiftAdd(DepartmentController, _loggedInEmployee, EmployeeController, ShiftController, dataGridViewShifts);
             form.ShowDialog();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (lbEmployees.SelectedIndex != -1)
+            if (dataGridViewShifts.CurrentRow != null)
             {
-                var shiftItem = (Shift)lbEmployees.SelectedItem;
-                ShiftController.DeleteShift(shiftItem);
-
-                getAllShifts();
+                var shiftInfo = (ShiftDisplayInfo)dataGridViewShifts.CurrentRow.DataBoundItem;
+                Shift shift = ShiftController.GetById(shiftInfo.id);
+                if (shift != null)
+                {
+                    ShiftController.DeleteShift(shift);
+                    getAllShifts();
+                }
             }
-            else { RJMessageBox.Show("No shift is selected"); }
+            else
+            {
+                RJMessageBox.Show("Please select a shift!");
+            }
         }
 
         private void Calendar_ValueChanged(object sender, EventArgs e)
@@ -75,18 +105,27 @@ namespace DesktopAppMediaBazaar.Forms
         {
             string departmentName = cbxDepartment.SelectedItem.ToString();
             _selectedDepartment = DepartmentController.Get(departmentName);
-            Shift[] shifts = ShiftController.GetAllByDateAndDepartment(_selectedDate, _selectedDepartment);
-            lbEmployees.Items.Clear();
-            foreach (var shift in shifts)
-            {
-                lbEmployees.Items.Add(shift);
-            }
+            //Shift[] shifts = ShiftController.GetAllByDateAndDepartment(_selectedDate, _selectedDepartment);
+
+            var shifts = ShiftController.GetAll()
+                .Where(shift => shift.Employee.Department.Name == departmentName)
+                .Select(shift => new ShiftDisplayInfo
+                {
+                    Name = shift.Employee.Name,
+                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    date = shift.Date,
+                })
+                .ToList();
+
+            dataGridViewShifts.Columns.Clear();
+            dataGridViewShifts.DataSource = shifts;
+            AdjustDataGridViewColumns();
         }
 
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            lbEmployees.Items.Clear();
+            //lbEmployees.Items.Clear();
             if (_selectedDate == default(DateTime))
             {
                 RJMessageBox.Show("The date was not selected!");
@@ -98,103 +137,94 @@ namespace DesktopAppMediaBazaar.Forms
                 return;
             }
 
-            Shift[] shifts = ShiftController.GetAllByDateAndDepartment(_selectedDate, _selectedDepartment);
+            var shifts = ShiftController.GetAllByDateAndDepartment(_selectedDate, _selectedDepartment)
+                .Select(shift => new ShiftDisplayInfo
+                {
+                    Name = shift.Employee.Name,
+                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    date = shift.Date,
+                })
+                .ToList();
 
-            //lblSelectedDate.Text = _selectedDate.ToShortDateString();
-
-            foreach (Shift shift in shifts)
-            {
-
-                lbEmployees.Items.Add(shift);
-
-            }
+            dataGridViewShifts.Columns.Clear();
+            dataGridViewShifts.DataSource = shifts;
+            AdjustDataGridViewColumns();
         }
 
 
         private void tbxName__TextChanged(object sender, EventArgs e)
         {
-            //alorithm gets the employee by name fragment and then returns the shifts assigned to him
-            //then we filter them by shift type and display them
             string searchText = tbxName.Texts.ToLower();
-            if (searchText.Length > 1)
-            {
-                lbEmployees.Items.Clear();
 
-            }
-            foreach (Employee employee in EmployeeController.GetAll())
+            if (searchText.Length >= 1)
             {
+                List<int> shiftTypeBinary = new List<int>();
 
-                if (employee.Department.Id > 2 && employee.Name.ToLower().Contains(searchText))
-                {
-                    List<Shift> employeeShifts = ShiftController.GetAllAssigned(employee).ToList();
-                    foreach (Shift shift in employeeShifts)
+                if (morningCheckBox.Checked)
+                { shiftTypeBinary.Add((int)ShiftType.Morning); }
+                if (afterNoonCheckBox.Checked)
+                { shiftTypeBinary.Add((int)ShiftType.Afternoon); }
+                if (eveningCheckBox.Checked)
+                { shiftTypeBinary.Add((int)ShiftType.Evening); }
+
+                bool searchByShiftType = shiftTypeBinary.Count == 0 ? false : true;
+
+                var shifts = ShiftController.GetAll()
+                    .Where(shift => (searchByShiftType ? shiftTypeBinary.Contains(shift.Type) : true) && shift.Employee.Name.ToLower().Contains(searchText))
+                    .Select(shift => new ShiftDisplayInfo
                     {
+                        Name = shift.Employee.Name,
+                        shiftType = Extensions.GetFirstShift(shift.Type),
+                        date = shift.Date,
+                    })
+                    .ToList();
 
-                        FilterByShiftType(shift, employee);
-                    }
-                }
-            }
-            if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
-            {
-                RJMessageBox.Show("Before you search by an employee,select shift type \n(morning/afternoon/evening) ");
+                dataGridViewShifts.Columns.Clear();
+                dataGridViewShifts.DataSource = shifts;
+                AdjustDataGridViewColumns();
             }
         }
 
 
-        public void FilterByShiftType(Shift shift, Employee employee)
+        public void FilterByShiftType()
         {
+            List<int> shiftTypeBinary = new List<int>();
+
             if (morningCheckBox.Checked)
             {
-                if (shift.Type == (int)ShiftType.Morning)
-                {
-                    lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
-
-                }
+                shiftTypeBinary.Add((int)ShiftType.Morning);
             }
             if (afterNoonCheckBox.Checked)
             {
-                if (shift.Type == (int)ShiftType.Afternoon)
-                {
-                    lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
-
-                }
+                shiftTypeBinary.Add((int)ShiftType.Afternoon);
             }
             if (eveningCheckBox.Checked)
             {
-                if (shift.Type == (int)ShiftType.Evening)
-                {
-                    lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
-
-                }
+                shiftTypeBinary.Add((int)ShiftType.Evening);
             }
-        }
 
-        private void getSpecificShift()
-        {
-            lbEmployees.Items.Clear();
-
-            string searchText = tbxName.Texts.ToLower();
-            foreach (Employee employee in EmployeeController.GetAll())
-            {
-
-                if (employee.Department.Id > 2 && employee.Name.ToLower().Contains(searchText))
+            var shifts = ShiftController.GetAll()
+                .Where(shift => shiftTypeBinary.Contains(shift.Type))
+                .Select(shift => new ShiftDisplayInfo
                 {
-                    List<Shift> employeeShifts = ShiftController.GetAllAssigned(employee).ToList();
-                    foreach (Shift shift in employeeShifts)
-                    {
-                        FilterByShiftType(shift, employee);
-                    }
-                }
-            }
+                    Name = shift.Employee.Name,
+                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    date = shift.Date,
+                })
+                .ToList();
+
+            dataGridViewShifts.Columns.Clear();
+            dataGridViewShifts.DataSource = shifts;
+            AdjustDataGridViewColumns();
         }
 
         private void morningCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (morningCheckBox.Checked)
             {
-                getSpecificShift();
+                FilterByShiftType();
             }
-            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked) 
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
             {
                 getAllShifts();
             }
@@ -204,7 +234,7 @@ namespace DesktopAppMediaBazaar.Forms
         {
             if (afterNoonCheckBox.Checked)
             {
-                getSpecificShift();
+                FilterByShiftType();
             }
             else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
             {
@@ -216,12 +246,64 @@ namespace DesktopAppMediaBazaar.Forms
         {
             if (eveningCheckBox.Checked)
             {
-                getSpecificShift();
+                FilterByShiftType();
             }
             else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
             {
                 getAllShifts();
             }
         }
+
+        private void InitializeDataGridViewStyles()
+        {
+            #region COLORS DATAGRID
+            dataGridViewShifts.DefaultCellStyle.SelectionBackColor = Color.FromArgb(215, 215, 215);
+            dataGridViewShifts.DefaultCellStyle.SelectionForeColor = dataGridViewShifts.DefaultCellStyle.ForeColor;
+            dataGridViewShifts.RowHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(215, 215, 215);
+            dataGridViewShifts.RowHeadersDefaultCellStyle.SelectionForeColor = dataGridViewShifts.RowHeadersDefaultCellStyle.ForeColor;
+            dataGridViewShifts.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewShifts.AdvancedRowHeadersBorderStyle.Top = DataGridViewAdvancedCellBorderStyle.Single;
+            dataGridViewShifts.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewShifts.AdvancedColumnHeadersBorderStyle.Left = DataGridViewAdvancedCellBorderStyle.Single;
+            dataGridViewShifts.BackgroundColor = Color.FromArgb(156, 84, 213);
+            dataGridViewShifts.GridColor = Color.FromArgb(156, 84, 213);
+            dataGridViewShifts.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(156, 84, 213);
+            dataGridViewShifts.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(156, 84, 213);
+            dataGridViewShifts.DefaultCellStyle.ForeColor = Color.FromArgb(215, 215, 215);
+            dataGridViewShifts.DefaultCellStyle.BackColor = Color.FromArgb(156, 84, 213);
+            dataGridViewShifts.DefaultCellStyle.SelectionForeColor = Color.FromArgb(127, 131, 140);
+            dataGridViewShifts.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(215, 215, 215);
+            dataGridViewShifts.EnableHeadersVisualStyles = false;
+            dataGridViewShifts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewShifts.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            dataGridViewShifts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewShifts.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewShifts.AutoGenerateColumns = false;
+            dataGridViewShifts.AllowUserToResizeRows = false;
+
+            foreach (DataGridViewColumn column in dataGridViewShifts.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
+
+            foreach (DataGridViewColumn column in dataGridViewShifts.Columns)
+            {
+                column.Resizable = DataGridViewTriState.False;
+            }
+
+            foreach (DataGridViewRow row in dataGridViewShifts.Rows)
+            {
+                row.Resizable = DataGridViewTriState.False;
+            }
+            #endregion
+        }
+    }
+
+    public class ShiftDisplayInfo
+    {
+        public int id {  get; set; }
+        public string Name { get; set; }
+        public ShiftType shiftType { get; set; }
+        public DateTime date { get; set; }
     }
 }

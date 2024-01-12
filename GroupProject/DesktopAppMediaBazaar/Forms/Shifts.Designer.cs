@@ -52,11 +52,12 @@
             btnDelete = new CustomElements.RoundButton();
             btnAdd = new CustomElements.RoundButton();
             roundPanelListBox1 = new CustomElements.RoundPanelListBox();
-            lbEmployees = new ListBox();
+            dataGridViewShifts = new DataGridView();
             roundPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             roundPanelListBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewShifts).BeginInit();
             SuspendLayout();
             // 
             // roundPanel1
@@ -412,26 +413,31 @@
             // roundPanelListBox1
             // 
             roundPanelListBox1.BackColor = Color.FromArgb(156, 84, 213);
-            roundPanelListBox1.Controls.Add(lbEmployees);
+            roundPanelListBox1.Controls.Add(dataGridViewShifts);
             roundPanelListBox1.Location = new Point(52, 50);
             roundPanelListBox1.Margin = new Padding(4, 3, 4, 3);
             roundPanelListBox1.Name = "roundPanelListBox1";
             roundPanelListBox1.Size = new Size(663, 337);
             roundPanelListBox1.TabIndex = 12;
             // 
-            // lbEmployees
+            // dataGridViewShifts
             // 
-            lbEmployees.BackColor = Color.FromArgb(156, 84, 213);
-            lbEmployees.BorderStyle = BorderStyle.None;
-            lbEmployees.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lbEmployees.ForeColor = Color.FromArgb(229, 229, 229);
-            lbEmployees.FormattingEnabled = true;
-            lbEmployees.ItemHeight = 17;
-            lbEmployees.Location = new Point(6, 7);
-            lbEmployees.Margin = new Padding(4, 3, 4, 3);
-            lbEmployees.Name = "lbEmployees";
-            lbEmployees.Size = new Size(657, 323);
-            lbEmployees.TabIndex = 0;
+            dataGridViewShifts.AllowUserToAddRows = false;
+            dataGridViewShifts.AllowUserToDeleteRows = false;
+            dataGridViewShifts.AllowUserToResizeColumns = false;
+            dataGridViewShifts.AllowUserToResizeRows = false;
+            dataGridViewShifts.BackgroundColor = Color.FromArgb(156, 84, 213);
+            dataGridViewShifts.BorderStyle = BorderStyle.None;
+            dataGridViewShifts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewShifts.GridColor = Color.FromArgb(11, 7, 17);
+            dataGridViewShifts.Location = new Point(0, 0);
+            dataGridViewShifts.Name = "dataGridViewShifts";
+            dataGridViewShifts.ReadOnly = true;
+            dataGridViewShifts.RowHeadersWidth = 62;
+            dataGridViewShifts.RowTemplate.Height = 25;
+            dataGridViewShifts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewShifts.Size = new Size(664, 337);
+            dataGridViewShifts.TabIndex = 1;
             // 
             // Shifts
             // 
@@ -450,6 +456,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             roundPanelListBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewShifts).EndInit();
             ResumeLayout(false);
         }
 
@@ -457,7 +464,6 @@
 
         private CustomElements.RoundPanel roundPanel1;
         private CustomElements.RoundPanelListBox roundPanelListBox1;
-        private ListBox lbEmployees;
         private CustomElements.RoundButton btnDelete;
         private CustomElements.RoundButton btnAdd;
         private CustomElements.RoundButton btnSearch;
@@ -479,5 +485,6 @@
         private Label label8;
         private Label label7;
         private CustomElements.RoundButton btnAutoShifts;
+        private DataGridView dataGridViewShifts;
     }
 }

@@ -2,7 +2,10 @@
 using BussinessLayer.Controllers.Shifts;
 using BussinessLayer.Utilities.Messages;
 using DataAccessLayer.DAL;
+using DataAccessLayer.Interfaces;
+using DataItems.LogicItems;
 using DesktopAppMediaBazaar.CustomElements;
+using DesktopAppMediaBazaar.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,11 +21,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
 {
     public partial class ShiftAutoAdd : Form
     {
-        private ListBox lbEmployees;
+        private DataGridView lbEmployees;
         private ShiftsAutomation shiftsAutomation;
         private readonly ShiftController shiftController;
 
-        public ShiftAutoAdd(ShiftController shiftController, ListBox lbEmployees)
+        public ShiftAutoAdd(ShiftController shiftController, DataGridView lbEmployees)
         {
             InitializeComponent();
 
@@ -34,11 +37,33 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
         private void showEmployeesMainForm()
         {
-            lbEmployees.Items.Clear();
-            foreach (var shift in shiftController.GetAll())
-            {
-                lbEmployees.Items.Add(shift);
-            }
+            var shifts = shiftController.GetAll()
+                .Select(shift => new ShiftDisplayInfo
+                {
+                    Name = shift.Employee.Name,
+                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    date = shift.Date,
+                })
+                .ToList();
+
+            lbEmployees.Columns.Clear();
+            lbEmployees.DataSource = shifts;
+            AdjustDataGridViewColumns();
+        }
+
+        private void AdjustDataGridViewColumns()
+        {
+            lbEmployees.Columns.Add("Name", "Name");
+            lbEmployees.Columns.Add("shiftType", "Shift Type");
+            lbEmployees.Columns.Add("date", "Date");
+
+            lbEmployees.Columns["Name"].DataPropertyName = "Name";
+            lbEmployees.Columns["shiftType"].DataPropertyName = "shiftType";
+            lbEmployees.Columns["date"].DataPropertyName = "date";
+
+            lbEmployees.Columns["Name"].HeaderText = "Name";
+            lbEmployees.Columns["shiftType"].HeaderText = "Shift Type";
+            lbEmployees.Columns["Date"].HeaderText = "Date";
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
