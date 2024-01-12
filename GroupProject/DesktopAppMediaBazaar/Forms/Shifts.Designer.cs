@@ -30,6 +30,7 @@
         private void InitializeComponent()
         {
             roundPanel1 = new CustomElements.RoundPanel();
+            btnAutoShifts = new CustomElements.RoundButton();
             panel2 = new Panel();
             customLabelV21 = new CustomElements.Controls.CustomLabelV2();
             tbxName = new housing.CustomElements.RoundTextBox();
@@ -52,7 +53,6 @@
             btnAdd = new CustomElements.RoundButton();
             roundPanelListBox1 = new CustomElements.RoundPanelListBox();
             lbEmployees = new ListBox();
-            btnAutoShifts = new CustomElements.RoundButton();
             roundPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -78,6 +78,27 @@
             roundPanel1.Radius = 20;
             roundPanel1.Size = new Size(1041, 542);
             roundPanel1.TabIndex = 4;
+            // 
+            // btnAutoShifts
+            // 
+            btnAutoShifts.BackColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.BackgroundColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.BorderColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.BorderRadius = 15;
+            btnAutoShifts.BorderSize = 0;
+            btnAutoShifts.ClickedColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.FlatAppearance.BorderSize = 0;
+            btnAutoShifts.FlatStyle = FlatStyle.Flat;
+            btnAutoShifts.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAutoShifts.ForeColor = Color.FromArgb(229, 229, 229);
+            btnAutoShifts.Location = new Point(722, 419);
+            btnAutoShifts.Name = "btnAutoShifts";
+            btnAutoShifts.Size = new Size(282, 40);
+            btnAutoShifts.TabIndex = 44;
+            btnAutoShifts.Text = "Generate Shifts Automatically";
+            btnAutoShifts.TextColor = Color.FromArgb(229, 229, 229);
+            btnAutoShifts.UseVisualStyleBackColor = false;
+            btnAutoShifts.Click += btnAutoShifts_Click;
             // 
             // panel2
             // 
@@ -195,6 +216,7 @@
             morningCheckBox.Size = new Size(45, 22);
             morningCheckBox.TabIndex = 40;
             morningCheckBox.UseVisualStyleBackColor = true;
+            morningCheckBox.CheckedChanged += morningCheckBox_CheckedChanged;
             // 
             // afterNoonCheckBox
             // 
@@ -209,6 +231,7 @@
             afterNoonCheckBox.Size = new Size(45, 22);
             afterNoonCheckBox.TabIndex = 39;
             afterNoonCheckBox.UseVisualStyleBackColor = true;
+            afterNoonCheckBox.CheckedChanged += afterNoonCheckBox_CheckedChanged;
             // 
             // label6
             // 
@@ -278,6 +301,7 @@
             eveningCheckBox.Size = new Size(45, 22);
             eveningCheckBox.TabIndex = 36;
             eveningCheckBox.UseVisualStyleBackColor = true;
+            eveningCheckBox.CheckedChanged += eveningCheckBox_CheckedChanged;
             // 
             // label4
             // 
@@ -408,27 +432,6 @@
             lbEmployees.Name = "lbEmployees";
             lbEmployees.Size = new Size(657, 323);
             lbEmployees.TabIndex = 0;
-            // 
-            // btnAutoShifts
-            // 
-            btnAutoShifts.BackColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.BackgroundColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.BorderColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.BorderRadius = 15;
-            btnAutoShifts.BorderSize = 0;
-            btnAutoShifts.ClickedColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.FlatAppearance.BorderSize = 0;
-            btnAutoShifts.FlatStyle = FlatStyle.Flat;
-            btnAutoShifts.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAutoShifts.ForeColor = Color.FromArgb(229, 229, 229);
-            btnAutoShifts.Location = new Point(722, 419);
-            btnAutoShifts.Name = "btnAutoShifts";
-            btnAutoShifts.Size = new Size(282, 40);
-            btnAutoShifts.TabIndex = 44;
-            btnAutoShifts.Text = "Generate Shifts Automatically";
-            btnAutoShifts.TextColor = Color.FromArgb(229, 229, 229);
-            btnAutoShifts.UseVisualStyleBackColor = false;
-            btnAutoShifts.Click += btnAutoShifts_Click;
             // 
             // Shifts
             // 

@@ -145,7 +145,7 @@ namespace DesktopAppMediaBazaar.Forms
         {
             if (morningCheckBox.Checked)
             {
-                if (shift.Type == 1)
+                if (shift.Type == (int)ShiftType.Morning)
                 {
                     lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
 
@@ -153,7 +153,7 @@ namespace DesktopAppMediaBazaar.Forms
             }
             if (afterNoonCheckBox.Checked)
             {
-                if (shift.Type == 2)
+                if (shift.Type == (int)ShiftType.Afternoon)
                 {
                     lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
 
@@ -161,11 +161,66 @@ namespace DesktopAppMediaBazaar.Forms
             }
             if (eveningCheckBox.Checked)
             {
-                if (shift.Type == 3)
+                if (shift.Type == (int)ShiftType.Evening)
                 {
                     lbEmployees.Items.Add($"{employee.Name} - {shift.ToString()}");
 
                 }
+            }
+        }
+
+        private void getSpecificShift()
+        {
+            lbEmployees.Items.Clear();
+
+            string searchText = tbxName.Texts.ToLower();
+            foreach (Employee employee in EmployeeController.GetAll())
+            {
+
+                if (employee.Department.Id > 2 && employee.Name.ToLower().Contains(searchText))
+                {
+                    List<Shift> employeeShifts = ShiftController.GetAllAssigned(employee).ToList();
+                    foreach (Shift shift in employeeShifts)
+                    {
+                        FilterByShiftType(shift, employee);
+                    }
+                }
+            }
+        }
+
+        private void morningCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (morningCheckBox.Checked)
+            {
+                getSpecificShift();
+            }
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked) 
+            {
+                getAllShifts();
+            }
+        }
+
+        private void afterNoonCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (afterNoonCheckBox.Checked)
+            {
+                getSpecificShift();
+            }
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
+            {
+                getAllShifts();
+            }
+        }
+
+        private void eveningCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (eveningCheckBox.Checked)
+            {
+                getSpecificShift();
+            }
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
+            {
+                getAllShifts();
             }
         }
     }

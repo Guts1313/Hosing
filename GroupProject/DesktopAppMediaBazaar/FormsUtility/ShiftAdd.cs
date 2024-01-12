@@ -115,25 +115,22 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
         private int CheckShiftSelectionType()
         {
-            int shiftType;
+            ShiftType shiftType;
 
             if (cklMorning.Checked)
             {
-                shiftType = 1;
-                return shiftType;
-
+                shiftType = ShiftType.Morning;
             }
             else if (cklAfternoon.Checked)
             {
-                shiftType = 2;
-                return shiftType;
-
+                shiftType = ShiftType.Afternoon;
             }
             else
             {
-                shiftType = 4;
-                return shiftType;
+                shiftType = ShiftType.Evening;
             }
+
+            return (int)shiftType;
         }
     }
 }
