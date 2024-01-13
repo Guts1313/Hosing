@@ -13,7 +13,7 @@ namespace BussinessLayer.Controllers.Shifts
     public class ShiftsAutomation
     {
         private const int TOTAL_WORKING_DAYS = 5;
-        private const int TOTAL_SHIFTS_DAY = 3;
+        private const int TOTAL_SHIFTS_DAY = 6;
         private ShiftController shifts;
         private EmployeeController employees;
 
@@ -104,10 +104,16 @@ namespace BussinessLayer.Controllers.Shifts
                 switch (i) 
                 {
                     case 0:
-                        daySeparation.Morning = new List<Employee>(shiftStuff); break;
+                        daySeparation.EarlyMorning = new List<Employee>(shiftStuff); break;
                     case 1:
-                        daySeparation.Afternoon = new List<Employee>(shiftStuff); break;
+                        daySeparation.Morning = new List<Employee>(shiftStuff); break;
                     case 2:
+                        daySeparation.EarlyAfternoon = new List<Employee>(shiftStuff); break;
+                    case 3:
+                        daySeparation.Afternoon = new List<Employee>(shiftStuff); break;
+                    case 4:
+                        daySeparation.EarlyEvening = new List<Employee>(shiftStuff); break;
+                    case 5:
                         daySeparation.Evening = new List<Employee>(shiftStuff); break;
                 }
 
@@ -147,8 +153,11 @@ namespace BussinessLayer.Controllers.Shifts
         {
             List <Employee> dayShifts = new List<Employee>();
 
+            dayShifts.AddRange(daySeparation.EarlyMorning);
             dayShifts.AddRange(daySeparation.Morning);
+            dayShifts.AddRange(daySeparation.EarlyAfternoon);
             dayShifts.AddRange(daySeparation.Afternoon);
+            dayShifts.AddRange(daySeparation.EarlyEvening);
             dayShifts.AddRange(daySeparation.Evening);
 
             return dayShifts;
@@ -188,13 +197,16 @@ namespace BussinessLayer.Controllers.Shifts
 
         private void test(DaySeparation day)
         {
-            Console.WriteLine($"Morning: {day.Morning[0].Username}");
-            Console.WriteLine($"Afternoon: {day.Afternoon[0].Username}");
-            Console.WriteLine($"Evening: {day.Evening[0].Username}");
+            Console.WriteLine($"Early Morning: {day.EarlyMorning[0].Username}");
+            Console.WriteLine($"Late Morning: {day.Morning[0].Username}");
+            Console.WriteLine($"Early Afternoon: {day.EarlyAfternoon[0].Username}");
+            Console.WriteLine($"Late Afternoon: {day.Afternoon[0].Username}");
+            Console.WriteLine($"Early Evening: {day.EarlyEvening[0].Username}");
+            Console.WriteLine($"Late Evening: {day.Evening[0].Username}");
             Console.WriteLine("\n");
         }
 
-        private ShiftsDays sevenWeekSeparation()
+        public ShiftsDays sevenWeekSeparation()
         {
             List<Employee> AllEmployees = employees.GetAll().ToList();
             List<Employee> AvailableEmployees = new List<Employee>(AllEmployees);
@@ -241,17 +253,29 @@ namespace BussinessLayer.Controllers.Shifts
 
         private void addShifts(DaySeparation daySeparation, DateTime date)
         {
+            foreach (var emp in daySeparation.EarlyMorning)
+            {
+                shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyMorning));
+            }
             foreach (var emp in daySeparation.Morning)
             {
-                shifts.AddShift(new Shift(emp, date, 1));
+                shifts.AddShift(new Shift(emp, date, (int)ShiftType.Morning));
+            }
+            foreach (var emp in daySeparation.EarlyAfternoon)
+            {
+                shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyAfternoon));
             }
             foreach (var emp in daySeparation.Afternoon)
             {
-                shifts.AddShift(new Shift(emp, date, 2));
+                shifts.AddShift(new Shift(emp, date, (int)ShiftType.Afternoon));
+            }
+            foreach (var emp in daySeparation.EarlyEvening)
+            {
+                shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyEvening));
             }
             foreach (var emp in daySeparation.Evening)
             {
-                shifts.AddShift(new Shift(emp, date, 4));
+                shifts.AddShift(new Shift(emp, date, (int)ShiftType.Evening));
             }
         }
 

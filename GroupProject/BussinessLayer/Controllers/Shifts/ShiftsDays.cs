@@ -21,5 +21,9 @@ namespace BussinessLayer.Controllers.Shifts
         public List<Employee> Morning { set; get; }
         public List<Employee> Afternoon { set; get; }
         public List<Employee> Evening { set; get; }
+        //----//
+        public List<Employee> EarlyMorning { set; get; }
+        public List<Employee> EarlyAfternoon { set; get; }
+        public List<Employee> EarlyEvening { set; get; }
     }
 }

@@ -33,6 +33,21 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private void InitializeComponent()
         {
             panelButtons = new Panel();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            cklEarlyMorning = new CustomElements.CustomCheckBox();
+            cklEarlyAfternoon = new CustomElements.CustomCheckBox();
+            label11 = new Label();
+            label13 = new Label();
+            cklEarlyEvening = new CustomElements.CustomCheckBox();
+            label14 = new Label();
+            label12 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
             tbxPassword = new RoundTextBox();
             label10 = new Label();
             panel1 = new Panel();
@@ -52,27 +67,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label2 = new Label();
             label1 = new Label();
             label3 = new Label();
-            lbFormTitle = new Label();
             btnClose = new Button();
             btnSave = new CustomElements.RoundButton();
             lbEmail = new Label();
             lbName = new Label();
             panelBody = new Panel();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            cklEarlyMorning = new CustomElements.CustomCheckBox();
-            cklEarlyAfternoon = new CustomElements.CustomCheckBox();
-            label11 = new Label();
-            label13 = new Label();
-            cklEarlyEvening = new CustomElements.CustomCheckBox();
-            label14 = new Label();
-            label12 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label19 = new Label();
             panelButtons.SuspendLayout();
             panel1.SuspendLayout();
             panelBody.SuspendLayout();
@@ -112,7 +111,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelButtons.Controls.Add(label2);
             panelButtons.Controls.Add(label1);
             panelButtons.Controls.Add(label3);
-            panelButtons.Controls.Add(lbFormTitle);
             panelButtons.Controls.Add(btnClose);
             panelButtons.Controls.Add(btnSave);
             panelButtons.Controls.Add(lbEmail);
@@ -123,6 +121,180 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelButtons.Size = new Size(832, 320);
             panelButtons.TabIndex = 4;
             panelButtons.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(157, 159);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 16);
+            label4.TabIndex = 94;
+            label4.Text = "8am-12am";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(241, 159);
+            label5.Name = "label5";
+            label5.Size = new Size(70, 16);
+            label5.TabIndex = 93;
+            label5.Text = "16pm-20pm";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(335, 159);
+            label6.Name = "label6";
+            label6.Size = new Size(56, 16);
+            label6.TabIndex = 92;
+            label6.Text = "0am-4am";
+            // 
+            // cklEarlyMorning
+            // 
+            cklEarlyMorning.AutoSize = true;
+            cklEarlyMorning.Location = new Point(163, 175);
+            cklEarlyMorning.MinimumSize = new Size(45, 22);
+            cklEarlyMorning.Name = "cklEarlyMorning";
+            cklEarlyMorning.OffBackColor = Color.FromArgb(229, 229, 229);
+            cklEarlyMorning.OffToggleColor = Color.FromArgb(156, 84, 213);
+            cklEarlyMorning.OnBackColor = Color.FromArgb(229, 229, 229);
+            cklEarlyMorning.OnToggleColor = Color.FromArgb(156, 84, 213);
+            cklEarlyMorning.Size = new Size(45, 22);
+            cklEarlyMorning.TabIndex = 91;
+            cklEarlyMorning.UseVisualStyleBackColor = true;
+            // 
+            // cklEarlyAfternoon
+            // 
+            cklEarlyAfternoon.AutoSize = true;
+            cklEarlyAfternoon.Location = new Point(253, 175);
+            cklEarlyAfternoon.MinimumSize = new Size(45, 22);
+            cklEarlyAfternoon.Name = "cklEarlyAfternoon";
+            cklEarlyAfternoon.OffBackColor = Color.FromArgb(229, 229, 229);
+            cklEarlyAfternoon.OffToggleColor = Color.FromArgb(156, 84, 213);
+            cklEarlyAfternoon.OnBackColor = Color.FromArgb(229, 229, 229);
+            cklEarlyAfternoon.OnToggleColor = Color.FromArgb(156, 84, 213);
+            cklEarlyAfternoon.Size = new Size(45, 22);
+            cklEarlyAfternoon.TabIndex = 90;
+            cklEarlyAfternoon.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.FromArgb(229, 229, 229);
+            label11.Location = new Point(329, 142);
+            label11.Name = "label11";
+            label11.Size = new Size(73, 21);
+            label11.TabIndex = 89;
+            label11.Text = "E. Eve.";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.ForeColor = Color.FromArgb(229, 229, 229);
+            label13.Location = new Point(241, 142);
+            label13.Name = "label13";
+            label13.Size = new Size(73, 21);
+            label13.TabIndex = 88;
+            label13.Text = "E. Aft.";
+            // 
+            // cklEarlyEvening
+            // 
+            cklEarlyEvening.AutoSize = true;
+            cklEarlyEvening.Location = new Point(340, 175);
+            cklEarlyEvening.MinimumSize = new Size(45, 22);
+            cklEarlyEvening.Name = "cklEarlyEvening";
+            cklEarlyEvening.OffBackColor = Color.FromArgb(229, 229, 229);
+            cklEarlyEvening.OffToggleColor = Color.FromArgb(156, 84, 213);
+            cklEarlyEvening.OnBackColor = Color.FromArgb(229, 229, 229);
+            cklEarlyEvening.OnToggleColor = Color.FromArgb(156, 84, 213);
+            cklEarlyEvening.Size = new Size(45, 22);
+            cklEarlyEvening.TabIndex = 87;
+            cklEarlyEvening.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.ForeColor = Color.FromArgb(229, 229, 229);
+            label14.Location = new Point(154, 142);
+            label14.Name = "label14";
+            label14.Size = new Size(73, 21);
+            label14.TabIndex = 86;
+            label14.Text = "E. Mor.";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(151, 218);
+            label12.Name = "label12";
+            label12.Size = new Size(70, 16);
+            label12.TabIndex = 85;
+            label12.Text = "12am-16pm";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(241, 218);
+            label15.Name = "label15";
+            label15.Size = new Size(63, 16);
+            label15.TabIndex = 84;
+            label15.Text = "20pm-0am";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(334, 218);
+            label16.Name = "label16";
+            label16.Size = new Size(56, 16);
+            label16.TabIndex = 83;
+            label16.Text = "4am-8am";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.ForeColor = Color.FromArgb(229, 229, 229);
+            label17.Location = new Point(328, 201);
+            label17.Name = "label17";
+            label17.Size = new Size(73, 21);
+            label17.TabIndex = 82;
+            label17.Text = "L. Eve.";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.ForeColor = Color.FromArgb(229, 229, 229);
+            label18.Location = new Point(238, 201);
+            label18.Name = "label18";
+            label18.Size = new Size(73, 21);
+            label18.TabIndex = 81;
+            label18.Text = "L. Aft.";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label19.ForeColor = Color.FromArgb(229, 229, 229);
+            label19.Location = new Point(151, 201);
+            label19.Name = "label19";
+            label19.Size = new Size(73, 21);
+            label19.TabIndex = 80;
+            label19.Text = "L. Mor.";
             // 
             // tbxPassword
             // 
@@ -415,18 +587,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label3.TabIndex = 21;
             label3.Text = "Phone:";
             // 
-            // lbFormTitle
-            // 
-            lbFormTitle.AutoSize = true;
-            lbFormTitle.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lbFormTitle.ForeColor = Color.FromArgb(229, 229, 229);
-            lbFormTitle.Location = new Point(8, 12);
-            lbFormTitle.Margin = new Padding(4, 0, 4, 0);
-            lbFormTitle.Name = "lbFormTitle";
-            lbFormTitle.Size = new Size(42, 16);
-            lbFormTitle.TabIndex = 14;
-            lbFormTitle.Text = "Title";
-            // 
             // btnClose
             // 
             btnClose.FlatAppearance.BorderSize = 0;
@@ -498,180 +658,6 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelBody.Padding = new Padding(13, 14, 0, 0);
             panelBody.Size = new Size(838, 326);
             panelBody.TabIndex = 6;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(157, 159);
-            label4.Name = "label4";
-            label4.Size = new Size(63, 16);
-            label4.TabIndex = 94;
-            label4.Text = "8am-12am";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(241, 159);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 16);
-            label5.TabIndex = 93;
-            label5.Text = "16pm-20pm";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(335, 159);
-            label6.Name = "label6";
-            label6.Size = new Size(56, 16);
-            label6.TabIndex = 92;
-            label6.Text = "0am-4am";
-            // 
-            // cklEarlyMorning
-            // 
-            cklEarlyMorning.AutoSize = true;
-            cklEarlyMorning.Location = new Point(163, 175);
-            cklEarlyMorning.MinimumSize = new Size(45, 22);
-            cklEarlyMorning.Name = "cklEarlyMorning";
-            cklEarlyMorning.OffBackColor = Color.FromArgb(229, 229, 229);
-            cklEarlyMorning.OffToggleColor = Color.FromArgb(156, 84, 213);
-            cklEarlyMorning.OnBackColor = Color.FromArgb(229, 229, 229);
-            cklEarlyMorning.OnToggleColor = Color.FromArgb(156, 84, 213);
-            cklEarlyMorning.Size = new Size(45, 22);
-            cklEarlyMorning.TabIndex = 91;
-            cklEarlyMorning.UseVisualStyleBackColor = true;
-            // 
-            // cklEarlyAfternoon
-            // 
-            cklEarlyAfternoon.AutoSize = true;
-            cklEarlyAfternoon.Location = new Point(253, 175);
-            cklEarlyAfternoon.MinimumSize = new Size(45, 22);
-            cklEarlyAfternoon.Name = "cklEarlyAfternoon";
-            cklEarlyAfternoon.OffBackColor = Color.FromArgb(229, 229, 229);
-            cklEarlyAfternoon.OffToggleColor = Color.FromArgb(156, 84, 213);
-            cklEarlyAfternoon.OnBackColor = Color.FromArgb(229, 229, 229);
-            cklEarlyAfternoon.OnToggleColor = Color.FromArgb(156, 84, 213);
-            cklEarlyAfternoon.Size = new Size(45, 22);
-            cklEarlyAfternoon.TabIndex = 90;
-            cklEarlyAfternoon.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = Color.FromArgb(229, 229, 229);
-            label11.Location = new Point(329, 142);
-            label11.Name = "label11";
-            label11.Size = new Size(73, 21);
-            label11.TabIndex = 89;
-            label11.Text = "E. Eve.";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.ForeColor = Color.FromArgb(229, 229, 229);
-            label13.Location = new Point(241, 142);
-            label13.Name = "label13";
-            label13.Size = new Size(73, 21);
-            label13.TabIndex = 88;
-            label13.Text = "E. Aft.";
-            // 
-            // cklEarlyEvening
-            // 
-            cklEarlyEvening.AutoSize = true;
-            cklEarlyEvening.Location = new Point(340, 175);
-            cklEarlyEvening.MinimumSize = new Size(45, 22);
-            cklEarlyEvening.Name = "cklEarlyEvening";
-            cklEarlyEvening.OffBackColor = Color.FromArgb(229, 229, 229);
-            cklEarlyEvening.OffToggleColor = Color.FromArgb(156, 84, 213);
-            cklEarlyEvening.OnBackColor = Color.FromArgb(229, 229, 229);
-            cklEarlyEvening.OnToggleColor = Color.FromArgb(156, 84, 213);
-            cklEarlyEvening.Size = new Size(45, 22);
-            cklEarlyEvening.TabIndex = 87;
-            cklEarlyEvening.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.ForeColor = Color.FromArgb(229, 229, 229);
-            label14.Location = new Point(154, 142);
-            label14.Name = "label14";
-            label14.Size = new Size(73, 21);
-            label14.TabIndex = 86;
-            label14.Text = "E. Mor.";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(151, 218);
-            label12.Name = "label12";
-            label12.Size = new Size(70, 16);
-            label12.TabIndex = 85;
-            label12.Text = "12am-16pm";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label15.ForeColor = Color.White;
-            label15.Location = new Point(241, 218);
-            label15.Name = "label15";
-            label15.Size = new Size(63, 16);
-            label15.TabIndex = 84;
-            label15.Text = "20pm-0am";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(334, 218);
-            label16.Name = "label16";
-            label16.Size = new Size(56, 16);
-            label16.TabIndex = 83;
-            label16.Text = "4am-8am";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label17.ForeColor = Color.FromArgb(229, 229, 229);
-            label17.Location = new Point(328, 201);
-            label17.Name = "label17";
-            label17.Size = new Size(73, 21);
-            label17.TabIndex = 82;
-            label17.Text = "L. Eve.";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label18.ForeColor = Color.FromArgb(229, 229, 229);
-            label18.Location = new Point(238, 201);
-            label18.Name = "label18";
-            label18.Size = new Size(73, 21);
-            label18.TabIndex = 81;
-            label18.Text = "L. Aft.";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label19.ForeColor = Color.FromArgb(229, 229, 229);
-            label19.Location = new Point(151, 201);
-            label19.Name = "label19";
-            label19.Size = new Size(73, 21);
-            label19.TabIndex = 80;
-            label19.Text = "L. Mor.";
             // 
             // EmployeesAdd
             // 
