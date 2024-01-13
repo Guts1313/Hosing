@@ -118,7 +118,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelButtons.Location = new Point(3, 3);
             panelButtons.Margin = new Padding(4, 3, 4, 3);
             panelButtons.Name = "panelButtons";
-            panelButtons.Size = new Size(832, 320);
+            panelButtons.Size = new Size(832, 368);
             panelButtons.TabIndex = 4;
             panelButtons.MouseDown += panelTitleBar_MouseDown;
             // 
@@ -127,7 +127,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(157, 159);
+            label4.Location = new Point(157, 195);
             label4.Name = "label4";
             label4.Size = new Size(63, 16);
             label4.TabIndex = 94;
@@ -138,7 +138,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label5.AutoSize = true;
             label5.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(241, 159);
+            label5.Location = new Point(241, 195);
             label5.Name = "label5";
             label5.Size = new Size(70, 16);
             label5.TabIndex = 93;
@@ -149,7 +149,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label6.AutoSize = true;
             label6.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(335, 159);
+            label6.Location = new Point(335, 195);
             label6.Name = "label6";
             label6.Size = new Size(56, 16);
             label6.TabIndex = 92;
@@ -158,7 +158,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklEarlyMorning
             // 
             cklEarlyMorning.AutoSize = true;
-            cklEarlyMorning.Location = new Point(163, 175);
+            cklEarlyMorning.Location = new Point(163, 211);
             cklEarlyMorning.MinimumSize = new Size(45, 22);
             cklEarlyMorning.Name = "cklEarlyMorning";
             cklEarlyMorning.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -172,7 +172,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklEarlyAfternoon
             // 
             cklEarlyAfternoon.AutoSize = true;
-            cklEarlyAfternoon.Location = new Point(253, 175);
+            cklEarlyAfternoon.Location = new Point(253, 211);
             cklEarlyAfternoon.MinimumSize = new Size(45, 22);
             cklEarlyAfternoon.Name = "cklEarlyAfternoon";
             cklEarlyAfternoon.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -188,7 +188,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label11.AutoSize = true;
             label11.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.FromArgb(229, 229, 229);
-            label11.Location = new Point(329, 142);
+            label11.Location = new Point(329, 178);
             label11.Name = "label11";
             label11.Size = new Size(73, 21);
             label11.TabIndex = 89;
@@ -199,7 +199,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label13.AutoSize = true;
             label13.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label13.ForeColor = Color.FromArgb(229, 229, 229);
-            label13.Location = new Point(241, 142);
+            label13.Location = new Point(241, 178);
             label13.Name = "label13";
             label13.Size = new Size(73, 21);
             label13.TabIndex = 88;
@@ -208,7 +208,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklEarlyEvening
             // 
             cklEarlyEvening.AutoSize = true;
-            cklEarlyEvening.Location = new Point(340, 175);
+            cklEarlyEvening.Location = new Point(340, 211);
             cklEarlyEvening.MinimumSize = new Size(45, 22);
             cklEarlyEvening.Name = "cklEarlyEvening";
             cklEarlyEvening.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -224,7 +224,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label14.AutoSize = true;
             label14.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label14.ForeColor = Color.FromArgb(229, 229, 229);
-            label14.Location = new Point(154, 142);
+            label14.Location = new Point(154, 178);
             label14.Name = "label14";
             label14.Size = new Size(73, 21);
             label14.TabIndex = 86;
@@ -235,7 +235,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label12.AutoSize = true;
             label12.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(151, 218);
+            label12.Location = new Point(154, 258);
             label12.Name = "label12";
             label12.Size = new Size(70, 16);
             label12.TabIndex = 85;
@@ -246,7 +246,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label15.AutoSize = true;
             label15.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label15.ForeColor = Color.White;
-            label15.Location = new Point(241, 218);
+            label15.Location = new Point(244, 258);
             label15.Name = "label15";
             label15.Size = new Size(63, 16);
             label15.TabIndex = 84;
@@ -257,7 +257,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label16.AutoSize = true;
             label16.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(334, 218);
+            label16.Location = new Point(337, 258);
             label16.Name = "label16";
             label16.Size = new Size(56, 16);
             label16.TabIndex = 83;
@@ -268,7 +268,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label17.AutoSize = true;
             label17.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label17.ForeColor = Color.FromArgb(229, 229, 229);
-            label17.Location = new Point(328, 201);
+            label17.Location = new Point(331, 241);
             label17.Name = "label17";
             label17.Size = new Size(73, 21);
             label17.TabIndex = 82;
@@ -279,7 +279,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label18.AutoSize = true;
             label18.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label18.ForeColor = Color.FromArgb(229, 229, 229);
-            label18.Location = new Point(238, 201);
+            label18.Location = new Point(241, 241);
             label18.Name = "label18";
             label18.Size = new Size(73, 21);
             label18.TabIndex = 81;
@@ -290,7 +290,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label19.AutoSize = true;
             label19.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label19.ForeColor = Color.FromArgb(229, 229, 229);
-            label19.Location = new Point(151, 201);
+            label19.Location = new Point(154, 241);
             label19.Name = "label19";
             label19.Size = new Size(73, 21);
             label19.TabIndex = 80;
@@ -334,7 +334,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panel1.Controls.Add(tbxName);
             panel1.Controls.Add(tbxUsername);
             panel1.Controls.Add(tbxPhone);
-            panel1.Location = new Point(135, 0);
+            panel1.Location = new Point(135, 38);
             panel1.Name = "panel1";
             panel1.Size = new Size(286, 133);
             panel1.TabIndex = 45;
@@ -476,7 +476,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label7.AutoSize = true;
             label7.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.FromArgb(229, 229, 229);
-            label7.Location = new Point(37, 177);
+            label7.Location = new Point(37, 215);
             label7.Name = "label7";
             label7.Size = new Size(73, 21);
             label7.TabIndex = 35;
@@ -485,7 +485,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklMorning
             // 
             cklMorning.AutoSize = true;
-            cklMorning.Location = new Point(164, 234);
+            cklMorning.Location = new Point(167, 274);
             cklMorning.MinimumSize = new Size(45, 22);
             cklMorning.Name = "cklMorning";
             cklMorning.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -499,7 +499,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklAfternoon
             // 
             cklAfternoon.AutoSize = true;
-            cklAfternoon.Location = new Point(254, 234);
+            cklAfternoon.Location = new Point(257, 274);
             cklAfternoon.MinimumSize = new Size(45, 22);
             cklAfternoon.Name = "cklAfternoon";
             cklAfternoon.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -513,7 +513,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             // cklEvening
             // 
             cklEvening.AutoSize = true;
-            cklEvening.Location = new Point(341, 234);
+            cklEvening.Location = new Point(344, 274);
             cklEvening.MinimumSize = new Size(45, 22);
             cklEvening.Name = "cklEvening";
             cklEvening.OffBackColor = Color.FromArgb(229, 229, 229);
@@ -581,7 +581,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             label3.AutoSize = true;
             label3.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(229, 229, 229);
-            label3.Location = new Point(38, 100);
+            label3.Location = new Point(38, 138);
             label3.Name = "label3";
             label3.Size = new Size(64, 21);
             label3.TabIndex = 21;
@@ -615,7 +615,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.Font = new Font("Cascadia Code", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = Color.FromArgb(127, 131, 140);
-            btnSave.Location = new Point(38, 266);
+            btnSave.Location = new Point(38, 310);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(752, 43);
             btnSave.TabIndex = 12;
@@ -629,7 +629,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             lbEmail.AutoSize = true;
             lbEmail.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbEmail.ForeColor = Color.FromArgb(229, 229, 229);
-            lbEmail.Location = new Point(38, 59);
+            lbEmail.Location = new Point(38, 97);
             lbEmail.Name = "lbEmail";
             lbEmail.Size = new Size(91, 21);
             lbEmail.TabIndex = 7;
@@ -640,7 +640,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             lbName.AutoSize = true;
             lbName.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbName.ForeColor = Color.FromArgb(229, 229, 229);
-            lbName.Location = new Point(38, 18);
+            lbName.Location = new Point(38, 56);
             lbName.Name = "lbName";
             lbName.Size = new Size(55, 21);
             lbName.TabIndex = 5;
@@ -656,7 +656,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             panelBody.Margin = new Padding(4, 3, 4, 3);
             panelBody.Name = "panelBody";
             panelBody.Padding = new Padding(13, 14, 0, 0);
-            panelBody.Size = new Size(838, 326);
+            panelBody.Size = new Size(838, 374);
             panelBody.TabIndex = 6;
             // 
             // EmployeesAdd
@@ -664,7 +664,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 229, 229);
-            ClientSize = new Size(838, 326);
+            ClientSize = new Size(838, 374);
             Controls.Add(panelBody);
             Font = new Font("Cascadia Code", 10F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.Black;

@@ -33,6 +33,9 @@
             label2 = new Label();
             StartCalendar = new CustomElements.CustomDatePicker();
             EndCalendar = new CustomElements.CustomDatePicker();
+            panelButtons = new Panel();
+            btnClose = new Button();
+            panelButtons.SuspendLayout();
             SuspendLayout();
             // 
             // btnGenerate
@@ -47,9 +50,9 @@
             btnGenerate.FlatStyle = FlatStyle.Flat;
             btnGenerate.Font = new Font("Cascadia Code", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnGenerate.ForeColor = Color.FromArgb(127, 131, 140);
-            btnGenerate.Location = new Point(26, 202);
+            btnGenerate.Location = new Point(46, 124);
             btnGenerate.Name = "btnGenerate";
-            btnGenerate.Size = new Size(352, 43);
+            btnGenerate.Size = new Size(303, 43);
             btnGenerate.TabIndex = 13;
             btnGenerate.Text = "Generate";
             btnGenerate.TextColor = Color.FromArgb(127, 131, 140);
@@ -62,7 +65,7 @@
             label1.BackColor = Color.FromArgb(156, 84, 213);
             label1.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(229, 229, 229);
-            label1.Location = new Point(157, 29);
+            label1.Location = new Point(44, 57);
             label1.Name = "label1";
             label1.Size = new Size(109, 21);
             label1.TabIndex = 45;
@@ -74,7 +77,7 @@
             label2.BackColor = Color.FromArgb(156, 84, 213);
             label2.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(229, 229, 229);
-            label2.Location = new Point(166, 113);
+            label2.Location = new Point(44, 88);
             label2.Name = "label2";
             label2.Size = new Size(91, 21);
             label2.TabIndex = 46;
@@ -91,7 +94,7 @@
             StartCalendar.CalendarTitleForeColor = Color.FromArgb(156, 84, 213);
             StartCalendar.CustomFormat = "MMM dd, yyy";
             StartCalendar.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            StartCalendar.Location = new Point(107, 53);
+            StartCalendar.Location = new Point(156, 52);
             StartCalendar.MinimumSize = new Size(0, 35);
             StartCalendar.Name = "StartCalendar";
             StartCalendar.Size = new Size(201, 35);
@@ -111,7 +114,7 @@
             EndCalendar.CalendarTitleForeColor = Color.FromArgb(156, 84, 213);
             EndCalendar.CustomFormat = "MMM dd, yyy";
             EndCalendar.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            EndCalendar.Location = new Point(105, 137);
+            EndCalendar.Location = new Point(156, 83);
             EndCalendar.MinimumSize = new Size(0, 35);
             EndCalendar.Name = "EndCalendar";
             EndCalendar.Size = new Size(201, 35);
@@ -120,21 +123,54 @@
             EndCalendar.TextColor = Color.FromArgb(229, 229, 229);
             EndCalendar.Value = new DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
+            // panelButtons
+            // 
+            panelButtons.BackColor = Color.FromArgb(156, 84, 213);
+            panelButtons.Controls.Add(btnClose);
+            panelButtons.Controls.Add(btnGenerate);
+            panelButtons.Controls.Add(EndCalendar);
+            panelButtons.Controls.Add(label1);
+            panelButtons.Controls.Add(label2);
+            panelButtons.Controls.Add(StartCalendar);
+            panelButtons.Location = new Point(3, 3);
+            panelButtons.Margin = new Padding(4, 3, 4, 3);
+            panelButtons.Name = "panelButtons";
+            panelButtons.Size = new Size(400, 205);
+            panelButtons.TabIndex = 49;
+            panelButtons.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // btnClose
+            // 
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.FlatAppearance.MouseOverBackColor = Color.FromArgb(229, 229, 229);
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Font = new Font("Microsoft Sans Serif", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            btnClose.ForeColor = Color.FromArgb(229, 229, 229);
+            btnClose.Location = new Point(352, 0);
+            btnClose.Margin = new Padding(4, 3, 4, 3);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(47, 38);
+            btnClose.TabIndex = 13;
+            btnClose.Text = "X";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            btnClose.MouseEnter += btnClose_MouseEnter;
+            btnClose.MouseLeave += btnClose_MouseLeave;
+            // 
             // ShiftAutoAdd
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(156, 84, 213);
-            ClientSize = new Size(407, 257);
-            Controls.Add(EndCalendar);
-            Controls.Add(StartCalendar);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(btnGenerate);
+            BackColor = Color.FromArgb(229, 229, 229);
+            ClientSize = new Size(406, 211);
+            Controls.Add(panelButtons);
             Name = "ShiftAutoAdd";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ShiftAutoAdd";
+            Load += ShiftAutoAdd_Load;
+            panelButtons.ResumeLayout(false);
+            panelButtons.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -144,5 +180,7 @@
         private Label label2;
         private CustomElements.CustomDatePicker StartCalendar;
         private CustomElements.CustomDatePicker EndCalendar;
+        private Panel panelButtons;
+        private Button btnClose;
     }
 }

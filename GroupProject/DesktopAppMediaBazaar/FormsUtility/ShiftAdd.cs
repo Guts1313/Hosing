@@ -44,6 +44,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             _currentEmployee = loggedEmployee;
             _employeeController = employeeController;
             _shiftController = shiftController;
+            this.FormBorderStyle = FormBorderStyle.None;
             this.lbEmployees = lbEmployees;
 
             /*            foreach (Department department in _departmentController.GetAll())

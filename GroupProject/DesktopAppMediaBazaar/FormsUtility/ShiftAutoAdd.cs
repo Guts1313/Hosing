@@ -13,6 +13,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,15 +25,40 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private DataGridView lbEmployees;
         private ShiftsAutomation shiftsAutomation;
         private readonly ShiftController shiftController;
+        #region FORM CUSTOM STYLE
+        //FORM DRAG NO BORDER
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void btnClose_MouseEnter(object sender, EventArgs e)
+        {
+            btnClose.ForeColor = Color.FromArgb(156, 84, 213);
+        }
 
+        private void btnClose_MouseLeave(object sender, EventArgs e)
+        {
+            btnClose.ForeColor = Color.FromArgb(229, 229, 229);
+        }
+        #endregion
         public ShiftAutoAdd(ShiftController shiftController, DataGridView lbEmployees)
         {
             InitializeComponent();
 
             shiftsAutomation = new ShiftsAutomation();
-
+            this.FormBorderStyle = FormBorderStyle.None;
             this.lbEmployees = lbEmployees;
             this.shiftController = shiftController;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private string GetShiftTypeDisplayName(ShiftType shiftType)
@@ -124,6 +150,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
             showEmployeesMainForm();
             this.Close();
+        }
+
+        private void ShiftAutoAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

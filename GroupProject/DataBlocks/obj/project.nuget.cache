@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ovjq8/teRlAOxuQ5H2U/t+GlWwac7mYBzNk9oqZfj01nTcmT8rogIWrGmerrazbEKP8yMQJJ5rMakkDaLcx5Gg==",
+  "dgSpecHash": "qv+YCwqFOrfmAT2jD2sKNDnybBDHWq4LHaCKs/SSBX6qmVsfoI0jwXLCV4XViDjCJEvSqNcQUBWpScPTAveb9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }

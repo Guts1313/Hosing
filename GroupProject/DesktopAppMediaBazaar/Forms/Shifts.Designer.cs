@@ -74,7 +74,6 @@
             roundPanel1.BackColor = Color.FromArgb(156, 84, 213);
             roundPanel1.BorderColor = Color.White;
             roundPanel1.BorderWidth = 5;
-            roundPanel1.Controls.Add(btnAutoShifts);
             roundPanel1.Controls.Add(panel2);
             roundPanel1.Controls.Add(panel1);
             roundPanel1.Controls.Add(roundPanelListBox1);
@@ -101,7 +100,7 @@
             btnAutoShifts.FlatStyle = FlatStyle.Flat;
             btnAutoShifts.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnAutoShifts.ForeColor = Color.FromArgb(229, 229, 229);
-            btnAutoShifts.Location = new Point(722, 419);
+            btnAutoShifts.Location = new Point(0, 370);
             btnAutoShifts.Name = "btnAutoShifts";
             btnAutoShifts.Size = new Size(282, 40);
             btnAutoShifts.TabIndex = 44;
@@ -159,6 +158,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(229, 229, 229);
+            panel1.Controls.Add(btnAutoShifts);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(label11);
@@ -186,7 +186,7 @@
             panel1.Controls.Add(btnAdd);
             panel1.Location = new Point(722, 50);
             panel1.Name = "panel1";
-            panel1.Size = new Size(282, 337);
+            panel1.Size = new Size(282, 422);
             panel1.TabIndex = 17;
             // 
             // label9
@@ -305,7 +305,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.FromArgb(114, 118, 127);
-            label8.Location = new Point(206, 201);
+            label8.Location = new Point(208, 201);
             label8.Name = "label8";
             label8.Size = new Size(56, 16);
             label8.TabIndex = 43;
@@ -316,7 +316,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.FromArgb(114, 118, 127);
-            label7.Location = new Point(114, 201);
+            label7.Location = new Point(116, 201);
             label7.Name = "label7";
             label7.Size = new Size(63, 16);
             label7.TabIndex = 42;
@@ -327,7 +327,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(114, 118, 127);
-            label3.Location = new Point(22, 201);
+            label3.Location = new Point(24, 201);
             label3.Name = "label3";
             label3.Size = new Size(70, 16);
             label3.TabIndex = 41;
@@ -368,7 +368,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(114, 118, 127);
-            label6.Location = new Point(200, 180);
+            label6.Location = new Point(202, 180);
             label6.Name = "label6";
             label6.Size = new Size(73, 21);
             label6.TabIndex = 38;
@@ -412,7 +412,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(114, 118, 127);
-            label5.Location = new Point(113, 180);
+            label5.Location = new Point(115, 180);
             label5.Name = "label5";
             label5.Size = new Size(73, 21);
             label5.TabIndex = 37;
@@ -438,7 +438,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(114, 118, 127);
-            label4.Location = new Point(22, 180);
+            label4.Location = new Point(24, 180);
             label4.Name = "label4";
             label4.Size = new Size(73, 21);
             label4.TabIndex = 35;
