@@ -59,7 +59,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
             this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             this.dgvEmployees = dgvEmployees;
-            this.refreshEmployeesGrid = refreshEmployeesGrid;   
+            this.refreshEmployeesGrid = refreshEmployeesGrid;
             _employee = employee;
             shiftController = new(new DALShiftController());
             departmentController = new(new DALDepartmentController());
@@ -136,6 +136,18 @@ namespace DesktopAppMediaBazaar.FormsUtility
             {
                 cklEvening.Checked = true;
             }
+            if (_employee.Shifts.HasShift(ShiftType.EarlyMorning))
+            {
+                cklEarlyMorning.Checked = true;
+            }
+            if (_employee.Shifts.HasShift(ShiftType.EarlyAfternoon))
+            {
+                cklEarlyAfternoon.Checked = true;
+            }
+            if (_employee.Shifts.HasShift(ShiftType.EarlyEvening))
+            {
+                cklEarlyEvening.Checked = true;
+            }
         }
 
         private void showEmployees()
@@ -176,10 +188,18 @@ namespace DesktopAppMediaBazaar.FormsUtility
             { shifts.AddShift(ShiftType.Afternoon); }
             if (cklEvening.Checked == true)
             { shifts.AddShift(ShiftType.Evening); }
-            if (cklMorning.Checked == false && cklAfternoon.Checked == false && cklEvening.Checked == false)
+            if (cklEarlyMorning.Checked == true)
+            { shifts.AddShift(ShiftType.EarlyMorning); }
+            if (cklEarlyAfternoon.Checked == true)
+            { shifts.AddShift(ShiftType.EarlyAfternoon); }
+            if (cklEarlyEvening.Checked == true)
+            { shifts.AddShift(ShiftType.EarlyEvening); }
+            if (cklMorning.Checked == false && cklAfternoon.Checked == false && cklEvening.Checked == false &&
+                cklEarlyMorning.Checked == false && cklEarlyAfternoon.Checked == false && cklEarlyEvening.Checked == false)
             { RJMessageBox.Show("Please select at least one preferred shift!"); return; }
-            if (cklMorning.Checked == true && cklAfternoon.Checked == true && cklEvening.Checked == true)
-            { RJMessageBox.Show("You cannot select more than 2 preferred shifts!"); return; }
+            if (cklMorning.Checked == true && cklAfternoon.Checked == true && cklEvening.Checked == true &&
+                cklEarlyMorning.Checked == true && cklEarlyAfternoon.Checked == true && cklEarlyEvening.Checked == true)
+            { RJMessageBox.Show("You cannot select more than 5 preferred shifts!"); return; }
 
             Department department = departmentController.Get(cbxDepartment.SelectedItem.ToString());
 

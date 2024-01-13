@@ -63,13 +63,34 @@ namespace DesktopAppMediaBazaar.FormsUtility
             }
         }
 
+        private string GetShiftTypeDisplayName(ShiftType shiftType)
+        {
+            switch (shiftType)
+            {
+                case ShiftType.Morning:
+                    return "Late Morning";
+                case ShiftType.EarlyMorning:
+                    return "Early Morning";
+                case ShiftType.Afternoon:
+                    return "Late Afternoon";
+                case ShiftType.EarlyAfternoon:
+                    return "Early Afternoon";
+                case ShiftType.Evening:
+                    return "Late Evening";
+                case ShiftType.EarlyEvening:
+                    return "Early Evening";
+                default:
+                    return shiftType.ToString();
+            }
+        }
+
         private void showEmployeesMainForm()
         {
             var shifts = _shiftController.GetAll()
                 .Select(shift => new ShiftDisplayInfo
                 {
                     Name = shift.Employee.Name,
-                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     date = shift.Date,
                 })
                 .ToList();
@@ -148,9 +169,25 @@ namespace DesktopAppMediaBazaar.FormsUtility
             {
                 shiftType = ShiftType.Afternoon;
             }
-            else
+            else if (cklEvening.Checked)
             {
                 shiftType = ShiftType.Evening;
+            }
+            else if (cklEarlyMorning.Checked)
+            {
+                shiftType = ShiftType.EarlyMorning;
+            }
+            else if (cklEarlyAfternoon.Checked)
+            {
+                shiftType = ShiftType.EarlyAfternoon;
+            }
+            else if (cklEarlyEvening.Checked)
+            {
+                shiftType = ShiftType.EarlyEvening;
+            }
+            else
+            {
+                shiftType = ShiftType.Morning;
             }
 
             return (int)shiftType;

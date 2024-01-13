@@ -41,9 +41,30 @@ namespace DataItems.LogicItems
             IsCancelled = isCancelled;
         }
 
+        private string GetShiftTypeDisplayName(ShiftType shiftType)
+        {
+            switch (shiftType)
+            {
+                case ShiftType.Morning:
+                    return "Late Morning";
+                case ShiftType.EarlyMorning:
+                    return "Early Morning";
+                case ShiftType.Afternoon:
+                    return "Late Afternoon";
+                case ShiftType.EarlyAfternoon:
+                    return "Early Afternoon";
+                case ShiftType.Evening:
+                    return "Late Evening";
+                case ShiftType.EarlyEvening:
+                    return "Early Evening";
+                default:
+                    return shiftType.ToString();
+            }
+        }
+
         public string GetType()
         {
-            return Enum.GetName((ShiftType)Type);
+            return GetShiftTypeDisplayName((ShiftType)Type);
         }
 
         public override string ToString()

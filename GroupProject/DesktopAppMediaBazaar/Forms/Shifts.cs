@@ -33,6 +33,27 @@ namespace DesktopAppMediaBazaar.Forms
             cbxDepartment.SelectedIndex = -1;
         }
 
+        private string GetShiftTypeDisplayName(ShiftType shiftType)
+        {
+            switch (shiftType)
+            {
+                case ShiftType.Morning:
+                    return "Late Morning";
+                case ShiftType.EarlyMorning:
+                    return "Early Morning";
+                case ShiftType.Afternoon:
+                    return "Late Afternoon";
+                case ShiftType.EarlyAfternoon:
+                    return "Early Afternoon";
+                case ShiftType.Evening:
+                    return "Late Evening";
+                case ShiftType.EarlyEvening:
+                    return "Early Evening";
+                default:
+                    return shiftType.ToString();
+            }
+        }
+
         private void getAllShifts()
         {
             var shifts = ShiftController.GetAll()
@@ -40,7 +61,7 @@ namespace DesktopAppMediaBazaar.Forms
                 {
                     id = shift.Id,
                     Name = shift.Employee.Name,
-                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     date = shift.Date,
                 })
                 .ToList();
@@ -112,7 +133,7 @@ namespace DesktopAppMediaBazaar.Forms
                 .Select(shift => new ShiftDisplayInfo
                 {
                     Name = shift.Employee.Name,
-                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     date = shift.Date,
                 })
                 .ToList();
@@ -141,7 +162,7 @@ namespace DesktopAppMediaBazaar.Forms
                 .Select(shift => new ShiftDisplayInfo
                 {
                     Name = shift.Employee.Name,
-                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     date = shift.Date,
                 })
                 .ToList();
@@ -174,7 +195,7 @@ namespace DesktopAppMediaBazaar.Forms
                     .Select(shift => new ShiftDisplayInfo
                     {
                         Name = shift.Employee.Name,
-                        shiftType = Extensions.GetFirstShift(shift.Type),
+                        shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                         date = shift.Date,
                     })
                     .ToList();
@@ -202,13 +223,25 @@ namespace DesktopAppMediaBazaar.Forms
             {
                 shiftTypeBinary.Add((int)ShiftType.Evening);
             }
+            if (earlyMorningCheckBox.Checked)
+            {
+                shiftTypeBinary.Add((int)ShiftType.EarlyMorning);
+            }
+            if (earlyAfternoonCheckBox.Checked)
+            {
+                shiftTypeBinary.Add((int)ShiftType.EarlyAfternoon);
+            }
+            if (earlyEveningCheckBox.Checked)
+            {
+                shiftTypeBinary.Add((int)ShiftType.EarlyEvening);
+            }
 
             var shifts = ShiftController.GetAll()
                 .Where(shift => shiftTypeBinary.Contains(shift.Type))
                 .Select(shift => new ShiftDisplayInfo
                 {
                     Name = shift.Employee.Name,
-                    shiftType = Extensions.GetFirstShift(shift.Type),
+                    shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     date = shift.Date,
                 })
                 .ToList();
@@ -224,7 +257,8 @@ namespace DesktopAppMediaBazaar.Forms
             {
                 FilterByShiftType();
             }
-            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked &&
+                     !earlyMorningCheckBox.Checked && !earlyAfternoonCheckBox.Checked && !earlyEveningCheckBox.Checked)
             {
                 getAllShifts();
             }
@@ -236,7 +270,8 @@ namespace DesktopAppMediaBazaar.Forms
             {
                 FilterByShiftType();
             }
-            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked &&
+                     !earlyMorningCheckBox.Checked && !earlyAfternoonCheckBox.Checked && !earlyEveningCheckBox.Checked)
             {
                 getAllShifts();
             }
@@ -248,7 +283,47 @@ namespace DesktopAppMediaBazaar.Forms
             {
                 FilterByShiftType();
             }
-            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked)
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked &&
+                     !earlyMorningCheckBox.Checked && !earlyAfternoonCheckBox.Checked && !earlyEveningCheckBox.Checked)
+            {
+                getAllShifts();
+            }
+        }
+
+        private void earlyMorningCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (earlyMorningCheckBox.Checked)
+            {
+                FilterByShiftType();
+            }
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked &&
+                     !earlyMorningCheckBox.Checked && !earlyAfternoonCheckBox.Checked && !earlyEveningCheckBox.Checked)
+            {
+                getAllShifts();
+            }
+        }
+
+        private void earlyAfternoonCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (earlyAfternoonCheckBox.Checked)
+            {
+                FilterByShiftType();
+            }
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked &&
+                     !earlyMorningCheckBox.Checked && !earlyAfternoonCheckBox.Checked && !earlyEveningCheckBox.Checked)
+            {
+                getAllShifts();
+            }
+        }
+
+        private void earlyEveningCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (earlyEveningCheckBox.Checked)
+            {
+                FilterByShiftType();
+            }
+            else if (!morningCheckBox.Checked && !afterNoonCheckBox.Checked && !eveningCheckBox.Checked &&
+                     !earlyMorningCheckBox.Checked && !earlyAfternoonCheckBox.Checked && !earlyEveningCheckBox.Checked)
             {
                 getAllShifts();
             }
@@ -301,9 +376,9 @@ namespace DesktopAppMediaBazaar.Forms
 
     public class ShiftDisplayInfo
     {
-        public int id {  get; set; }
+        public int id { get; set; }
         public string Name { get; set; }
-        public ShiftType shiftType { get; set; }
+        public string shiftType { get; set; }
         public DateTime date { get; set; }
     }
 }

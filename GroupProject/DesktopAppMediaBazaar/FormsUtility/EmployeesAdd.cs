@@ -84,10 +84,18 @@ namespace DesktopAppMediaBazaar.FormsUtility
             { shifts.AddShift(ShiftType.Afternoon); }
             if (cklEvening.Checked == true)
             { shifts.AddShift(ShiftType.Evening); }
-            if (cklMorning.Checked == false && cklAfternoon.Checked == false && cklEvening.Checked == false)
+            if (cklEarlyMorning.Checked == true)
+            { shifts.AddShift(ShiftType.EarlyMorning); }
+            if (cklEarlyAfternoon.Checked == true)
+            { shifts.AddShift(ShiftType.EarlyAfternoon); }
+            if (cklEarlyEvening.Checked == true)
+            { shifts.AddShift(ShiftType.EarlyEvening); }
+            if (cklMorning.Checked == false && cklAfternoon.Checked == false && cklEvening.Checked == false &&
+                cklEarlyMorning.Checked == false && cklEarlyAfternoon.Checked == false && cklEarlyEvening.Checked == false)
             { RJMessageBox.Show("Please select at least one preferred shift!"); return; }
-            if (cklMorning.Checked == true && cklAfternoon.Checked == true && cklEvening.Checked == true)
-            { RJMessageBox.Show("You cannot select more than 2 preferred shifts!"); return; }
+            if (cklMorning.Checked == true && cklAfternoon.Checked == true && cklEvening.Checked == true &&
+                cklEarlyMorning.Checked == true && cklEarlyAfternoon.Checked == true && cklEarlyEvening.Checked == true)
+            { RJMessageBox.Show("You cannot select more than 5 preferred shifts!"); return; }
 
             string _name = tbxName.Texts;
             string _password = tbxPassword.Texts;
@@ -116,7 +124,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             employeeController.AddEmployee(employee, key, iv);
 
             refreshEmployeesGrid();
-            this.Close();   
+            this.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

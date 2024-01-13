@@ -10,6 +10,9 @@ namespace DataItems.LogicItems
     {
         Morning = 0b0001,
         Afternoon = 0b0010,
-        Evening = 0b0100
+        Evening = 0b0100,
+        EarlyMorning = 0b1000,
+        EarlyAfternoon = 0b10000,
+        EarlyEvening = 0b100000
     }
 }
