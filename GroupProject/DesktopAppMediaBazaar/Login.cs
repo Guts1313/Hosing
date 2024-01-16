@@ -107,8 +107,9 @@ namespace DesktopAppMediaBazaar
 
             string username = tbxUsername.Text;
             string password = tbxPassword.Text;
-
-            var employee = EmployeeController.Login(username, password);
+            string hasedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+            
+            var employee = EmployeeController.Login(username, password,hasedPassword);
             if (employee == null)
             {
                 animator.Hide(lbLoggingIn, true);
@@ -122,7 +123,15 @@ namespace DesktopAppMediaBazaar
             }
             else
             {
-                LoggedInEmployee = employee;
+                if (BCrypt.Net.BCrypt.Verify(password, hasedPassword))
+                {
+                    LoggedInEmployee = employee;
+
+                }
+                else
+                {
+                    MessageBox.Show($"Incorrect login info");
+                }
 
                 Form nextForm = null;
                 if (EmployeeController.IsAdmin(LoggedInEmployee))

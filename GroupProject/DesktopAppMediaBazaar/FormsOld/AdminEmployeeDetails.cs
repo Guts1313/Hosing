@@ -76,6 +76,7 @@ namespace DesktopAppMediaBazaar
 			string username = tbxUsername.Text;
 			string phone = tbxPhone.Text;
 			decimal salary = numUpDownSalary.Value;
+			decimal bsn = 56753;
 			int shifts = 0;
 
 			string departmentName = null;
@@ -125,12 +126,14 @@ namespace DesktopAppMediaBazaar
             byte[] key = encryptor.GenerateKey();
             byte[] iv = encryptor.GenerateIV();
             byte[] encriptedSalary = encryptor.Encrypt(salary, key, iv);
-
-            Employee employee = new Employee(_employee.Id, username, _employee.Password, department, name, _employee.Email, phone, encriptedSalary, _employee.HireDate, _employee.ProfilePicture, shifts);
-
+            byte[] keyBsn = encryptor.GenerateKey();
+            byte[] ivBSN = encryptor.GenerateIV();
+            byte[] encryptedBSN = encryptor.Encrypt(bsn,keyBsn,ivBSN);
+            Employee employee = new Employee(_employee.Id, username, _employee.Password, department, name, _employee.Email, phone, encriptedSalary, _employee.HireDate, _employee.ProfilePicture, shifts,encryptedBSN);
+            Console.WriteLine(encryptedBSN);
 			_employee = employee;
 
-			EmployeeController.UpdateEmployee(_employee, key, iv);
+			EmployeeController.UpdateEmployee(_employee, key, iv,keyBsn,ivBSN);
 
 			AdminEmployeesForm form = new AdminEmployeesForm(_loggedInEmployee);
 			this.Hide();

@@ -24,6 +24,10 @@ namespace BussinessLayer.Controllers
         {
             return _employeeDal.Create(employee, key, iv);
         }
+        public bool AddEmployee(Employee employee, byte[] key, byte[] iv,byte[]bsnKey,byte[]bsnIv)
+        {
+            return _employeeDal.Create(employee, key, iv,bsnKey,bsnIv);
+        }
 
         public bool RemoveEmployee(Employee employee)
         {
@@ -44,7 +48,10 @@ namespace BussinessLayer.Controllers
         {
             return _employeeDal.Update(employee, key, iv);
         }
-
+        public bool UpdateEmployee(Employee employee, byte[] key, byte[] iv,byte[]bsnKey,byte[]bsnIv)
+        {
+            return _employeeDal.Update(employee,key,iv,bsnKey,bsnIv);
+        }
         public bool ChangePassword(string email, string newPassword) 
         {
             return _employeeDal.ChangePassword(email,newPassword);
@@ -91,11 +98,11 @@ namespace BussinessLayer.Controllers
             return employees.ToArray();
         }
 
-        public Employee Login(string username, string password)
+        public Employee Login(string username, string password,string hashedPassword)
         {
             foreach (Employee employee in GetAll())
             {
-                if (employee.Username == username && employee.Password == password)
+                if (employee.Username == username && BCrypt.Net.BCrypt.Verify(password,hashedPassword))
                 {
                     return employee;
                 }

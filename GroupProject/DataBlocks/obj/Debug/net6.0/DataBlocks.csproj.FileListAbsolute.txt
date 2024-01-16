@@ -54,3 +54,4 @@ C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.
 C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\refint\DataBlocks.dll
 C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.pdb
 C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\ref\DataBlocks.dll
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.csproj.AssemblyReference.cache

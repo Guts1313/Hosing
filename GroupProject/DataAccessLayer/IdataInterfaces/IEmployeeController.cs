@@ -10,8 +10,10 @@ namespace DataAccessLayer.Interfaces
 	public interface IEmployeeController
 	{
 		public bool Create(Employee employee, byte[] key, byte[] iv);
+		public bool Create(Employee employee, byte[] key, byte[] iv,byte[]bsnKey,byte[]bsnIv);
 
 		public bool Update(Employee employee, byte[] key, byte[] iv);
+		public bool Update(Employee employee, byte[] key, byte[] iv,byte[] bsnKey,byte[]bsnIv);
 
 		public bool Delete(Employee employee);
 

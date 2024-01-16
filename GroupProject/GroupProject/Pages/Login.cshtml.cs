@@ -26,7 +26,8 @@ namespace GroupProject.Pages
 
         public IActionResult OnPost()
         {
-            if (_employeeController.Login(employee.Username, employee.Password) != null)
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(employee.Password);
+            if (_employeeController.Login(employee.Username, employee.Password,hashedPassword) != null)
             {
                 HttpContext.Session.SetString("username", employee.Username);
 

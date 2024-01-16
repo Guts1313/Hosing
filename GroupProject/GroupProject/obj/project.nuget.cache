@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "A2QRRorT41aaVX25hwDrmEahsBQi0+Nm+nHU8SF9hUXkaLsyopYmB1VbZ7gWT8f3txunwxrOezdrihI8Vbf7Pw==",
+  "dgSpecHash": "wzp+tDxln9HVTUb1360bnW7/qbaBANfVWvBNeUXh3cS4TDrZLX0PEMWPuXW/h+IzlNuVEM7y0By8b72W+KmHUQ==",
   "success": true,
   "projectFilePath": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\GRIGS\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
+    "C:\\Users\\GRIGS\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\GRIGS\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\GRIGS\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\GRIGS\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
@@ -14,5 +16,16 @@
     "C:\\Users\\GRIGS\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\GRIGS\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BCrypt 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "BCrypt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

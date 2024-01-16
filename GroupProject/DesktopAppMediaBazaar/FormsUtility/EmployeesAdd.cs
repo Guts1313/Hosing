@@ -14,6 +14,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCrypt.Net;
 
 namespace DesktopAppMediaBazaar.FormsUtility
 {
@@ -102,7 +103,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
             string _username = tbxUsername.Texts;
             string _email = tbxEmail.Texts;
             string _phone = tbxPhone.Texts;
-
+            decimal bsn = 512214;
             string departmentName = null;
             Department department = departmentController.Get(cbxDepartment.SelectedItem.ToString());
 
@@ -119,9 +120,12 @@ namespace DesktopAppMediaBazaar.FormsUtility
             byte[] key = encryptor.GenerateKey();
             byte[] iv = encryptor.GenerateIV();
             byte[] encriptedSalary = encryptor.Encrypt(salary, key, iv);
-
-            Employee employee = new Employee(_username, _password, department, _name, _email, _phone, encriptedSalary, shifts);
-            employeeController.AddEmployee(employee, key, iv);
+            byte[] bsnKey = encryptor.GenerateKey();
+            byte[] bsnIv = encryptor.GenerateIV();
+            byte[] encryptedBsn = encryptor.Encrypt(bsn, bsnKey, bsnIv);
+            Employee employee = new Employee(_username, _password, department, _name, _email, _phone, encriptedSalary,DateTime.Now, null, shifts,encryptedBsn);
+            employee.Password = BCrypt.Net.BCrypt.HashPassword(employee.Password);
+            employeeController.AddEmployee(employee, key, iv,bsnKey,bsnIv);
 
             refreshEmployeesGrid();
             this.Close();

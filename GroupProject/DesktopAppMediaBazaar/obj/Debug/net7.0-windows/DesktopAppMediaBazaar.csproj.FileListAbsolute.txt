@@ -408,3 +408,5 @@ C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-
 C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.pdb
 C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\DesktopAppMediaBazaar.genruntimeconfig.cache
 C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\obj\Debug\net7.0-windows\ref\DesktopAppMediaBazaar.dll
+C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\bin\Debug\net7.0-windows\DevOne.Security.Cryptography.BCrypt.dll
+C:\GroupProject\cb02-group5\GroupProject\DesktopAppMediaBazaar\bin\Debug\net7.0-windows\BCrypt.Net-Core.dll

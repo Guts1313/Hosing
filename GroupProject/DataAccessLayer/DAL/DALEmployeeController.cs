@@ -51,6 +51,40 @@ namespace DataAccessLayer.DAL
                 return false;
             }
         }
+        public bool Create(Employee employee, byte[] key, byte[] iv,byte[]bsnKey,byte[]bsnIv)
+        {
+              using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                {
+                    string sql = "INSERT INTO Employee (Username, Password, DepartmentID, Name, Email, Phone, Shifts, ProfilePicture, Salary, HireDate, SalaryKey, SalaryIv,BSN,BSN_Key,BSN_Iv) VALUES (@username, @password, @departmentID, @name, @email, @phone, @shifts, @profilepicture, @salary, @hiredate, @salaryKey, @salaryIv,@bsn,@bsn_key,@bsn_iv)";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@username", employee.Username);
+                        cmd.Parameters.AddWithValue("@password", employee.Password);
+                        cmd.Parameters.AddWithValue("@departmentID", employee.Department.Id);
+                        cmd.Parameters.AddWithValue("@name", employee.Name);
+                        cmd.Parameters.AddWithValue("@email", employee.Email);
+                        cmd.Parameters.AddWithValue("@phone", employee.Phone);
+                        cmd.Parameters.AddWithValue("@shifts", employee.Shifts);
+                        cmd.Parameters.AddWithValue("@profilepicture", "https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg");
+                        cmd.Parameters.AddWithValue("@salary", employee.Salary);
+                        cmd.Parameters.AddWithValue("@hiredate", employee.HireDate);
+                        cmd.Parameters.AddWithValue("@salaryKey", key);
+                        cmd.Parameters.AddWithValue("@salaryIv", iv);
+                        cmd.Parameters.AddWithValue("@bsn", employee.BSN);
+                        cmd.Parameters.AddWithValue("@bsn_key", bsnKey);
+                        cmd.Parameters.AddWithValue("@bsn_iv", bsnIv);
+
+                        conn.Open();
+                        int result = cmd.ExecuteNonQuery();
+
+                        if (result < 0) return false;
+                    }
+
+                }
+                return true;
+            
+        }
 
         public bool Delete(Employee employee)
         {
@@ -240,6 +274,51 @@ namespace DataAccessLayer.DAL
                         cmd.Parameters.AddWithValue("@hiredate", employee.HireDate);
                         cmd.Parameters.AddWithValue("@salaryKey", key);
                         cmd.Parameters.AddWithValue("@salaryIv", iv);
+                        
+                        
+                        conn.Open();
+                        int result = cmd.ExecuteNonQuery();
+
+                        if (result < 0) return false;
+                    }
+
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool Update(Employee employee,byte[] key, byte[] iv,byte[] bsnKey, byte[] bsnIv)
+        {
+            try
+            {
+                using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
+                {
+                    string sql = "UPDATE Employee SET Username = @username, Password = @password, DepartmentID = @departmentID, Name = @name, Email = @email, Phone = @phone, " +
+                                 "Shifts = @shifts, ProfilePicture = @profilepicture, " +
+                                 "Salary = @salary, HireDate = @hiredate, SalaryKey = @salaryKey, " +
+                                 "SalaryIv = @salaryIv, BSN=@BSN, BSN_Key=@BSN_Key,BSN_Iv=@BSN_Iv WHERE Id = @id";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@id", employee.Id);
+                        cmd.Parameters.AddWithValue("@username", employee.Username);
+                        cmd.Parameters.AddWithValue("@password", employee.Password);
+                        cmd.Parameters.AddWithValue("@departmentID", employee.Department.Id);
+                        cmd.Parameters.AddWithValue("@name", employee.Name);
+                        cmd.Parameters.AddWithValue("@email", employee.Email);
+                        cmd.Parameters.AddWithValue("@phone", employee.Phone);
+                        cmd.Parameters.AddWithValue("@shifts", employee.Shifts);
+                        cmd.Parameters.AddWithValue("@profilepicture", employee.ProfilePicture);
+                        cmd.Parameters.AddWithValue("@salary", employee.Salary);
+                        cmd.Parameters.AddWithValue("@hiredate", employee.HireDate);
+                        cmd.Parameters.AddWithValue("@salaryKey", key);
+                        cmd.Parameters.AddWithValue("@salaryIv", iv);
+                        cmd.Parameters.AddWithValue("@BSN", employee.BSN);
+                        cmd.Parameters.AddWithValue("@BSN_Key", bsnKey);
+                        cmd.Parameters.AddWithValue("@BSN_Iv", bsnIv);
 
                         conn.Open();
                         int result = cmd.ExecuteNonQuery();
