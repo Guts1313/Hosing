@@ -43,3 +43,14 @@ C:\Users\Danila\source\repos\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\refint\DataBlocks.dll
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.pdb
 C:\Users\Danila\source\repos\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\ref\DataBlocks.dll
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\bin\Debug\net6.0\DataBlocks.deps.json
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\bin\Debug\net6.0\DataBlocks.dll
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\bin\Debug\net6.0\DataBlocks.pdb
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.GeneratedMSBuildEditorConfig.editorconfig
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.AssemblyInfoInputs.cache
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.AssemblyInfo.cs
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.csproj.CoreCompileInputs.cache
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.dll
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\refint\DataBlocks.dll
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\DataBlocks.pdb
+C:\GroupProject\cb02-group5\GroupProject\DataBlocks\obj\Debug\net6.0\ref\DataBlocks.dll

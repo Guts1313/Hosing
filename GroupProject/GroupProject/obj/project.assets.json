@@ -525,19 +525,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\GRIGS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
+      "projectUniqueName": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
       "projectName": "GroupProject",
-      "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\",
+      "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\GroupProject.csproj",
+      "packagesPath": "C:\\Users\\GRIGS\\.nuget\\packages\\",
+      "outputPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GRIGS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -551,14 +551,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
+            "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
             },
-            "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
             }
           }
         }
@@ -583,24 +583,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.26, 6.0.26]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -609,7 +591,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

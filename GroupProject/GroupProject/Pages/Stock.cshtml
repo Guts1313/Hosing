@@ -4,22 +4,66 @@
 @{
 }
 
-
-<div class="stock-list">
-    @foreach (var stock in Model.stocks)
-    {
-        <div class="stock-list-item">
-            <span class="stock-list-item-title">@stock.Name</span>
-            <p class="stock-list-item-desc">Price: @stock.Price</p>
-            <p class="stock-list-item-desc">Available Amount: @stock.Amount</p>
-            <p class="stock-list-item-desc">Description: @stock.Description</p>
-            
-            <form method = "post">
-                <input type="hidden" name="id" value="@stock.Id"/>
-                <label asp-for="@stock.Amount">Amount</label>
-                <input asp-for="@stock.Amount" name="amount"/>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+<style>
+    body{
+    background: url("https://www.consafelogistics.com/hubfs/agvs-warehouse-moving-boxes.jpg");
     }
-</div>
+        .table{
+       color: #ffffff;
+           vertical-align: top;
+           border-color: #dee2e6;
+           border: none;
+           border-radius: 30px;
+           margin-top: 5%;
+           height: auto;
+           width: auto;
+           text-align: center;
+           font-weight: 600;
+           backdrop-filter: blur(25px);
+           background: linear-gradient(177deg, #1a0101b8, #182e46);
+        }
+        tbody, td, tfoot, th, thead, tr {
+            border-color: inherit;
+            border-width: 0;
+            text-align: center;
+        }
+        .btn-primary{
+            color: #fff;
+            background-color: #00081bb0;
+            border-color: #0d6efd;
+            border-radius: 30px;
+            border: none;
+            margin-left: 10px;
+        }
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Available Amount</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stock in Model.stocks)
+        {
+            <tr>
+                <td>@stock.Name</td>
+                <td>@stock.Price</td>
+                <td>@stock.Amount</td>
+                <td>@stock.Description</td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="id" value="@stock.Id" />
+                        <label asp-for="@stock.Amount">Amount</label>
+                        <input asp-for="@stock.Amount" name="amount" />
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
