@@ -180,3 +180,5 @@ C:\GroupProject\cb02-group5\GroupProject\GroupProject\obj\Debug\net6.0\GroupProj
 C:\GroupProject\cb02-group5\GroupProject\GroupProject\obj\Debug\net6.0\ref\GroupProject.dll
 C:\GroupProject\cb02-group5\GroupProject\GroupProject\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
 C:\GroupProject\cb02-group5\GroupProject\GroupProject\bin\Debug\net6.0\BCrypt.Net-Core.dll
+C:\S2-Group-Project\cb02-group5\GroupProject\GroupProject\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
+C:\S2-Group-Project\cb02-group5\GroupProject\GroupProject\bin\Debug\net6.0\BCrypt.Net-Core.dll

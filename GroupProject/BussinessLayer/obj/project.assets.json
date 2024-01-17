@@ -95,7 +95,7 @@
           }
         }
       },
-      "System.Data.SqlClient/4.8.5": {
+      "System.Data.SqlClient/4.8.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -173,10 +173,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BCrypt": "1.0.0",
           "BCrypt.Net-Core": "1.6.0",
           "DataBlocks": "1.0.0",
-          "System.Data.SqlClient": "4.8.5"
+          "System.Data.SqlClient": "4.8.6"
         },
         "compile": {
           "bin/placeholder/DataAccessLayer.dll": {}
@@ -364,10 +363,10 @@
         "version.txt"
       ]
     },
-    "System.Data.SqlClient/4.8.5": {
-      "sha512": "fRqxut4lrndPHrXD+ht1XRmCL3obuKldm4XjCRYS9p5f7FSR7shBxAwTkDrpFMsHC9BhNgjjmUtiIjvehn5zkg==",
+    "System.Data.SqlClient/4.8.6": {
+      "sha512": "2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
       "type": "package",
-      "path": "system.data.sqlclient/4.8.5",
+      "path": "system.data.sqlclient/4.8.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -444,7 +443,7 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.8.5.nupkg.sha512",
+        "system.data.sqlclient.4.8.6.nupkg.sha512",
         "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -570,19 +569,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GRIGS\\.nuget\\packages\\": {}
+    "C:\\Users\\nahme\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
+      "projectUniqueName": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
       "projectName": "BussinessLayer",
-      "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
-      "packagesPath": "C:\\Users\\GRIGS\\.nuget\\packages\\",
-      "outputPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\obj\\",
+      "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
+      "packagesPath": "C:\\Users\\nahme\\.nuget\\packages\\",
+      "outputPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\GRIGS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nahme\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -596,11 +595,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
             }
           }
         }
@@ -640,7 +639,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

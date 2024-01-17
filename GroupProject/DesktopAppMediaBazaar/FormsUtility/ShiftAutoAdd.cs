@@ -88,8 +88,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
                 .Select(shift => new ShiftDisplayInfo
                 {
                     Name = shift.Employee.Name,
+                    date = shift.Date.DayOfWeek,
                     shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
-                    date = shift.Date,
                 })
                 .ToList();
 
