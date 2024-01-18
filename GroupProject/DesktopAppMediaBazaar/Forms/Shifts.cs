@@ -60,6 +60,7 @@ namespace DesktopAppMediaBazaar.Forms
                 .Select(shift => new ShiftDisplayInfo
                 {
                     id = shift.Id,
+                    time = shift.Date,
                     date = shift.Date.DayOfWeek,
                     shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     Name = shift.Employee.Name,
@@ -73,14 +74,17 @@ namespace DesktopAppMediaBazaar.Forms
 
         private void AdjustDataGridViewColumns()
         {
+            dataGridViewShifts.Columns.Add("time", "Date");
             dataGridViewShifts.Columns.Add("date", "Day of Week");
             dataGridViewShifts.Columns.Add("shiftType", "Shift Type");
             dataGridViewShifts.Columns.Add("Name", "Name");
 
+            dataGridViewShifts.Columns["time"].DataPropertyName = "time";
             dataGridViewShifts.Columns["date"].DataPropertyName = "date";
             dataGridViewShifts.Columns["shiftType"].DataPropertyName = "shiftType";
             dataGridViewShifts.Columns["Name"].DataPropertyName = "Name";
 
+            dataGridViewShifts.Columns["time"].HeaderText = "Date";
             dataGridViewShifts.Columns["date"].HeaderText = "Day of Week";
             dataGridViewShifts.Columns["shiftType"].HeaderText = "Shift Type";
             dataGridViewShifts.Columns["Name"].HeaderText = "Name";
@@ -132,6 +136,7 @@ namespace DesktopAppMediaBazaar.Forms
                 .Where(shift => shift.Employee.Department.Name == departmentName)
                 .Select(shift => new ShiftDisplayInfo
                 {
+                    time = shift.Date,
                     date = shift.Date.DayOfWeek,
                     shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     Name = shift.Employee.Name,
@@ -161,6 +166,7 @@ namespace DesktopAppMediaBazaar.Forms
             var shifts = ShiftController.GetAllByDateAndDepartment(_selectedDate, _selectedDepartment)
                 .Select(shift => new ShiftDisplayInfo
                 {
+                    time = shift.Date,
                     date = shift.Date.DayOfWeek,
                     shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     Name = shift.Employee.Name,
@@ -194,6 +200,7 @@ namespace DesktopAppMediaBazaar.Forms
                     .Where(shift => (searchByShiftType ? shiftTypeBinary.Contains(shift.Type) : true) && shift.Employee.Name.ToLower().Contains(searchText))
                     .Select(shift => new ShiftDisplayInfo
                     {
+                        time = shift.Date,
                         date = shift.Date.DayOfWeek,
                         shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                         Name = shift.Employee.Name,
@@ -240,6 +247,7 @@ namespace DesktopAppMediaBazaar.Forms
                 .Where(shift => shiftTypeBinary.Contains(shift.Type))
                 .Select(shift => new ShiftDisplayInfo
                 {
+                    time = shift.Date,
                     date = shift.Date.DayOfWeek,
                     shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
                     Name = shift.Employee.Name,
@@ -382,6 +390,7 @@ namespace DesktopAppMediaBazaar.Forms
     public class ShiftDisplayInfo
     {
         public int id { get; set; }
+        public DateTime time { get; set; }
         public DayOfWeek date { get; set; }
         public string shiftType { get; set; }
         public string Name { get; set; }
