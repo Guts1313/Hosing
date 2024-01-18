@@ -9,58 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GroupProject
 build_property.RootNamespace = GroupProject
-build_property.ProjectDir = C:\Users\Danila\source\repos\cb02-group5\GroupProject\GroupProject\
+build_property.ProjectDir = C:\GroupProject\cb02-group5\GroupProject\GroupProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Danila\source\repos\cb02-group5\GroupProject\GroupProject
+build_property.MSBuildProjectDirectory = C:\GroupProject\cb02-group5\GroupProject\GroupProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/CallInSick.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/CallInSick.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsbEluU2ljay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/CancelledShifts.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/CancelledShifts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FuY2VsbGVkU2hpZnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/ChangeDetails.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/ChangeDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbmdlRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/ChooseShift.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/ChooseShift.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hvb3NlU2hpZnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Error.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Index.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Login.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Logout.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Privacy.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Profile.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/RequestVacation.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/RequestVacation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdFZhY2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Shared/_Login2Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbjJMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,32 +69,29 @@ build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbkxheW91dC5j
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
-=======
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Shared/_ValidationScriptsPartial.cshtml]
->>>>>>> 242ea27064d5ddbe11c8108e24ec6ea2d3e021a1
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Shifts.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Shifts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpZnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Stock.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Stock.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2suY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/_ViewImports.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/_ViewStart.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Shared/_Layout.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vwrv26ldn1
 
-[C:/Users/Danila/source/repos/cb02-group5/GroupProject/GroupProject/Pages/Shared/_Layout2.cshtml]
+[C:/GroupProject/cb02-group5/GroupProject/GroupProject/Pages/Shared/_Layout2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-fspjijfgnz
