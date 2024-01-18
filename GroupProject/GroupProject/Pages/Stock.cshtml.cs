@@ -29,7 +29,7 @@ namespace GroupProject.Pages
 
             return Page();
         }
-        public IActionResult OnPost()
+        public IActionResult UpdateStock()
         {
             if (int.TryParse(Request.Form["id"], out int id) && int.TryParse(Request.Form["amount"], out int newAmount))
             {

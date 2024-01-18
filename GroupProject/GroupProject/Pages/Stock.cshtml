@@ -2,68 +2,124 @@
 @using DataBlocks.LogicItems;
 @model GroupProject.Pages.StockModel
 @{
+    Layout = "Shared/_Login2Layout";
+
 }
 
 <style>
-    body{
-    background: url("https://www.consafelogistics.com/hubfs/agvs-warehouse-moving-boxes.jpg");
-    }
-        .table{
-       color: #ffffff;
-           vertical-align: top;
-           border-color: #dee2e6;
-           border: none;
-           border-radius: 30px;
-           margin-top: 5%;
-           height: auto;
-           width: auto;
-           text-align: center;
-           font-weight: 600;
-           backdrop-filter: blur(25px);
-           background: linear-gradient(177deg, #1a0101b8, #182e46);
-        }
-        tbody, td, tfoot, th, thead, tr {
-            border-color: inherit;
-            border-width: 0;
-            text-align: center;
-        }
-        .btn-primary{
-            color: #fff;
-            background-color: #00081bb0;
-            border-color: #0d6efd;
-            border-radius: 30px;
-            border: none;
-            margin-left: 10px;
-        }
+ 
 </style>
+<video autoplay loop muted class="bg-video">
+    <source src="assets/media/login/background.mp4" type="video/mp4">
+</video>
+<header class="header style-1">
+    <div class="container">
+        <!-- Start Mainmenu Nav -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/Index">
+                <img src="assets/media/login/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <br/><br/>
+                <ul class="navbar-nav me-3 mainmenu">
+                    <li class="menu-item-has-children">
+                        <a href="/Index">Home</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/Stock">Stock</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#Timesheet" class="dropdown-toggle" id="timesheet" data-bs-toggle="dropdown"
+                           data-bs-auto-close="outside" aria-expanded="false">
+                            Timesheet
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="timesheet">
+                            <li>
+                                <a href="/Shifts">Shifts</a>
+                            </li>
+                            <li>
+                                <a href="/CancelledShifts">Shift Management</a>
+                            </li>
+                            <li>
+                                <a href="/RequestVacation">Holidays</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/Profile">Profile</a>
+                    </li>
+                </ul>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Available Amount</th>
-            <th>Description</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var stock in Model.stocks)
-        {
-            <tr>
-                <td>@stock.Name</td>
-                <td>@stock.Price</td>
-                <td>@stock.Amount</td>
-                <td>@stock.Description</td>
-                <td>
-                    <form method="post">
-                        <input type="hidden" name="id" value="@stock.Id" />
-                        <label asp-for="@stock.Amount">Amount</label>
-                        <input asp-for="@stock.Amount" name="amount" />
-                        <button type="submit" class="btn btn-primary">Update</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                <div class="d-flex ms-auto right-nav">
+                    <a href="/Login" class="anime-btn btn-dark">LOG OUT</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+@* <table class="table"> *@
+@*     <thead> *@
+@*         <tr> *@
+@*             <th>Name</th> *@
+@*             <th>Price</th> *@
+@*             <th>Available Amount</th> *@
+@*             <th>Description</th> *@
+@*             <th>Action</th> *@
+@*         </tr> *@
+@*     </thead> *@
+@*     <tbody> *@
+@*         @foreach (var stock in Model.stocks) *@
+@*         { *@
+@*             <tr> *@
+@*                 <td>@stock.Name</td> *@
+@*                 <td>@stock.Price</td> *@
+@*                 <td>@stock.Amount</td> *@
+@*                 <td>@stock.Description</td> *@
+@*                 <td> *@
+@* <form method="post"> *@
+@*     <input type="hidden" name="id" value="@stock.Id"/> *@
+@*     <label asp-for="@stock.Amount">Amount</label> *@
+@*     <input asp-for="@stock.Amount" name="amount"/> *@
+@*     <button type="submit" class="btn btn-primary">Update</button> *@
+@* </form> *@
+@*                 </td> *@
+@*             </tr> *@
+@*         } *@
+@*     </tbody> *@
+@* </table> *@
+<div class="container">
+    <div class="login-block">
+        <div style="margin-top:-45px"class="login-content">
+            <h2 class="mt-3 section-title">
+                <img src="assets/media/login/Stock.png" alt="Stock Icon" class="section-icon"> Stock Items:
+            </h2>
+            <hr class="section-divider">
+            <div class="row">
+                @foreach (var stocks in Model.stocks)
+                {
+                    <div class="col-auto">
+                        <div class="card stock-list-item">
+                            <div class="card-body">
+                                <h4 class="card-title">Item name: @stocks.Name</h4>
+                                <p class="card-text">Price: @stocks.Price</p>
+                                <p class="card-text">Available Amount: @stocks.Amount</p>
+                                <p class="card-text">Description: @stocks.Description</p> <!-- Corrected to show Description -->
+
+                                <form method="post">
+                                    <input type="hidden" name="id" value="@stocks.Id"/>
+                                    <label asp-for="@stocks.Amount">Amount</label>
+                                    <input asp-for="@stocks.Amount" name="amount"/>
+                                    <button type="submit" class="btn btn-primary">Update</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

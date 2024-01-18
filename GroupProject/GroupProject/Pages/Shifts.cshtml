@@ -116,6 +116,51 @@
 <!--=====================================-->
 <!--=        NEW DESIGN CODE         =-->
 <!--=====================================-->
+<header class="header style-1">
+        <div class="container">
+            <!-- Start Mainmenu Nav -->
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/Index"><img src="assets/media/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                <br/><br/>
+                    <ul class="navbar-nav me-3 mainmenu">
+                        <li class="menu-item-has-children">
+                            <a href="/Index">Home</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/Stock">Stock</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#Timesheet" class="dropdown-toggle" id="timesheet" data-bs-toggle="dropdown"
+                               data-bs-auto-close="outside" aria-expanded="false">Timesheet</a>
+                            <ul class="dropdown-menu" aria-labelledby="timesheet">
+                                <li>
+                                    <a href="/Shifts">Shifts</a>
+                                </li>
+                                <li>
+                                    <a href="/CancelledShifts">Shift Management</a>
+                                </li>
+                                <li>
+                                    <a href="/RequestVacation">Holidays</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/Profile">Profile</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex ms-auto right-nav">
+                        <a href="/Login" class="anime-btn btn-dark">LOG OUT</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
 <div class="login">
     <video autoplay loop muted class="bg-video">
         <source src="assets/media/login/background.mp4" type="video/mp4">
