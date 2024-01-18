@@ -37,7 +37,6 @@
             btnLogout = new CustomElements.NoHoverButton();
             panelInformation2 = new Panel();
             btnVacations = new Button();
-            btnCancelledShifts = new Button();
             btnShifts = new Button();
             btnTimesheet = new Button();
             panelInformation = new Panel();
@@ -63,7 +62,7 @@
             customControlBox1.BackColor = Color.Transparent;
             customControlBox1.EnableMaximizeButton = false;
             customControlBox1.EnableMinimizeButton = true;
-            customControlBox1.Location = new Point(1127, 0);
+            customControlBox1.Location = new Point(1288, 0);
             customControlBox1.Name = "customControlBox1";
             customControlBox1.Size = new Size(139, 31);
             customControlBox1.TabIndex = 0;
@@ -77,11 +76,12 @@
             LogInContainer.DrawIcon = false;
             LogInContainer.Font = new Font("Cascadia Code", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             LogInContainer.Location = new Point(0, 0);
-            LogInContainer.MaximumSize = new Size(1266, 573);
-            LogInContainer.MinimumSize = new Size(1266, 573);
+            LogInContainer.Margin = new Padding(3, 4, 3, 4);
+            LogInContainer.MaximumSize = new Size(1447, 764);
+            LogInContainer.MinimumSize = new Size(1447, 764);
             LogInContainer.Name = "LogInContainer";
-            LogInContainer.Padding = new Padding(0, 31, 0, 0);
-            LogInContainer.Size = new Size(1266, 573);
+            LogInContainer.Padding = new Padding(0, 41, 0, 0);
+            LogInContainer.Size = new Size(1447, 764);
             LogInContainer.TabIndex = 0;
             LogInContainer.TextAlignment = CustomElements.Controls.CustomContainer.Alignment.Left;
             LogInContainer.TitleBarTextColor = Color.Gainsboro;
@@ -91,9 +91,10 @@
             panel2.BackColor = Color.FromArgb(156, 84, 213);
             panel2.Controls.Add(panelChildForm);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(225, 31);
+            panel2.Location = new Point(257, 41);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1041, 542);
+            panel2.Size = new Size(1190, 723);
             panel2.TabIndex = 2;
             // 
             // panelChildForm
@@ -104,10 +105,11 @@
             panelChildForm.FillColor = Color.FromArgb(229, 229, 229);
             panelChildForm.IsBorder = false;
             panelChildForm.IsFill = true;
-            panelChildForm.Location = new Point(-6, 0);
+            panelChildForm.Location = new Point(-7, 0);
+            panelChildForm.Margin = new Padding(3, 4, 3, 4);
             panelChildForm.Name = "panelChildForm";
             panelChildForm.Radius = 20;
-            panelChildForm.Size = new Size(1047, 542);
+            panelChildForm.Size = new Size(1197, 723);
             panelChildForm.TabIndex = 3;
             // 
             // leftPanel
@@ -122,16 +124,18 @@
             leftPanel.Controls.Add(panelLogo);
             leftPanel.Dock = DockStyle.Left;
             leftPanel.ForeColor = Color.FromArgb(250, 250, 250);
-            leftPanel.Location = new Point(0, 31);
+            leftPanel.Location = new Point(0, 41);
+            leftPanel.Margin = new Padding(3, 4, 3, 4);
             leftPanel.Name = "leftPanel";
             leftPanel.Side = CustomElements.Controls.CustomPanelV2.PanelSide.Left;
-            leftPanel.Size = new Size(225, 542);
+            leftPanel.Size = new Size(257, 723);
             leftPanel.TabIndex = 1;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Logout;
-            pictureBox2.Location = new Point(11, 507);
+            pictureBox2.Location = new Point(13, 676);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(24, 24);
             pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -149,9 +153,10 @@
             btnLogout.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogout.ForeColor = Color.FromArgb(250, 250, 250);
             btnLogout.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLogout.Location = new Point(0, 497);
+            btnLogout.Location = new Point(0, 663);
+            btnLogout.Margin = new Padding(3, 4, 3, 4);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(225, 45);
+            btnLogout.Size = new Size(257, 60);
             btnLogout.TabIndex = 0;
             btnLogout.Text = "     Log Out";
             btnLogout.TextAlign = ContentAlignment.MiddleLeft;
@@ -163,12 +168,12 @@
             // 
             panelInformation2.BackColor = Color.FromArgb(124, 75, 163);
             panelInformation2.Controls.Add(btnVacations);
-            panelInformation2.Controls.Add(btnCancelledShifts);
             panelInformation2.Controls.Add(btnShifts);
             panelInformation2.Dock = DockStyle.Top;
-            panelInformation2.Location = new Point(0, 318);
+            panelInformation2.Location = new Point(0, 424);
+            panelInformation2.Margin = new Padding(3, 4, 3, 4);
             panelInformation2.Name = "panelInformation2";
-            panelInformation2.Size = new Size(225, 136);
+            panelInformation2.Size = new Size(257, 121);
             panelInformation2.TabIndex = 29;
             // 
             // btnVacations
@@ -183,39 +188,17 @@
             btnVacations.ForeColor = Color.FromArgb(250, 250, 250);
             btnVacations.Image = Properties.Resources.Vacations;
             btnVacations.ImageAlign = ContentAlignment.MiddleLeft;
-            btnVacations.Location = new Point(0, 90);
+            btnVacations.Location = new Point(0, 60);
+            btnVacations.Margin = new Padding(3, 4, 3, 4);
             btnVacations.Name = "btnVacations";
-            btnVacations.Padding = new Padding(5, 0, 0, 0);
-            btnVacations.Size = new Size(225, 45);
+            btnVacations.Padding = new Padding(6, 0, 0, 0);
+            btnVacations.Size = new Size(257, 60);
             btnVacations.TabIndex = 30;
             btnVacations.Text = "  Vacations";
             btnVacations.TextAlign = ContentAlignment.MiddleLeft;
             btnVacations.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnVacations.UseVisualStyleBackColor = false;
             btnVacations.Click += btnVacations_Click;
-            // 
-            // btnCancelledShifts
-            // 
-            btnCancelledShifts.BackColor = Color.FromArgb(124, 75, 163);
-            btnCancelledShifts.Dock = DockStyle.Top;
-            btnCancelledShifts.FlatAppearance.BorderSize = 0;
-            btnCancelledShifts.FlatAppearance.MouseDownBackColor = Color.FromArgb(23, 21, 32);
-            btnCancelledShifts.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 22, 34);
-            btnCancelledShifts.FlatStyle = FlatStyle.Flat;
-            btnCancelledShifts.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCancelledShifts.ForeColor = Color.FromArgb(250, 250, 250);
-            btnCancelledShifts.Image = Properties.Resources.CancelledShift;
-            btnCancelledShifts.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCancelledShifts.Location = new Point(0, 45);
-            btnCancelledShifts.Name = "btnCancelledShifts";
-            btnCancelledShifts.Padding = new Padding(5, 0, 0, 0);
-            btnCancelledShifts.Size = new Size(225, 45);
-            btnCancelledShifts.TabIndex = 24;
-            btnCancelledShifts.Text = "  Cancelled Shifts";
-            btnCancelledShifts.TextAlign = ContentAlignment.MiddleLeft;
-            btnCancelledShifts.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelledShifts.UseVisualStyleBackColor = false;
-            btnCancelledShifts.Click += btnCancelledShifts_Click;
             // 
             // btnShifts
             // 
@@ -230,9 +213,10 @@
             btnShifts.Image = Properties.Resources.shifts;
             btnShifts.ImageAlign = ContentAlignment.MiddleLeft;
             btnShifts.Location = new Point(0, 0);
+            btnShifts.Margin = new Padding(3, 4, 3, 4);
             btnShifts.Name = "btnShifts";
-            btnShifts.Padding = new Padding(5, 0, 0, 0);
-            btnShifts.Size = new Size(225, 45);
+            btnShifts.Padding = new Padding(6, 0, 0, 0);
+            btnShifts.Size = new Size(257, 60);
             btnShifts.TabIndex = 23;
             btnShifts.Text = "  Shifts";
             btnShifts.TextAlign = ContentAlignment.MiddleLeft;
@@ -251,10 +235,11 @@
             btnTimesheet.ForeColor = Color.FromArgb(250, 250, 250);
             btnTimesheet.Image = Properties.Resources.Timesheet;
             btnTimesheet.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTimesheet.Location = new Point(0, 273);
+            btnTimesheet.Location = new Point(0, 364);
+            btnTimesheet.Margin = new Padding(3, 4, 3, 4);
             btnTimesheet.Name = "btnTimesheet";
-            btnTimesheet.Padding = new Padding(5, 0, 0, 0);
-            btnTimesheet.Size = new Size(225, 45);
+            btnTimesheet.Padding = new Padding(6, 0, 0, 0);
+            btnTimesheet.Size = new Size(257, 60);
             btnTimesheet.TabIndex = 28;
             btnTimesheet.Text = "  Timesheet";
             btnTimesheet.TextAlign = ContentAlignment.MiddleLeft;
@@ -268,9 +253,10 @@
             panelInformation.Controls.Add(btnDepartments);
             panelInformation.Controls.Add(btnEmployee);
             panelInformation.Dock = DockStyle.Top;
-            panelInformation.Location = new Point(0, 182);
+            panelInformation.Location = new Point(0, 243);
+            panelInformation.Margin = new Padding(3, 4, 3, 4);
             panelInformation.Name = "panelInformation";
-            panelInformation.Size = new Size(225, 91);
+            panelInformation.Size = new Size(257, 121);
             panelInformation.TabIndex = 27;
             // 
             // btnDepartments
@@ -285,10 +271,11 @@
             btnDepartments.ForeColor = Color.FromArgb(250, 250, 250);
             btnDepartments.Image = Properties.Resources.Departments;
             btnDepartments.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDepartments.Location = new Point(0, 45);
+            btnDepartments.Location = new Point(0, 60);
+            btnDepartments.Margin = new Padding(3, 4, 3, 4);
             btnDepartments.Name = "btnDepartments";
-            btnDepartments.Padding = new Padding(5, 0, 0, 0);
-            btnDepartments.Size = new Size(225, 45);
+            btnDepartments.Padding = new Padding(6, 0, 0, 0);
+            btnDepartments.Size = new Size(257, 60);
             btnDepartments.TabIndex = 27;
             btnDepartments.Text = "  Departments";
             btnDepartments.TextAlign = ContentAlignment.MiddleLeft;
@@ -309,9 +296,10 @@
             btnEmployee.Image = Properties.Resources.Employees;
             btnEmployee.ImageAlign = ContentAlignment.MiddleLeft;
             btnEmployee.Location = new Point(0, 0);
+            btnEmployee.Margin = new Padding(3, 4, 3, 4);
             btnEmployee.Name = "btnEmployee";
-            btnEmployee.Padding = new Padding(5, 0, 0, 0);
-            btnEmployee.Size = new Size(225, 45);
+            btnEmployee.Padding = new Padding(6, 0, 0, 0);
+            btnEmployee.Size = new Size(257, 60);
             btnEmployee.TabIndex = 23;
             btnEmployee.Text = "  Employees";
             btnEmployee.TextAlign = ContentAlignment.MiddleLeft;
@@ -330,10 +318,11 @@
             btnBusiness.ForeColor = Color.FromArgb(250, 250, 250);
             btnBusiness.Image = Properties.Resources.Business;
             btnBusiness.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBusiness.Location = new Point(0, 137);
+            btnBusiness.Location = new Point(0, 183);
+            btnBusiness.Margin = new Padding(3, 4, 3, 4);
             btnBusiness.Name = "btnBusiness";
-            btnBusiness.Padding = new Padding(5, 0, 0, 0);
-            btnBusiness.Size = new Size(225, 45);
+            btnBusiness.Padding = new Padding(6, 0, 0, 0);
+            btnBusiness.Size = new Size(257, 60);
             btnBusiness.TabIndex = 24;
             btnBusiness.Text = "  Business";
             btnBusiness.TextAlign = ContentAlignment.MiddleLeft;
@@ -352,10 +341,11 @@
             btnAnnouncements.ForeColor = Color.FromArgb(250, 250, 250);
             btnAnnouncements.Image = Properties.Resources.Announcements;
             btnAnnouncements.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAnnouncements.Location = new Point(0, 92);
+            btnAnnouncements.Location = new Point(0, 123);
+            btnAnnouncements.Margin = new Padding(3, 4, 3, 4);
             btnAnnouncements.Name = "btnAnnouncements";
-            btnAnnouncements.Padding = new Padding(5, 0, 0, 0);
-            btnAnnouncements.Size = new Size(225, 45);
+            btnAnnouncements.Padding = new Padding(6, 0, 0, 0);
+            btnAnnouncements.Size = new Size(257, 60);
             btnAnnouncements.TabIndex = 17;
             btnAnnouncements.Text = "  Announcements";
             btnAnnouncements.TextAlign = ContentAlignment.MiddleLeft;
@@ -368,33 +358,34 @@
             panelLogo.Controls.Add(pictureBox1);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
+            panelLogo.Margin = new Padding(3, 4, 3, 4);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(225, 92);
+            panelLogo.Size = new Size(257, 123);
             panelLogo.TabIndex = 1;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(156, 84, 213);
             pictureBox1.Image = Properties.Resources.LOGO;
-            pictureBox1.Location = new Point(80, 14);
+            pictureBox1.Location = new Point(91, 19);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(64, 64);
+            pictureBox1.Size = new Size(73, 85);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = SystemColors.ControlDarkDark;
-            ClientSize = new Size(1266, 573);
+            ClientSize = new Size(1447, 764);
             Controls.Add(LogInContainer);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
-            MaximumSize = new Size(2560, 1440);
-            MinimumSize = new Size(1266, 573);
+            MaximumSize = new Size(2926, 1920);
+            MinimumSize = new Size(1447, 764);
             Name = "Dashboard";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
@@ -421,7 +412,6 @@
         private Panel panelLogo;
         private PictureBox pictureBox1;
         private Panel panelInformation2;
-        private Button btnCancelledShifts;
         private Button btnShifts;
         private Button btnTimesheet;
         private Panel panelInformation;

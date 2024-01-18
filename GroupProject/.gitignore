@@ -151,6 +151,10 @@ coverage*.json
 coverage*.xml
 coverage*.info
 
+# Ignore directories created by the build process
+GroupProject/GroupProject/bin/
+GroupProject/GroupProject/obj/
+
 # Visual Studio code coverage results
 *.coverage
 *.coveragexml

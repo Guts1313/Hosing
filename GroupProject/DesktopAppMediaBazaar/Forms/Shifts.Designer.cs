@@ -30,11 +30,11 @@
         private void InitializeComponent()
         {
             roundPanel1 = new CustomElements.RoundPanel();
-            btnAutoShifts = new CustomElements.RoundButton();
             panel2 = new Panel();
             customLabelV21 = new CustomElements.Controls.CustomLabelV2();
             tbxName = new housing.CustomElements.RoundTextBox();
             panel1 = new Panel();
+            btnAutoShifts = new CustomElements.RoundButton();
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
@@ -82,41 +82,21 @@
             roundPanel1.IsBorder = false;
             roundPanel1.IsFill = true;
             roundPanel1.Location = new Point(0, 0);
-            roundPanel1.Margin = new Padding(4, 3, 4, 3);
+            roundPanel1.Margin = new Padding(5, 4, 5, 4);
             roundPanel1.Name = "roundPanel1";
             roundPanel1.Radius = 20;
-            roundPanel1.Size = new Size(1041, 542);
+            roundPanel1.Size = new Size(1190, 723);
             roundPanel1.TabIndex = 4;
-            // 
-            // btnAutoShifts
-            // 
-            btnAutoShifts.BackColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.BackgroundColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.BorderColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.BorderRadius = 15;
-            btnAutoShifts.BorderSize = 0;
-            btnAutoShifts.ClickedColor = Color.FromArgb(156, 84, 213);
-            btnAutoShifts.FlatAppearance.BorderSize = 0;
-            btnAutoShifts.FlatStyle = FlatStyle.Flat;
-            btnAutoShifts.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAutoShifts.ForeColor = Color.FromArgb(229, 229, 229);
-            btnAutoShifts.Location = new Point(0, 370);
-            btnAutoShifts.Name = "btnAutoShifts";
-            btnAutoShifts.Size = new Size(282, 40);
-            btnAutoShifts.TabIndex = 44;
-            btnAutoShifts.Text = "Generate Shifts Automatically";
-            btnAutoShifts.TextColor = Color.FromArgb(229, 229, 229);
-            btnAutoShifts.UseVisualStyleBackColor = false;
-            btnAutoShifts.Click += btnAutoShifts_Click;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(229, 229, 229);
             panel2.Controls.Add(customLabelV21);
             panel2.Controls.Add(tbxName);
-            panel2.Location = new Point(58, 403);
+            panel2.Location = new Point(66, 537);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(648, 69);
+            panel2.Size = new Size(741, 92);
             panel2.TabIndex = 29;
             // 
             // customLabelV21
@@ -126,9 +106,9 @@
             customLabelV21.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             customLabelV21.ForeColor = Color.FromArgb(114, 118, 127);
             customLabelV21.Location = new Point(0, 0);
-            customLabelV21.Margin = new Padding(4, 0, 4, 0);
+            customLabelV21.Margin = new Padding(5, 0, 5, 0);
             customLabelV21.Name = "customLabelV21";
-            customLabelV21.Size = new Size(163, 21);
+            customLabelV21.Size = new Size(216, 27);
             customLabelV21.TabIndex = 15;
             customLabelV21.Text = "Search Employees:";
             // 
@@ -141,15 +121,15 @@
             tbxName.BorderSize = 3;
             tbxName.Font = new Font("Cascadia Code", 9F, FontStyle.Regular, GraphicsUnit.Point);
             tbxName.ForeColor = Color.FromArgb(127, 131, 140);
-            tbxName.Location = new Point(0, 25);
-            tbxName.Margin = new Padding(4);
+            tbxName.Location = new Point(0, 33);
+            tbxName.Margin = new Padding(5);
             tbxName.Multiline = false;
             tbxName.Name = "tbxName";
-            tbxName.Padding = new Padding(10, 7, 10, 7);
+            tbxName.Padding = new Padding(11, 9, 11, 9);
             tbxName.PasswordChar = false;
             tbxName.PlaceholderColor = Color.FromArgb(127, 131, 140);
             tbxName.PlaceholderText = "< name >";
-            tbxName.Size = new Size(240, 31);
+            tbxName.Size = new Size(274, 39);
             tbxName.TabIndex = 15;
             tbxName.Texts = "";
             tbxName.UnderlinedStyle = true;
@@ -184,19 +164,42 @@
             panel1.Controls.Add(btnSearch);
             panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnAdd);
-            panel1.Location = new Point(722, 50);
+            panel1.Location = new Point(825, 67);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(282, 422);
+            panel1.Size = new Size(322, 563);
             panel1.TabIndex = 17;
+            // 
+            // btnAutoShifts
+            // 
+            btnAutoShifts.BackColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.BackgroundColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.BorderColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.BorderRadius = 15;
+            btnAutoShifts.BorderSize = 0;
+            btnAutoShifts.ClickedColor = Color.FromArgb(156, 84, 213);
+            btnAutoShifts.FlatAppearance.BorderSize = 0;
+            btnAutoShifts.FlatStyle = FlatStyle.Flat;
+            btnAutoShifts.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAutoShifts.ForeColor = Color.FromArgb(229, 229, 229);
+            btnAutoShifts.Location = new Point(0, 493);
+            btnAutoShifts.Margin = new Padding(3, 4, 3, 4);
+            btnAutoShifts.Name = "btnAutoShifts";
+            btnAutoShifts.Size = new Size(322, 53);
+            btnAutoShifts.TabIndex = 44;
+            btnAutoShifts.Text = "Generate Shifts Automatically";
+            btnAutoShifts.TextColor = Color.FromArgb(229, 229, 229);
+            btnAutoShifts.UseVisualStyleBackColor = false;
+            btnAutoShifts.Click += btnAutoShifts_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.FromArgb(114, 118, 127);
-            label9.Location = new Point(207, 135);
+            label9.Location = new Point(237, 180);
             label9.Name = "label9";
-            label9.Size = new Size(56, 16);
+            label9.Size = new Size(72, 20);
             label9.TabIndex = 52;
             label9.Text = "0am-4am";
             // 
@@ -205,9 +208,9 @@
             label10.AutoSize = true;
             label10.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label10.ForeColor = Color.FromArgb(114, 118, 127);
-            label10.Location = new Point(113, 135);
+            label10.Location = new Point(129, 180);
             label10.Name = "label10";
-            label10.Size = new Size(70, 16);
+            label10.Size = new Size(90, 20);
             label10.TabIndex = 51;
             label10.Text = "16pm-20pm";
             // 
@@ -216,9 +219,9 @@
             label11.AutoSize = true;
             label11.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label11.ForeColor = Color.FromArgb(114, 118, 127);
-            label11.Location = new Point(29, 135);
+            label11.Location = new Point(33, 180);
             label11.Name = "label11";
-            label11.Size = new Size(63, 16);
+            label11.Size = new Size(81, 20);
             label11.TabIndex = 50;
             label11.Text = "8am-12pm";
             // 
@@ -227,9 +230,9 @@
             label12.AutoSize = true;
             label12.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label12.ForeColor = Color.FromArgb(114, 118, 127);
-            label12.Location = new Point(201, 114);
+            label12.Location = new Point(230, 152);
             label12.Name = "label12";
-            label12.Size = new Size(73, 21);
+            label12.Size = new Size(96, 27);
             label12.TabIndex = 49;
             label12.Text = "E. Eve.";
             // 
@@ -238,9 +241,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label13.ForeColor = Color.FromArgb(114, 118, 127);
-            label13.Location = new Point(113, 114);
+            label13.Location = new Point(129, 152);
             label13.Name = "label13";
-            label13.Size = new Size(73, 21);
+            label13.Size = new Size(96, 27);
             label13.TabIndex = 48;
             label13.Text = "E. Aft.";
             // 
@@ -249,23 +252,24 @@
             label14.AutoSize = true;
             label14.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label14.ForeColor = Color.FromArgb(114, 118, 127);
-            label14.Location = new Point(26, 114);
+            label14.Location = new Point(30, 152);
             label14.Name = "label14";
-            label14.Size = new Size(73, 21);
+            label14.Size = new Size(96, 27);
             label14.TabIndex = 47;
             label14.Text = "E. Mor.";
             // 
             // earlyEveningCheckBox
             // 
             earlyEveningCheckBox.AutoSize = true;
-            earlyEveningCheckBox.Location = new Point(212, 151);
-            earlyEveningCheckBox.MinimumSize = new Size(45, 22);
+            earlyEveningCheckBox.Location = new Point(242, 201);
+            earlyEveningCheckBox.Margin = new Padding(3, 4, 3, 4);
+            earlyEveningCheckBox.MinimumSize = new Size(51, 29);
             earlyEveningCheckBox.Name = "earlyEveningCheckBox";
             earlyEveningCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
             earlyEveningCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
             earlyEveningCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
             earlyEveningCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
-            earlyEveningCheckBox.Size = new Size(45, 22);
+            earlyEveningCheckBox.Size = new Size(51, 29);
             earlyEveningCheckBox.TabIndex = 46;
             earlyEveningCheckBox.UseVisualStyleBackColor = true;
             earlyEveningCheckBox.CheckedChanged += earlyEveningCheckBox_CheckedChanged;
@@ -273,14 +277,15 @@
             // earlyAfternoonCheckBox
             // 
             earlyAfternoonCheckBox.AutoSize = true;
-            earlyAfternoonCheckBox.Location = new Point(125, 151);
-            earlyAfternoonCheckBox.MinimumSize = new Size(45, 22);
+            earlyAfternoonCheckBox.Location = new Point(143, 201);
+            earlyAfternoonCheckBox.Margin = new Padding(3, 4, 3, 4);
+            earlyAfternoonCheckBox.MinimumSize = new Size(51, 29);
             earlyAfternoonCheckBox.Name = "earlyAfternoonCheckBox";
             earlyAfternoonCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
             earlyAfternoonCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
             earlyAfternoonCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
             earlyAfternoonCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
-            earlyAfternoonCheckBox.Size = new Size(45, 22);
+            earlyAfternoonCheckBox.Size = new Size(51, 29);
             earlyAfternoonCheckBox.TabIndex = 45;
             earlyAfternoonCheckBox.UseVisualStyleBackColor = true;
             earlyAfternoonCheckBox.CheckedChanged += earlyAfternoonCheckBox_CheckedChanged;
@@ -288,14 +293,15 @@
             // earlyMorningCheckBox
             // 
             earlyMorningCheckBox.AutoSize = true;
-            earlyMorningCheckBox.Location = new Point(35, 151);
-            earlyMorningCheckBox.MinimumSize = new Size(45, 22);
+            earlyMorningCheckBox.Location = new Point(40, 201);
+            earlyMorningCheckBox.Margin = new Padding(3, 4, 3, 4);
+            earlyMorningCheckBox.MinimumSize = new Size(51, 29);
             earlyMorningCheckBox.Name = "earlyMorningCheckBox";
             earlyMorningCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
             earlyMorningCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
             earlyMorningCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
             earlyMorningCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
-            earlyMorningCheckBox.Size = new Size(45, 22);
+            earlyMorningCheckBox.Size = new Size(51, 29);
             earlyMorningCheckBox.TabIndex = 44;
             earlyMorningCheckBox.UseVisualStyleBackColor = true;
             earlyMorningCheckBox.CheckedChanged += earlyMorningCheckBox_CheckedChanged;
@@ -305,9 +311,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.FromArgb(114, 118, 127);
-            label8.Location = new Point(208, 201);
+            label8.Location = new Point(238, 268);
             label8.Name = "label8";
-            label8.Size = new Size(56, 16);
+            label8.Size = new Size(72, 20);
             label8.TabIndex = 43;
             label8.Text = "4am-8am";
             // 
@@ -316,9 +322,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.FromArgb(114, 118, 127);
-            label7.Location = new Point(116, 201);
+            label7.Location = new Point(133, 268);
             label7.Name = "label7";
-            label7.Size = new Size(63, 16);
+            label7.Size = new Size(81, 20);
             label7.TabIndex = 42;
             label7.Text = "20pm-0am";
             // 
@@ -327,23 +333,24 @@
             label3.AutoSize = true;
             label3.Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(114, 118, 127);
-            label3.Location = new Point(24, 201);
+            label3.Location = new Point(27, 268);
             label3.Name = "label3";
-            label3.Size = new Size(70, 16);
+            label3.Size = new Size(90, 20);
             label3.TabIndex = 41;
             label3.Text = "12am-16pm";
             // 
             // morningCheckBox
             // 
             morningCheckBox.AutoSize = true;
-            morningCheckBox.Location = new Point(35, 218);
-            morningCheckBox.MinimumSize = new Size(45, 22);
+            morningCheckBox.Location = new Point(40, 291);
+            morningCheckBox.Margin = new Padding(3, 4, 3, 4);
+            morningCheckBox.MinimumSize = new Size(51, 29);
             morningCheckBox.Name = "morningCheckBox";
             morningCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
             morningCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
             morningCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
             morningCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
-            morningCheckBox.Size = new Size(45, 22);
+            morningCheckBox.Size = new Size(51, 29);
             morningCheckBox.TabIndex = 40;
             morningCheckBox.UseVisualStyleBackColor = true;
             morningCheckBox.CheckedChanged += morningCheckBox_CheckedChanged;
@@ -351,14 +358,15 @@
             // afterNoonCheckBox
             // 
             afterNoonCheckBox.AutoSize = true;
-            afterNoonCheckBox.Location = new Point(125, 218);
-            afterNoonCheckBox.MinimumSize = new Size(45, 22);
+            afterNoonCheckBox.Location = new Point(143, 291);
+            afterNoonCheckBox.Margin = new Padding(3, 4, 3, 4);
+            afterNoonCheckBox.MinimumSize = new Size(51, 29);
             afterNoonCheckBox.Name = "afterNoonCheckBox";
             afterNoonCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
             afterNoonCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
             afterNoonCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
             afterNoonCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
-            afterNoonCheckBox.Size = new Size(45, 22);
+            afterNoonCheckBox.Size = new Size(51, 29);
             afterNoonCheckBox.TabIndex = 39;
             afterNoonCheckBox.UseVisualStyleBackColor = true;
             afterNoonCheckBox.CheckedChanged += afterNoonCheckBox_CheckedChanged;
@@ -368,9 +376,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(114, 118, 127);
-            label6.Location = new Point(202, 180);
+            label6.Location = new Point(231, 240);
             label6.Name = "label6";
-            label6.Size = new Size(73, 21);
+            label6.Size = new Size(96, 27);
             label6.TabIndex = 38;
             label6.Text = "L. Eve.";
             // 
@@ -386,11 +394,12 @@
             cbxDepartment.IconColor = Color.FromArgb(156, 84, 213);
             cbxDepartment.ListBackColor = Color.FromArgb(215, 215, 215);
             cbxDepartment.ListTextColor = Color.FromArgb(156, 84, 213);
-            cbxDepartment.Location = new Point(21, 28);
-            cbxDepartment.MinimumSize = new Size(200, 30);
+            cbxDepartment.Location = new Point(24, 37);
+            cbxDepartment.Margin = new Padding(3, 4, 3, 4);
+            cbxDepartment.MinimumSize = new Size(229, 40);
             cbxDepartment.Name = "cbxDepartment";
             cbxDepartment.Padding = new Padding(1);
-            cbxDepartment.Size = new Size(241, 33);
+            cbxDepartment.Size = new Size(275, 44);
             cbxDepartment.TabIndex = 28;
             cbxDepartment.Texts = "";
             cbxDepartment.OnSelectedIndexChanged += cbxDepartment_OnSelectedIndexChanged;
@@ -401,9 +410,9 @@
             label2.BackColor = Color.FromArgb(229, 229, 229);
             label2.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(114, 118, 127);
-            label2.Location = new Point(22, 0);
+            label2.Location = new Point(25, 0);
             label2.Name = "label2";
-            label2.Size = new Size(109, 21);
+            label2.Size = new Size(144, 27);
             label2.TabIndex = 27;
             label2.Text = "Department:";
             // 
@@ -412,23 +421,24 @@
             label5.AutoSize = true;
             label5.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(114, 118, 127);
-            label5.Location = new Point(115, 180);
+            label5.Location = new Point(131, 240);
             label5.Name = "label5";
-            label5.Size = new Size(73, 21);
+            label5.Size = new Size(96, 27);
             label5.TabIndex = 37;
             label5.Text = "L. Aft.";
             // 
             // eveningCheckBox
             // 
             eveningCheckBox.AutoSize = true;
-            eveningCheckBox.Location = new Point(212, 218);
-            eveningCheckBox.MinimumSize = new Size(45, 22);
+            eveningCheckBox.Location = new Point(242, 291);
+            eveningCheckBox.Margin = new Padding(3, 4, 3, 4);
+            eveningCheckBox.MinimumSize = new Size(51, 29);
             eveningCheckBox.Name = "eveningCheckBox";
             eveningCheckBox.OffBackColor = Color.FromArgb(156, 84, 213);
             eveningCheckBox.OffToggleColor = Color.FromArgb(229, 229, 229);
             eveningCheckBox.OnBackColor = Color.FromArgb(156, 84, 213);
             eveningCheckBox.OnToggleColor = Color.FromArgb(229, 229, 229);
-            eveningCheckBox.Size = new Size(45, 22);
+            eveningCheckBox.Size = new Size(51, 29);
             eveningCheckBox.TabIndex = 36;
             eveningCheckBox.UseVisualStyleBackColor = true;
             eveningCheckBox.CheckedChanged += eveningCheckBox_CheckedChanged;
@@ -438,9 +448,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(114, 118, 127);
-            label4.Location = new Point(24, 180);
+            label4.Location = new Point(27, 240);
             label4.Name = "label4";
-            label4.Size = new Size(73, 21);
+            label4.Size = new Size(96, 27);
             label4.TabIndex = 35;
             label4.Text = "L. Mor.";
             // 
@@ -449,9 +459,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(114, 118, 127);
-            label1.Location = new Point(21, 73);
+            label1.Location = new Point(24, 97);
             label1.Name = "label1";
-            label1.Size = new Size(55, 21);
+            label1.Size = new Size(72, 27);
             label1.TabIndex = 29;
             label1.Text = "Date:";
             // 
@@ -466,10 +476,11 @@
             Calendar.CalendarTitleForeColor = Color.FromArgb(156, 84, 213);
             Calendar.CustomFormat = "MMM dd, yyy";
             Calendar.Font = new Font("Cascadia Code SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Calendar.Location = new Point(66, 68);
-            Calendar.MinimumSize = new Size(0, 35);
+            Calendar.Location = new Point(75, 91);
+            Calendar.Margin = new Padding(3, 4, 3, 4);
+            Calendar.MinimumSize = new Size(4, 35);
             Calendar.Name = "Calendar";
-            Calendar.Size = new Size(201, 35);
+            Calendar.Size = new Size(229, 35);
             Calendar.SkinColor = Color.FromArgb(229, 229, 229);
             Calendar.TabIndex = 30;
             Calendar.TextColor = Color.FromArgb(114, 118, 127);
@@ -488,9 +499,10 @@
             btnSearch.FlatStyle = FlatStyle.Flat;
             btnSearch.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnSearch.ForeColor = Color.FromArgb(156, 84, 213);
-            btnSearch.Location = new Point(20, 298);
+            btnSearch.Location = new Point(23, 397);
+            btnSearch.Margin = new Padding(3, 4, 3, 4);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(240, 40);
+            btnSearch.Size = new Size(274, 53);
             btnSearch.TabIndex = 16;
             btnSearch.Text = "Search by Date";
             btnSearch.TextColor = Color.FromArgb(156, 84, 213);
@@ -509,9 +521,10 @@
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnDelete.ForeColor = Color.FromArgb(229, 229, 229);
-            btnDelete.Location = new Point(143, 252);
+            btnDelete.Location = new Point(163, 336);
+            btnDelete.Margin = new Padding(3, 4, 3, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(117, 40);
+            btnDelete.Size = new Size(134, 53);
             btnDelete.TabIndex = 14;
             btnDelete.Text = "Delete";
             btnDelete.TextColor = Color.FromArgb(229, 229, 229);
@@ -530,9 +543,10 @@
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnAdd.ForeColor = Color.FromArgb(229, 229, 229);
-            btnAdd.Location = new Point(20, 252);
+            btnAdd.Location = new Point(23, 336);
+            btnAdd.Margin = new Padding(3, 4, 3, 4);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(117, 40);
+            btnAdd.Size = new Size(134, 53);
             btnAdd.TabIndex = 13;
             btnAdd.Text = "Add";
             btnAdd.TextColor = Color.FromArgb(229, 229, 229);
@@ -543,10 +557,10 @@
             // 
             roundPanelListBox1.BackColor = Color.FromArgb(156, 84, 213);
             roundPanelListBox1.Controls.Add(dataGridViewShifts);
-            roundPanelListBox1.Location = new Point(52, 50);
-            roundPanelListBox1.Margin = new Padding(4, 3, 4, 3);
+            roundPanelListBox1.Location = new Point(59, 67);
+            roundPanelListBox1.Margin = new Padding(5, 4, 5, 4);
             roundPanelListBox1.Name = "roundPanelListBox1";
-            roundPanelListBox1.Size = new Size(663, 337);
+            roundPanelListBox1.Size = new Size(758, 449);
             roundPanelListBox1.TabIndex = 12;
             // 
             // dataGridViewShifts
@@ -559,23 +573,25 @@
             dataGridViewShifts.BorderStyle = BorderStyle.None;
             dataGridViewShifts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewShifts.GridColor = Color.FromArgb(11, 7, 17);
-            dataGridViewShifts.Location = new Point(0, 0);
+            dataGridViewShifts.Location = new Point(-4, 0);
+            dataGridViewShifts.Margin = new Padding(3, 4, 3, 4);
             dataGridViewShifts.Name = "dataGridViewShifts";
             dataGridViewShifts.ReadOnly = true;
             dataGridViewShifts.RowHeadersWidth = 62;
             dataGridViewShifts.RowTemplate.Height = 25;
             dataGridViewShifts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewShifts.Size = new Size(664, 337);
+            dataGridViewShifts.Size = new Size(759, 449);
             dataGridViewShifts.TabIndex = 1;
+            dataGridViewShifts.CellContentClick += dataGridViewShifts_CellContentClick;
             // 
             // Shifts
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1041, 542);
+            ClientSize = new Size(1190, 723);
             Controls.Add(roundPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(5, 4, 5, 4);
             Name = "Shifts";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Shifts";

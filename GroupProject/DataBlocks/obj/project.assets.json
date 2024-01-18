@@ -70,19 +70,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GRIGS\\.nuget\\packages\\": {}
+    "C:\\Users\\Danila\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+      "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
       "projectName": "DataBlocks",
-      "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
-      "packagesPath": "C:\\Users\\GRIGS\\.nuget\\packages\\",
-      "outputPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\obj\\",
+      "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+      "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\GRIGS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

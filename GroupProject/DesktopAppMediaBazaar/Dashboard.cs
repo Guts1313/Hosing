@@ -86,7 +86,6 @@ namespace DesktopAppMediaBazaar
             SetButtonStyle(btnDepartments);
             SetButtonStyle(btnTimesheet);
             SetButtonStyle(btnShifts);
-            SetButtonStyle(btnCancelledShifts);
             SetButtonStyle(btnVacations);
         }
 
@@ -98,7 +97,6 @@ namespace DesktopAppMediaBazaar
             SetImageButtonStyle(btnDepartments, btnDepartments.Image, DesktopAppMediaBazaar.Properties.Resources.Departments_Invert);
             SetImageButtonStyle(btnTimesheet, btnTimesheet.Image, DesktopAppMediaBazaar.Properties.Resources.Timesheet_Invert);
             SetImageButtonStyle(btnShifts, btnShifts.Image, DesktopAppMediaBazaar.Properties.Resources.shifts_Invert);
-            SetImageButtonStyle(btnCancelledShifts, btnCancelledShifts.Image, DesktopAppMediaBazaar.Properties.Resources.CancelledShift_Invert);
             SetImageButtonStyle(btnVacations, btnVacations.Image, DesktopAppMediaBazaar.Properties.Resources.Vacations_Invert);
         }
 
@@ -326,14 +324,6 @@ namespace DesktopAppMediaBazaar
         }
 
         private void btnShifts_Click(object sender, EventArgs e)
-        {
-            panelChildForm.SuspendLayout();
-            openChildForm(new Shifts(_loggedInEmployee));
-            panelChildForm.ResumeLayout();
-            SetActiveButton((Button)sender);
-        }
-
-        private void btnCancelledShifts_Click(object sender, EventArgs e)
         {
             panelChildForm.SuspendLayout();
             openChildForm(new Shifts(_loggedInEmployee));
