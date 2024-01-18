@@ -5,6 +5,290 @@
       "PackagePath": "staticwebassets\\GroupProject.bundle.scp.css"
     },
     {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Bold.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Bold.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-BoldItalic.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-BoldItalic.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Heavy.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Heavy.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Italic.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Italic.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Light.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Light.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-LightItalic.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-LightItalic.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Medium.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Medium.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-MediumItalic.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-MediumItalic.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Regular.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Regular.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBold.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-SemiBold.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.ttf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.woff"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.woff2"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900d41d.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.ttf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.woff"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300d41d.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slickd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slickd41d.eot"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\app.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\app.css"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\sal.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\sal.css"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick-theme.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\vendor\\slick.css"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-appear.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-appear.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\sal.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\sal.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\slick.min.js"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Announcements.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\Announcements.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Calendar.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\Calendar.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\CancelledShift.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\CancelledShift.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Employee.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\Employee.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Stock.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\Stock.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Timesheet.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\Timesheet.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Vacations.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\Vacations.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\background.mp4",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\background.mp4"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\favicon.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\logo.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo_.png",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\logo_.png"
+    },
+    {
+      "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\preloader.svg",
+      "PackagePath": "staticwebassets\\assets\\media\\login\\preloader.svg"
+    },
+    {
       "Id": "C:\\GroupProject\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

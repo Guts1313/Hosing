@@ -1,15 +1,14 @@
 ﻿@page
 @model GroupProject.Pages.LoginModel
 @{
-	ViewData["Title"] = "Login";
-	Layout = "_Layout2";
+  Layout = "_Login2Layout";
 }
 <style>
+  
+  body{
+  background:url("assets/media/login/background.mp4") ;
+  }
 
-	body{
-		background: url('https://www.amsc-usa.com/wp-content/uploads/2023/05/large-government-warehouse.jpg');
-		background-size:cover;
-	}
 	.form-box {
     max-width: 550px;
     background: #f1f7fe;
@@ -161,7 +160,7 @@
     padding: 40px;
     margin: 20px auto;
     transform: translate(-50%, -55%);
-    background: linear-gradient(135deg,rgba(0,0,0,0.82),rgba(255,255,255,0));
+    background: linear-gradient(135deg,rgb(30 52 120 / 22%),rgba(255,255,255,0));
     box-sizing: border-box;
     border-radius: 20px;
     backdrop-filter: blur(25px);
@@ -364,7 +363,6 @@
       background: transparent;
   }
       </style>
-      <body>
       @* <div class="center-container"> *@
       @*     <div class="form-box"> *@
       @*         <form class="form" method="post"> *@
@@ -389,7 +387,10 @@
       @*             <p>Have an account? <a href="">Log in</a> </p> *@
       @*         </div> *@
       @*     </div> *@
-      @* </div> *@
+@* </div> *@
+<video autoplay muted loop id="myBackgroundVideo">
+        <source src="assets/media/login/background.mp4" type="video/mp4">
+    </video>
       <div class="login-box">
         <p>Login</p>
         <form class="form" method="post">
@@ -411,4 +412,49 @@
               </a>
         </form>
       </div>
-</body>
+<!--=====================================-->
+<!--=           Footer Area Start       =-->
+<!--=====================================-->
+<footer class="footer">
+  <div class="footer-bottom bg-color-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="footer-copyright">
+            <span class="copyright-text">Copyright © <a href="/Index">Media Bazaar</a>. All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main style-1">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5 col-sm-12 col-12">
+          <div class="footer-widget">
+            <p class="mb-5">Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Jquery Js -->
+<style>
+#myBackgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+      footer{
+          position: fixed;
+          transform: translateY(360%);
+          width: 100%;
+      }
+</style>

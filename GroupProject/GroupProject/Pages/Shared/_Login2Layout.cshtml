@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unicart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/sal.css">
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/vendor/app.css">
+    
+    
+</head>
+<body style="padding-top:0px"class="sticky-header">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    <a href="#main-wrapper" id="backto-top" class="back-to-top">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+    <div class="main-wrapper" id="main-wrapper">
+        <!--=====================================-->
+        <!--=        Header Area Start       	=-->
+        <!--=====================================-->
+        <header class="header style-1">
+            <div class="container">
+                <!-- Start Mainmenu Nav -->
+            </div>
+        </header>
+
+
+                    @RenderBody()
+
+    </div>
+    <div id="errorModal" class="modal fade" tabindex="-1" style="overflow:auto !important" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box mx-auto">
+                        <i class="material-icons">&#xE5CD;</i>
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>Ooops!</h4>
+                    <p id="error-message">Something went wrong.</p>
+                    <button class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/sal.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var message = serverMessage || "";
+            if (message.length > 0) {
+                document.getElementById('error-message').innerText = message;
+                var myModal = new bootstrap.Modal(document.getElementById('errorModal'));
+                myModal.show();
+            }
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.getElementById("loader-wrapper").style.opacity = "0";
+                document.body.style.overflow = "auto";
+                setTimeout(function () {
+                    document.getElementById("loader-wrapper").style.display = "none";
+                }, 800);
+            }, 800);
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.modal').on('hidden.bs.modal', function () {
+                if (!$('.modal.show').length) {
+                    $('body').removeClass('modal-open');
+                    $('.modal-backdrop').remove();
+                    $('body').css('overflow', 'auto');
+                }
+            });
+        });
+    </script>
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+
+
+</body>
+</html>

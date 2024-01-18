@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UNICART</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/sal.css">
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body class="sticky-header">
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<a href="#main-wrapper" id="backto-top" class="back-to-top">
+    <i class="fas fa-angle-double-up"></i>
+</a>
+<div class="main-wrapper" id="main-wrapper">
+    <!--=====================================-->
+    <!--=        Header Area Start       	=-->
+    <!--=====================================-->
+    <header class="header style-1">
+        <div class="container">
+            <!-- Start Mainmenu Nav -->
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/Index"><img src="assets/media/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                <br/><br/>
+                    <ul class="navbar-nav me-3 mainmenu">
+                        <li class="menu-item-has-children">
+                            <a href="/Index">Home</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/Stock">Stock</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#Timesheet" class="dropdown-toggle" id="timesheet" data-bs-toggle="dropdown"
+                               data-bs-auto-close="outside" aria-expanded="false">Timesheet</a>
+                            <ul class="dropdown-menu" aria-labelledby="timesheet">
+                                <li>
+                                    <a href="/Shifts">Shifts</a>
+                                </li>
+                                <li>
+                                    <a href="/CancelledShifts">Shift Management</a>
+                                </li>
+                                <li>
+                                    <a href="/RequestVacation">Holidays</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/Profile">Profile</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex ms-auto right-nav">
+                        <a href="/Login" class="anime-btn btn-dark">LOG OUT</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    @RenderBody()
+
+    <!--=====================================-->
+    <!--=           Footer Area Start       =-->
+    <!--=====================================-->
+    <footer class="footer">
+        <div class="footer-bottom bg-color-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="footer-copyright">
+                                <span class="copyright-text">Copyright © <a href="/Index">Media Bazaar</a>. All Rights Reserved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main style-1">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-5 col-sm-12 col-12">
+                        <div class="footer-widget">
+                            <p class="mb-5">Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <div id="errorModal" class="modal fade" tabindex="-1" style="overflow:auto !important" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box mx-auto">
+                    <i class="material-icons">&#xE5CD;</i>
+                </div>
+            </div>
+            <div class="modal-body text-center">
+                <h4>Ooops!</h4>
+                <p id="error-message">Something went wrong.</p>
+                <button class="btn btn-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Jquery Js -->
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendor/slick.min.js"></script>
+<script src="assets/js/vendor/jquery.countdown.min.js"></script>
+<script src="assets/js/vendor/jquery-appear.js"></script>
+<script src="assets/js/vendor/sal.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var message = serverMessage || "";
+    if (message.length > 0) {
+        document.getElementById('error-message').innerText = message;
+        var myModal = new bootstrap.Modal(document.getElementById('errorModal'));
+        myModal.show();
+    }
+});
+</script>
+
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader-wrapper").style.opacity = "0";
+        document.body.style.overflow = "auto";
+        setTimeout(function () {
+            document.getElementById("loader-wrapper").style.display = "none";
+        }, 800);
+    }, 800);
+});
+
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('.modal').on('hidden.bs.modal', function() {
+            if (!$('.modal.show').length) {
+                $('body').removeClass('modal-open');
+                $('.modal-backdrop').remove();
+                $('body').css('overflow', 'auto');
+            }
+        });
+    });
+</script>
+<!-- Site Scripts -->
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
