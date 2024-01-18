@@ -18,6 +18,7 @@ namespace GroupProject.Pages
         {
             _employeeController = new(new DALEmployeeController());
             _stockController = new(new DALStockController());
+            stocks = new Stock[0];
         }
         public IActionResult OnGet()
         {
@@ -29,7 +30,7 @@ namespace GroupProject.Pages
 
             return Page();
         }
-        public IActionResult UpdateStock()
+        public IActionResult OnPost()
         {
             if (int.TryParse(Request.Form["id"], out int id) && int.TryParse(Request.Form["amount"], out int newAmount))
             {
