@@ -548,19 +548,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nahme\\.nuget\\packages\\": {}
+    "C:\\Users\\Danila\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\nahme\\.nuget\\packages\\",
-      "outputPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nahme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -574,8 +574,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+            "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
             }
           }
         }
@@ -615,7 +615,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   },
