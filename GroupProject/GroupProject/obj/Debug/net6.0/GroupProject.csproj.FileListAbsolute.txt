@@ -182,3 +182,5 @@ C:\GroupProject\cb02-group5\GroupProject\GroupProject\obj\Debug\net6.0\refint\Gr
 C:\GroupProject\cb02-group5\GroupProject\GroupProject\obj\Debug\net6.0\GroupProject.pdb
 C:\GroupProject\cb02-group5\GroupProject\GroupProject\obj\Debug\net6.0\GroupProject.genruntimeconfig.cache
 C:\GroupProject\cb02-group5\GroupProject\GroupProject\obj\Debug\net6.0\ref\GroupProject.dll
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\GroupProject\bin\Debug\net6.0\DevOne.Security.Cryptography.BCrypt.dll
+C:\Users\Danila\source\repos\cb02-group5\GroupProject\GroupProject\bin\Debug\net6.0\BCrypt.Net-Core.dll
