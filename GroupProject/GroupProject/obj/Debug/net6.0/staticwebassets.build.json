@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "ofWGM1I+X/kbRtuWWCpFlEyZ7So9jdFWcOLvn9mcoqw=",
-=======
-  "Hash": "68vBBjxOklMlkJ8uyUB+IhKAEGQc2RITqnT955ku9GM=",
->>>>>>> e2fdcca6659da527321f458045a3c37394505d95
+  "Hash": "nTOMPxCvV+XqRUogZAIhSpf6ep82SVT9gqPCjJTxMMg=",
   "Source": "GroupProject",
   "BasePath": "_content/GroupProject",
   "Mode": "Default",
@@ -14,17 +10,17 @@
     {
       "Name": "GroupProject\\wwwroot",
       "Source": "GroupProject",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css",
       "SourceId": "GroupProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "GroupProject.styles.css",
       "AssetKind": "All",
@@ -35,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css"
+      "OriginalItemSpec": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GroupProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css",
       "SourceId": "GroupProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "GroupProject.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\ajax-loader.gif",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\ajax-loader.gif",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/ajax-loader.gif",
       "AssetKind": "All",
@@ -72,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\ajax-loader.gif"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -89,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -106,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -123,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -140,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -157,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-brands-400d41d.eot",
       "AssetKind": "All",
@@ -174,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-duotone-900.eot",
       "AssetKind": "All",
@@ -191,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-duotone-900.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.ttf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.ttf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-duotone-900.ttf",
       "AssetKind": "All",
@@ -208,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-duotone-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-duotone-900.woff",
       "AssetKind": "All",
@@ -225,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff2",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff2",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-duotone-900.woff2",
       "AssetKind": "All",
@@ -242,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900d41d.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900d41d.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-duotone-900d41d.eot",
       "AssetKind": "All",
@@ -259,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-duotone-900d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-light-300.eot",
       "AssetKind": "All",
@@ -276,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-light-300.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.ttf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.ttf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-light-300.ttf",
       "AssetKind": "All",
@@ -293,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-light-300.ttf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-light-300.woff",
       "AssetKind": "All",
@@ -310,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-light-300.woff"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff2",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff2",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-light-300.woff2",
       "AssetKind": "All",
@@ -327,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-light-300.woff2"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300d41d.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300d41d.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-light-300d41d.eot",
       "AssetKind": "All",
@@ -344,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-light-300d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -361,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -378,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -395,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -412,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -429,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-regular-400d41d.eot",
       "AssetKind": "All",
@@ -446,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -463,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -480,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -497,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -514,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -531,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/fa-solid-900d41d.eot",
       "AssetKind": "All",
@@ -548,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Bold.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Bold.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-Bold.otf",
       "AssetKind": "All",
@@ -565,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-Bold.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-BoldItalic.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-BoldItalic.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-BoldItalic.otf",
       "AssetKind": "All",
@@ -582,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-BoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Heavy.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Heavy.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-Heavy.otf",
       "AssetKind": "All",
@@ -599,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-Heavy.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-HeavyItalic.otf",
       "AssetKind": "All",
@@ -616,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Italic.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Italic.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-Italic.otf",
       "AssetKind": "All",
@@ -633,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-Italic.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Light.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Light.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-Light.otf",
       "AssetKind": "All",
@@ -650,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-Light.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-LightItalic.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-LightItalic.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-LightItalic.otf",
       "AssetKind": "All",
@@ -667,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-LightItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Medium.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Medium.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-Medium.otf",
       "AssetKind": "All",
@@ -684,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-Medium.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-MediumItalic.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-MediumItalic.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-MediumItalic.otf",
       "AssetKind": "All",
@@ -701,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-MediumItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Regular.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Regular.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-Regular.otf",
       "AssetKind": "All",
@@ -718,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-Regular.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBold.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBold.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-SemiBold.otf",
       "AssetKind": "All",
@@ -735,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-SemiBold.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/NoirPro-SemiBoldItalic.otf",
       "AssetKind": "All",
@@ -752,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/slick.eot",
       "AssetKind": "All",
@@ -769,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\slick.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.ttf",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.ttf",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/slick.ttf",
       "AssetKind": "All",
@@ -786,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\slick.ttf"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.woff",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.woff",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/slick.woff",
       "AssetKind": "All",
@@ -803,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\slick.woff"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slickd41d.eot",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slickd41d.eot",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/fonts/slickd41d.eot",
       "AssetKind": "All",
@@ -820,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\fonts\\slickd41d.eot"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\app.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\app.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/vendor/app.css",
       "AssetKind": "All",
@@ -837,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\vendor\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\bootstrap.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\bootstrap.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/vendor/bootstrap.min.css",
       "AssetKind": "All",
@@ -854,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\vendor\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\font-awesome.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\font-awesome.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/vendor/font-awesome.css",
       "AssetKind": "All",
@@ -871,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\vendor\\font-awesome.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\sal.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\sal.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/vendor/sal.css",
       "AssetKind": "All",
@@ -888,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\vendor\\sal.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/vendor/slick.css",
       "AssetKind": "All",
@@ -905,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\vendor\\slick.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick-theme.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick-theme.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/css/vendor/slick-theme.css",
       "AssetKind": "All",
@@ -922,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\vendor\\slick-theme.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\app.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\app.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/app.js",
       "AssetKind": "All",
@@ -939,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\app.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\bootstrap.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\bootstrap.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/vendor/bootstrap.min.js",
       "AssetKind": "All",
@@ -956,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\imagesloaded.pkgd.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\imagesloaded.pkgd.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/vendor/imagesloaded.pkgd.min.js",
       "AssetKind": "All",
@@ -973,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\imagesloaded.pkgd.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery.countdown.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery.countdown.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/vendor/jquery.countdown.min.js",
       "AssetKind": "All",
@@ -990,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\jquery.countdown.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/vendor/jquery-3.6.0.min.js",
       "AssetKind": "All",
@@ -1007,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-appear.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-appear.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/vendor/jquery-appear.js",
       "AssetKind": "All",
@@ -1024,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\jquery-appear.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\sal.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\sal.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/vendor/sal.js",
       "AssetKind": "All",
@@ -1041,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\sal.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\slick.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\slick.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/js/vendor/slick.min.js",
       "AssetKind": "All",
@@ -1058,7 +1054,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\slick.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Announcements.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
@@ -1145,29 +1140,9 @@
     },
     {
       "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Announcements.png",
-=======
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\favicon.png",
->>>>>>> e2fdcca6659da527321f458045a3c37394505d95
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-      "BasePath": "_content/GroupProject",
-      "RelativePath": "assets/media/favicon.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\media\\favicon.png"
-    },
-    {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Announcements.png",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/Announcements.png",
       "AssetKind": "All",
@@ -1181,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\Announcements.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\background.mp4",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\background.mp4",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/background.mp4",
       "AssetKind": "All",
@@ -1198,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\background.mp4"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Calendar.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Calendar.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/Calendar.png",
       "AssetKind": "All",
@@ -1215,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\Calendar.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\CancelledShift.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\CancelledShift.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/CancelledShift.png",
       "AssetKind": "All",
@@ -1232,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\CancelledShift.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Employee.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Employee.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/Employee.png",
       "AssetKind": "All",
@@ -1249,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\Employee.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\favicon.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\favicon.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/favicon.png",
       "AssetKind": "All",
@@ -1266,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/logo.png",
       "AssetKind": "All",
@@ -1283,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo_.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo_.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/logo_.png",
       "AssetKind": "All",
@@ -1300,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\logo_.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\preloader.svg",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\preloader.svg",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/preloader.svg",
       "AssetKind": "All",
@@ -1317,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\preloader.svg"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Stock.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Stock.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/Stock.png",
       "AssetKind": "All",
@@ -1334,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\Stock.png"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Vacations.png",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Vacations.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "assets/media/login/Vacations.png",
       "AssetKind": "All",
@@ -1351,7 +1326,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\media\\login\\Vacations.png"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\logo.png",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
@@ -1472,29 +1446,9 @@
     },
     {
       "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
-=======
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Timesheet.png",
->>>>>>> e2fdcca6659da527321f458045a3c37394505d95
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
-      "BasePath": "_content/GroupProject",
-      "RelativePath": "assets/media/Timesheet.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\media\\Timesheet.png"
-    },
-    {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
-      "SourceId": "GroupProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1508,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\favicon.ico",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\favicon.ico",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1525,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\js\\site.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\js\\site.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1542,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1559,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1576,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1593,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1610,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1627,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1644,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1661,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1678,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1695,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1712,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1729,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1746,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1763,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1780,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1797,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1814,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1831,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1848,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1865,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1882,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1899,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1916,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1933,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1950,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1967,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1984,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2001,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2018,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2035,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2052,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2069,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2086,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2103,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2120,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2137,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2154,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2171,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2188,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2205,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2222,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2239,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2256,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2273,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2290,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2307,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2324,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2341,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2358,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2375,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2392,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2409,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2426,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2443,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2460,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2477,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2494,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "GroupProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
+      "ContentRoot": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\",
       "BasePath": "_content/GroupProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
