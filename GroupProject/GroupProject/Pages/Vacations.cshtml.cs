@@ -35,14 +35,24 @@ namespace MediaBazaarWebsite.Pages
 			_employeeController = new(new DALEmployeeController());
 			_vacationController = new(new DALVacationController());
 		}
-		public void OnGet()
+		public IActionResult OnGet()
 		{
-			_loggedInEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
+            if (HttpContext.Session.GetString("username") != null)
+            {
+                _loggedInEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
+            }
+            else
+            {
+                return RedirectToPage("Login");
+            }
+
+            _loggedInEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
 
 			_vacations = _vacationController.ReadAllByMember(_loggedInEmployee.Id);
 
 			vacations = _vacations.OrderByDescending(Vacation => Vacation.StartDate).ToList();
-		}
+            return Page();
+        }
 
 		public void OnPostFilter(string filter)
 		{

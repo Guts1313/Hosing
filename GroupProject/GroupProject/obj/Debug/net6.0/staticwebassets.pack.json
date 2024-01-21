@@ -1,575 +1,583 @@
 {
   "Files": [
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GroupProject.bundle.scp.css",
       "PackagePath": "staticwebassets\\GroupProject.bundle.scp.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Bold.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\app.css",
+      "PackagePath": "staticwebassets\\assets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Bold.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Bold.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-BoldItalic.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-BoldItalic.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-BoldItalic.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Heavy.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Heavy.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Heavy.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-HeavyItalic.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Italic.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Italic.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Italic.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Light.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Light.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Light.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-LightItalic.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-LightItalic.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-LightItalic.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Medium.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Medium.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Medium.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-MediumItalic.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-MediumItalic.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-MediumItalic.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Regular.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-Regular.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-Regular.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBold.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBold.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-SemiBold.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\NoirPro-SemiBoldItalic.otf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\ajax-loader.gif",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\ajax-loader.gif"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.svg"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400d41d.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.ttf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.ttf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.woff"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff2",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900.woff2"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900d41d.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-duotone-900d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-duotone-900d41d.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.ttf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.ttf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.woff"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff2",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300.woff2"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300d41d.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-light-300d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-light-300d41d.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.svg"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400d41d.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.svg"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900d41d.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.ttf",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.ttf"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.woff",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slick.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.woff"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slickd41d.eot",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\fonts\\slickd41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slickd41d.eot"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\app.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\app.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendor\\app.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\bootstrap.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendor\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\font-awesome.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\font-awesome.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendor\\font-awesome.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\sal.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\sal.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendor\\sal.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick-theme.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick-theme.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendor\\slick-theme.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\css\\vendor\\slick.css",
       "PackagePath": "staticwebassets\\assets\\css\\vendor\\slick.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\app.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\app.js",
       "PackagePath": "staticwebassets\\assets\\js\\app.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\bootstrap.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\imagesloaded.pkgd.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\imagesloaded.pkgd.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\imagesloaded.pkgd.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-3.6.0.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-3.6.0.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-appear.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery-appear.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-appear.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery.countdown.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\jquery.countdown.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery.countdown.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\sal.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\sal.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\sal.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\slick.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\js\\vendor\\slick.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\slick.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Announcements.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Announcements.png",
       "PackagePath": "staticwebassets\\assets\\media\\Announcements.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Calendar.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Calendar.png",
       "PackagePath": "staticwebassets\\assets\\media\\Calendar.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\CancelledShift.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\CancelledShift.png",
       "PackagePath": "staticwebassets\\assets\\media\\CancelledShift.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Employee.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Employee.png",
       "PackagePath": "staticwebassets\\assets\\media\\Employee.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\RequestVacation.cshtml.cs",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\RequestVacation.cshtml.cs",
       "PackagePath": "staticwebassets\\assets\\media\\RequestVacation.cshtml.cs"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Stock.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Sick.png",
+      "PackagePath": "staticwebassets\\assets\\media\\Sick.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Stock.png",
       "PackagePath": "staticwebassets\\assets\\media\\Stock.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Timesheet.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Timesheet.png",
       "PackagePath": "staticwebassets\\assets\\media\\Timesheet.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Vacations.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Vacations.png",
       "PackagePath": "staticwebassets\\assets\\media\\Vacations.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\favicon.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\favicon.png",
       "PackagePath": "staticwebassets\\assets\\media\\favicon.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Announcements.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Announcements.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\Announcements.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Calendar.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Calendar.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\Calendar.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\CancelledShift.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\CancelledShift.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\CancelledShift.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Employee.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Employee.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\Employee.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Stock.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Stock.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\Stock.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Vacations.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Vacations.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\Vacations.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\background.mp4",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\background.mp4",
       "PackagePath": "staticwebassets\\assets\\media\\login\\background.mp4"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\favicon.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\favicon.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\favicon.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\logo.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo_.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\logo_.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\logo_.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\preloader.svg",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\preloader.svg",
       "PackagePath": "staticwebassets\\assets\\media\\login\\preloader.svg"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\logo.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\logo.png",
       "PackagePath": "staticwebassets\\assets\\media\\logo.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\logo_.png",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\logo_.png",
       "PackagePath": "staticwebassets\\assets\\media\\logo_.png"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\preloader.svg",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\preloader.svg",
       "PackagePath": "staticwebassets\\assets\\media\\preloader.svg"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

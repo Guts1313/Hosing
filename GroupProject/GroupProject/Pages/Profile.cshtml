@@ -6,233 +6,124 @@
 @using DataAccessLayer.DAL;
 @model Profile
 @{
-	Layout = "_Login2Layout";
+	Layout = "_LoginLayout";
 }
-@{
-	ViewData["Title"] = "Profile";
-}
-
-<header class="header style-1">
-	<div class="container">
-		<!-- Start Mainmenu Nav -->
-		<nav class="navbar navbar-expand-lg">
-			<a class="navbar-brand" href="/Index"><img src="assets/media/logo.png" alt=""></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-				<i class="fas fa-bars"></i>
-			</button>
-			<div class="collapse navbar-collapse" id="mynavbar">
-				<br /><br />
-				<ul class="navbar-nav me-3 mainmenu">
-					<li class="menu-item-has-children">
-						<a href="/Index">Home</a>
-					</li>
-					<li class="menu-item-has-children">
-						<a href="/Stock">Stock</a>
-					</li>
-					<li class="menu-item-has-children">
-						<a href="#Timesheet" class="dropdown-toggle" id="timesheet" data-bs-toggle="dropdown"
-						   data-bs-auto-close="outside" aria-expanded="false">Timesheet</a>
-						<ul class="dropdown-menu" aria-labelledby="timesheet">
-							<li>
-								<a href="/Shifts">Shifts</a>
-							</li>
-							<li>
-								<a href="/CancelledShifts">Shift Management</a>
-							</li>
-							<li>
-								<a href="/RequestVacation">Holidays</a>
-							</li>
-						</ul>
-					</li>
-					<li class="menu-item-has-children">
-						<a href="/Profile">Profile</a>
-					</li>
-				</ul>
-
-				<div class="d-flex ms-auto right-nav">
-					<a href="/Login" class="anime-btn btn-dark">LOG OUT</a>
-				</div>
-			</div>
-		</nav>
-	</div>
-</header>
-
-<style>
-	#myBackgroundVideo {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		min-width: 100%;
-		min-height: 100%;
-		width: auto;
-		height: auto;
-		z-index: -100;
-		background-size: cover;
-	}
-
-	.login.text-center{
-		margin-top: 30px;
-		display: flex;
-		position: absolute !important;
-		left: 0;
-		top: 0;
-		height: 100%;
-		width: 100%;
-	}
-
-	footer {
-		position: absolute;
-		top: -15px;
-		transform: translateY(360%);
-		width: 100%;
-	}
-
-	.footer-main {
-		margin-top: -1px;
-	}
-</style>
 
 <div class="login">
-	<video autoplay muted loop id="myBackgroundVideo">
-		<source src="assets/media/login/background.mp4" type="video/mp4">
-	</video>
-	<section class="login text-center">
-		<div class="container">
-			<div class="login-block">
-				<div class="login-content">
-					<div class="title-enhanced">
-						<h1 style="margin-top: 15px">Dashboard > @Model._loggedInEmployee.Username</h1>
-					</div>
-					<hr class="section-divider">
-					<h2 class="mt-3 section-title">
-						<img src="@Model._loggedInEmployee.ProfilePicture" class="section-icon" /> Employee - Department: Warehouse
-					</h2>
-					<p class="date-range-label"><em>For any changes, please contact the system administrator.</em></p>
-					<div class="row">
-						<!-- Dummy Profile Data -->
-						<div class="col-auto">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title">Username</h4>
-									<p class="card-text">@Model._loggedInEmployee.Username</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-auto">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title">Email</h4>
-									<p class="card-text">@Model._loggedInEmployee.Email</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-auto">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title">Phone</h4>
-									<p class="card-text">@Model._loggedInEmployee.Phone</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-auto">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title">Hire Date</h4>
-									<p class="card-text">@Model._loggedInEmployee.HireDate</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-auto">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title">Salary</h4>
-									<p class="card-text">
-										@{
-											var encryptor = new Encryptor();
-											var employeeController = new EmployeeController(new DALEmployeeController());
+    <video autoplay loop muted class="bg-video">
+        <source src="assets/media/login/background.mp4" type="video/mp4">
+    </video>
+    <section class="login text-center">
+        <div class="container">
+            <div class="login-block">
+                <div class="login-content">
+                    <div class="title-enhanced">
+                        <h1 style="margin-top: 15px">Dashboard > @Model._loggedInEmployee.Name</h1>
+                    </div>
+                    <hr class="section-divider">
+                    <h2 class="mt-3 section-title">
+                        <img src="@Model._loggedInEmployee.ProfilePicture" alt="Employee Icon" class="section-icon"> Employee - Department: Warehouse
+                    </h2>
+                    <p class="date-range-label"><em>For any changes, please contact the system administrator.</em></p>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Username</h4>
+                                    <p class="card-text">@Model._loggedInEmployee.Username</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Email</h4>
+                                    <p class="card-text">@Model._loggedInEmployee.Email</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Phone</h4>
+                                    <p class="card-text">@Model._loggedInEmployee.Phone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Hire Date</h4>
+                                    <p class="card-text">@Model._loggedInEmployee.HireDate.ToShortDateString()</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Salary</h4>
+                                    <p class="card-text">
+                                        @{
+                                            var encryptor = new Encryptor();
+                                            var employeeController = new EmployeeController(new DALEmployeeController());
 
-											var key = employeeController.GetKeybyName(Model._loggedInEmployee.Username);
-											var iv = employeeController.GetIvByName(Model._loggedInEmployee.Username);
+                                            var key = employeeController.GetKeybyName(Model._loggedInEmployee.Username);
+                                            var iv = employeeController.GetIvByName(Model._loggedInEmployee.Username);
 
-											var salary = encryptor.Decrypt(Model._loggedInEmployee.Salary, key, iv).ToString();
-										}
-										@salary €
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-auto">
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title">Available Shift(s)</h4>
-									<p class="card-text">
-										@{
-
-											int shifts = Model._loggedInEmployee.Shifts;
-											string _shifts = string.Empty;
-											if (shifts.HasShift(ShiftType.EarlyMorning))
-											{
-												_shifts += (_shifts.Length != 0 ? ", " : "") + "Early Morning";
-											}
-											if (shifts.HasShift(ShiftType.EarlyAfternoon))
-											{
-												_shifts += (_shifts.Length != 0 ? ", " : "") + "Early Afternoon";
-											}
-											if (shifts.HasShift(ShiftType.EarlyEvening))
-											{
-												_shifts += (_shifts.Length != 0 ? ", " : "") + "Early Evening";
-											}
-											if (shifts.HasShift(ShiftType.Morning))
-											{
-												_shifts += (_shifts.Length != 0 ? ", " : "") + "Late Morning";
-											}
-											if (shifts.HasShift(ShiftType.Afternoon))
-											{
-												_shifts += (_shifts.Length != 0 ? ", " : "") + "Late Afternoon";
-											}
-											if (shifts.HasShift(ShiftType.Evening))
-											{
-												_shifts += (_shifts.Length != 0 ? ", " : "") + "Late Evening";
-											}
-										}
-										@_shifts
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                                            var salary = encryptor.Decrypt(Model._loggedInEmployee.Salary, key, iv).ToString();
+                                        }
+                                        @salary €
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Available Shift(s)</h4>
+                                    <p class="card-text">
+                                        @{
+                                            int shifts = Model._loggedInEmployee.Shifts;
+                                            string _shifts = string.Empty;
+                                            if (shifts.HasShift(ShiftType.EarlyMorning))
+                                            {
+                                                _shifts += (_shifts.Length != 0 ? ", " : "") + "Early Morning";
+                                            }
+                                            if (shifts.HasShift(ShiftType.EarlyAfternoon))
+                                            {
+                                                _shifts += (_shifts.Length != 0 ? ", " : "") + "Early Afternoon";
+                                            }
+                                            if (shifts.HasShift(ShiftType.EarlyEvening))
+                                            {
+                                                _shifts += (_shifts.Length != 0 ? ", " : "") + "Early Evening";
+                                            }
+                                            if (shifts.HasShift(ShiftType.Morning))
+                                            {
+                                                _shifts += (_shifts.Length != 0 ? ", " : "") + "Late Morning";
+                                            }
+                                            if (shifts.HasShift(ShiftType.Afternoon))
+                                            {
+                                                _shifts += (_shifts.Length != 0 ? ", " : "") + "Late Afternoon";
+                                            }
+                                            if (shifts.HasShift(ShiftType.Evening))
+                                            {
+                                                _shifts += (_shifts.Length != 0 ? ", " : "") + "Late Evening";
+                                            }
+                                        }
+                                        @_shifts
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
-<footer class="footer">
-	<div class="footer-bottom bg-color-black">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-12">
-					<div class="footer-copyright">
-						<span class="copyright-text">Copyright © <a href="/Index">Media Bazaar</a>. All Rights Reserved</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-main style-1">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-lg-5 col-sm-12 col-12">
-					<div class="footer-widget">
-						<p class="mb-5">Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
 
 @* <div class="container">
 	<div class="row mt-5">

@@ -5,128 +5,8 @@
 @using DataAccessLayer.DAL;
 @model GroupProject.Pages.HomeModel
 @{
-	Layout = "Shared/_Login2Layout";
+	Layout = "Shared/_LoginLayout";
 }
-
-<h1>Welcome, @Model._loggedInEmployee.Username !</h1>
-
-@* <h2 class="mt-3 mb-2">Announcements:</h2> *@
-@* *@
-@* <div class="row"> *@
-@* 	@{ *@
-@* 		VacationController vacationController = new(new DALVacationController()); *@
-@* 		if (Model._announcements != null) *@
-@* 		{ *@
-@* 			foreach (var a in Model._announcements) *@
-@* 			{ *@
-@* 				//if (vacationController.ReadById(a.VacationId).Employee.Id != Model._loggedInEmployee.Id) *@
-@* 				//{ *@
-@* 					<div class="col"> *@
-@* 						<div class="card"> *@
-@* 							<div class="card-body"> *@
-@* 								<h4 class="card-title">@a.Title</h4> *@
-@* 								<p class="card-text">@a.Details</p> *@
-@* 								@if(@a.VacationId != 0) *@
-@* 								{ *@
-@* 									<a asp-page="/ChooseShift" asp-route-id="@a.VacationId" class="btn btn-primary">See available shifts</a> *@
-@* 								} *@
-@* 							</div> *@
-@* 						</div> *@
-@* 					</div> *@
-@* 				//} *@
-@* 			} *@
-@* 		} *@
-@* 	} *@
-@* </div> *@
-@* *@
-@* <h2 class="mt-3">Shifts:</h2> *@
-@* <div class="row"> *@
-@* 	@{ *@
-@* 		int i = 0; *@
-@* 	} *@
-@* 	@foreach (var shift in Model._assignedShifts) *@
-@* 	{ *@
-@* 		<div class="col-3"> *@
-@* 			<div class="card"> *@
-@* 				<div class="card-body"> *@
-@* 					<h5 class="card-title"> *@
-@* 						@shift.Date.ToShortDateString() : @shift.GetType() *@
-@* 					</h5> *@
-@* 					@{ *@
-@* 						if (shift.Type == (int)ShiftType.Morning) *@
-@* 						{ *@
-@* 							<p class="card-text">8am - 12pm</p> *@
-@* 						} *@
-@* 						else if (shift.Type == (int)ShiftType.Afternoon) *@
-@* 						{ *@
-@* 							<p class="card-text">12pm - 4pm</p> *@
-@* 						} *@
-@* 						else if (shift.Type == (int)ShiftType.Evening) *@
-@* 						{ *@
-@* 							<p class="card-text">4pm - 8pm</p> *@
-@* 						} *@
-@* 					} *@
-@* 					@{ *@
-@* 						if(Model.shiftIdsToCancel.Contains(shift.Id)) *@
-@* 						{ *@
-@* 							<a asp-page="/CallInSick" asp-route-id="@shift.Id" class="btn btn-primary">Cancel</a> *@
-@* 						} *@
-@* 						else *@
-@* 						{ *@
-@* 							<a asp-page="/CallInSick" asp-route-id="@shift.Id" class="btn btn-dark disabled">Too early to cancel</a> *@
-@* 						} *@
-@* 					} *@
-@* 				</div> *@
-@* 			</div> *@
-@* 		</div> *@
-@* 		i++; *@
-@* 	} *@
-@* </div> *@
-
-<header class="header style-1">
-        <div class="container">
-            <!-- Start Mainmenu Nav -->
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/Index"><img src="assets/media/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="mynavbar">
-                <br/><br/>
-                    <ul class="navbar-nav me-3 mainmenu">
-                        <li class="menu-item-has-children">
-                            <a href="/Index">Home</a>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="/Stock">Stock</a>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#Timesheet" class="dropdown-toggle" id="timesheet" data-bs-toggle="dropdown"
-                               data-bs-auto-close="outside" aria-expanded="false">Timesheet</a>
-                            <ul class="dropdown-menu" aria-labelledby="timesheet">
-                                <li>
-                                    <a href="/Shifts">Shifts</a>
-                                </li>
-                                <li>
-                                    <a href="/CancelledShifts">Shift Management</a>
-                                </li>
-                                <li>
-                                    <a href="/RequestVacation">Holidays</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="/Profile">Profile</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-flex ms-auto right-nav">
-                        <a href="/Login" class="anime-btn btn-dark">LOG OUT</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
 
 <div class="login">
     <video autoplay loop muted class="bg-video">
@@ -141,28 +21,27 @@
                     </div>
                     <br />
                     <h2 class="mt-3 section-title">
-                        <img src="assets/media/login/Announcements.png" alt="Announcement Icon" class="section-icon"> Announcements:
+                        <img src="assets/media/Announcements.png" alt="Announcement Icon" class="section-icon"> Announcements:
                     </h2>
                     <div class="row">
-                        <!-- Dummy Announcement Data -->
-                        <div class="col-auto">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Announcement Title</h4>
-                                    <p class="card-text">Details of the announcement.</p>
-                                    <a href="#" class="btn btn-primary">See available shifts</a>
+                        @if (Model._announcements != null)
+                        {
+                            foreach (var a in Model._announcements)
+                            {
+                                <div class="col-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">@a.Title</h4>
+                                            <p class="card-text">@a.Details</p>
+                                            @if (@a.VacationId != 0)
+                                            {
+                                                <a asp-page="/ChooseShift" asp-route-id="@a.VacationId" class="btn btn-primary">See available shifts</a>
+                                            }
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Another Announcement Title</h4>
-                                    <p class="card-text">More details of the announcement.</p>
-                                    <a href="#" class="btn btn-primary">See available shifts</a>
-                                </div>
-                            </div>
-                        </div>
+                            }
+                        }
                     </div>
                     <br />
                     <hr class="section-divider">
@@ -170,46 +49,53 @@
                         <img src="assets/media/Timesheet.png" alt="Shifts Icon" class="section-icon"> Shifts:
                     </h2>
                     <div class="row">
-                        <!-- Dummy Shift Data -->
-                        <div class="col-auto">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Date: Shift Type</h5>
-                                    <p class="card-text">8am - 12pm</p>
-                                    <a href="#" class="btn btn-primary">Cancel</a>
+                        @foreach (var shift in Model._assignedShifts)
+                        {
+                            <div class="col-auto">
+                                <div style="width: 370px"class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@shift.Date.ToShortDateString() : @shift.GetType()</h5>
+                                        @switch (shift.Type)
+                                        {
+                                            case (int)DataItems.LogicItems.ShiftType.Morning:
+                                                <p class="card-text">12am - 4pm</p>
+                                                break;
+                                            case (int)DataItems.LogicItems.ShiftType.Afternoon:
+                                                <p class="card-text">8pm - 12am</p>
+                                                break;
+                                            case (int)DataItems.LogicItems.ShiftType.Evening:
+                                                <p class="card-text">4am - 8am</p>
+                                                break;
+                                            case (int)DataItems.LogicItems.ShiftType.EarlyMorning:
+                                                <p class="card-text">8am - 12pm</p>
+                                                break;
+                                            case (int)DataItems.LogicItems.ShiftType.EarlyAfternoon:
+                                                <p class="card-text">4pm - 8pm</p>
+                                                break;
+                                            case (int)DataItems.LogicItems.ShiftType.EarlyEvening:
+                                                <p class="card-text">0am - 4am</p>
+                                                break;
+                                            default:
+                                                <p class="card-text">Unknown Shift</p>
+                                                break;
+                                        }
+
+                                        @if (Model.shiftIdsToCancel.Contains(shift.Id))
+                                        {
+                                            <a asp-page="/CallInSick" asp-route-id="@shift.Id" class="btn btn-primary">Cancel</a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-page="/CallInSick" asp-route-id="@shift.Id" class="btn btn-dark disabled">Too early to cancel</a>
+                                        }
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Date: Shift Type</h5>
-                                    <p class="card-text">8am - 12pm</p>
-                                    <a href="#" class="btn btn-primary">Cancel</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Date: Shift Type</h5>
-                                    <p class="card-text">8am - 12pm</p>
-                                    <a href="#" class="btn btn-primary">Cancel</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Date: Shift Type</h5>
-                                    <p class="card-text">8am - 12pm</p>
-                                    <a href="#" class="btn btn-primary">Cancel</a>
-                                </div>
-                            </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </div>
+    

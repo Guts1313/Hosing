@@ -16,12 +16,18 @@ namespace MediaBazaarWebsite.Pages
         {
 			_employeeController = new(new DALEmployeeController());
 		}
-        public void OnGet()
+        public IActionResult OnGet()
         {
-			if (HttpContext.Session.GetString("username") != null)
-			{
-				_loggedInEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
+            if (HttpContext.Session.GetString("username") != null)
+            {
+                _loggedInEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
             }
-		}
+            else
+            {
+				return RedirectToPage("Login");
+            }
+
+            return Page();
+        }
     }
 }

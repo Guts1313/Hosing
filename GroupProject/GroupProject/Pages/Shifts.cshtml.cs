@@ -32,11 +32,15 @@ namespace GroupProject.Pages
 
 		public IActionResult OnGet()
 		{
-			if (HttpContext.Session.GetString("username") != null)
-			{
-				_loggedInEmployee = employeeController.Get(HttpContext.Session.GetString("username"));
-			}
-			_assignedShifts = _shiftController.GetAllAssigned(_loggedInEmployee);
+            if (HttpContext.Session.GetString("username") != null)
+            {
+                _loggedInEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
+            }
+            else
+            {
+                return RedirectToPage("Login");
+            }
+            _assignedShifts = _shiftController.GetAllAssigned(_loggedInEmployee);
 			shiftIdsToCancel = _shiftController.GetShiftIdsToCancelByEmp(_loggedInEmployee, _assignedShifts);
 
 			return Page();

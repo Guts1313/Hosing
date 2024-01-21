@@ -26,6 +26,10 @@ namespace GroupProject.Pages
             {
                 _loggedInEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
             }
+            else
+            {
+                return RedirectToPage("Login");
+            }
             stocks = _stockController.GetAll();
 
             return Page();

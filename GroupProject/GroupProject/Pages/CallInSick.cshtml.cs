@@ -27,19 +27,19 @@ namespace MediaBazaarWebsite.Pages
         {
 			_selectedShift = _shiftController.GetById(id);
 		}
-		public IActionResult OnPost()
-		{
-			int idTest = Convert.ToInt16(HttpContext.GetRouteData().Values["id"]);
-			CancelledShift cancelledShift = new CancelledShift();
-			cancelledShift.AssignedEmployee = _employeeController.Get(HttpContext.Session.GetString("username"));
-			cancelledShift.Shift = _shiftController.GetById(idTest);
-			cancelledShift.Reason = _reason;
-			//_shiftController.GetById(idTest).IsCancelled = true;
+        public IActionResult OnPost(int shiftId)
+        {
+            CancelledShift cancelledShift = new CancelledShift
+            {
+                AssignedEmployee = _employeeController.Get(HttpContext.Session.GetString("username")),
+                Shift = _shiftController.GetById(shiftId),
+                Reason = _reason
+            };
 
-			CancelledShiftController cancelledShiftController = new(new DALCancelledShiftController());
-			cancelledShiftController.Add(cancelledShift, new DALShiftController());
-			//_shiftController.DeleteShift(_selectedShift);
-			return RedirectToPage("Index");
-		}
+            CancelledShiftController cancelledShiftController = new(new DALCancelledShiftController());
+            cancelledShiftController.Add(cancelledShift, new DALShiftController());
+
+            return RedirectToPage("Index");
+        }
     }
 }
