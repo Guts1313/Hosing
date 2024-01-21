@@ -396,11 +396,11 @@
         <form class="form" method="post">
           
             <div class="user-box">
-                <input required asp-for="employee.Username" class="input" placeholder="Username" id="usernameInput">
+                <input required asp-for="employee.Username" class="input" placeholder="Username" id="usernameInput" value="andrei">
                 <span id="emailError" class="text-danger"></span>
             </div>
           <div class="user-box">
-            <input asp-for="employee.Password" class="input" placeholder="Password" type="password">
+            <input asp-for="employee.Password" class="input" placeholder="Password" type="password" value="1234">
             <span asp-validation-for="employee.Password" class="text-danger"></span>
           </div>
           <a href="#">

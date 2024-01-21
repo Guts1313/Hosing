@@ -5717,13 +5717,13 @@ footer {
 .calendar-day-custom.viewed {
     border: 3px solid #496338; /* Solid border for working days */
     background: #496338;
-    color: #FFFFFF; /* Optionally change the text color to match */
+    color: green; /* Optionally change the text color to match */
 }
 
 .calendar-day-custom.sent {
     border: 3px solid #93864a; /* Solid border for working days */
     background: #93864a;
-    color: #FFFFFF; /* Optionally change the text color to match */
+    color: yellow; /* Optionally change the text color to match */
 }
 .calendar-day-custom.rejected {
     border: 3px solid #8b4040; /* Solid border for working days */

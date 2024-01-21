@@ -241,6 +241,42 @@
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\slick.min.js"
     },
     {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Announcements.png",
+      "PackagePath": "staticwebassets\\assets\\media\\Announcements.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Calendar.png",
+      "PackagePath": "staticwebassets\\assets\\media\\Calendar.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\CancelledShift.png",
+      "PackagePath": "staticwebassets\\assets\\media\\CancelledShift.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Employee.png",
+      "PackagePath": "staticwebassets\\assets\\media\\Employee.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\RequestVacation.cshtml.cs",
+      "PackagePath": "staticwebassets\\assets\\media\\RequestVacation.cshtml.cs"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Stock.png",
+      "PackagePath": "staticwebassets\\assets\\media\\Stock.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Timesheet.png",
+      "PackagePath": "staticwebassets\\assets\\media\\Timesheet.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\Vacations.png",
+      "PackagePath": "staticwebassets\\assets\\media\\Vacations.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\media\\favicon.png"
+    },
+    {
       "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\Announcements.png",
       "PackagePath": "staticwebassets\\assets\\media\\login\\Announcements.png"
     },
@@ -287,6 +323,18 @@
     {
       "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\login\\preloader.svg",
       "PackagePath": "staticwebassets\\assets\\media\\login\\preloader.svg"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\media\\logo.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\logo_.png",
+      "PackagePath": "staticwebassets\\assets\\media\\logo_.png"
+    },
+    {
+      "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\assets\\media\\preloader.svg",
+      "PackagePath": "staticwebassets\\assets\\media\\preloader.svg"
     },
     {
       "Id": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\GroupProject\\wwwroot\\css\\site.css",
