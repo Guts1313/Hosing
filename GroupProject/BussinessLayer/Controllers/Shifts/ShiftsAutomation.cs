@@ -16,12 +16,15 @@ namespace BussinessLayer.Controllers.Shifts
         private const int TOTAL_SHIFTS_DAY = 6;
         private ShiftController shifts;
         private EmployeeController employees;
+        private VacationController vacations;
 
         public ShiftsAutomation() 
         {
             shifts = new ShiftController(new DALShiftController());
             employees = new EmployeeController(new DALEmployeeController());
-        }
+            vacations = new VacationController(new DALVacationController());
+
+		}
 
         private List<Employee> specificTimeShift(ShiftType shiftType, List<Employee> AllEmployees)
         {
@@ -165,12 +168,10 @@ namespace BussinessLayer.Controllers.Shifts
 
         private List<Employee> getDayAvailableEmployees(List<Employee> AllEmployees, DaySeparation day)
         {
-            List<Employee> AvailableEmployees = new List<Employee>(AllEmployees);
+            List<Employee> AvailableEmployees = deleteTheSameInstancesFromLists(AllEmployees, createListFromShifts(day));
             int indexEmplyeesPerShift = countEmployeesNeededForAShift(AllEmployees.Count);
             int addExtraEmployees = 0;
             Random random = new Random();
-
-            AvailableEmployees = deleteTheSameInstancesFromLists(AllEmployees, createListFromShifts(day));
 
             if (AvailableEmployees.Count <= indexEmplyeesPerShift * TOTAL_SHIFTS_DAY)
             { addExtraEmployees = indexEmplyeesPerShift * TOTAL_SHIFTS_DAY - AvailableEmployees.Count; }
@@ -206,10 +207,28 @@ namespace BussinessLayer.Controllers.Shifts
             Console.WriteLine("\n");
         }
 
-        public ShiftsDays sevenWeekSeparation()
+        private List<Vacation> GetAllApprovedVacationEmployees(DateTime end)
+        {
+            List<Vacation> clearedvacationEmployees = new List<Vacation>();
+			Vacation[] vacationEmployees = vacations.ReadAll();
+            DateOnly endDate = DateOnly.FromDateTime(end);
+
+            foreach(var vacation in vacationEmployees)
+            {
+                if (vacation != null)
+                {
+                    if (vacation.EndDate <= endDate && vacation.Approved)
+                    { clearedvacationEmployees.Add(vacation); }
+				}
+            }
+
+            return clearedvacationEmployees;
+        }
+
+        public ShiftsDays sevenWeekSeparation(DateTime start, DateTime end)
         {
             List<Employee> AllEmployees = employees.GetAll().ToList();
-            List<Employee> AvailableEmployees = new List<Employee>(AllEmployees);
+			List<Employee> AvailableEmployees = new List<Employee>(AllEmployees);
             ShiftsDays shiftsDays = new ShiftsDays();
 
             for (int i = 0; i < TOTAL_WORKING_DAYS; i++)
@@ -251,40 +270,99 @@ namespace BussinessLayer.Controllers.Shifts
             return shiftsDays;
         }
 
-        private void addShifts(DaySeparation daySeparation, DateTime date)
+        private int getListIdOfTheGivenEmployee(List<Employee> vacationEmployees, Employee employee)
         {
-            foreach (var emp in daySeparation.EarlyMorning)
+            for (int i = 0; i < vacationEmployees.Count; i++)
             {
-                shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyMorning));
+                if (employee.Id == vacationEmployees[i].Id)
+                {
+                    return employee.Id;
+                }
+            }
+            return 0;
+        }
+
+        private void addShifts(DaySeparation daySeparation, DateTime date, List<Vacation> vacations, List<Employee> allEmployees, List<Employee> vacationEmployees)
+        {
+			DateOnly dateOnly = DateOnly.FromDateTime(date);
+			Random random = new Random();
+
+			foreach (var emp in daySeparation.EarlyMorning)
+            {
+                if (vacationEmployees.Contains(emp)
+                    && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
+                    && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
+                { 
+                    shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning)); 
+                }
+                else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyMorning)); }
             }
             foreach (var emp in daySeparation.Morning)
             {
-                shifts.AddShift(new Shift(emp, date, (int)ShiftType.Morning));
+				if (vacationEmployees.Contains(emp)
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
+				{
+					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+				}
+				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.Morning)); }
             }
             foreach (var emp in daySeparation.EarlyAfternoon)
             {
-                shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyAfternoon));
+				if (vacationEmployees.Contains(emp)
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
+				{
+					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+				}
+				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyAfternoon)); }
             }
             foreach (var emp in daySeparation.Afternoon)
             {
-                shifts.AddShift(new Shift(emp, date, (int)ShiftType.Afternoon));
+				if (vacationEmployees.Contains(emp)
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
+				{
+					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+				}
+				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.Afternoon)); }
             }
             foreach (var emp in daySeparation.EarlyEvening)
             {
-                shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyEvening));
+				if (vacationEmployees.Contains(emp)
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
+				{
+					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+				}
+				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyEvening)); }
             }
             foreach (var emp in daySeparation.Evening)
             {
-                shifts.AddShift(new Shift(emp, date, (int)ShiftType.Evening));
+				if (vacationEmployees.Contains(emp)
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
+	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
+				{
+					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+				}
+				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.Evening)); }
             }
         }
 
         public void AssignShiftsAutomaticallyByDate(DateTime start, DateTime end)
         {
             DateTime currentPos = start;
-            ShiftsDays weekShifts = sevenWeekSeparation();
+            ShiftsDays weekShifts = sevenWeekSeparation(start, end);
+			List<Vacation> vacations = GetAllApprovedVacationEmployees(end);
+			List<Employee> AllEmployees = employees.GetAll().ToList();
+            List<Employee> vacationEmployees = new List<Employee>();
 
-            if (start > end)
+            foreach(Vacation vacation in vacations)
+            {
+                vacationEmployees.Add(vacation.Employee);
+			}
+
+			if (start > end)
             {
                 throw new Exception("start date can`t be in the future compaired to end date");
             }
@@ -297,19 +375,19 @@ namespace BussinessLayer.Controllers.Shifts
                 switch (dayName)
                 {
                     case DayOfWeek.Monday:
-                        addShifts(weekShifts.Monday, currentPos);
+                        addShifts(weekShifts.Monday, currentPos, vacations, AllEmployees, vacationEmployees);
                         break;
                     case DayOfWeek.Tuesday:
-                        addShifts(weekShifts.Tuesday, currentPos);
+                        addShifts(weekShifts.Tuesday, currentPos, vacations, AllEmployees, vacationEmployees);
                         break;
                     case DayOfWeek.Wednesday:
-                        addShifts(weekShifts.Wendsday, currentPos);
+                        addShifts(weekShifts.Wendsday, currentPos, vacations, AllEmployees, vacationEmployees);
                         break;
                     case DayOfWeek.Thursday:
-                        addShifts(weekShifts.Thursday, currentPos);
+                        addShifts(weekShifts.Thursday, currentPos, vacations, AllEmployees, vacationEmployees);
                         break;
                     case DayOfWeek.Friday:
-                        addShifts(weekShifts.Friday, currentPos);
+                        addShifts(weekShifts.Friday, currentPos, vacations, AllEmployees, vacationEmployees);
                         break;
                 }
 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj": {}
+    "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
+    "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
         "projectName": "BussinessLayer",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+              "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+                "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
               }
             }
           }
@@ -67,40 +67,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,8 +100,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+              "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+                "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
               }
             }
           }
@@ -150,40 +136,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+    "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+        "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
         "projectName": "DataBlocks",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\obj\\",
+        "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+        "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -229,40 +201,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.26, 6.0.26]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj": {
+    "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
+        "projectUniqueName": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
         "projectName": "DesktopAppMediaBazaar",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\obj\\",
+        "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\DesktopAppMediaBazaar.csproj",
+        "packagesPath": "C:\\Users\\Danila\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DesktopAppMediaBazaar\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Danila\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -276,14 +234,14 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
+              "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj"
               },
-              "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+              "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+                "projectPath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
               }
             }
           }
@@ -322,24 +280,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -348,7 +288,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,14 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "VkeT8JtrBCi8fLZ/969JhZbT5U2zgOHkXpf+3BiTCi3V0RwztIB1tMxVaDneuiOVNSVhJJ08ezm3XL517uigSg==",
+  "dgSpecHash": "SKU37W3tSV24a4p0BG2E2etFxBgtQys6Y91opL312mGc7dMGvnO8GmAWz0l6YcOyVmVYemZ02OuBovrmBMtgaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Source\\Repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+  "projectFilePath": "C:\\Users\\Danila\\source\\repos\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+    "C:\\Users\\Danila\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
+    "C:\\Users\\Danila\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512"
   ],
   "logs": [
     {
