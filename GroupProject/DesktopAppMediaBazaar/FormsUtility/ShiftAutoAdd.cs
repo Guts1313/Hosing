@@ -87,10 +87,12 @@ namespace DesktopAppMediaBazaar.FormsUtility
             var shifts = shiftController.GetAll()
                 .Select(shift => new ShiftDisplayInfo
                 {
-                    Name = shift.Employee.Name,
-                    date = shift.Date.DayOfWeek,
-                    shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
-                })
+					id = shift.Id,
+					time = shift.Date,
+					date = shift.Date.DayOfWeek,
+					shiftType = GetShiftTypeDisplayName(Extensions.GetFirstShift(shift.Type)),
+					Name = shift.Employee.Name,
+				})
                 .ToList();
 
             lbEmployees.Columns.Clear();
@@ -100,18 +102,21 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
         private void AdjustDataGridViewColumns()
         {
-            lbEmployees.Columns.Add("Name", "Name");
-            lbEmployees.Columns.Add("shiftType", "Shift Type");
-            lbEmployees.Columns.Add("date", "Date");
+			lbEmployees.Columns.Add("time", "Date");
+			lbEmployees.Columns.Add("date", "Day of Week");
+			lbEmployees.Columns.Add("shiftType", "Shift Type");
+			lbEmployees.Columns.Add("Name", "Name");
 
-            lbEmployees.Columns["Name"].DataPropertyName = "Name";
-            lbEmployees.Columns["shiftType"].DataPropertyName = "shiftType";
-            lbEmployees.Columns["date"].DataPropertyName = "date";
+			lbEmployees.Columns["time"].DataPropertyName = "time";
+			lbEmployees.Columns["date"].DataPropertyName = "date";
+			lbEmployees.Columns["shiftType"].DataPropertyName = "shiftType";
+			lbEmployees.Columns["Name"].DataPropertyName = "Name";
 
-            lbEmployees.Columns["Name"].HeaderText = "Name";
-            lbEmployees.Columns["shiftType"].HeaderText = "Shift Type";
-            lbEmployees.Columns["Date"].HeaderText = "Date";
-        }
+			lbEmployees.Columns["time"].HeaderText = "Date";
+			lbEmployees.Columns["date"].HeaderText = "Day of Week";
+			lbEmployees.Columns["shiftType"].HeaderText = "Shift Type";
+			lbEmployees.Columns["Name"].HeaderText = "Name";
+		}
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
