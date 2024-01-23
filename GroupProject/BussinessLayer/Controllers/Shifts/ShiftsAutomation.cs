@@ -292,8 +292,9 @@ namespace BussinessLayer.Controllers.Shifts
                 if (vacationEmployees.Contains(emp)
                     && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
                     && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
-                { 
-                    shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning)); 
+                {
+					var newEmployeeLst = DeleteEmployeeFromListById(emp.Id, allEmployees);
+					shifts.AddShift(new Shift(newEmployeeLst[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning)); 
                 }
                 else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyMorning)); }
             }
@@ -303,7 +304,8 @@ namespace BussinessLayer.Controllers.Shifts
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
 				{
-					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+                    var newEmployeeLst = DeleteEmployeeFromListById(emp.Id, allEmployees);
+					shifts.AddShift(new Shift(newEmployeeLst[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
 				}
 				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.Morning)); }
             }
@@ -313,7 +315,8 @@ namespace BussinessLayer.Controllers.Shifts
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
 				{
-					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+					var newEmployeeLst = DeleteEmployeeFromListById(emp.Id, allEmployees);
+					shifts.AddShift(new Shift(newEmployeeLst[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
 				}
 				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyAfternoon)); }
             }
@@ -323,7 +326,8 @@ namespace BussinessLayer.Controllers.Shifts
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
 				{
-					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+					var newEmployeeLst = DeleteEmployeeFromListById(emp.Id, allEmployees);
+					shifts.AddShift(new Shift(newEmployeeLst[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
 				}
 				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.Afternoon)); }
             }
@@ -333,7 +337,8 @@ namespace BussinessLayer.Controllers.Shifts
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
 				{
-					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+					var newEmployeeLst = DeleteEmployeeFromListById(emp.Id, allEmployees);
+					shifts.AddShift(new Shift(newEmployeeLst[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
 				}
 				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.EarlyEvening)); }
             }
@@ -343,7 +348,8 @@ namespace BussinessLayer.Controllers.Shifts
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].StartDate <= dateOnly
 	                && vacations[getListIdOfTheGivenEmployee(vacationEmployees, emp)].EndDate >= dateOnly)
 				{
-					shifts.AddShift(new Shift(allEmployees[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
+					var newEmployeeLst = DeleteEmployeeFromListById(emp.Id, allEmployees);
+					shifts.AddShift(new Shift(newEmployeeLst[random.Next(allEmployees.Count)], date, (int)ShiftType.EarlyMorning));
 				}
 				else { shifts.AddShift(new Shift(emp, date, (int)ShiftType.Evening)); }
             }
