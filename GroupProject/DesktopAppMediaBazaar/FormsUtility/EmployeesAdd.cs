@@ -113,6 +113,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
             if (_name.Length == 0 || _password.Length == 0 || _username.Length == 0)
             { RJMessageBox.Show("Name, username and password cannot be empty!"); return; }
+            if (_password.Length < 12)
+            { RJMessageBox.Show("Password should be more then 12 symbols!"); return; }
             if (salary == 0)
             { RJMessageBox.Show("Salary cannot be 0!"); return; }
 

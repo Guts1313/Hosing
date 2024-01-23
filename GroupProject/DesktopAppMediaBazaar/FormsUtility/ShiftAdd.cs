@@ -1,5 +1,6 @@
 ﻿using BussinessLayer.Controllers;
 using BussinessLayer.Controllers.Shifts;
+using DataAccessLayer.DAL;
 using DataAccessLayer.Interfaces;
 using DataItems.LogicItems;
 using DesktopAppMediaBazaar.CustomElements;
@@ -14,6 +15,7 @@ namespace DesktopAppMediaBazaar.FormsUtility
         private readonly DepartmentController _departmentController;
         private readonly EmployeeController _employeeController;
         private readonly ShiftController _shiftController;
+        private readonly VacationController _vacationController;
         private DataGridView lbEmployees;
         #region FORM CUSTOM STYLE
         //FORM DRAG NO BORDER
@@ -47,11 +49,9 @@ namespace DesktopAppMediaBazaar.FormsUtility
             this.FormBorderStyle = FormBorderStyle.None;
             this.lbEmployees = lbEmployees;
 
-            /*            foreach (Department department in _departmentController.GetAll())
-                        {
-                            cbxDepartment.Items.Add(department.Name);
-                        }*/
-            _shiftController = shiftController;
+            _vacationController = new VacationController(new DALVacationController());
+
+			_shiftController = shiftController;
             showEmployees();
         }
 
@@ -141,15 +141,44 @@ namespace DesktopAppMediaBazaar.FormsUtility
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+		private List<Vacation> GetAllApprovedVacationEmployees(DateTime selectedDate)
+		{
+			List<Vacation> clearedvacationEmployees = new List<Vacation>();
+			Vacation[] vacationEmployees = _vacationController.ReadAll();
+			DateOnly endDate = DateOnly.FromDateTime(selectedDate);
+
+			foreach (var vacation in vacationEmployees)
+			{
+				if (vacation != null)
+				{
+					if (vacation.EndDate >= endDate && vacation.Approved)
+					{ clearedvacationEmployees.Add(vacation); }
+				}
+			}
+
+			return clearedvacationEmployees;
+		}
+
+		private void btnSave_Click(object sender, EventArgs e)
         {
             var shiftType = CheckShiftSelectionType();
             DateTime shiftDate = Calendar.Value;
+            DateOnly dateOnly = DateOnly.FromDateTime(shiftDate);
 
             if (lbxEmployees.SelectedIndex != -1)
             {
-                Employee _employee = (Employee)lbxEmployees.SelectedItem;
-                Shift shift = new Shift(_employee, shiftDate, shiftType);
+				Employee _employee = (Employee)lbxEmployees.SelectedItem;
+				var vacations = _vacationController.ReadAllByMember(_employee.Id);
+
+                foreach (var vacation in vacations)
+                {
+                    if (vacation.EndDate >= dateOnly && dateOnly >= vacation.StartDate)
+                    {
+						RJMessageBox.Show("Selected employee is on vacation");
+					}
+                }
+
+				Shift shift = new Shift(_employee, shiftDate, shiftType);
                 _shiftController.AddShift(shift);
                 lbxEmployees.Items.Add(shift);
                 showEmployeesMainForm();
