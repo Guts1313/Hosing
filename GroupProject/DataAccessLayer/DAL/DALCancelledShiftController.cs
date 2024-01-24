@@ -256,9 +256,9 @@ namespace DataAccessLayer.DAL
 
         public CancelledShift[] GetFromVacation(int id)
         {
+            List<CancelledShift> cancelledShifts = new();
             try
             {
-                List<CancelledShift> cancelledShifts = new();
                 DALEmployeeController _employeeController = new DALEmployeeController();
                 DALVacationController _vacationController =new DALVacationController();
                 DALShiftController _shiftController = new DALShiftController();
@@ -267,7 +267,18 @@ namespace DataAccessLayer.DAL
 
                 using SqlConnection conn = new SqlConnection(CONNECTION_STRING);
                 {
-                    string sql = "SELECT c.* FROM Shift AS s INNER JOIN CancelledShift AS c ON s.Id = c.ShiftID INNER JOIN Vacation AS v ON c.AssignedEmployeeID = v.EmployeeId WHERE c.AssignedEmployeeID = @empId AND c.NewEmployeeID IS NULL AND s.Date >= @startDate AND s.Date <= @endDate ORDER BY s.Date";
+                    string sql = "SELECT c.* " +
+                        "FROM Shift " +
+                        "AS s " +
+                        "INNER JOIN CancelledShift AS c " +
+                        "ON s.Id = c.ShiftID " +
+                        "INNER JOIN Vacation AS v " +
+                        "ON c.AssignedEmployeeID = v.EmployeeId " +
+                        "WHERE c.AssignedEmployeeID = @empId " +
+                        "AND c.NewEmployeeID IS NULL " +
+                        "AND s.Date >= @startDate " +
+						"AND s.Date <= @endDate " +
+                        "ORDER BY s.Date";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))
                     {
@@ -299,7 +310,7 @@ namespace DataAccessLayer.DAL
             }
             catch (Exception ex)
             {
-                return null;
+                return cancelledShifts.ToArray();
             }
         }
 

@@ -15,6 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BCrypt.Net;
+using System.Text.RegularExpressions;
 
 namespace DesktopAppMediaBazaar.FormsUtility
 {
@@ -105,6 +106,11 @@ namespace DesktopAppMediaBazaar.FormsUtility
             string _phone = tbxPhone.Texts;
             decimal bsn = 512214;
             string departmentName = null;
+            if (cbxDepartment.SelectedItem == null)
+            {
+                RJMessageBox.Show("Select Department");
+                return;
+            }
             Department department = departmentController.Get(cbxDepartment.SelectedItem.ToString());
 
             decimal salary;
@@ -113,8 +119,8 @@ namespace DesktopAppMediaBazaar.FormsUtility
 
             if (_name.Length == 0 || _password.Length == 0 || _username.Length == 0)
             { RJMessageBox.Show("Name, username and password cannot be empty!"); return; }
-            if (_password.Length < 12)
-            { RJMessageBox.Show("Password should be more then 12 symbols!"); return; }
+            if (_password.Length < 12 && !Regex.IsMatch(_password,@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{12,}"))
+            { RJMessageBox.Show("Password should be atleast 12 symbols, 1 capital letter, 1 small letter and 1 digit!"); return; }
             if (salary == 0)
             { RJMessageBox.Show("Salary cannot be 0!"); return; }
 
