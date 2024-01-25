@@ -569,19 +569,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nahme\\.nuget\\packages\\": {}
+    "C:\\Users\\GRIGS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
+      "projectUniqueName": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
       "projectName": "BussinessLayer",
-      "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
-      "packagesPath": "C:\\Users\\nahme\\.nuget\\packages\\",
-      "outputPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\BussinessLayer\\obj\\",
+      "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\BussinessLayer.csproj",
+      "packagesPath": "C:\\Users\\GRIGS\\.nuget\\packages\\",
+      "outputPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\BussinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nahme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GRIGS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -595,11 +595,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
-              "projectPath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
+            "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj": {
+              "projectPath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj"
             }
           }
         }
@@ -639,7 +639,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   },

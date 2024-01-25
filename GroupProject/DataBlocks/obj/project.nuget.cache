@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hne3FZ/r+bkVOEqVhFdzePtdL5FLDSD5fLTs/1+DEa65Iniaf7hwRIb/Py6F94UGxn+14K59ect25mPLBGzS+Q==",
+  "dgSpecHash": "KZ38Gnh+xFaYjxrC1pn/+qZjf2QW+Fp0my7rN3HJal4QonIcvZQKae8en3UfSHAO8Hq/SlQs0jVVqgH2StYW9Q==",
   "success": true,
-  "projectFilePath": "C:\\S2-Group-Project\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
+  "projectFilePath": "C:\\GroupProject\\cb02-group5\\GroupProject\\DataBlocks\\DataBlocks.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nahme\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
-    "C:\\Users\\nahme\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512"
+    "C:\\Users\\GRIGS\\.nuget\\packages\\bcrypt\\1.0.0\\bcrypt.1.0.0.nupkg.sha512",
+    "C:\\Users\\GRIGS\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512"
   ],
   "logs": [
     {
